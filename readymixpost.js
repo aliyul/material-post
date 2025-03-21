@@ -16,7 +16,8 @@
           <span itemprop='name'>Ready Mix</span> &nbsp;&#8250;&nbsp;
       </a>
 
-      <span itemprop='name'>${document.title}</span>
+      <span itemprop='name'><data:blog.pageName/></span>
+     
     `;
 
     // Menambahkan HTML ke body halaman
