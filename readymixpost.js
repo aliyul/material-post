@@ -1,7 +1,7 @@
 // Mendapatkan URL halaman saat ini
   var currentUrl = window.location.href;
 
-  // URL target yang ingin Anda periksa
+  // Menentukan URL yang ingin Anda periksa
   var targetUrl = "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html";
 
   // Jika URL halaman saat ini cocok dengan target URL
@@ -19,6 +19,6 @@
       <span itemprop='name'>${document.title}</span>
     `;
 
-    // Menyisipkan HTML tersebut ke dalam elemen dengan ID 'content-area'
-    document.getElementById('content-area').innerHTML = html;
+    // Menambahkan HTML ke body halaman
+    document.body.insertAdjacentHTML('beforeend', html);
   }
