@@ -3,6 +3,7 @@ window.onload = function() {
   var targetUrl = "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html";
 
   if (currentUrl === targetUrl) {
+    console.log()
     var html = `
       <a href='https://www.betonjayareadymix.com/p/material-konstruksi.html' itemprop='item' title='MATERIAL KONSTRUKSI'>
           <span itemprop='name'>Material Konstruksi</span> &nbsp;&#8250;&nbsp;
