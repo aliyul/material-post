@@ -1,15 +1,24 @@
-var htmlContent = var html = `
-<b:if cond='data:blog.url == "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html"'>
-    <a href='https://www.betonjayareadymix.com/p/material-konstruksi.html' itemprop='item' title='MATERIAL KONSTRUKSI'>
-        <span itemprop='name'>Material Konstruksi</span> &nbsp;&#8250;&nbsp;
-    </a>
+// Mendapatkan URL halaman saat ini
+  var currentUrl = window.location.href;
 
-    <a href='https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' itemprop='item' title='READY MIX'>
-        <span itemprop='name'>Ready Mix</span> &nbsp;&#8250;&nbsp;
-    </a>
+  // URL target yang ingin Anda periksa
+  var targetUrl = "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html";
 
-    <span itemprop='name'>${document.title}</span>
-</b:if>
-`;
+  // Jika URL halaman saat ini cocok dengan target URL
+  if (currentUrl === targetUrl) {
+    // HTML yang ingin ditambahkan
+    var html = `
+      <a href='https://www.betonjayareadymix.com/p/material-konstruksi.html' itemprop='item' title='MATERIAL KONSTRUKSI'>
+          <span itemprop='name'>Material Konstruksi</span> &nbsp;&#8250;&nbsp;
+      </a>
 
-        document.getElementById('popupContainer').innerHTML = htmlContent;
+      <a href='https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' itemprop='item' title='READY MIX'>
+          <span itemprop='name'>Ready Mix</span> &nbsp;&#8250;&nbsp;
+      </a>
+
+      <span itemprop='name'>${document.title}</span>
+    `;
+
+    // Menyisipkan HTML tersebut ke dalam elemen dengan ID 'content-area'
+    document.getElementById('content-area').innerHTML = html;
+  }
