@@ -21,6 +21,6 @@
       `;
 
       // Menambahkan HTML ke body halaman
-      document.body.insertAdjacentHTML('beforeend', html);
+      document.body.insertAdjacentHTML('afterbegin', html);
     }
   });
