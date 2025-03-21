@@ -1,14 +1,13 @@
   var currentUrl = window.location.href;
 
-  // Cek URL yang diambil
-  console.log("Current URL:", currentUrl);
-
   // Menentukan URL yang ingin Anda periksa
   var targetUrl = "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html";
 
   // Jika URL halaman saat ini cocok dengan target URL
   if (currentUrl === targetUrl) {
     // HTML yang ingin ditambahkan
+      // Cek URL yang diambil
+  console.log("Current URL:", currentUrl);
     var html = `
       <a href='https://www.betonjayareadymix.com/p/material-konstruksi.html' itemprop='item' title='MATERIAL KONSTRUKSI'>
           <span itemprop='name'>Material Konstruksi</span> &nbsp;&#8250;&nbsp;
