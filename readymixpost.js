@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function() {
      } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-tasikmalaya.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
-       pageNameSpan.textContent = "Harga Beton Ready Mix Tasikmalaya";
+       pageNameSpan.textContent = "Beton Ready Mix Tasikmalaya";
      } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-garut.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
