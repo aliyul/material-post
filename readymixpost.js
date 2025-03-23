@@ -1,20 +1,27 @@
-window.onload = function() {
-  var currentUrl = window.location.href;
-  var targetUrl = "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html";
+// Mendapatkan URL halaman saat ini
+var currentPageUrl = window.location.href;
 
-  if (currentUrl === targetUrl) {
-    console.log()
-    var html = `
-      <a href='https://www.betonjayareadymix.com/p/material-konstruksi.html' itemprop='item' title='MATERIAL KONSTRUKSI'>
-          <span itemprop='name'>Material Konstruksi</span> &nbsp;&#8250;&nbsp;
-      </a>
+// Mendefinisikan URL target untuk breadcrumbs
+var targetUrl = "https://www.betonjayareadymix.com/2019/06/harga-chipping-beton-per-m2.html";
 
-      <a href='https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' itemprop='item' title='READY MIX'>
-          <span itemprop='name'>Ready Mix</span> &nbsp;&#8250;&nbsp;
-      </a>
+// Mendefinisikan struktur breadcrumbs
+var breadcrumbs = [
+  { title: "BJR", url: "https://www.betonjayareadymix.com/" },
+  { title: "Jasa Konstruksi", url: "https://www.betonjayareadymix.com/p/jasa-konstruksi.html" },
+  { title: "Jasa Renovasi Perbaikan", url: "https://www.betonjayareadymix.com/p/jasa-renovasi-perbaikan.html" },
+   { title: "Jasa Chipping Beton", url: "https://www.betonjayareadymix.com/p/jasa-chipping-beton.html" }
+];
 
-      <span itemprop='name'>${document.title}</span>
-    `;
-    document.body.insertAdjacentHTML('beforeend', html);
+// Memeriksa apakah URL halaman saat ini sama dengan URL target
+if (currentPageUrl === targetUrl) {
+  // Menampilkan struktur breadcrumbs
+  document.write("<div class='breadcrumbs'>");
+  for (var i = 0; i < breadcrumbs.length; i++) {
+    if (i < breadcrumbs.length - 1) {
+      document.write("<a href='" + breadcrumbs[i].url + "'>" + breadcrumbs[i].title + "</a> &gt; ");
+    } else {
+      document.write(breadcrumbs[i].title);
+    }
   }
-};
+  document.write("</div>");
+}
