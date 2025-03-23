@@ -604,5 +604,117 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Beton Ready Mix Pionir";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-adhimix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Adhimix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-holcim.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Holcim";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-jayamix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Jayamix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-merah-putih.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Merah Putih";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix B0";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-per-m3.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Per m3";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Cari Harga Beton Ready Mix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bandung.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Bandung";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cirebon.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Cirebon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cikarang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Cikarang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-depok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Depok";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-terbaru.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Terbaru";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-garut.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Garut";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-majalengka.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Majalengka";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-subang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Subang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-sukabumi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Sukabumi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-ciamis.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Ciamis";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cianjur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Cianjur";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-indramayu.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Indramayu";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-termurah.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Termurah";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-majalengka.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Beton Ready Mix Majalengka";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-tasikmalaya.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Ready Mix Tasikmalaya";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-garut.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Beton Ready Mix Garut";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sukabumi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Beton Ready Mix Sukabumi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-purwakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Beton Ready Mix Purwakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sumedang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Beton Ready Mix Sumedang";
      }
    });
