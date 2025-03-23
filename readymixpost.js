@@ -14,6 +14,7 @@ var breadcrumbs = [
 
 // Memeriksa apakah URL halaman saat ini sama dengan URL target
 if (currentPageUrl === targetUrl) {
+  console.log();
   // Menampilkan struktur breadcrumbs
   document.write("<div class='breadcrumbs'>");
   for (var i = 0; i < breadcrumbs.length; i++) {
