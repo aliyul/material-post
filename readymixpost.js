@@ -1269,6 +1269,110 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Jayamix Pangkalan Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pedes-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Pedes Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pedes-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Pedes Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-purwasari-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Purwasari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-purwasari-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Purwasari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rawamerta-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Rawamerta Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rawamerta-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Rawamerta Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rengasdengklok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Rengasdengklok Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rengasdengklok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Rengasdengklok Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-barat.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Telukjambe barat Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-barat.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Telukjambe barat Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-talagasari-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Talagasari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-talagasari-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Talagasari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Tegalwaru Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Tegalwaru Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-timur-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Telukjambe timur Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-timur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Telukjambe timur Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tempuran-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Tempuran Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tempuran-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Tempuran Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtamulya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Tirtamulya Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tirtamulya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Tirtamulya Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtajaya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Tirtajaya Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tirtajaya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Tirtajaya Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-banyusari-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Banyusari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-banyusari-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Banyusari Kab Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-batujaya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Jayamix Batujaya Kab Karawang";
+      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-batujaya-kab-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Batujaya Kab Karawang";
      // akhir kecamatan karawang
           
      } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-cor-beton-dinding.html") {
