@@ -1220,7 +1220,7 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Beton Cor Serang";
-     // kecamatan karawang
+     // KARAWANG KECAMATAN
      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
