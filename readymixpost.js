@@ -984,6 +984,10 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Ready Mix Jombang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Cibinong";
      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
