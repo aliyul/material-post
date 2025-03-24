@@ -1136,5 +1136,201 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Cor Beton K 250";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-250-per-m3.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton K 250 per m3";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton K 225";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-jabodetabek.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Jabodetabek";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-instan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Instan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-bandung.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton Bandung";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-depok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton K Depok";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k350.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton K 350";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-dak.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Dak ";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-tangerang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Tangerang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-di-jakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton di Jakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-bekasi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Bekasi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-pionir.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Pionir";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-cor-dynamix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Dynamix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-cor-jayamix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Jayamix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor K300 holcim";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-tiga-roda.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Tiga Roda";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Beton Cor Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-cor-beton-dinding.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton Dinding";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-jalan-per-meter.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton Jalan per meter";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-borongan-cor-beton.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Borongan Cor Beton";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-borongan-cor-beton-per-m3.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Borongan Cor Beton per m3";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-per-m2.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton per m2";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-k225-per-m3.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Beton K225 per m3";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/harga-cor-jayamix-kediri.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Cor Jayamix Kediri";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-bangunan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Bangunan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-terdekat.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Terdekat";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-bekasi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Bekasi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-depok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Depok";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-jakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Jakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-tangerang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Tangerang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-rumah.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Rumah";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-kontrakan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Kontrakan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-ruko-toko.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Ruko Toko";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-rukan-kantor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Rukan Kantor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-apartemen.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Apartemen";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-hotel.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Hotel";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-townhouse.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Townhouse";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-villa.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Villa";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-pabrik.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Pabrik";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-gedung.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Gedung";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-gudang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Gudang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-masjid.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Masjid";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-yayasan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Yayasan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-mall.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Mall";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-stadion.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Stadion";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-stasiun.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Stasiun";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-sekolah.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Sekolah";
      } 
    });
