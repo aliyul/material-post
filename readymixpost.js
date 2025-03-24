@@ -1332,5 +1332,177 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Borongan Cor Beton Sekolah";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-pelabuhan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Pelabuhan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-bandara.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Bandara";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-jalan-desa.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Jalan desa";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-jalan-raya.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Jalan raya";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/borongan-cor-beton-jalan-tol.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Borongan Cor Beton Jalan tol";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Cor Beton Bangunan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/office-kantor-scg-kalibata.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Office Kantor Scg Kalibata";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-batching-plant.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Batching plant";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/scg-readymix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-beton.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Beton";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/pt-scg-readymix-indonesia.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "PT Scg Ready Mix Indonesia";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/03/scg-readymix-indonesia.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Indonesia";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Subang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-sukabumi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Sukabumi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-purwakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Purwakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-majalengka.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Majalengka";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bandung.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Bandung";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cirebon.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Cirebon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cianjur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Cianjur";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bekasi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Batching plant Scg Bekasi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jayamix-dki-jakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix DKI Jakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/scg-readymix-jakarta.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Jakarta";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-utara.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Kota Jakarta utara";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-selatan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Jakarta selatan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-barat.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Kota Jakarta barat";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/plant-scg-jelambar.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Plant Scg Jelambar";
+     } else if (currentUrl === "hhttps://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-timur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Kota Jakarta timur";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/plant-scg-kampung-rambutan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Plant Scg Kampung rambutan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/plant-scg-kebon-nanas-jakarta-timur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Plant Scg Kebon nanas Jakarta timur";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jayamix-depok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix Depok";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-depok.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Depok";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jayamix-bekasi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix Bekasi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-bekasi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Bekasi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-cikarang-selatan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Cikarang Selatan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jayamix-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-babakan-madang-kab-bogor.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix babakan madang kab bogor";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-jayamix-tangerang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Jayamix Tangerang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-tangerang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Scg Ready Mix Tangerang";
      } 
    });
