@@ -904,5 +904,85 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Ready Mix Majalengka";
-     }
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-karawang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Karawang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-subang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Subang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sukabumi.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Sukabumi";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-ciamis.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Cirebon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cianjur.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Cirebon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cirebon.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Cirebon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-indramayu.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Indramayu";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-pangandaran.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Pangandaran";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kuningan.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Kuningan";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tasikmalaya.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Tasikmalaya";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sumedang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Sumedang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cilegon.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Cilegon";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-per-kubik.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Per Kubik";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-surabaya.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Surabaya";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jogja.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Boyolali";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-boyolali.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Boyolali";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-magelang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Magelang";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-klaten.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Klaten";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-pati.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Pati";
+     } else if (currentUrl === "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html") {
+       materialKonstruksiLink.style.visibility = 'visible';
+       readyMixLink.style.visibility = 'visible';
+       pageNameSpan.textContent = "Harga Ready Mix Jombang";
+     } 
    });
