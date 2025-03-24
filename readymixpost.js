@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
      // Default untuk menyembunyikan elemen
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
-     pageNameSpan.textContent = "Default Page";
+     pageNameSpan.style.visibility = 'hidden';
+     pageNameSpan.textContent = "";
 
      // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      if (currentUrl === "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html") {
