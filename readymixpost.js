@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
      var currentUrl = window.location.href;
+     const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
 
      // Menemukan elemen menggunakan ID
      var materialKonstruksiLink = document.getElementById("materialKonstruksi");
@@ -188,10 +189,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 };
 
-if (urlMapping[currentUrl]) {
+if (urlMapping[cleanUrl]) {
     materialKonstruksiLink.style.visibility = 'visible';
     readyMixLink.style.visibility = 'visible';
-    pageNameSpan.textContent = urlMapping[currentUrl];
+    pageNameSpan.textContent = urlMapping[cleanUrl];
 }
 
    });
