@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
+console.log('https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang.html?m=1:', cleanUrl);
+    console.log('Apakah URL ditemukan di mapping?', urlMapping[cleanUrl]);
 
      // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      const urlMapping = {
