@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
      // Default untuk menyembunyikan elemen
     materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
-     pageNameSpan.textContent = "default";
+     pageNameSpan.textContent = "";
 
      // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      const urlMapping = {
