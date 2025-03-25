@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
      // Default untuk menyembunyikan elemen
     materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
-     pageNameSpan.textContent = "";
+     pageNameSpan.textContent = "default";
 
      // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      const urlMapping = {
@@ -199,8 +199,6 @@ console.log('Material Konstruksi:', materialKonstruksiLink);
         return;
     }
 
-    const cleanUrl = window.location.href.split(/[?#]/)[0];
-    
     if (urlMapping[cleanUrl]) {
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
