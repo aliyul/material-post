@@ -210,11 +210,11 @@ console.log('Material Konstruksi:', materialKonstruksiLink);
         pageNameSpan.textContent = urlMapping[cleanUrl];
     }
 
-if (urlMapping[cleanUrl]) {
+/*if (urlMapping[cleanUrl]) {
         document.getElementById('materialKonstruksiLink').style.visibility = 'visible';
         document.getElementById('readyMixLink').style.visibility = 'visible';
         document.getElementById('pageNameSpan').textContent = urlMapping[cleanUrl];
     }
-
+*/
 
    });
