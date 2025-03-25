@@ -1220,7 +1220,7 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Beton Cor Serang";
-     // KARAWANG KECAMATAN
+     // KECAMATAN KARAWANG 
      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
@@ -1461,7 +1461,7 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Ready Mix Karawang timur";
-//KECAMATAN SERANG
+// KECAMATAN SERANG
      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-anyar-kab-serang.html") {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
