@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
-console.log('https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang.html?m=1:', cleanUrl);
-    console.log('Apakah URL ditemukan di mapping?', urlMapping[cleanUrl]);
 
      // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      const urlMapping = {
@@ -193,9 +191,10 @@ console.log('https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang
 };
 
 if (urlMapping[cleanUrl]) {
-    materialKonstruksiLink.style.visibility = 'visible';
-    readyMixLink.style.visibility = 'visible';
-    pageNameSpan.textContent = urlMapping[cleanUrl];
-}
+        document.getElementById('materialKonstruksiLink').style.visibility = 'visible';
+        document.getElementById('readyMixLink').style.visibility = 'visible';
+        document.getElementById('pageNameSpan').textContent = urlMapping[cleanUrl];
+    }
+
 
    });
