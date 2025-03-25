@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-     var currentUrl = window.location.href;
-     const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
+    // var currentUrl = window.location.href;
+     //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
+     const cleanUrl = window.location.href.split('?')[0]; // Menghilangkan parameter seperti ?m=1
 
      // Menemukan elemen menggunakan ID
      var materialKonstruksiLink = document.getElementById("materialKonstruksi");
