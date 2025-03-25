@@ -1461,8 +1461,6 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKonstruksiLink.style.visibility = 'visible';
        readyMixLink.style.visibility = 'visible';
        pageNameSpan.textContent = "Harga Ready Mix Karawang timur";
-// AKHIR POST KEC KARAWANG
-
 //KECAMATAN SERANG
      } else if (currentUrl === "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-anyar-kab-serang.html") {
        materialKonstruksiLink.style.visibility = 'visible';
