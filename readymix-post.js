@@ -170,9 +170,31 @@
   "https://www.betonjayareadymix.com/2018/08/batching-plant-sukabumi.html": "Batching Plant Sukabumi",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-purwakarta.html": "Batching Plant Scg Purwakarta",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-majalengka.html": "Batching Plant Scg Majalengka",
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bandung.html": "Batching Plant Scg Bandung"
-
-
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bandung.html": "Batching Plant Scg Bandung",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cirebon.html": "Batching plant Scg Cirebon",
+        "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cianjur.html": "Batching plant Scg Cianjur",
+        "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bogor.html": "Batching plant Scg Bogor",
+        "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bekasi.html": "Batching plant Scg Bekasi",
+        "https://www.betonjayareadymix.com/2018/08/scg-jakarta.html": "Scg Jakarta",
+        "https://www.betonjayareadymix.com/2018/08/scg-jayamix-dki-jakarta.html": "Scg Jayamix DKI Jakarta",
+        "https://www.betonjayareadymix.com/2018/04/scg-readymix-jakarta.html": "Scg Ready Mix Jakarta",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-utara.html": "Scg Ready Mix Kota Jakarta Utara",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-selatan.html": "Scg Ready Mix Jakarta Selatan",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-barat.html": "Scg Ready Mix Kota Jakarta Barat",
+        "https://www.betonjayareadymix.com/2018/08/plant-scg-jelambar.html": "Plant Scg Jelambar",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-kota-jakarta-timur.html": "Scg Ready Mix Kota Jakarta Timur",
+        "https://www.betonjayareadymix.com/2018/08/plant-scg-kampung-rambutan.html": "Plant Scg Kampung Rambutan",
+        "https://www.betonjayareadymix.com/2018/08/plant-scg-kebon-nanas-jakarta-timur.html": "Plant Scg Kebon Nanas Jakarta Timur",
+        "https://www.betonjayareadymix.com/2018/08/scg-jayamix-depok.html": "Scg Jayamix Depok",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-depok.html": "Scg Ready Mix Depok",
+        "https://www.betonjayareadymix.com/2018/08/scg-jayamix-bekasi.html": "Scg Jayamix Bekasi",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-bekasi.html": "Scg Ready Mix Bekasi",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-cikarang-selatan.html": "Scg Ready Mix Cikarang Selatan",
+        "https://www.betonjayareadymix.com/2018/08/scg-jayamix-bogor.html": "Scg Jayamix Bogor",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-bogor.html": "Scg Ready Mix Bogor",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-babakan-madang-kab-bogor.html": "Scg Ready Mix Babakan Madang Kab Bogor",
+        "https://www.betonjayareadymix.com/2018/08/scg-jayamix-tangerang.html": "Scg Jayamix Tangerang",
+        "https://www.betonjayareadymix.com/2018/08/scg-ready-mix-tangerang.html": "Scg Ready Mix Tangerang"
 };
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
@@ -203,12 +225,4 @@ document.addEventListener("DOMContentLoaded", function() {
         readyMixLink.style.visibility = 'visible';
         pageNameSpan.textContent = urlMapping[cleanUrl];
     }
-
-/*if (urlMapping[cleanUrl]) {
-        document.getElementById('materialKonstruksiLink').style.visibility = 'visible';
-        document.getElementById('readyMixLink').style.visibility = 'visible';
-        document.getElementById('pageNameSpan').textContent = urlMapping[cleanUrl];
-    }
-*/
-
    });
