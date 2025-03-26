@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var pageNameSpan = document.getElementById("pageNameSpan");
 
      // Default untuk menyembunyikan elemen
-    materialKonstruksiLink.style.visibility = 'hidden';
+     materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
 
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-lantai.html": "Harga Cor Beton Lantai",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal per m3",
- "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",
+    "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",
     "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jayakerta.html": "Harga Ready Mix Jayakerta",
     "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kutawaluya.html": "Harga Jayamix Kutawaluya",
     "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-kutawaluya.html": "Harga Ready Mix Kutawaluya",
