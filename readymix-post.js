@@ -86,6 +86,8 @@
     "https://www.betonjayareadymix.com/2021/03/ready-mix-gresik.html": "Ready Mix Gresik",
     "https://www.betonjayareadymix.com/2021/03/ready-mix-cilacap.html": "Ready Mix Cilacap",
     "https://www.betonjayareadymix.com/2021/03/ready-mix-klaten.html": "Ready Mix Klaten",
+     "https://www.betonjayareadymix.com/2021/03/ready-mix-magelang.html": "Ready Mix Magelang",
+    "https://www.betonjayareadymix.com/2021/03/ready-mix-majalengka.html": "Ready Mix Majalengka",
       
      "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k250.html": "Analisa Beton Ready Mix K250",
   "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k350.html": "Analisa Beton Ready Mix K350",
@@ -242,6 +244,7 @@
     "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-murah.html": "Harga Ready Mix Murah",
     "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-jayamix.html": "Harga Ready Mix Jayamix",
     "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html": "Harga Ready Mix Jombang",
+    "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-k-275.html": "Harga Ready Mix K 275",
       
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
   "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",
@@ -272,6 +275,11 @@
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-lantai.html": "Harga Cor Beton Lantai",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal per m3",
+   "https://www.betonjayareadymix.com/2019/01/harga-cor-beton-jalan-tasikmalaya.html": "Harga Cor Beton Jalan Tasikmalaya",
+    "https://www.betonjayareadymix.com/2019/01/harga-cor-beton-jalan-sukabumi.html": "Harga Cor Beton Jalan Sukabumi",
+    "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
+    "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
+     
     "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",
     "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jayakerta.html": "Harga Ready Mix Jayakerta",
     "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kutawaluya.html": "Harga Jayamix Kutawaluya",
