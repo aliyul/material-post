@@ -780,20 +780,6 @@
     "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
 
 };
-function adjustBreadcrumbLayout() {
-    const breadcrumb = document.querySelector('.breadcrumb');
-    
-    // Menghapus margin dan padding dari semua elemen breadcrumb untuk memastikan layout tetap rapih
-    breadcrumb.style.display = 'flex'; // Gunakan flexbox untuk meminimalkan ruang kosong
-    breadcrumb.style.flexWrap = 'wrap'; // Membuat breadcrumb fleksibel (jika perlu)
-
-    // Pastikan semua div breadcrumb teratur dengan gap minimal
-    const items = breadcrumb.querySelectorAll('div');
-    items.forEach(item => {
-        item.style.margin = '0';  // Menghilangkan margin yang tidak perlu
-        item.style.padding = '0'; // Menghilangkan padding yang tidak perlu
-    });
-}
 
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
@@ -824,8 +810,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (urlMapping[cleanUrl]) {
-      // Menyesuaikan tampilan setelah elemen dihapus (optional)
-        adjustBreadcrumbLayout();
        materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
