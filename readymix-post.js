@@ -279,6 +279,7 @@
     "https://www.betonjayareadymix.com/2019/01/harga-cor-beton-jalan-sukabumi.html": "Harga Cor Beton Jalan Sukabumi",
     "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
     "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
+    "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
      
     "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",
     "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jayakerta.html": "Harga Ready Mix Jayakerta",
