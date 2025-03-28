@@ -815,10 +815,11 @@ document.addEventListener("DOMContentLoaded", function() {
      // Menemukan elemen menggunakan ID
     //var JasaKonstruksiPerbaikan = document.getElementById("JasaKons");
      var JasaKons = document.getElementById("JasaKons");
-     var JasaBobokTembok = document.getElementById("JasaBobokTembok");
-     var JasaBongkarKeramik = document.getElementById("JasaBongkarKeramik");
-     var JasaBobokBeton = document.getElementById("JasaBobokBeton");
-      var JasaChippingBeton = document.getElementById("JasaChippingBeton");
+ 
+     var JasaBobokTembokLink = document.getElementById("JasaBobokTembok");
+     var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
+     var JasaBobokBetonLink = document.getElementById("JasaBobokBeton");
+      var JasaChippingBetonLink = document.getElementById("JasaChippingBeton");
  
      var materialKons = document.getElementById("materialKons");
       var materialKonstruksiLink = document.getElementById("materialKonstruksi");
@@ -828,10 +829,11 @@ document.addEventListener("DOMContentLoaded", function() {
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
       JasaKons.style.visibility = 'hidden';
-      JasaBobokTembok.style.visibility = 'hidden';
-      JasaBongkarKeramik.style.visibility = 'hidden';
-      JasaBobokBeton.style.visibility = 'hidden';
-      JasaChippingBeton.style.visibility = 'hidden';
+ 
+      JasaBobokTembokLink.style.visibility = 'hidden';
+      JasaBongkarKeramikLink.style.visibility = 'hidden';
+      JasaBobokBetonLink.style.visibility = 'hidden';
+      JasaChippingBetonLink.style.visibility = 'hidden';
  
     
      materialKons.style.visibility = 'hidden';
