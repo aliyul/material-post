@@ -780,21 +780,45 @@
     "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
 
 };
+// Fungsi untuk menghapus elemen berdasarkan ID
+function removeCondition(conditionId) {
+    const conditionElement = document.getElementById(conditionId);
 
+    if (conditionElement) {
+        // Menyimpan elemen yang dihapus dalam objek untuk bisa dikembalikan
+        removedElements[conditionId] = conditionElement;
+        conditionElement.remove(); // Menghapus elemen tersebut
+    }
+}
+
+// Fungsi untuk mengembalikan elemen yang telah dihapus
+function restoreCondition(conditionId) {
+    const breadcrumb = document.querySelector('.breadcrumb');
+    const elementToRestore = removedElements[conditionId];
+
+    if (elementToRestore) {
+        breadcrumb.appendChild(elementToRestore); // Menambahkan kembali elemen ke dalam breadcrumb
+        delete removedElements[conditionId]; // Menghapus elemen dari objek removedElements setelah dikembalikan
+    }
+}
+
+removeCondition('JasaKons');
+restoreCondition('materialKons');
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-
+  
      // Menemukan elemen menggunakan ID
-    var JasaKonstruksiPerbaikan = document.getElementById("JasaKons");
+    //var JasaKonstruksiPerbaikan = document.getElementById("JasaKons");
      var materialKons = document.getElementById("materialKons");
       var materialKonstruksiLink = document.getElementById("materialKonstruksi");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameSpan = document.getElementById("pageNameSpan");
  
      // Default untuk menyembunyikan elemen
-     JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
+     //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
+    
      materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
