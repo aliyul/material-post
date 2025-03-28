@@ -806,8 +806,6 @@ function restoreCondition(conditionId) {
     }
 }
 
-removeCondition('JasaKons');
-restoreCondition('materialKons');
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
@@ -838,6 +836,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (urlMappingReadymix[cleanUrl]) {
+        removeCondition('JasaKons');
+        restoreCondition('materialKons');
        materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
