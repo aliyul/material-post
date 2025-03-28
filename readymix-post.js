@@ -794,7 +794,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
      // Default untuk menyembunyikan elemen
      JasaKonstruksiPerbaikan.style.visibility = 'hidden';
-     materialKonsDIV.style.visibility = 'hidden';
+     materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
