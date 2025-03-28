@@ -791,6 +791,8 @@ document.addEventListener("DOMContentLoaded", function() {
      var pageNameSpan = document.getElementById("pageNameSpan");
 
      // Default untuk menyembunyikan elemen
+     JasaKons.style.visibility = 'hidden';
+     materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
@@ -805,6 +807,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (urlMapping[cleanUrl]) {
+       materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
         pageNameSpan.textContent = urlMapping[cleanUrl];
