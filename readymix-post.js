@@ -844,6 +844,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (urlMappingReadymix[cleanUrl]) {
+      JasaKons.style.visibility = 'hidden';
+      JasaBobokTembokLink.style.visibility = 'hidden';
+      JasaBongkarKeramikLink.style.visibility = 'hidden';
+      JasaBobokBetonLink.style.visibility = 'hidden';
+      JasaChippingBetonLink.style.visibility = 'hidden';
+     
         removeCondition('JasaKons');
         restoreCondition('materialKons');
        materialKons.style.visibility = 'visible';
