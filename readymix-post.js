@@ -793,7 +793,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var pageNameSpan = document.getElementById("pageNameSpan");
  
      // Default untuk menyembunyikan elemen
-     JasaKonstruksiPerbaikan.style.visibility = 'hidden';
+     JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
      materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
