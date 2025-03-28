@@ -1,5 +1,5 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-     const urlMapping = {
+     const urlMappingReadymix = {
     "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",
@@ -837,7 +837,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    if (urlMapping[cleanUrl]) {
+    if (urlMappingReadymix[cleanUrl]) {
        materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
