@@ -839,7 +839,7 @@ document.addEventListener("DOMContentLoaded", function() {
      materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
-     pageNameSpan.textContent = "";
+     pageNameReadymix.textContent = "";
   
     console.log('Material Konstruksi:', materialKonstruksiLink);
     console.log('Ready Mix:', readyMixLink);
