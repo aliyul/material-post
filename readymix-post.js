@@ -786,13 +786,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
 
      // Menemukan elemen menggunakan ID
+    var JasaKonsID = document.getElementById("JasaKons");
+   var materialKonsID = document.getElementById("materialKons");
       var materialKonstruksiLink = document.getElementById("materialKonstruksi");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameSpan = document.getElementById("pageNameSpan");
 
      // Default untuk menyembunyikan elemen
-     JasaKons.style.visibility = 'hidden';
-     materialKons.style.visibility = 'hidden';
+     JasaKonsID.style.visibility = 'hidden';
+     materialKonsID.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameSpan.textContent = "";
