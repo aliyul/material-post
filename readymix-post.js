@@ -828,14 +828,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
-      JasaKons.style.visibility = 'hidden';
- 
-      JasaBobokTembokLink.style.visibility = 'hidden';
-      JasaBongkarKeramikLink.style.visibility = 'hidden';
-      JasaBobokBetonLink.style.visibility = 'hidden';
-      JasaChippingBetonLink.style.visibility = 'hidden';
- 
-    
+  
      materialKons.style.visibility = 'hidden';
      materialKonstruksiLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
