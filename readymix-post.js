@@ -842,6 +842,6 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
-        pageNameSpan.textContent = urlMapping[cleanUrl];
+        pageNameSpan.textContent = urlMappingReadymix[cleanUrl];
     }
    });
