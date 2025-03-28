@@ -817,7 +817,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var materialKons = document.getElementById("materialKons");
       var materialKonstruksiLink = document.getElementById("materialKonstruksi");
      var readyMixLink = document.getElementById("readyMix");
-     var pageNameSpan = document.getElementById("pageNameSpan");
+     var pageNameReadymix = document.getElementById("pageNameReadymix");
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
@@ -829,9 +829,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     console.log('Material Konstruksi:', materialKonstruksiLink);
     console.log('Ready Mix:', readyMixLink);
-    console.log('Page Name Span:', pageNameSpan);
+    console.log('Page Name Span:', pageNameReadymix);
 
-    if (!materialKonstruksiLink || !readyMixLink || !pageNameSpan) {
+    if (!materialKonstruksiLink || !readyMixLink || !pageNameReadymix) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
@@ -842,6 +842,6 @@ document.addEventListener("DOMContentLoaded", function() {
        materialKons.style.visibility = 'visible';
         materialKonstruksiLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
-        pageNameSpan.textContent = urlMappingReadymix[cleanUrl];
+        pageNameReadymix.textContent = urlMappingReadymix[cleanUrl];
     }
    });
