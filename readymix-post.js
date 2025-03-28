@@ -796,11 +796,13 @@ function removeCondition(conditionId) {
 // Fungsi untuk mengembalikan elemen yang telah dihapus
 function restoreCondition(conditionId) {
     const breadcrumb = document.querySelector('.breadcrumb');
-    const elementToRestore = removedElements[conditionId];
+    const elementToRestore = removedElements[conditionId]; // Mendapatkan elemen yang disimpan
 
     if (elementToRestore) {
-        breadcrumb.appendChild(elementToRestore); // Menambahkan kembali elemen ke dalam breadcrumb
-        delete removedElements[conditionId]; // Menghapus elemen dari objek removedElements setelah dikembalikan
+        breadcrumb.appendChild(elementToRestore); // Menambahkan elemen kembali ke dalam breadcrumb
+        delete removedElements[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
+    } else {
+        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElements.`);
     }
 }
 
