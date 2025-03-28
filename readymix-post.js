@@ -791,7 +791,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var materialKonstruksiLink = document.getElementById("materialKonstruksi");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameSpan = document.getElementById("pageNameSpan");
-
+ 
      // Default untuk menyembunyikan elemen
      JasaKonstruksiPerbaikan.style.visibility = 'hidden';
      materialKons.style.visibility = 'hidden';
