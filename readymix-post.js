@@ -834,11 +834,11 @@ document.addEventListener("DOMContentLoaded", function() {
      readyMixLink.style.visibility = 'hidden';
      pageNameReadymix.textContent = "";
   
-    console.log('Material Konstruksi:', materialKonstruksiLink);
+    console.log('Material Konstruksi:', materialKonstruksiReadymixLink);
     console.log('Ready Mix:', readyMixLink);
     console.log('Page Name Span:', pageNameReadymix);
 
-    if (!materialKonstruksiLink || !readyMixLink || !pageNameReadymix) {
+    if (!materialKonstruksiReadymixLink || !readyMixLink || !pageNameReadymix) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
