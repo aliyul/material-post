@@ -822,7 +822,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var JasaChippingBetonLink = document.getElementById("JasaChippingBeton");
  */
      var materialKonsReadymix = document.getElementById("materialKonsReadymix");
-      var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
+     var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameReadymix = document.getElementById("pageNameReadymix");
  
