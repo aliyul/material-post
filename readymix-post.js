@@ -814,23 +814,23 @@ document.addEventListener("DOMContentLoaded", function() {
   
      // Menemukan elemen menggunakan ID
     //var JasaKonstruksiPerbaikan = document.getElementById("JasaKons");
-     var JasaKons = document.getElementById("JasaKons");
+    /* var JasaKonsPerbaikan = document.getElementById("JasaKonsPerbaikan");
  
      var JasaBobokTembokLink = document.getElementById("JasaBobokTembok");
      var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
      var JasaBobokBetonLink = document.getElementById("JasaBobokBeton");
       var JasaChippingBetonLink = document.getElementById("JasaChippingBeton");
- 
-     var materialKons = document.getElementById("materialKons");
-      var materialKonstruksiLink = document.getElementById("materialKonstruksi");
+ */
+     var materialKonsReadymix = document.getElementById("materialKonsReadymix");
+      var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameReadymix = document.getElementById("pageNameReadymix");
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
   
-     materialKons.style.visibility = 'hidden';
-     materialKonstruksiLink.style.visibility = 'hidden';
+     materialKonsReadymix.style.visibility = 'hidden';
+     materialKonstruksiReadymixLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameReadymix.textContent = "";
   
@@ -844,16 +844,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (urlMappingReadymix[cleanUrl]) {
+     /*
       JasaKons.style.visibility = 'hidden';
       JasaBobokTembokLink.style.visibility = 'hidden';
       JasaBongkarKeramikLink.style.visibility = 'hidden';
       JasaBobokBetonLink.style.visibility = 'hidden';
       JasaChippingBetonLink.style.visibility = 'hidden';
-     
-        removeCondition('JasaKons');
-        restoreCondition('materialKons');
-       materialKons.style.visibility = 'visible';
-        materialKonstruksiLink.style.visibility = 'visible';
+     */
+        removeCondition('JasaKonsPerbaikan');
+        restoreCondition('materialKonsReadymix');
+       materialKonsReadymix.style.visibility = 'visible';
+        materialKonstruksiReadymixLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
         pageNameReadymix.textContent = urlMappingReadymix[cleanUrl];
     }
