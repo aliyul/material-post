@@ -813,15 +813,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
   
      // Menemukan elemen menggunakan ID
-    //var JasaKonstruksiPerbaikan = document.getElementById("JasaKons");
-    /* var JasaKonsPerbaikan = document.getElementById("JasaKonsPerbaikan");
- 
-     var JasaBobokTembokLink = document.getElementById("JasaBobokTembok");
-     var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
-     var JasaBobokBetonLink = document.getElementById("JasaBobokBeton");
-      var JasaChippingBetonLink = document.getElementById("JasaChippingBeton");
- */
      var materialKonsReadymix = document.getElementById("materialKonsReadymix");
+    if (!materialKonsReadymix) {
+        console.error("elemen Id materialKonsReadymix kondisi terhapus");
+        return;
+    }
      var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
      var readyMixLink = document.getElementById("readyMix");
      var pageNameReadymix = document.getElementById("pageNameReadymix");
