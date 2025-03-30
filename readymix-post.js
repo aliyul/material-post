@@ -852,7 +852,8 @@ document.addEventListener("DOMContentLoaded", function() {
       JasaChippingBetonLink.style.visibility = 'hidden';
      */
         removeCondition('JasaKonsPerbaikan');
-         removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('JasaKonsPembatas');
      
         restoreCondition('materialKonsReadymix');
        
