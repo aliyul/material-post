@@ -849,6 +849,7 @@ document.addEventListener("DOMContentLoaded", function() {
      */
         removeCondition('JasaKonsPerbaikan');
         removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
      
         restoreCondition('materialKonsReadymix');
