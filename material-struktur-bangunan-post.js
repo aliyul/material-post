@@ -822,7 +822,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
  
      var readyMixLink = document.getElementById("readyMix");
-     var pageNameReadymix = document.getElementById("pageNameReadymix");
+     var pageNameMaterialKonsStukturPost = document.getElementById("pageNameMaterialKonsStukturPost");
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
@@ -830,18 +830,21 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialKonsStukturPost.style.visibility = 'hidden';
      MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
-     pageNameReadymix.textContent = "";
+     pageNameMaterialKonsStukturPost.textContent = "";
   
     console.log('Material Konstruksi:', MaterialKonstruksiReadymixPostLink);
     console.log('Ready Mix:', readyMixLink);
-    console.log('Page Name Span:', pageNameReadymix);
+    console.log('Page Name Span:', pageNameMaterialKonsStukturPost);
 
-    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameReadymix) {
+    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameMaterialKonsStukturPost) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
 
-    if (urlMappingReadymix[cleanUrl]) {
+   if (urlMappingReadymix[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMixPost');
+       
      /*
       JasaKons.style.visibility = 'hidden';
       JasaBobokTembokLink.style.visibility = 'hidden';
@@ -849,16 +852,22 @@ document.addEventListener("DOMContentLoaded", function() {
       JasaBobokBetonLink.style.visibility = 'hidden';
       JasaChippingBetonLink.style.visibility = 'hidden';
      */
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+    /*
         removeCondition('JasaKonsPerbaikan');
         removeCondition('ProdukKonsSaluran');
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
-     
-        restoreCondition('MaterialKonsStukturPost');
+     */
+       // restoreCondition('MaterialKonsStukturPost');
        
        MaterialKonsStukturPost.style.visibility = 'visible';
         MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
-        pageNameReadymix.textContent = urlMappingReadymix[cleanUrl];
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymix[cleanUrl];
     }
    });
