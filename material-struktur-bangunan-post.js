@@ -813,28 +813,30 @@ document.addEventListener("DOMContentLoaded", function() {
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
   
      // Menemukan elemen menggunakan ID
-     var materialKonsReadymix = document.getElementById("materialKonsReadymix");
-    if (!materialKonsReadymix) {
-        console.error("elemen Id materialKonsReadymix kondisi terhapus");
+     var MaterialKonsStukturPost = document.getElementById("MaterialKonsStukturPost");
+    if (!MaterialKonsStukturPost) {
+        console.error("elemen Id MaterialKonsStukturPost kondisi terhapus");
         return;
     }
-     var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
+     var MaterialKonstruksiReadymixPostLink = document.getElementById("MaterialKonstruksiReadymixPost");
+     var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
+ 
      var readyMixLink = document.getElementById("readyMix");
      var pageNameReadymix = document.getElementById("pageNameReadymix");
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
   
-     materialKonsReadymix.style.visibility = 'hidden';
-     materialKonstruksiReadymixLink.style.visibility = 'hidden';
+     MaterialKonsStukturPost.style.visibility = 'hidden';
+     MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameReadymix.textContent = "";
   
-    console.log('Material Konstruksi:', materialKonstruksiReadymixLink);
+    console.log('Material Konstruksi:', MaterialKonstruksiReadymixPostLink);
     console.log('Ready Mix:', readyMixLink);
     console.log('Page Name Span:', pageNameReadymix);
 
-    if (!materialKonstruksiReadymixLink || !readyMixLink || !pageNameReadymix) {
+    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameReadymix) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
@@ -852,10 +854,10 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
      
-        restoreCondition('materialKonsReadymix');
+        restoreCondition('MaterialKonsStukturPost');
        
-       materialKonsReadymix.style.visibility = 'visible';
-        materialKonstruksiReadymixLink.style.visibility = 'visible';
+       MaterialKonsStukturPost.style.visibility = 'visible';
+        MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
         pageNameReadymix.textContent = urlMappingReadymix[cleanUrl];
     }
