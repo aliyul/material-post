@@ -150,10 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialLainnyaLink.style.visibility = 'hidden';
  
      pageNameMaterialKons.textContent = "";
-  
-    console.log('Material Konstruksi:', MaterialKonstruksiLink);
-    console.log('Ready Mix:', readyMixPostLink);
-    console.log('Page Name Span:', pageNameMaterialKons);
+ 
 
     if (!MaterialKonstruksiLink || !pageNameMaterialKons) {
         console.error("Salah satu elemen tidak ditemukan!");
