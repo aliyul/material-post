@@ -18,7 +18,21 @@ const urlMappingMaterialKons = {
 
 };
 const urlMappingMaterialStrukturBangunan = {
-
+"https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",
+  "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix",
+  "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
+  "https://www.betonjayareadymix.com/p/besi-beton-ulir.html": "Besi Beton Ulir",
+  "https://www.betonjayareadymix.com/p/besi-beton-polos.html": "Besi Beton Polos",
+  "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
+  "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html": "Baja Ringan Struktur",
+  "https://www.betonjayareadymix.com/p/baja-tulangan.html": "Baja Tulangan",
+  "https://www.betonjayareadymix.com/p/scaffolding.html": "Scaffolding",
+  "https://www.betonjayareadymix.com/p/bekisting-baja.html": "Bekisting Baja",
+  "https://www.betonjayareadymix.com/p/semen-instan.html": "Semen Instan",
+  "https://www.betonjayareadymix.com/p/semen-putih.html": "Semen Putih",
+  "https://www.betonjayareadymix.com/p/bekisting-kayu.html": "Bekisting Kayu",
+  "https://www.betonjayareadymix.com/p/mortar-struktural.html": "Mortar Struktural",
+  "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
 };
 
 const urlMappingMaterialDindingPenutup = {
@@ -196,19 +210,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
  //SUB PAGE MATERIAL KONSTRUKSI
-    if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
+   if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('readyMixPost');
-       /*
-        removeCondition('ProdukKonsSaluranPost');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-        */
+       restoreCondition('MaterialStrukturBangunan');
+  
     
          // hapus elemen id DIV Lain
-        removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
@@ -221,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsSub');
         removeCondition('MenuKons');
      
-       // HAPUS ELEMEN LAIN NYA SEMUA 
+       // HAPUS ELEMEN LAIN NYA SEMUA KECUALI MaterialStrukturBangunan
         removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialDindingPenutup');
         removeCondition('MaterialPekerjaanTanahJalan');
