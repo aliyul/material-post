@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MenuKons');
      
        // HAPUS ELEMEN LAIN NYA SEMUA KECUALI MaterialStrukturBangunan
-        removeCondition('MaterialStrukturBangunan');
+        //removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialDindingPenutup');
         removeCondition('MaterialPekerjaanTanahJalan');
         removeCondition('MaterialPlumbingSaluran');
