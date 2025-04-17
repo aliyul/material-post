@@ -162,17 +162,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
    if (urlMappingMaterialKons[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('readyMixPost');
-       /*
-        removeCondition('ProdukKonsSaluranPost');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-        */
-    
+
          // hapus elemen id DIV Lain
-        removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
@@ -203,9 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
-       
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
-       readyMixPostLink.style.visibility = 'visible';
+     
        pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
     }
 
