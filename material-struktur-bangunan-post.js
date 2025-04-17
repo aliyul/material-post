@@ -1,5 +1,5 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-     const urlMappingReadymix = {
+     const urlMappingReadymixPost = {
     "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",
@@ -821,7 +821,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var MaterialKonstruksiReadymixPostLink = document.getElementById("MaterialKonstruksiReadymixPost");
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
  
-     var readyMixPostLink = document.getElementById("readyMixPost");
+     var readyMixLink = document.getElementById("readyMix");
      var pageNameMaterialKonsStukturPost = document.getElementById("pageNameMaterialKonsStukturPost");
  
      // Default untuk menyembunyikan elemen
@@ -830,21 +830,21 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialKonsStukturPost.style.visibility = 'hidden';
      MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
      MaterialStrukturBangunanPostLink.style.visibility = 'hidden';
-     readyMixPostLink.style.visibility = 'hidden';
+     readyMixLink.style.visibility = 'hidden';
      pageNameMaterialKonsStukturPost.textContent = "";
   
     console.log('Material Konstruksi:', MaterialKonstruksiReadymixPostLink);
-    console.log('Ready Mix:', readyMixPostLink);
+    console.log('Ready Mix:', readyMixLink);
     console.log('Page Name Span:', pageNameMaterialKonsStukturPost);
 
-    if (!MaterialKonstruksiReadymixPostLink || !readyMixPostLink || !pageNameMaterialKonsStukturPost) {
+    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameMaterialKonsStukturPost) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
 
-   if (urlMappingReadymix[cleanUrl]) {
+   if (urlMappingReadymixPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
-       restoreCondition('readyMixPost');
+       restoreCondition('readyMix');
        
      /*
       JasaKons.style.visibility = 'hidden';
@@ -853,6 +853,7 @@ document.addEventListener("DOMContentLoaded", function() {
       JasaBobokBetonLink.style.visibility = 'hidden';
       JasaChippingBetonLink.style.visibility = 'hidden';
      */
+    // hapus ID DIV Lain
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPembatasPost');
@@ -864,13 +865,28 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
      */
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
        // restoreCondition('MaterialKonsStukturPost');
        
        MaterialKonsStukturPost.style.visibility = 'visible';
        MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
-        readyMixPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymix[cleanUrl];
     }
    });
