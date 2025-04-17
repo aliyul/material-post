@@ -829,6 +829,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
      MaterialKonsStukturPost.style.visibility = 'hidden';
      MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
+     MaterialStrukturBangunanPostLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameMaterialKonsStukturPost.textContent = "";
   
@@ -866,7 +867,9 @@ document.addEventListener("DOMContentLoaded", function() {
        // restoreCondition('MaterialKonsStukturPost');
        
        MaterialKonsStukturPost.style.visibility = 'visible';
-        MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
+       MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymix[cleanUrl];
     }
