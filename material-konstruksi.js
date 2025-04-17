@@ -17,6 +17,57 @@ const urlMappingMaterialKons = {
   "https://www.betonjayareadymix.com/p/material-lainnya.html": "Material Lainnya"
 
 };
+const urlMappingMaterialStrukturBangunan = {
+
+};
+
+const urlMappingMaterialDindingPenutup = {
+
+};
+
+const urlMappingMaterialPekerjaanTanahJalan = {
+
+};
+
+const urlMappingMaterialPlumbingSaluran = {
+
+};
+
+const urlMappingMaterialAtapPenutup = {
+
+};
+
+const urlMappingMaterialFasadPelapisEksterior = {
+
+};
+
+const urlMappingMaterialFinishingInterior = {
+
+};
+
+const urlMappingMaterialInsulasiAkustik = {
+
+};
+
+const urlMappingMaterialWaterproofingPelapis = {
+
+};
+const urlMappingMaterialGeosintetikDrainase = {
+
+};
+const urlMappingMaterialKonstruksiKhusus = {
+
+};
+const urlMappingMaterialKonstruksiKelistrikan = {
+
+};
+const urlMappingMaterialModularPrefabrikasi = {
+
+};
+
+const urlMappingMaterialLainnya = {
+
+};
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElements = {};
@@ -45,56 +96,166 @@ function restoreCondition(conditionId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // var currentUrl = window.location.href;
-     //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
-    const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
+
+ 
+        const cleanUrlMaterialKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
   
      // Menemukan elemen menggunakan ID
-     var materialKonsReadymix = document.getElementById("materialKonsReadymix");
-    if (!materialKonsReadymix) {
-        console.error("elemen Id materialKonsReadymix kondisi terhapus");
+     var MaterialKons = document.getElementById("MaterialKons");
+    if (!MaterialKons) {
+        console.error("elemen Id MaterialKons kondisi terhapus");
         return;
     }
-     var materialKonstruksiReadymixLink = document.getElementById("materialKonstruksiReadymix");
-     var readyMixLink = document.getElementById("readyMix");
-     var pageNameReadymix = document.getElementById("pageNameReadymix");
+     var MaterialKonstruksiLink = document.getElementById("MaterialKonstruksi");
+     var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
+ 
+
+
+
+     var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
+     var MaterialDindingPenutupLink = document.getElementById("MaterialDindingPenutup");
+     var MaterialPekerjaanTanahJalanLink = document.getElementById("MaterialPekerjaanTanahJalan");
+     var MaterialPlumbingSaluranLink = document.getElementById("MaterialPlumbingSaluran");
+     var MaterialAtapPenutupLink = document.getElementById("MaterialAtapPenutup");
+     var MaterialFasadPelapisEksteriorLink = document.getElementById("MaterialFasadPelapisEksterior");
+     var MaterialFinishingInteriorLink = document.getElementById("MaterialFinishingInterior");
+     var MaterialInsulasiAkustikLink = document.getElementById("MaterialInsulasiAkustik");
+     var MaterialWaterproofingPelapisLink = document.getElementById("MaterialWaterproofingPelapis");
+     var MaterialGeosintetikDrainaseLink = document.getElementById("MaterialGeosintetikDrainase");
+     var MaterialKonstruksiKhususLink = document.getElementById("MaterialKonstruksiKhusus");
+     var MaterialKonstruksiKelistrikanLink = document.getElementById("MaterialKonstruksiKelistrikan");
+     var MaterialModularPrefabrikasiLink = document.getElementById("MaterialModularPrefabrikasi");
+     var MaterialLainnyaLink = document.getElementById("MaterialLainnya");
+ 
+     var pageNameMaterialKons = document.getElementById("pageNameMaterialKons");
  
      // Default untuk menyembunyikan elemen
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
   
-     materialKonsReadymix.style.visibility = 'hidden';
-     materialKonstruksiReadymixLink.style.visibility = 'hidden';
-     readyMixLink.style.visibility = 'hidden';
-     pageNameReadymix.textContent = "";
+     MaterialKons.style.visibility = 'hidden';
+     MaterialKonstruksiLink.style.visibility = 'hidden';
+     MaterialStrukturBangunanLink.style.visibility = 'hidden';
+     MaterialDindingPenutupLink.style.visibility = 'hidden';
+     MaterialPekerjaanTanahJalanLink.style.visibility = 'hidden';
+     MaterialPlumbingSaluranLink.style.visibility = 'hidden';
+     MaterialAtapPenutupLink.style.visibility = 'hidden';
+     MaterialFasadPelapisEksteriorLink.style.visibility = 'hidden';
+     MaterialFinishingInteriorLink.style.visibility = 'hidden';
+     MaterialInsulasiAkustikLink.style.visibility = 'hidden';
+     MaterialWaterproofingPelapisLink.style.visibility = 'hidden';
+     MaterialGeosintetikDrainaseLink.style.visibility = 'hidden';
+     MaterialKonstruksiKhususLink.style.visibility = 'hidden';
+     MaterialKonstruksiKelistrikanLink.style.visibility = 'hidden';
+     MaterialModularPrefabrikasiLink.style.visibility = 'hidden';
+     MaterialLainnyaLink.style.visibility = 'hidden';
+ 
+     pageNameMaterialKons.textContent = "";
   
-    console.log('Material Konstruksi:', materialKonstruksiReadymixLink);
-    console.log('Ready Mix:', readyMixLink);
-    console.log('Page Name Span:', pageNameReadymix);
+    console.log('Material Konstruksi:', MaterialKonstruksiLink);
+    console.log('Ready Mix:', readyMixPostLink);
+    console.log('Page Name Span:', pageNameMaterialKons);
 
-    if (!materialKonstruksiReadymixLink || !readyMixLink || !pageNameReadymix) {
+    if (!MaterialKonstruksiLink || !pageNameMaterialKons) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
 
-    if (urlMappingReadymix[cleanUrl]) {
-     /*
-      JasaKons.style.visibility = 'hidden';
-      JasaBobokTembokLink.style.visibility = 'hidden';
-      JasaBongkarKeramikLink.style.visibility = 'hidden';
-      JasaBobokBetonLink.style.visibility = 'hidden';
-      JasaChippingBetonLink.style.visibility = 'hidden';
-     */
-        removeCondition('JasaKonsPerbaikan');
+   if (urlMappingMaterialKons[cleanUrlMaterialKons]) {
+       restoreCondition('MaterialKons');
+       restoreCondition('readyMixPost');
+       /*
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        */
+    
+         // hapus elemen id DIV Lain
+        removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+        removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsStruktur');
+       	removeCondition('JasaKons');
+        removeCondition('JasaKonsSub');
+        removeCondition('MenuKons');
      
-        restoreCondition('materialKonsReadymix');
+       // HAPUS ELEMEN LAIN NYA SEMUA 
+        removeCondition('MaterialStrukturBangunan');
+        removeCondition('MaterialDindingPenutup');
+        removeCondition('MaterialPekerjaanTanahJalan');
+        removeCondition('MaterialPlumbingSaluran');
+        removeCondition('MaterialAtapPenutup');
+        removeCondition('MaterialFasadPelapisEksterior');
+        removeCondition('MaterialFinishingInterior');
+        removeCondition('MaterialInsulasiAkustik');
+        removeCondition('MaterialWaterproofingPelapis');
+        removeCondition('MaterialGeosintetikDrainase');
+        removeCondition('MaterialKonstruksiKhusus');
+        removeCondition('MaterialKonstruksiKelistrikan');
+        removeCondition('MaterialModularPrefabrikasi');
+        removeCondition('MaterialLainnya');
+
+       MaterialKons.style.visibility = 'visible';
+       MaterialKonstruksiLink.style.visibility = 'visible';
        
-       materialKonsReadymix.style.visibility = 'visible';
-        materialKonstruksiReadymixLink.style.visibility = 'visible';
-        readyMixLink.style.visibility = 'visible';
-        pageNameReadymix.textContent = urlMappingReadymix[cleanUrl];
+       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       readyMixPostLink.style.visibility = 'visible';
+       pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
+    }
+
+ //SUB PAGE MATERIAL KONSTRUKSI
+    if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
+       restoreCondition('MaterialKons');
+       restoreCondition('readyMixPost');
+       /*
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        */
+    
+         // hapus elemen id DIV Lain
+        removeCondition('materialKonsReadymix');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+        removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsStruktur');
+       	removeCondition('JasaKons');
+        removeCondition('JasaKonsSub');
+        removeCondition('MenuKons');
+     
+       // HAPUS ELEMEN LAIN NYA SEMUA 
+        removeCondition('MaterialStrukturBangunan');
+        removeCondition('MaterialDindingPenutup');
+        removeCondition('MaterialPekerjaanTanahJalan');
+        removeCondition('MaterialPlumbingSaluran');
+        removeCondition('MaterialAtapPenutup');
+        removeCondition('MaterialFasadPelapisEksterior');
+        removeCondition('MaterialFinishingInterior');
+        removeCondition('MaterialInsulasiAkustik');
+        removeCondition('MaterialWaterproofingPelapis');
+        removeCondition('MaterialGeosintetikDrainase');
+        removeCondition('MaterialKonstruksiKhusus');
+        removeCondition('MaterialKonstruksiKelistrikan');
+        removeCondition('MaterialModularPrefabrikasi');
+        removeCondition('MaterialLainnya');
+
+       MaterialKons.style.visibility = 'visible';
+       MaterialKonstruksiLink.style.visibility = 'visible';
+       
+       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       readyMixPostLink.style.visibility = 'visible';
+       pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
     }
    });
-
