@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKonstruksiLink.style.visibility = 'visible';
        
        MaterialStrukturBangunanLink.style.visibility = 'visible';
-       readyMixPostLink.style.visibility = 'visible';
+       //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
     }
    });
