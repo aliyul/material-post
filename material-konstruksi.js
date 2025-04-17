@@ -1,6 +1,21 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingMaterialKons = {
- "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix Beton Cor Jayamix Minimix"
+ //"https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix Beton Cor Jayamix Minimix"
+   "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",
+  "https://www.betonjayareadymix.com/p/material-dinding-penutup.html": "Material Dinding Penutup",
+  "https://www.betonjayareadymix.com/p/material-pekerjaan-tanah-jalan.html": "Material Pekerjaan Tanah Jalan",
+  "https://www.betonjayareadymix.com/p/material-plumbing-saluran.html": "Material Plumbing Saluran",
+  "https://www.betonjayareadymix.com/p/material-atap-penutup.html": "Material Atap Penutup",
+  "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html": "Material Fasad Pelapis Eksterior",
+  "https://www.betonjayareadymix.com/p/material-finishing-interior.html": "Material Finishing Interior",
+  "https://www.betonjayareadymix.com/p/material-insulasi-akustik.html": "Material Insulasi Akustik",
+  "https://www.betonjayareadymix.com/p/material-waterproofing-pelapis.html": "Material Waterproofing Pelapis",
+  "https://www.betonjayareadymix.com/p/material-geosintetik-drainase.html": "Material Geosintetik Drainase",
+  "https://www.betonjayareadymix.com/p/material-konstruksi-khusus.html": "Material Konstruksi Khusus",
+  "https://www.betonjayareadymix.com/p/material-konstruksi-kelistrikan.html": "Material Konstruksi Kelistrikan",
+  "https://www.betonjayareadymix.com/p/material-modular-prefabrikasi.html": "Material Modular Prefabrikasi",
+  "https://www.betonjayareadymix.com/p/material-lainnya.html": "Material Lainnya"
+
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
