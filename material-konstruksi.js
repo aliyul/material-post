@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
      
-       pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
+       pageNameMaterialKons.textContent = urlMappingMaterialKons[cleanUrlMaterialKons];
     }
 
  //SUB PAGE MATERIAL KONSTRUKSI
@@ -242,6 +242,6 @@ document.addEventListener("DOMContentLoaded", function() {
        
        MaterialStrukturBangunanLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
-       pageNameMaterialKons.textContent = urlMappingReadymix[cleanUrlMaterialKons];
+       pageNameMaterialKons.textContent = urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons];
     }
    });
