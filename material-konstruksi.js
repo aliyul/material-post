@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
      var MaterialKonstruksiLink = document.getElementById("MaterialKonstruksi");
-     var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
+     //var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
  
 
 
