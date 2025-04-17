@@ -818,7 +818,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("elemen Id MaterialKonsStukturPost kondisi terhapus");
         return;
     }
-     var MaterialKonstruksiReadymixPostLink = document.getElementById("MaterialKonstruksiReadymixPost");
+     var MaterialKonstruksiStukturPostLink = document.getElementById("MaterialKonstruksiStukturPost");
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
  
      var readyMixLink = document.getElementById("readyMix");
@@ -828,16 +828,16 @@ document.addEventListener("DOMContentLoaded", function() {
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
   
      MaterialKonsStukturPost.style.visibility = 'hidden';
-     MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
+     MaterialKonstruksiStukturPostLink.style.visibility = 'hidden';
      MaterialStrukturBangunanPostLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
      pageNameMaterialKonsStukturPost.textContent = "";
   
-    console.log('Material Konstruksi:', MaterialKonstruksiReadymixPostLink);
+    console.log('Material Konstruksi:', MaterialKonstruksiStukturPostLink);
     console.log('Ready Mix:', readyMixLink);
     console.log('Page Name Span:', pageNameMaterialKonsStukturPost);
 
-    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameMaterialKonsStukturPost) {
+    if (!MaterialKonstruksiStukturPostLink || !readyMixLink || !pageNameMaterialKonsStukturPost) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
@@ -883,7 +883,7 @@ document.addEventListener("DOMContentLoaded", function() {
        // restoreCondition('MaterialKonsStukturPost');
        
        MaterialKonsStukturPost.style.visibility = 'visible';
-       MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
