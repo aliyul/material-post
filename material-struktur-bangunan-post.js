@@ -821,7 +821,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var MaterialKonstruksiReadymixPostLink = document.getElementById("MaterialKonstruksiReadymixPost");
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
  
-     var readyMixLink = document.getElementById("readyMix");
+     var readyMixPostLink = document.getElementById("readyMixPost");
      var pageNameMaterialKonsStukturPost = document.getElementById("pageNameMaterialKonsStukturPost");
  
      // Default untuk menyembunyikan elemen
@@ -830,14 +830,14 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialKonsStukturPost.style.visibility = 'hidden';
      MaterialKonstruksiReadymixPostLink.style.visibility = 'hidden';
      MaterialStrukturBangunanPostLink.style.visibility = 'hidden';
-     readyMixLink.style.visibility = 'hidden';
+     readyMixPostLink.style.visibility = 'hidden';
      pageNameMaterialKonsStukturPost.textContent = "";
   
     console.log('Material Konstruksi:', MaterialKonstruksiReadymixPostLink);
-    console.log('Ready Mix:', readyMixLink);
+    console.log('Ready Mix:', readyMixPostLink);
     console.log('Page Name Span:', pageNameMaterialKonsStukturPost);
 
-    if (!MaterialKonstruksiReadymixPostLink || !readyMixLink || !pageNameMaterialKonsStukturPost) {
+    if (!MaterialKonstruksiReadymixPostLink || !readyMixPostLink || !pageNameMaterialKonsStukturPost) {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
@@ -870,7 +870,7 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKonstruksiReadymixPostLink.style.visibility = 'visible';
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
-        readyMixLink.style.visibility = 'visible';
+        readyMixPostLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymix[cleanUrl];
     }
    });
