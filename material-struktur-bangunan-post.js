@@ -887,6 +887,6 @@ document.addEventListener("DOMContentLoaded", function() {
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
-        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymix[cleanUrl];
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixPost[cleanUrl];
     }
    });
