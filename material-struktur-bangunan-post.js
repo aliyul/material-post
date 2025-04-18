@@ -781,6 +781,60 @@
     "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
 
 };
+
+const urlMappingSemenPortlandPost {
+
+
+};
+
+const urlMappingSemenInstanPost {
+
+
+};
+const urlMappingBajaRinganStrukturPost {
+
+
+};
+const urlMappingBajaTulanganPost {
+
+
+};
+const urlMappingWiremeshPost {
+
+
+};
+const urlMappingBesiBetonUlirPost {
+
+
+};
+const urlMappingBesiBetonPolosPost {
+
+
+};
+const urlMappingBekistingBajaPost {
+
+
+};
+const urlMappingBekistingKayuPost {
+
+
+};
+const urlMappingScaffoldingPost {
+
+
+};
+const urlMappingPerekatBetonEpoxyPost {
+
+};
+
+const urlMappingMortarStrukturalPost {
+
+};
+
+const urlMappingSemenPutihPost {
+
+};
+
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsMaterialKonsStukturPost = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
@@ -820,8 +874,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
      var MaterialKonstruksiStukturPostLink = document.getElementById("MaterialKonstruksiStukturPost");
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
- 
+     
      var readyMixLink = document.getElementById("readyMix");
+     var SemenPortlandLink = document.getElementById("SemenPortland");
+     var BesiBetonUlirLink = document.getElementById("BesiBetonUlir");
+     var BesiBetonPolosLink = document.getElementById("BesiBetonPolos");
+     var WiremeshLink = document.getElementById("Wiremesh");
+     var BajaRinganStrukturLink = document.getElementById("BajaRinganStruktur");
+     var BajaTulanganLink = document.getElementById("BajaTulangan");
+     var ScaffoldingLink = document.getElementById("Scaffolding");
+     var BekistingBajaLink = document.getElementById("BekistingBaja");
+     var SemenInstanLink = document.getElementById("SemenInstan");
+     var SemenPutihLink = document.getElementById("SemenPutih");
+     var BekistingKayuLink = document.getElementById("BekistingKayu");
+     var MortarStrukturalLink = document.getElementById("MortarStruktural");
+     var PerekatBetonEpoxyLink = document.getElementById("PerekatBetonEpoxy");
      var pageNameMaterialKonsStukturPost = document.getElementById("pageNameMaterialKonsStukturPost");
  
      // Default untuk menyembunyikan elemen
@@ -831,6 +898,19 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialKonstruksiStukturPostLink.style.visibility = 'hidden';
      MaterialStrukturBangunanPostLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
+     SemenPortlandLink.style.visibility = 'hidden';
+     BesiBetonUlirLink.style.visibility = 'hidden';
+     BesiBetonPolosLink.style.visibility = 'hidden';
+     WiremeshLink.style.visibility = 'hidden';
+     BajaRinganStrukturLink.style.visibility = 'hidden';
+     BajaTulanganLink.style.visibility = 'hidden';
+     ScaffoldingLink.style.visibility = 'hidden';
+     BekistingBajaLink.style.visibility = 'hidden';
+     SemenInstanLink.style.visibility = 'hidden';
+     SemenPutihLink.style.visibility = 'hidden';
+     BekistingKayuLink.style.visibility = 'hidden';
+     MortarStrukturalLink.style.visibility = 'hidden';
+     PerekatBetonEpoxyLink.style.visibility = 'hidden';
      pageNameMaterialKonsStukturPost.textContent = "";
   
     console.log('Material Konstruksi:', MaterialKonstruksiStukturPostLink);
@@ -842,29 +922,17 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-   if (urlMappingReadymixPost[cleanUrl]) {
+  if (urlMappingReadymixPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
-       
-     /*
-      JasaKons.style.visibility = 'hidden';
-      JasaBobokTembokLink.style.visibility = 'hidden';
-      JasaBongkarKeramikLink.style.visibility = 'hidden';
-      JasaBobokBetonLink.style.visibility = 'hidden';
-      JasaChippingBetonLink.style.visibility = 'hidden';
-     */
+      
     // hapus ID DIV Lain
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-    /*
-        removeCondition('JasaKonsPerbaikan');
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
-        removeCondition('JasaKonsPembatas');
-     */
+   
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
@@ -889,4 +957,461 @@ document.addEventListener("DOMContentLoaded", function() {
         readyMixLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixPost[cleanUrl];
     }
+
+ if (urlMappingSemenPortlandPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingSemenPortlandPost[cleanUrl];
+    }
+if (urlMappingSemenInstanPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingSemenInstanPost[cleanUrl];
+    }
+if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBajaRinganStrukturPost[cleanUrl];
+    }
+if (urlMappingBajaTulanganPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBajaTulanganPost[cleanUrl];
+    }
+if (urlMappingWiremeshPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingWiremeshPost[cleanUrl];
+    }
+if (urlMappingBesiBetonUlirPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBesiBetonUlirPost[cleanUrl];
+    }
+if (urlMappingBesiBetonPolosPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBesiBetonPolosPost[cleanUrl];
+    }
+if (urlMappingBekistingBajaPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingBajaPost[cleanUrl];
+    }
+if (urlMappingBekistingKayuPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingKayuPost[cleanUrl];
+    }
+if (urlMappingScaffoldingPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingScaffoldingPost[cleanUrl];
+    }
+if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingPerekatBetonEpoxyPost[cleanUrl];
+    }
+if (urlMappingMortarStrukturalPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingMortarStrukturalPost[cleanUrl];
+    }
+if (urlMappingSemenPutihPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingSemenPutihPost[cleanUrl];
+    }
+
    });
