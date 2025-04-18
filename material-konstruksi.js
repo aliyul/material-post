@@ -36,50 +36,142 @@ const urlMappingMaterialStrukturBangunan = {
 };
 
 const urlMappingMaterialDindingPenutup = {
-
+ "https://www.betonjayareadymix.com/p/bata-merah-tanah-liat.html": "Bata Merah Tanah Liat",
+  "https://www.betonjayareadymix.com/p/batako-press-beton.html": "Batako Press / Beton",
+  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-aac.html": "Bata Ringan Hebel / AAC Block",
+  "https://www.betonjayareadymix.com/p/grc-board.html": "GRC Board (Glassfiber Reinforced Cement)",
+  "https://www.betonjayareadymix.com/p/papan-semen.html": "Papan Semen",
+  "https://www.betonjayareadymix.com/p/gypsum-board.html": "Gypsum Board",
+  "https://www.betonjayareadymix.com/p/papan-fiber-semen.html": "Papan Fiber Semen",
+  "https://www.betonjayareadymix.com/p/plesteran-semen.html": "Plesteran Semen"
 };
 
 const urlMappingMaterialPekerjaanTanahJalan = {
-
+"https://www.betonjayareadymix.com/p/tanah-urug-padat.html": "Tanah Urug Padat",
+  "https://www.betonjayareadymix.com/p/tanah-merah-urugan.html": "Tanah Merah",
+  "https://www.betonjayareadymix.com/p/pasir-urug.html": "Pasir Urug",
+  "https://www.betonjayareadymix.com/p/pasir-beton.html": "Pasir Beton",
+  "https://www.betonjayareadymix.com/p/pasir-pasang.html": "Pasir Pasang",
+  "https://www.betonjayareadymix.com/p/sirtu-pasir-batu.html": "Sirtu (Pasir Batu)",
+  "https://www.betonjayareadymix.com/p/batu-kali.html": "Batu Kali",
+  "https://www.betonjayareadymix.com/p/batu-split.html": "Batu Split",
+  "https://www.betonjayareadymix.com/p/kerikil.html": "Kerikil",
+  "https://www.betonjayareadymix.com/p/abu-batu.html": "Abu Batu",
+  "https://www.betonjayareadymix.com/p/base-course-jalan.html": "Base Course (Lapis Pondasi Jalan)",
+  "https://www.betonjayareadymix.com/p/sub-base-course.html": "Sub Base Course (Lapis Bawah Base Course)",
+  "https://www.betonjayareadymix.com/p/aspal-curah.html": "Aspal Curah",
+  "https://www.betonjayareadymix.com/p/aspal-emulsi.html": "Aspal Emulsi"
 };
 
 const urlMappingMaterialPlumbingSaluran = {
-
+  "https://www.betonjayareadymix.com/p/pipa-pvc.html": "Pipa PVC",
+  "https://www.betonjayareadymix.com/p/pipa-hdpe.html": "Pipa HDPE (High-Density Polyethylene)",
+  "https://www.betonjayareadymix.com/p/pipa-ppr.html": "Pipa PPR (Polypropylene Random)",
+  "https://www.betonjayareadymix.com/p/pipa-galvanis.html": "Pipa Galvanis",
+  "https://www.betonjayareadymix.com/p/fitting-pipa.html": "Fitting Pipa",
+  "https://www.betonjayareadymix.com/p/kran-air.html": "Kran Air",
+  "https://www.betonjayareadymix.com/p/floor-drain.html": "Floor Drain",
+  "https://www.betonjayareadymix.com/p/bak-kontrol-saluran.html": "Bak Kontrol Saluran Air",
+  "https://www.betonjayareadymix.com/p/talang-air.html": "Talang Air"
 };
 
 const urlMappingMaterialAtapPenutup = {
-
+"https://www.betonjayareadymix.com/p/genteng-beton.html": "Genteng Beton",
+  "https://www.betonjayareadymix.com/p/genteng-keramik.html": "Genteng Keramik",
+  "https://www.betonjayareadymix.com/p/atap-spandek.html": "Atap Spandek",
+  "https://www.betonjayareadymix.com/p/atap-zincalume.html": "Atap Zincalume",
+  "https://www.betonjayareadymix.com/p/atap-bitumen.html": "Atap Bitumen",
+  "https://www.betonjayareadymix.com/p/talang-atap.html": "Talang Atap",
+  "https://www.betonjayareadymix.com/p/sekrup-atap.html": "Sekrup Atap"
 };
 
 const urlMappingMaterialFasadPelapisEksterior = {
-
+  "https://www.betonjayareadymix.com/p/granit-exterior.html": "Granit Exterior",
+  "https://www.betonjayareadymix.com/p/cladding-fasad.html": "Cladding Fasad",
+  "https://www.betonjayareadymix.com/p/grc-fasad.html": "Grc Fasad",
+  "https://www.betonjayareadymix.com/p/louvers.html": "Louvers",
+  "https://www.betonjayareadymix.com/p/sun-shading.html": "Sun Shading",
+  "https://www.betonjayareadymix.com/p/cat-eksterior.html": "Cat Eksterior",
+  "https://www.betonjayareadymix.com/p/cat-tembok-luar.html": "Cat Tembok Luar",
+  "https://www.betonjayareadymix.com/p/plester-eksterior.html": "Plester Eksterior",
+  "https://www.betonjayareadymix.com/p/batu-alam-dinding.html": "Batu Alam Dinding",
+  "https://www.betonjayareadymix.com/p/keramik-eksterior.html": "Keramik Eksterior
 };
 
 const urlMappingMaterialFinishingInterior = {
+"https://www.betonjayareadymix.com/p/keramik-lantai.html": "Keramik Lantai",
+  "https://www.betonjayareadymix.com/p/keramik-dinding.html": "Keramik Dinding",
+  "https://www.betonjayareadymix.com/p/granit-interior.html": "Granit Interior",
+  "https://www.betonjayareadymix.com/p/vinyl-lantai.html": "Vinyl Lantai",
+  "https://www.betonjayareadymix.com/p/parket-kayu.html": "Parket Kayu",
+  "https://www.betonjayareadymix.com/p/karpet-interior.html": "Karpet Interior",
+  "https://www.betonjayareadymix.com/p/cat-interior.html": "Cat Interior",
+  "https://www.betonjayareadymix.com/p/plafon-gypsum.html": "Plafon Gypsum",
+  "https://www.betonjayareadymix.com/p/plafon-pvc.html": "Plafon PVC",
+  "https://www.betonjayareadymix.com/p/wallpaper.html": "Wallpaper"
 
 };
 
 const urlMappingMaterialInsulasiAkustik = {
+  "https://www.betonjayareadymix.com/p/insulasi-panas.html": "Insulasi Panas",
+  "https://www.betonjayareadymix.com/p/insulasi-suara.html": "Insulasi Suara",
+  "https://www.betonjayareadymix.com/p/glasswool.html": "Glasswool",
+  "https://www.betonjayareadymix.com/p/rockwool.html": "Rockwool",
+  "https://www.betonjayareadymix.com/p/peredam-akustik.html": "Peredam Akustik",
+  "https://www.betonjayareadymix.com/p/polyurethane-foam.html": "Polyurethane Foam",
+  "https://www.betonjayareadymix.com/p/bubble-foil.html": "Bubble Foil"
 
 };
 
 const urlMappingMaterialWaterproofingPelapis = {
-
+"https://www.betonjayareadymix.com/p/pelapis-anti-bocor.html": "Pelapis Anti Bocor",
+  "https://www.betonjayareadymix.com/p/membrane-waterproofing.html": "Membrane Waterproofing",
+  "https://www.betonjayareadymix.com/p/coating-waterproofing.html": "Coating Waterproofing",
+  "https://www.betonjayareadymix.com/p/sika-waterproofing.html": "Sika Waterproofing",
+  "https://www.betonjayareadymix.com/p/bentonite-waterproofing.html": "Bentonite Waterproofing",
+  "https://www.betonjayareadymix.com/p/sealant.html": "Sealant",
+  "https://www.betonjayareadymix.com/p/waterstop.html": "Waterstop"
 };
 const urlMappingMaterialGeosintetikDrainase = {
+"https://www.betonjayareadymix.com/p/geotextile.html": "Geotextile",
+  "https://www.betonjayareadymix.com/p/geomembrane.html": "Geomembrane",
+  "https://www.betonjayareadymix.com/p/geogrid.html": "Geogrid",
+  "https://www.betonjayareadymix.com/p/geocell.html": "Geocell",
+  "https://www.betonjayareadymix.com/p/pipa-drainase.html": "Pipa Drainase",
+  "https://www.betonjayareadymix.com/p/subdrain.html": "Subdrain",
+  "https://www.betonjayareadymix.com/p/biopori-modul.html": "Biopori Modul"
 
 };
 const urlMappingMaterialKonstruksiKhusus = {
-
+"https://www.betonjayareadymix.com/p/fiber-optik-ducting.html": "Fiber Optik Ducting",
+  "https://www.betonjayareadymix.com/p/baja-konstruksi-tambang.html": "Baja Konstruksi Tambang",
+  "https://www.betonjayareadymix.com/p/material-jembatan.html": "Material Jembatan",
+  "https://www.betonjayareadymix.com/p/railway-sleeper.html": "Railway Sleeper",
+  "https://www.betonjayareadymix.com/p/blast-resistant-material.html": "Blast Resistant Materia
 };
 const urlMappingMaterialKonstruksiKelistrikan = {
+"https://www.betonjayareadymix.com/p/kabel-listrik.html": "Kabel Listrik",
+    "https://www.betonjayareadymix.com/p/instalasi-listrik.html": "Instalasi Listrik",
+    "https://www.betonjayareadymix.com/p/stopkontak.html": "Stopkontak",
+    "https://www.betonjayareadymix.com/p/pipa-kabel.html": "Pipa Kabel",
+    "https://www.betonjayareadymix.com/p/panel-listrik.html": "Panel Listrik",
+    "https://www.betonjayareadymix.com/p/lampu-proyek.html": "Lampu Proyek"
 
 };
 const urlMappingMaterialModularPrefabrikasi = {
-
+"https://www.betonjayareadymix.com/p/rumah-modular.html": "Rumah Modular",
+    "https://www.betonjayareadymix.com/p/kantor-container.html": "Kantor Container",
+    "https://www.betonjayareadymix.com/p/lantai-modular.html": "Lantai Modular",
+    "https://www.betonjayareadymix.com/p/dinding-modular.html": "Dinding Modular",
+    "https://www.betonjayareadymix.com/p/atap-modular.html": "Atap Modular",
+    "https://www.betonjayareadymix.com/p/kamar-mandi-prefab.html": "Kamar Mandi Prefab"
 };
 
 const urlMappingMaterialLainnya = {
+"https://www.betonjayareadymix.com/p/perekat-serbaguna.html": "Perekat Serbaguna",
+    "https://www.betonjayareadymix.com/p/sealant-serbaguna.html": "Sealant Serbaguna",
+    "https://www.betonjayareadymix.com/p/alat-bantu-material.html": "Alat Bantu Material",
+    "https://www.betonjayareadymix.com/p/produk-ekstra-konstruksi.html": "Produk Ekstra Konstruksi"
 
 };
 
