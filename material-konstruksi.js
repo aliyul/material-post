@@ -95,7 +95,7 @@ const urlMappingMaterialFasadPelapisEksterior = {
   "https://www.betonjayareadymix.com/p/cat-tembok-luar.html": "Cat Tembok Luar",
   "https://www.betonjayareadymix.com/p/plester-eksterior.html": "Plester Eksterior",
   "https://www.betonjayareadymix.com/p/batu-alam-dinding.html": "Batu Alam Dinding",
-  "https://www.betonjayareadymix.com/p/keramik-eksterior.html": "Keramik Eksterior
+  "https://www.betonjayareadymix.com/p/keramik-eksterior.html": "Keramik Eksterior"
 };
 
 const urlMappingMaterialFinishingInterior = {
