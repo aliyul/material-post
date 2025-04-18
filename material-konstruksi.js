@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }   
  if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialDindingPenutup');
   
     
          // hapus elemen id DIV Lain
@@ -363,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function() {
      
        // HAPUS ELEMEN LAIN NYA SEMUA KECUALI MaterialStrukturBangunan
         //removeCondition('MaterialStrukturBangunan');
-        removeCondition('MaterialDindingPenutup');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialPekerjaanTanahJalan');
         removeCondition('MaterialPlumbingSaluran');
         removeCondition('MaterialAtapPenutup');
@@ -380,13 +380,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialDindingPenutupLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialDindingPenutup[cleanUrlMaterialKons];
     }  
  if (urlMappingMaterialPekerjaanTanahJalan[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialPekerjaanTanahJalan');
   
     
          // hapus elemen id DIV Lain
@@ -405,7 +405,7 @@ document.addEventListener("DOMContentLoaded", function() {
        // HAPUS ELEMEN LAIN NYA SEMUA KECUALI MaterialStrukturBangunan
         //removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialDindingPenutup');
-        removeCondition('MaterialPekerjaanTanahJalan');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialPlumbingSaluran');
         removeCondition('MaterialAtapPenutup');
         removeCondition('MaterialFasadPelapisEksterior');
@@ -421,13 +421,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialPekerjaanTanahJalanLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialPekerjaanTanahJalan[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialPlumbingSaluran[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialPlumbingSaluran');
   
     
          // hapus elemen id DIV Lain
@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialDindingPenutup');
         removeCondition('MaterialPekerjaanTanahJalan');
-        removeCondition('MaterialPlumbingSaluran');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialAtapPenutup');
         removeCondition('MaterialFasadPelapisEksterior');
         removeCondition('MaterialFinishingInterior');
@@ -462,13 +462,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialPlumbingSaluranLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialPlumbingSaluran[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialAtapPenutup[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialAtapPenutup');
   
     
          // hapus elemen id DIV Lain
@@ -489,7 +489,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialDindingPenutup');
         removeCondition('MaterialPekerjaanTanahJalan');
         removeCondition('MaterialPlumbingSaluran');
-        removeCondition('MaterialAtapPenutup');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialFasadPelapisEksterior');
         removeCondition('MaterialFinishingInterior');
         removeCondition('MaterialInsulasiAkustik');
@@ -503,13 +503,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialAtapPenutupLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialAtapPenutup[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialFasadPelapisEksterior[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialFasadPelapisEksterior');
   
     
          // hapus elemen id DIV Lain
@@ -531,7 +531,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialPekerjaanTanahJalan');
         removeCondition('MaterialPlumbingSaluran');
         removeCondition('MaterialAtapPenutup');
-        removeCondition('MaterialFasadPelapisEksterior');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialFinishingInterior');
         removeCondition('MaterialInsulasiAkustik');
         removeCondition('MaterialWaterproofingPelapis');
@@ -544,13 +544,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialFasadPelapisEksteriorLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialFasadPelapisEksterior[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialFinishingInterior[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialFinishingInterior');
   
     
          // hapus elemen id DIV Lain
@@ -573,7 +573,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialPlumbingSaluran');
         removeCondition('MaterialAtapPenutup');
         removeCondition('MaterialFasadPelapisEksterior');
-        removeCondition('MaterialFinishingInterior');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialInsulasiAkustik');
         removeCondition('MaterialWaterproofingPelapis');
         removeCondition('MaterialGeosintetikDrainase');
@@ -585,13 +585,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialFinishingInteriorLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialFinishingInterior[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialInsulasiAkustik[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialInsulasiAkustik');
   
     
          // hapus elemen id DIV Lain
@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialAtapPenutup');
         removeCondition('MaterialFasadPelapisEksterior');
         removeCondition('MaterialFinishingInterior');
-        removeCondition('MaterialInsulasiAkustik');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialWaterproofingPelapis');
         removeCondition('MaterialGeosintetikDrainase');
         removeCondition('MaterialKonstruksiKhusus');
@@ -626,13 +626,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialInsulasiAkustikLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialInsulasiAkustik[cleanUrlMaterialKons];
     }   
  if (urlMappingMaterialWaterproofingPelapis[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialWaterproofingPelapis');
   
     
          // hapus elemen id DIV Lain
@@ -657,7 +657,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialFasadPelapisEksterior');
         removeCondition('MaterialFinishingInterior');
         removeCondition('MaterialInsulasiAkustik');
-        removeCondition('MaterialWaterproofingPelapis');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialGeosintetikDrainase');
         removeCondition('MaterialKonstruksiKhusus');
         removeCondition('MaterialKonstruksiKelistrikan');
@@ -667,13 +667,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialWaterproofingPelapisLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialWaterproofingPelapis[cleanUrlMaterialKons];
     }
  if (urlMappingMaterialGeosintetikDrainase[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialGeosintetikDrainase');
   
     
          // hapus elemen id DIV Lain
@@ -699,7 +699,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialFinishingInterior');
         removeCondition('MaterialInsulasiAkustik');
         removeCondition('MaterialWaterproofingPelapis');
-        removeCondition('MaterialGeosintetikDrainase');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialKonstruksiKhusus');
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
@@ -708,13 +708,13 @@ document.addEventListener("DOMContentLoaded", function() {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialGeosintetikDrainaseLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialGeosintetikDrainase[cleanUrlMaterialKons];
     }
 if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialKonstruksiKhusus');
   
     
          // hapus elemen id DIV Lain
@@ -741,7 +741,7 @@ if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
         removeCondition('MaterialInsulasiAkustik');
         removeCondition('MaterialWaterproofingPelapis');
         removeCondition('MaterialGeosintetikDrainase');
-        removeCondition('MaterialKonstruksiKhusus');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
@@ -749,13 +749,13 @@ if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialKonstruksiKhususLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons];
     }
 if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialKonstruksiKelistrikan');
   
     
          // hapus elemen id DIV Lain
@@ -783,20 +783,20 @@ if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
         removeCondition('MaterialWaterproofingPelapis');
         removeCondition('MaterialGeosintetikDrainase');
         removeCondition('MaterialKonstruksiKhusus');
-        removeCondition('MaterialKonstruksiKelistrikan');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialKonstruksiKelistrikanLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons];
     }
 if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialModularPrefabrikasi');
   
     
          // hapus elemen id DIV Lain
@@ -825,19 +825,19 @@ if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
         removeCondition('MaterialGeosintetikDrainase');
         removeCondition('MaterialKonstruksiKhusus');
         removeCondition('MaterialKonstruksiKelistrikan');
-        removeCondition('MaterialModularPrefabrikasi');
+        removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialLainnya');
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialModularPrefabrikasiLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons];
     }
 if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
-       restoreCondition('MaterialStrukturBangunan');
+       restoreCondition('MaterialLainnya');
   
     
          // hapus elemen id DIV Lain
@@ -867,12 +867,12 @@ if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKhusus');
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
-        removeCondition('MaterialLainnya');
+        removeCondition('MaterialStrukturBangunan');
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
-       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       MaterialLainnyaLink.style.visibility = 'visible';
        //readyMixPostLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialLainnya[cleanUrlMaterialKons];
     }
