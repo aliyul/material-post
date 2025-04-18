@@ -782,56 +782,56 @@
 
 };
 
-const urlMappingSemenPortlandPost {
+const urlMappingSemenPortlandPost = {
 
 
 };
 
-const urlMappingSemenInstanPost {
+const urlMappingSemenInstanPost = {
 
 
 };
-const urlMappingBajaRinganStrukturPost {
+const urlMappingBajaRinganStrukturPost = {
 
 
 };
-const urlMappingBajaTulanganPost {
+const urlMappingBajaTulanganPost = {
 
 
 };
-const urlMappingWiremeshPost {
+const urlMappingWiremeshPost = {
 
 
 };
-const urlMappingBesiBetonUlirPost {
+const urlMappingBesiBetonUlirPost = {
 
 
 };
-const urlMappingBesiBetonPolosPost {
+const urlMappingBesiBetonPolosPost = {
 
 
 };
-const urlMappingBekistingBajaPost {
+const urlMappingBekistingBajaPost = {
 
 
 };
-const urlMappingBekistingKayuPost {
+const urlMappingBekistingKayuPost = {
 
 
 };
-const urlMappingScaffoldingPost {
+const urlMappingScaffoldingPost = {
 
 
 };
-const urlMappingPerekatBetonEpoxyPost {
+const urlMappingPerekatBetonEpoxyPost = {
 
 };
 
-const urlMappingMortarStrukturalPost {
+const urlMappingMortarStrukturalPost = {
 
 };
 
-const urlMappingSemenPutihPost {
+const urlMappingSemenPutihPost = {
 
 };
 
