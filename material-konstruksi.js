@@ -147,7 +147,7 @@ const urlMappingMaterialKonstruksiKhusus = {
   "https://www.betonjayareadymix.com/p/baja-konstruksi-tambang.html": "Baja Konstruksi Tambang",
   "https://www.betonjayareadymix.com/p/material-jembatan.html": "Material Jembatan",
   "https://www.betonjayareadymix.com/p/railway-sleeper.html": "Railway Sleeper",
-  "https://www.betonjayareadymix.com/p/blast-resistant-material.html": "Blast Resistant Materia
+  "https://www.betonjayareadymix.com/p/blast-resistant-material.html": "Blast Resistant Material"
 };
 const urlMappingMaterialKonstruksiKelistrikan = {
 "https://www.betonjayareadymix.com/p/kabel-listrik.html": "Kabel Listrik",
