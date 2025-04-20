@@ -267,8 +267,9 @@ document.addEventListener("DOMContentLoaded", function() {
        restoreCondition('MaterialKons');
 
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -308,8 +309,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -349,8 +351,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -390,8 +393,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -431,8 +435,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -472,8 +477,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -513,8 +519,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -554,8 +561,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -595,8 +603,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -636,8 +645,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -677,8 +687,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -718,8 +729,9 @@ if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -759,8 +771,9 @@ if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -800,8 +813,9 @@ if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
@@ -841,8 +855,9 @@ if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsJalanPerkerasan');
         removeCondition('JasaKonsPondasiTanah');
