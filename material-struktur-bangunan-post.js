@@ -792,7 +792,47 @@ const urlMappingSemenInstanPost = {
 
 };
 const urlMappingBajaRinganStrukturPost = {
-
+"https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sumedang-utara.html": "Harga Baja Ringan Sumedang Utara",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileunyi.html": "Harga Baja Ringan Cileunyi",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cimahi.html": "Harga Baja Ringan Cimahi",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-caringin.html": "Harga Baja Ringan Caringin",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-barat.html": "Harga Baja Ringan Karawang Barat",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-gunung-putri.html": "Harga Baja Ringan Gunung Putri",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sukaraja.html": "Harga Baja Ringan Sukaraja",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-kota-bekasi.html": "Harga Baja Ringan Kota Bekasi",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-timur.html": "Harga Baja Ringan Karawang Timur",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-purwakarta.html": "Harga Baja Ringan Purwakarta",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bekasi.html": "Harga Baja Ringan Bekasi",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cikampek.html": "Harga Baja Ringan Cikampek",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cirebon.html": "Harga Baja Ringan Cirebon",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bogor.html": "Harga Baja Ringan Bogor",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-telukjambe-timur.html": "Harga Baja Ringan Telukjambe Timur",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-jatibarang.html": "Harga Baja Ringan Jatibarang",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-parung-panjang.html": "Harga Baja Ringan Parung Panjang",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cibinong.html": "Harga Baja Ringan Cibinong",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileungsi.html": "Harga Baja Ringan Cileungsi",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bojong-gede.html": "Harga Baja Ringan Bojong Gede",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-karawang-timur.html": "Baja Ringan Harga Karawang Timur",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-gunung-putri.html": "Baja Ringan Harga Gunung Putri",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-ciomas.html": "Baja Ringan Harga Ciomas",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kota-bekasi.html": "Baja Ringan Harga Kota Bekasi",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cikampek.html": "Baja Ringan Harga Cikampek",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-lembang.html": "Baja Ringan Harga Lembang",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bekasi.html": "Baja Ringan Harga Bekasi",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cianjur.html": "Baja Ringan Harga Cianjur",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-caringin.html": "Baja Ringan Harga Caringin",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-purwakarta.html": "Baja Ringan Harga Purwakarta",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cirebon.html": "Baja Ringan Harga Cirebon",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cimahi.html": "Baja Ringan Harga Cimahi",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bogor.html": "Baja Ringan Harga Bogor",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-dramaga.html": "Baja Ringan Harga Dramaga",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cibinong.html": "Baja Ringan Harga Cibinong",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cileungsi.html": "Baja Ringan Harga Cileungsi",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-telukjambe-timur.html": "Baja Ringan Harga Telukjambe Timur",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bojong-gede.html": "Baja Ringan Harga Bojong Gede",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-parung-panjang.html": "Baja Ringan Harga Parung Panjang",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kemang.html": "Baja Ringan Harga Kemang",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-tajur-halang.html": "Baja Ringan Harga Tajur Halang"
 
 };
 const urlMappingBajaTulanganPost = {
