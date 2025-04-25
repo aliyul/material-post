@@ -840,18 +840,12 @@ const urlMappingBajaRinganStrukturPost = {
   "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bekasi.html": "Reng Baja Ringan Harga Bekasi",
   "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-sukabumi.html": "Reng Baja Ringan Harga Sukabumi",
 
-  "https://www.betonjayareadymix.com/2019/05/harga-borongan-baja-ringan-plus-material-bandung.html": "Harga Borongan Baja Ringan Plus Material Bandung",
-  "https://www.betonjayareadymix.com/2019/05/harga-borongan-baja-ringan-plus-material-jakarta.html": "Harga Borongan Baja Ringan Plus Material Jakarta",
-  "https://www.betonjayareadymix.com/2019/05/harga-borongan-baja-ringan-plus-material-depok.html": "Harga Borongan Baja Ringan Plus Material Depok",
-  "https://www.betonjayareadymix.com/2019/05/harga-borongan-baja-ringan-plus-material-kota-bekasi.html": "Harga Borongan Baja Ringan Plus Material Kota Bekasi",
-
   "https://www.betonjayareadymix.com/2019/04/baja-ringan-harga.html": "Baja Ringan Harga",
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan.html": "Harga Baja Ringan",
   "https://www.betonjayareadymix.com/2019/04/reng-baja-ringan-harga.html": "Reng Baja Ringan Harga",
   "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-6-meter.html": "Harga Reng Baja Ringan 6 Meter",
   "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-per-batang.html": "Harga Reng Baja Ringan Per Batang",
   "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan.html": "Harga Reng Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/04/harga-borongan-baja-ringan-plus-material.html": "Harga Borongan Baja Ringan Plus Material",
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-reng.html": "Harga Baja Ringan Reng",
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso",
   "https://www.betonjayareadymix.com/2019/04/baja-ringan-reng.html": "Baja Ringan Reng",
@@ -862,10 +856,7 @@ const urlMappingBajaRinganStrukturPost = {
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-meter.html": "Harga Baja Ringan Per Meter",
   "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-meter.html": "Baja Ringan Per Meter",
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang",
-  "https://www.betonjayareadymix.com/2019/04/harga-borongan-baja-ringan.html": "Harga Borongan Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/04/borongan-baja-ringan.html": "Borongan Baja Ringan"
-
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang"
 };
 const urlMappingBajaTulanganPost = {
 
