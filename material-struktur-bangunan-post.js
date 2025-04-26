@@ -892,8 +892,7 @@ const urlMappingAluminiumPost = {
 };
 
 const urlMappingBajaTulanganPost = {
-
-
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-beton.html": "Harga Besi Beton"
 };
 
 const urlMappingWiremeshPost = {
@@ -905,7 +904,6 @@ const urlMappingBondexPost = {
 
 };
 const urlMappingBesiBetonUlirPost = {
-
 
 };
 const urlMappingBesiBetonPolosPost = {
