@@ -773,6 +773,10 @@ const urlMappingSemenInstanPost = {
 
 
 };
+const urlMappingBajaKonvensionalPost = {
+
+
+};
 const urlMappingBajaRinganStrukturPost = {
 "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sumedang-utara.html": "Harga Baja Ringan Sumedang Utara",
   "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileunyi.html": "Harga Baja Ringan Cileunyi",
@@ -930,6 +934,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var BesiBetonPolosLink = document.getElementById("BesiBetonPolos");
      var WiremeshLink = document.getElementById("Wiremesh");
      var BondexLink = document.getElementById("Bondex");
+     var BajaKonvensionalLink = document.getElementById("BajaKonvensional");
      var BajaRinganStrukturLink = document.getElementById("BajaRinganStruktur");
      var BajaTulanganLink = document.getElementById("BajaTulangan");
      var ScaffoldingLink = document.getElementById("Scaffolding");
@@ -953,6 +958,7 @@ document.addEventListener("DOMContentLoaded", function() {
      BesiBetonPolosLink.style.visibility = 'hidden';
      WiremeshLink.style.visibility = 'hidden';
      BondexLink.style.visibility = 'hidden';
+     BajaKonvensionalLink.style.visibility = 'hidden';
      BajaRinganStrukturLink.style.visibility = 'hidden';
      BajaTulanganLink.style.visibility = 'hidden';
      ScaffoldingLink.style.visibility = 'hidden';
@@ -995,6 +1001,7 @@ document.addEventListener("DOMContentLoaded", function() {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1038,6 +1045,7 @@ document.addEventListener("DOMContentLoaded", function() {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1080,6 +1088,7 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1122,6 +1131,7 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
      removeCondition('Wiremesh');
      removeCondition('Bondex');
      removeCondition('readyMix');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
      removeCondition('BekistingBaja');
@@ -1162,6 +1172,7 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('readyMix');
      removeCondition('Scaffolding');
@@ -1203,6 +1214,7 @@ if (urlMappingWiremeshPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Bondex');
      removeCondition('readyMix');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1244,6 +1256,7 @@ if (urlMappingBondexPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('readyMix');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1285,6 +1298,7 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1326,6 +1340,7 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
      removeCondition('readyMix');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1367,6 +1382,7 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1408,6 +1424,7 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1449,6 +1466,7 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('readyMix');
@@ -1490,6 +1508,7 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1531,6 +1550,7 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
@@ -1572,6 +1592,7 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
+     removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
