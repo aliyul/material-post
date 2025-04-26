@@ -18,7 +18,7 @@ const urlMappingMaterialKons = {
 
 };
 const urlMappingMaterialStrukturBangunan = {
-"https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",
+"https://www.betonjayareadymix.com/p/sloof.html": "Sloof",
   "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix",
   "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
   "https://www.betonjayareadymix.com/p/besi-beton-ulir.html": "Besi Beton Ulir",
