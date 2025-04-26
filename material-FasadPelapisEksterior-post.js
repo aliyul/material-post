@@ -137,6 +137,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('PanelFasad');
       
     // hapus ID DIV Lain
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPembatasPost');
