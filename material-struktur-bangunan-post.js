@@ -773,6 +773,10 @@ const urlMappingSemenInstanPost = {
 
 
 };
+const urlMappingBesiBangunanPost = {
+"https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan"
+ 
+};
 const urlMappingBajaKonvensionalPost = {
   "https://www.betonjayareadymix.com/2019/04/harga-besi-h-beam.html": "Harga Besi H Beam",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-pipa.html": "Harga Besi Pipa",
