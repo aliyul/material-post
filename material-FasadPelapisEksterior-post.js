@@ -121,13 +121,10 @@ document.addEventListener("DOMContentLoaded", function() {
      BatuAlamDindingLink.style.visibility = 'hidden';
      KeramikEksteriorLink.style.visibility = 'hidden';
 	
-     pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = "";
-  
-    console.log('Material Konstruksi:', MaterialKonstruksiFasadPelapisEksteriorPostLink);
-   console.log('Page Name Span:', pageNameMaterialKonsFasadPelapisEksteriorPost);
-
+     pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = ""; 
+ 
     if (!MaterialKonstruksiFasadPelapisEksteriorPostLink || !pageNameMaterialKonsFasadPelapisEksteriorPost) {
-        console.error("Salah satu elemen tidak ditemukan!");
+        console.error("Salah satu elemen MaterialKonsFasadPelapisEksteriorPost tidak ditemukan!");
         return;
     }
 
@@ -135,7 +132,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
        restoreCondition('PanelFasad');
       
-    // hapus ID DIV Lain
+    // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
         removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -147,7 +144,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
-        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        //removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
     //hapus elemen lain nya selain PanelFasad
      removeCondition('ExpandedMetal');
@@ -175,7 +172,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
        restoreCondition('ExpandedMetal');
       
-    // hapus ID DIV Lain
+    // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
         removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -187,7 +184,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
-        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+       /// removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
     //hapus elemen lain nya selain PanelFasad
      removeCondition('PanelFasad');
