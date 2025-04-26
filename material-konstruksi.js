@@ -18,6 +18,7 @@ const urlMappingMaterialKons = {
 
 };
 const urlMappingMaterialStrukturBangunan = {
+"https://www.betonjayareadymix.com/p/ring-balok.html": "Ring Balok",
 "https://www.betonjayareadymix.com/p/sloof.html": "Sloof",
   "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix",
   "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
