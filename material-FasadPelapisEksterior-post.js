@@ -177,6 +177,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('ExpandedMetal');
       
     // hapus ID DIV Lain
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPembatasPost');
