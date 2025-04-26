@@ -1,64 +1,49 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingReadymixPost = {
-       
-};
-
-const urlMappingSemenPortlandPost = {
-
+//SUB MaterialFasadPelapisEksteriorPost
+const urlMappingPanelFasadPost = {
 
 };
 
-const urlMappingSemenInstanPost = {
+const urlMappingExpandedMetalPost = {
 
 
 };
-const urlMappingBajaKonvensionalPost = {
 
-};
-const urlMappingBajaRinganStrukturPost = {
-
-};
-const urlMappingBajaTulanganPost = {
+const urlMappingGranitExteriorPost = {
 
 
 };
-const urlMappingWiremeshPost = {
+const urlMappingCladdingFasadPost = {
+
+};
+const urlMappingGrcFasadPost = {
+
+};
+const urlMappingLouversPost = {
 
 
 };
-const urlMappingBondexPost = {
+const urlMappingSunShadingPost = {
+
+};
+const urlMappingCatEksteriorPost = {
 
 
 };
-const urlMappingBesiBetonUlirPost = {
+const urlMappingCatTembokLuarPost = {
 
 
 };
-const urlMappingBesiBetonPolosPost = {
+const urlMappingPlesterEksteriorPost = {
 
 
 };
-const urlMappingBekistingBajaPost = {
+const urlMappingBatuAlamDindingPost = {
 
 
 };
-const urlMappingBekistingKayuPost = {
+const urlMappingKeramikEksteriorPost = {
 
-
-};
-const urlMappingScaffoldingPost = {
-
-
-};
-const urlMappingPerekatBetonEpoxyPost = {
-
-};
-
-const urlMappingMortarStrukturalPost = {
-
-};
-
-const urlMappingSemenPutihPost = {
 
 };
 
