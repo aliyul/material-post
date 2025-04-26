@@ -88,6 +88,7 @@ const urlMappingMaterialAtapPenutup = {
 };
 
 const urlMappingMaterialFasadPelapisEksterior = {
+  "https://www.betonjayareadymix.com/p/expanded-metal.html": "Expanded Metal",
   "https://www.betonjayareadymix.com/p/granit-exterior.html": "Granit Exterior",
   "https://www.betonjayareadymix.com/p/cladding-fasad.html": "Cladding Fasad",
   "https://www.betonjayareadymix.com/p/grc-fasad.html": "Grc Fasad",
