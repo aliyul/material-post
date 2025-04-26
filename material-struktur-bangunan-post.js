@@ -1108,6 +1108,48 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
         SemenInstanLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSemenInstanPost[cleanUrl];
     }
+if (urlMappingBajaKonvensionalPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('BajaKonvensional');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('readyMix');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        BajaKonvensionalLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBajaKonvensionalPost[cleanUrl];
+    }
 if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BajaRinganStruktur');
