@@ -1002,6 +1002,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	  
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1045,6 +1047,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
    
     //hapus elemen lain nya selain READY MIX
@@ -1088,6 +1091,7 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
    
     //hapus elemen lain nya selain READY MIX
@@ -1131,6 +1135,7 @@ if (urlMappingBajaKonvensionalPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1173,6 +1178,7 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1215,6 +1221,7 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1257,6 +1264,7 @@ if (urlMappingWiremeshPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1299,6 +1307,7 @@ if (urlMappingBondexPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1341,6 +1350,7 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1383,6 +1393,7 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1425,6 +1436,7 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1467,6 +1479,7 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1509,6 +1522,7 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1551,6 +1565,7 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1593,6 +1608,7 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
@@ -1635,6 +1651,7 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
    
     //hapus elemen lain nya selain READY MIX
      removeCondition('SemenPortland');
