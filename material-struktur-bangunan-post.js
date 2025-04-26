@@ -896,7 +896,7 @@ const urlMappingBajaTulanganPost = {
 };
 
 const urlMappingWiremeshPost = {
-
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-wiremesh.html": "Harga Besi Wiremesh"
 
 };
 const urlMappingBondexPost = {
