@@ -774,7 +774,6 @@ const urlMappingSemenInstanPost = {
 
 };
 const urlMappingBajaKonvensionalPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-h-beam.html": "Harga Besi H Beam",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-pipa.html": "Harga Besi Pipa",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-plat.html": "Harga Besi Plat",
