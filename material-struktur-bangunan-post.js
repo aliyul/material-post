@@ -882,6 +882,10 @@ const urlMappingBajaRinganStrukturPost = {
   "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang",
   "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang"
 };
+const urlMappingBekistingPost = {
+ // "https://www.betonjayareadymix.com/2019/04/harga-besi-aluminium.html": "Harga Besi Aluminium"
+
+};
 const urlMappingAluminiumPost = {
   "https://www.betonjayareadymix.com/2019/04/harga-besi-aluminium.html": "Harga Besi Aluminium"
 
@@ -1032,6 +1036,57 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Salah satu elemen tidak ditemukan!");
         return;
     }
+	
+if (urlMappingBekistingPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('Bekisting');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	  
+   
+    //hapus elemen lain nya selain RingBalok
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('readyMix');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        BekistingLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingPost[cleanUrl];
+    }
+
 if (urlMappingAluminiumPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Aluminium');
