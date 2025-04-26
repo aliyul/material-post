@@ -5,8 +5,7 @@ const urlMappingPanelFasadPost = {
 };
 
 const urlMappingExpandedMetalPost = {
-
-
+"https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal"
 };
 
 const urlMappingGranitExteriorPost = {
