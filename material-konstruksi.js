@@ -18,6 +18,7 @@ const urlMappingMaterialKons = {
 
 };
 const urlMappingMaterialStrukturBangunan = {
+"https://www.betonjayareadymix.com/p/pondasi.html": "Pondasi",
 "https://www.betonjayareadymix.com/p/bekisting.html": "Bekisting",
 "https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
 "https://www.betonjayareadymix.com/p/ring-balok.html": "Ring Balok",
