@@ -767,6 +767,10 @@
 const urlMappingDakBetonPost = {
 
 }
+
+const urlMappingPondasiPost = {
+
+}
 const urlMappingSloofPost = {
   "https://www.betonjayareadymix.com/2018/09/harga-sloof-per-meter.html": "Harga Sloof Per Meter",
   
@@ -1091,6 +1095,58 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 	
+if (urlMappingDakBetonPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('DakBeton');
+      
+    // hapus ID DIV Lain
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	removeCondition('MaterialKonsAtapPenutupPost');
+	  
+   
+    //hapus elemen lain nya selain RingBalok
+     removeCondition('Bekisting');
+     removeCondition('Pondasi');
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('readyMix');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        DakBetonLink.style.visibility = 'visible';
+        pageNameMaterialKonsStukturPost.textContent = urlMappingDakBetonPost[cleanUrl];
+    }
 if (urlMappingBekistingPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Bekisting');
@@ -1143,7 +1199,6 @@ if (urlMappingBekistingPost[cleanUrl]) {
         BekistingLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingPost[cleanUrl];
     }
-
 if (urlMappingAluminiumPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Aluminium');
