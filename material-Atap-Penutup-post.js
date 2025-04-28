@@ -129,6 +129,41 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Salah satu elemen MaterialAtapPenutupPost tidak ditemukan!");
         return;
     }
+if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
+       restoreCondition('MaterialAtapPenutupPost');
+       restoreCondition('Genteng');
+  
+    // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	      removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	      removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+
+    //hapus elemen lain nya selain GentengBeton
+     removeCondition('GentengTanahLiat');
+     removeCondition('GentengBeton');
+     removeCondition('GentengKeramik');
+     removeCondition('AtapSpandek');
+     removeCondition('AtapZincalume');
+     removeCondition('AtapBitumen');
+     removeCondition('TalangAtap');
+     removeCondition('SekrupAtap');
+
+       MaterialAtapPenutupPost.style.visibility = 'visible';
+       MaterialKonstruksiAtapPenutupPostLink.style.visibility = 'visible';
+       
+        MaterialAtapPenutupPostLink.style.visibility = 'visible';
+        GentengLink.style.visibility = 'visible';
+        pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost];
+    }
 if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('GentengTanahLiat');
@@ -164,7 +199,6 @@ if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
         GentengTanahLiatLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost];
     }
-
 if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('GentengBeton');
