@@ -83,6 +83,8 @@ const urlMappingMaterialPlumbingSaluran = {
 };
 
 const urlMappingMaterialAtapPenutup = {
+   "https://www.betonjayareadymix.com/p/genteng.html": "Genteng",
+  "https://www.betonjayareadymix.com/p/genteng-tanah-liat.html": "Genteng Tanah Liat",
 "https://www.betonjayareadymix.com/p/genteng-beton.html": "Genteng Beton",
   "https://www.betonjayareadymix.com/p/genteng-keramik.html": "Genteng Keramik",
   "https://www.betonjayareadymix.com/p/atap-spandek.html": "Atap Spandek",
