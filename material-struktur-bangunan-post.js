@@ -764,6 +764,9 @@
     "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
 
 };
+const urlMappingDakBetonPost = {
+
+}
 const urlMappingSloofPost = {
   "https://www.betonjayareadymix.com/2018/09/harga-sloof-per-meter.html": "Harga Sloof Per Meter",
   
