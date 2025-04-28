@@ -817,6 +817,7 @@ const urlMappingBajaKonvensionalPost = {
 
 };
 const urlMappingBajaRinganStrukturPost = {
+  "https://www.betonjayareadymix.com/2021/10/harga-baja-ringan.html": "Harga Baja Ringan",
 "https://www.betonjayareadymix.com/2021/10/harga-baja-ringan-termurah.html": "Harga Baja Ringan Termurah",
   "https://www.betonjayareadymix.com/2021/10/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso",
   "https://www.betonjayareadymix.com/2021/10/harga-baja-ringan-lembaran.html": "Harga Baja Ringan Lembaran",
