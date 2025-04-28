@@ -12,6 +12,11 @@
 //SUB MaterialAtapPenutupPost
 
 const urlMappingGentengTanahLiatPost = {
+    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-asli.html": "Genteng Karang Pilang Asli",
+    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-jakarta.html": "Genteng Karang Pilang Jakarta",
+    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-di-bogor.html": "Genteng Karang Pilang Di Bogor",
+    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-anti-lumut.html": "Genteng Karang Pilang Anti Lumut",
+    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-ambulu.html": "Genteng Karang Pilang Ambulu"
 
 };
 
