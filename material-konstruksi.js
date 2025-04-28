@@ -95,6 +95,7 @@ const urlMappingMaterialAtapPenutup = {
 };
 
 const urlMappingMaterialFasadPelapisEksterior = {
+ "https://www.betonjayareadymix.com/p/beton-ekspos-eksterior.html": "Beton Ekspos Eksterior",
   "https://www.betonjayareadymix.com/p/panel-fasad.html": "Panel Fasad",
   "https://www.betonjayareadymix.com/p/expanded-metal.html": "Expanded Metal",
   "https://www.betonjayareadymix.com/p/granit-exterior.html": "Granit Exterior",
@@ -110,6 +111,7 @@ const urlMappingMaterialFasadPelapisEksterior = {
 };
 
 const urlMappingMaterialFinishingInterior = {
+ "https://www.betonjayareadymix.com/p/beton-ekspos-interior.html": "Beton Ekspos Interior",
 "https://www.betonjayareadymix.com/p/keramik-lantai.html": "Keramik Lantai",
   "https://www.betonjayareadymix.com/p/keramik-dinding.html": "Keramik Dinding",
   "https://www.betonjayareadymix.com/p/granit-interior.html": "Granit Interior",
