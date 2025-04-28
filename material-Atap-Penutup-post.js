@@ -10,6 +10,11 @@
 */
 
 //SUB MaterialAtapPenutupPost
+
+const urlMappingGentengTanahLiatPost = {
+
+};
+
 const urlMappingGentengBetonPost = {
 
 };
@@ -76,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
      var MaterialKonstruksiAtapPenutupPostLink = document.getElementById("MaterialKonstruksiAtapPenutupPost");
      var MaterialAtapPenutupPostLink = document.getElementById("MaterialAtapPenutupPost");
 
+     var GentengTanahLiatLink = document.getElementById("GentengTanahLiat");
      var GentengBetonLink = document.getElementById("GentengBeton");
      var GentengKeramikLink = document.getElementById("GentengKeramik");
      var AtapSpandekLink = document.getElementById("AtapSpandek");
@@ -93,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
      MaterialKonstruksiFasadPelapisEksteriorPostLink.style.visibility = 'hidden';
      MaterialAtapPenutupPostLink.style.visibility = 'hidden';
   
+     GentengTanahLiatLink.style.visibility = 'hidden';
      GentengBetonLink.style.visibility = 'hidden';
      GentengKeramikLink.style.visibility = 'hidden';
      AtapSpandekLink.style.visibility = 'hidden';
@@ -111,6 +118,40 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!MaterialKonstruksiAtapPenutupPostLink || !pageNameMaterialKonsAtapPenutupPost) {
         console.error("Salah satu elemen MaterialAtapPenutupPost tidak ditemukan!");
         return;
+    }
+if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
+       restoreCondition('MaterialAtapPenutupPost');
+       restoreCondition('GentengTanahLiat');
+  
+    // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	      removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	      removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+
+    //hapus elemen lain nya selain GentengBeton
+     removeCondition('GentengBeton');
+     removeCondition('GentengKeramik');
+     removeCondition('AtapSpandek');
+     removeCondition('AtapZincalume');
+     removeCondition('AtapBitumen');
+     removeCondition('TalangAtap');
+     removeCondition('SekrupAtap');
+
+       MaterialAtapPenutupPost.style.visibility = 'visible';
+       MaterialKonstruksiAtapPenutupPostLink.style.visibility = 'visible';
+       
+        MaterialAtapPenutupPostLink.style.visibility = 'visible';
+        GentengTanahLiatLink.style.visibility = 'visible';
+        pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost];
     }
 
 if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
@@ -132,7 +173,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('JasaKonsStrukturPost');
 
     //hapus elemen lain nya selain GentengBeton
-     //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('AtapSpandek');
      removeCondition('AtapZincalume');
@@ -167,6 +208,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengBeton');
      removeCondition('AtapSpandek');
      removeCondition('AtapZincalume');
@@ -201,6 +243,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('GentengBeton');
      removeCondition('AtapZincalume');
@@ -235,6 +278,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('AtapSpandek');
      removeCondition('GentengBeton');
@@ -269,6 +313,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('AtapSpandek');
      removeCondition('AtapZincalume');
@@ -303,6 +348,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('AtapSpandek');
      removeCondition('AtapZincalume');
@@ -337,6 +383,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
+     removeCondition('GentengTanahLiat');
      removeCondition('GentengKeramik');
      removeCondition('AtapSpandek');
      removeCondition('AtapZincalume');
