@@ -245,7 +245,23 @@
     "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-jayamix.html": "Harga Ready Mix Jayamix",
     "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html": "Harga Ready Mix Jombang",
     "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-k-275.html": "Harga Ready Mix K 275",
-      
+
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-jombang.html": "Ready Mix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-jogja.html": "Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-pati.html": "Ready Mix Pati",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-ambon.html": "Ready Mix Ambon",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-makassar.html": "Ready Mix Makassar",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-kediri.html": "Ready Mix Kediri",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-semarang.html": "Ready Mix Semarang",
+
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-garut.html": "Harga Beton Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-majalengka.html": "Harga Beton Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-subang.html": "Harga Beton Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-sukabumi.html": "Harga Beton Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-ciamis.html": "Harga Beton Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cianjur.html": "Harga Beton Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-indramayu.html": "Harga Beton Ready Mix Indramayu",
+	     
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
   "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",
   "https://www.betonjayareadymix.com/2021/08/cor-beton-murah.html": "Cor Beton Murah",
