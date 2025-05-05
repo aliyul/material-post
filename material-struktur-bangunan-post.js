@@ -948,7 +948,16 @@ const urlMappingAluminiumPost = {
 };
 
 const urlMappingBajaTulanganPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-beton.html": "Harga Besi Beton"
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-beton.html": "Harga Besi Beton",
+    "https://www.betonjayareadymix.com/2021/03/harga-besi-beton-per-kg.html": "Harga Besi Beton per Kg",
+  "https://www.betonjayareadymix.com/2021/03/daftar-harga-besi-beton.html": "Daftar Harga Besi Beton",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-12mm-per-batang.html": "Harga Besi Beton 12mm per Batang",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-surabaya.html": "Harga Besi Beton Surabaya",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-jogja.html": "Harga Besi Beton Jogja",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-10mm.html": "Harga Besi Beton 10mm",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm",
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-per-kg-2021.html": "Harga Besi Beton per Kg 2021"
+
 };
 
 const urlMappingWiremeshPost = {
