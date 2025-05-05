@@ -956,9 +956,7 @@ const urlMappingBajaTulanganPost = {
   "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-jogja.html": "Harga Besi Beton Jogja",
   "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-10mm.html": "Harga Besi Beton 10mm",
   "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm",
-  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-per-kg-2021.html": "Harga Besi Beton per Kg 2021",
- "https://www.betonjayareadymix.com/2021/04/harga-pagar-besi-ulir.html": "Harga Pagar Besi Ulir"
-
+  "https://www.betonjayareadymix.com/2021/04/harga-besi-beton-per-kg-2021.html": "Harga Besi Beton per Kg 2021"
 };
 
 const urlMappingWiremeshPost = {
