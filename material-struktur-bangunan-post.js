@@ -779,7 +779,39 @@
     "https://www.betonjayareadymix.com/2018/08/farika-beton-cilegon-prov-banten.html": "Farika Beton Cilegon Prov Banten",
     "https://www.betonjayareadymix.com/2018/08/farika-beton-serang.html": "Farika Beton Serang",
     "https://www.betonjayareadymix.com/2018/08/farika-beton-cikande-kab-serang.html": "Farika Beton Cikande Kab Serang",
-    "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
+    "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-k-175.html": "Harga Ready Mix K 175",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-k-200.html": "Harga Ready Mix K 200",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-225.html": "Harga Ready Mix K 225",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-250.html": "Harga Ready Mix K 250",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-300.html": "Harga Ready Mix K 300",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-350.html": "Harga Ready Mix K 350",
+
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-beji-depok.html": "Harga Ready Mix Beji Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-beji-depok.html": "Harga Jayamix Beji Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cimanggis-depok.html": "Harga Jayamix Cimanggis Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cimanggis-depok.html": "Harga Ready Mix Cimanggis Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cinere-depok.html": "Harga Jayamix Cinere Depok",
+  "https://www.betonjayareadymix.com/2021/04/harga-readymix-cinere.html": "Harga Readymix Cinere",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tapos-depok.html": "Harga Ready Mix Tapos Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tapos.html": "Harga Jayamix Tapos",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sawangan-depok.html": "Harga Ready Mix Sawangan Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sawangan-depok.html": "Harga Jayamix Sawangan Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukmajaya.html": "Harga Jayamix Sukmajaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukmajaya-depok.html": "Harga Ready Mix Sukmajaya Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cilodong-depok.html": "Harga Jayamix Cilodong Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cilodong-depok.html": "Harga Ready Mix Cilodong Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cipayung-depok.html": "Harga Ready Mix Cipayung Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipayung-depok.html": "Harga Jayamix Cipayung Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-limo-depok.html": "Harga Ready Mix Limo Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-limo.html": "Harga Jayamix Limo",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pancoran-mas-depok.html": "Harga Ready Mix Pancoran Mas Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pancoran-mas-depok.html": "Harga Jayamix Pancoran Mas Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-bojongsari-depok.html": "Harga Ready Mix Bojongsari Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bojongsari-depok.html": "Harga Jayamix Bojongsari Depok",
+
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-tiga-roda.html": "Ready Mix Tiga Roda",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tiga-roda.html": "Harga Ready Mix Tiga Roda"
 
 };
 const urlMappingDakBetonPost = {
