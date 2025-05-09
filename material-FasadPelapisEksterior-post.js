@@ -148,6 +148,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
         //removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
     //hapus elemen lain nya selain PanelFasad
@@ -191,6 +192,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
        /// removeCondition('MaterialKonsFasadPelapisEksteriorPost');
 
     //hapus elemen lain nya selain PanelFasad
