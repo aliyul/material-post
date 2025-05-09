@@ -148,6 +148,7 @@ if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      removeCondition('GentengTanahLiat');
@@ -185,6 +186,7 @@ if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      removeCondition('Genteng');
@@ -222,6 +224,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      removeCondition('Genteng');
@@ -259,6 +262,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
@@ -297,6 +301,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
@@ -335,6 +340,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
@@ -373,6 +379,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
@@ -411,6 +418,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
@@ -449,6 +457,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
 	      removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
 
     //hapus elemen lain nya selain GentengBeton
      //removeCondition('GentengBeton');
