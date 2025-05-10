@@ -10,6 +10,7 @@
     "https://www.betonjayareadymix.com/2021/08/jayamix-blitar.html": "Jayamix Blitar",
     "https://www.betonjayareadymix.com/2021/08/jayamix-klaten.html": "Jayamix Klaten",
     "https://www.betonjayareadymix.com/2021/08/jayamix-jakarta.html": "Jayamix Jakarta",
+    "https://www.betonjayareadymix.com/2022/12/jayamix-serang.html": "Jayamix Serang",
     "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html": "SCG Jayamix",
     "https://www.betonjayareadymix.com/2021/08/jayamix-purwakarta.html": "Jayamix Purwakarta",
     "https://www.betonjayareadymix.com/2021/03/perbedaan-jayamix-dan-readymix.html": "Perbedaan Jayamix dan Ready Mix",
@@ -819,7 +820,14 @@
   "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html": "Harga Beton Cor Bogor",
   "https://www.betonjayareadymix.com/2018/09/harga-cor-beton-ready-mix-jakarta.html": "Harga Cor Beton Ready Mix Jakarta",
   "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-bekasi.html": "Harga Beton Cor Bekasi",
-  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-tangerang.html": "Harga Beton Cor Tangerang"
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-tangerang.html": "Harga Beton Cor Tangerang",
+
+    "https://www.betonjayareadymix.com/2018/08/batching-plant-depok.html": "Batching Plant Depok",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-tangerang.html": "Batching Plant Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-prov-dki-jakarta.html": "Batching Plant Prov DKI Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-bekasi.html": "Batching Plant Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-bogor.html": "Batching Plant Bogor"
+  
 
 
 };
