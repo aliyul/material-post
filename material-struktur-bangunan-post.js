@@ -301,6 +301,7 @@
     "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
     "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
     "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
+    "https://www.betonjayareadymix.com/2018/04/harga-jayamix-murah.html": "Harga Jayamix Murah",
 
       "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",
   "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html": "Harga Ready Mix Tegalwaru Kab Karawang",
