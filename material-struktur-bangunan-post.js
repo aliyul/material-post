@@ -248,6 +248,8 @@
     "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-k-275.html": "Harga Ready Mix K 275",
     "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-250.html": "Harga Cor Beton K 250",
     "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html": "Harga Cor Beton K 225",
+      "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-holcim-per-m3.html": "Harga Cor Beton Holcim per m3",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix.html": "Harga Cor Beton Ready Mix",
 
   "https://www.betonjayareadymix.com/2021/03/ready-mix-jombang.html": "Ready Mix Jombang",
   "https://www.betonjayareadymix.com/2021/03/ready-mix-jogja.html": "Ready Mix Jogja",
