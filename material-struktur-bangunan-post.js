@@ -301,6 +301,8 @@
     "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
       "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3",
     "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
+     "https://www.betonjayareadymix.com/2018/04/harga-cor-jayamix-kediri.html": "Harga Cor Jayamix Kediri",
+  "https://www.betonjayareadymix.com/2021/08/harga-cor-jayamix.html": "Harga Cor Jayamix",
     "https://www.betonjayareadymix.com/2018/04/harga-jayamix-murah.html": "Harga Jayamix Murah",
 
       "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",
