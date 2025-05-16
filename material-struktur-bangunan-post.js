@@ -296,6 +296,7 @@
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix-per-kubik.html": "Harga Cor Beton Jayamix per kubik",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-sloof.html": "Harga Cor Beton Sloof",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-lantai.html": "Harga Cor Beton Lantai",
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-dak.html": "Harga Beton Cor Dak",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",
    "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
     "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
