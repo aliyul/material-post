@@ -30,7 +30,6 @@ const urlMappingMaterialStrukturBangunan = {
   "https://www.betonjayareadymix.com/p/baja-konvensional.html": "Baja Konvensional",
   "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html": "Baja Ringan Struktur",
   "https://www.betonjayareadymix.com/p/baja-tulangan.html": "Baja Tulangan",
-  //"https://www.betonjayareadymix.com/p/scaffolding.html": "Scaffolding",
   "https://www.betonjayareadymix.com/p/bekisting-baja.html": "Bekisting Baja",
   "https://www.betonjayareadymix.com/p/semen-instan.html": "Semen Instan",
   "https://www.betonjayareadymix.com/p/semen-putih.html": "Semen Putih",
