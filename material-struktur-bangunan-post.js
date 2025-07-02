@@ -1163,7 +1163,16 @@ const urlMappingBajaTulanganPost = {
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bogor.html": "Harga Besi Beton Bogor",
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-jakarta.html": "Harga Besi Beton Jakarta",
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-10mm.html": "Harga Besi Beton 10mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm"
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm",
+
+	  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-kg.html": "Harga Besi Beton Ulir per Kg",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-10-mm.html": "Harga Besi Beton Ulir 10 mm",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm.html": "Harga Besi Beton Ulir 12 mm",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-13-mm.html": "Harga Besi Beton Ulir 13 mm",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-16-mm.html": "Harga Besi Beton Ulir 16 mm",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-batang.html": "Harga Besi Beton Ulir per Batang",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang"
+
 };
 
 const urlMappingWiremeshPost = {
