@@ -134,6 +134,7 @@ if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('Genteng');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -173,6 +174,7 @@ if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('GentengTanahLiat');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -212,6 +214,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('GentengBeton');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -251,6 +254,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('GentengKeramik');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -291,6 +295,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('AtapSpandek');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -331,6 +336,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('AtapZincalume');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -371,6 +377,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('AtapBitumen');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -411,6 +418,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('TalangAtap');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
@@ -451,6 +459,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('SekrupAtap');
   
     // hapus ID DIV Lain KECUALI MaterialAtapPenutupPost
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
