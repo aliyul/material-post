@@ -211,8 +211,6 @@ function restoreCondition(conditionId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
- 
         const cleanUrlMaterialKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
   
      // Menemukan elemen menggunakan ID
@@ -223,10 +221,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
      var MaterialKonstruksiLink = document.getElementById("MaterialKonstruksi");
      //var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
- 
-
-
-
      var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
      var MaterialDindingPenutupLink = document.getElementById("MaterialDindingPenutup");
      var MaterialPekerjaanTanahJalanLink = document.getElementById("MaterialPekerjaanTanahJalan");
@@ -276,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
        restoreCondition('MaterialKons');
 
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -318,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -360,6 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -402,6 +399,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -444,6 +442,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -486,6 +485,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -528,6 +528,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -570,6 +571,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -612,6 +614,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -654,6 +657,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -696,6 +700,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -738,6 +743,7 @@ if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -780,6 +786,7 @@ if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -822,6 +829,7 @@ if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
@@ -864,6 +872,7 @@ if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
   
     
          // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
         removeCondition('ProdukKons');
         //removeCondition('ProdukKonsSaluran');
         //removeCondition('ProdukKonsPembatas');
