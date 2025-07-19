@@ -133,6 +133,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('PanelFasad');
       
     // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');        
 	removeCondition('MaterialKonsAtapPenutupPost');
@@ -180,6 +181,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('ExpandedMetal');
       
     // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
 	removeCondition('MaterialKonsAtapPenutupPost');
