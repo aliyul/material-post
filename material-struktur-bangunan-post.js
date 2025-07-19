@@ -1314,6 +1314,7 @@ if (urlMappingDakBetonPost[cleanUrl]) {
        restoreCondition('DakBeton');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1372,6 +1373,7 @@ if (urlMappingBekistingPost[cleanUrl]) {
        restoreCondition('Bekisting');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1429,6 +1431,7 @@ if (urlMappingAluminiumPost[cleanUrl]) {
        restoreCondition('Aluminium');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1486,6 +1489,7 @@ if (urlMappingRingBalokPost[cleanUrl]) {
        restoreCondition('RingBalok');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1543,6 +1547,7 @@ if (urlMappingSloofPost[cleanUrl]) {
        restoreCondition('Sloof');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1601,6 +1606,7 @@ if (urlMappingReadymixPost[cleanUrl]) {
        restoreCondition('readyMix');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1659,6 +1665,7 @@ if (urlMappingReadymixPost[cleanUrl]) {
        restoreCondition('SemenPortland');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1716,6 +1723,7 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
        restoreCondition('SemenInstan');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1773,6 +1781,7 @@ if (urlMappingBajaKonvensionalPost[cleanUrl]) {
        restoreCondition('BajaKonvensional');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1829,6 +1838,7 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
        restoreCondition('BajaRinganStruktur');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1885,6 +1895,7 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
        restoreCondition('BajaTulangan');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1941,6 +1952,7 @@ if (urlMappingWiremeshPost[cleanUrl]) {
        restoreCondition('Wiremesh');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1997,6 +2009,7 @@ if (urlMappingBondexPost[cleanUrl]) {
        restoreCondition('Bondex');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2053,6 +2066,7 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
        restoreCondition('BesiBetonUlir');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2109,6 +2123,7 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
        restoreCondition('BesiBetonPolos');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2165,6 +2180,7 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
        restoreCondition('BekistingBaja');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2221,6 +2237,7 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
        restoreCondition('BekistingKayu');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2277,6 +2294,7 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
        restoreCondition('Scaffolding');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2333,6 +2351,7 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
        restoreCondition('PerekatBetonEpoxy');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2389,6 +2408,7 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
        restoreCondition('MortarStruktural');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2445,6 +2465,7 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
        restoreCondition('SemenPutih');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -2502,6 +2523,7 @@ if (urlMappingBesiBangunanPost[cleanUrl]) {
        restoreCondition('BesiBangunan');
       
     // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
