@@ -1659,7 +1659,51 @@ if (urlMappingReadymixPost[cleanUrl]) {
         readyMixLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixPost[cleanUrl];
     }
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingReadymixPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix Beton Cor Jayamix Minimix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingReadymixPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
 
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
  if (urlMappingSemenPortlandPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('SemenPortland');
@@ -1718,6 +1762,51 @@ if (urlMappingReadymixPost[cleanUrl]) {
         SemenPortlandLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSemenPortlandPost[cleanUrl];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingSemenPortlandPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Semen Portland",
+                   "item": "https://www.betonjayareadymix.com/p/semen-portland.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingSemenPortlandPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingSemenInstanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('SemenInstan');
@@ -1776,6 +1865,52 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
         SemenInstanLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSemenInstanPost[cleanUrl];
     }
+
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingSemenInstanPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Semen Instan",
+                   "item": "https://www.betonjayareadymix.com/p/semen-instan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingSemenInstanPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBajaKonvensionalPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BajaKonvensional');
@@ -1832,7 +1967,52 @@ if (urlMappingBajaKonvensionalPost[cleanUrl]) {
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         BajaKonvensionalLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBajaKonvensionalPost[cleanUrl];
-    }
+    } 
+
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBajaKonvensionalPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Baja Konvensional",
+                   "item": "https://www.betonjayareadymix.com/p/baja-konvensional.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBajaKonvensionalPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BajaRinganStruktur');
@@ -1890,6 +2070,51 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
         BajaRinganStrukturLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBajaRinganStrukturPost[cleanUrl];
     }
+
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Baja Ringan Struktur",
+                   "item": "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBajaRinganStrukturPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBajaTulanganPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BajaTulangan');
@@ -1947,6 +2172,50 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
         BajaTulanganLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBajaTulanganPost[cleanUrl];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBajaTulanganPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Baja Tulangan",
+                   "item": "https://www.betonjayareadymix.com/p/baja-tulangan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBajaTulanganPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingWiremeshPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Wiremesh');
@@ -2004,6 +2273,51 @@ if (urlMappingWiremeshPost[cleanUrl]) {
         WiremeshLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingWiremeshPost[cleanUrl];
     }
+
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingWiremeshPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Wiremesh",
+                   "item": "https://www.betonjayareadymix.com/p/wiremesh.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingWiremeshPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBondexPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Bondex');
@@ -2061,6 +2375,50 @@ if (urlMappingBondexPost[cleanUrl]) {
         BondexLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBondexPost[cleanUrl];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBondexPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Bondex",
+                   "item": "https://www.betonjayareadymix.com/p/bondex.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBondexPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBesiBetonUlirPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BesiBetonUlir');
@@ -2118,6 +2476,50 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
         BesiBetonUlirLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBesiBetonUlirPost[cleanUrl];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBesiBetonUlirPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Besi Beton Ulir",
+                   "item": "https://www.betonjayareadymix.com/p/besi-beton-ulir.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBesiBetonUlirPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBesiBetonPolosPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BesiBetonPolos');
@@ -2175,6 +2577,51 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
         BesiBetonPolosLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBesiBetonPolosPost[cleanUrl];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBesiBetonPolosPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Besi Beton Polos",
+                   "item": "https://www.betonjayareadymix.com/p/besi-beton-polos.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBesiBetonPolosPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBekistingBajaPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BekistingBaja');
@@ -2232,6 +2679,51 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
         BekistingBajaLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingBajaPost[cleanUrl];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBekistingBajaPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Bekisting",
+                   "item": "https://www.betonjayareadymix.com/p/bekisting.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBekistingBajaPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBekistingKayuPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BekistingKayu');
@@ -2289,6 +2781,50 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
         BekistingKayuLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBekistingKayuPost[cleanUrl];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBekistingKayuPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Bekisting Kayu",
+                   "item": "https://www.betonjayareadymix.com/p/bekisting-kayu.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBekistingKayuPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingScaffoldingPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('Scaffolding');
@@ -2346,6 +2882,51 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
         ScaffoldingLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingScaffoldingPost[cleanUrl];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingScaffoldingPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Scaffolding",
+                   "item": "https://www.betonjayareadymix.com/p/scaffolding.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingScaffoldingPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('PerekatBetonEpoxy');
@@ -2403,6 +2984,51 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
         PerekatBetonEpoxyLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingPerekatBetonEpoxyPost[cleanUrl];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Perekat Beton Epoxy",
+                   "item": "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingPerekatBetonEpoxyPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingMortarStrukturalPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('MortarStruktural');
@@ -2460,6 +3086,50 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
         MortarStrukturalLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingMortarStrukturalPost[cleanUrl];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingMortarStrukturalPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Mortar Struktural",
+                   "item": "https://betonjayareadymix.com/p/mortar-struktural.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingMortarStrukturalPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingSemenPutihPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('SemenPutih');
@@ -2517,7 +3187,50 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
         SemenPutihLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSemenPutihPost[cleanUrl];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingSemenPutihPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Semen Putih",
+                   "item": "https://www.betonjayareadymix.com/p/semen-putih.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingSemenPutihPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
 
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingBesiBangunanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('BesiBangunan');
@@ -2575,4 +3288,49 @@ if (urlMappingBesiBangunanPost[cleanUrl]) {
         BesiBangunanLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingBesiBangunanPost[cleanUrl];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBesiBangunanPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Besi Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/besi-bangunan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBesiBangunanPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    });
