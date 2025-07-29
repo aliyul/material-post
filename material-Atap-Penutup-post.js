@@ -170,6 +170,51 @@ if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
         GentengLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Genteng",
+                   "item": "https://www.betonjayareadymix.com/p/genteng.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
 if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('GentengTanahLiat');
@@ -211,6 +256,50 @@ if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
         GentengTanahLiatLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost];
     }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Genteng",
+                   "item": "https://www.betonjayareadymix.com/p/genteng.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('GentengBeton');
@@ -252,6 +341,50 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         GentengBetonLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost];
     }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Genteng Beton",
+                   "item": "https://www.betonjayareadymix.com/p/genteng-beton.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
   if (urlMappingGentengKeramikPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('GentengKeramik');
@@ -294,6 +427,50 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         GentengKeramikLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingGentengKeramikPost[cleanUrlMaterialAtapPenutupPost];
     }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingGentengKeramikPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Genteng Beton",
+                   "item": "https://www.betonjayareadymix.com/p/genteng-keramik.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingGentengKeramikPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
   if (urlMappingAtapSpandekPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('AtapSpandek');
@@ -336,6 +513,50 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         AtapSpandekLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingAtapSpandekPost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingAtapSpandekPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Atap Spandek",
+                   "item": "https://www.betonjayareadymix.com/p/atap-spandek.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingAtapSpandekPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
   if (urlMappingAtapZincalumePost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('AtapZincalume');
@@ -378,6 +599,51 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         AtapZincalumeLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingAtapZincalumePost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingAtapZincalumePost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Atap Zincalume",
+                   "item": "https://www.betonjayareadymix.com/p/atap-zincalume.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingAtapZincalumePost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
   if (urlMappingAtapBitumenPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('AtapBitumen');
@@ -420,6 +686,50 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         AtapBitumenLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingAtapBitumenPost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingAtapBitumenPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Atap Bitumen",
+                   "item": "https://www.betonjayareadymix.com/p/atap-bitumen.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingAtapBitumenPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
   if (urlMappingTalangAtapPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('TalangAtap');
@@ -462,6 +772,50 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         TalangAtapLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingTalangAtapPost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingTalangAtapPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Talang Atap",
+                   "item": "https://www.betonjayareadymix.com/p/talang-atap.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingTalangAtapPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
   if (urlMappingSekrupAtapPost[cleanUrlMaterialAtapPenutupPost]) {
        restoreCondition('MaterialAtapPenutupPost');
        restoreCondition('SekrupAtap');
@@ -504,5 +858,49 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         SekrupAtapLink.style.visibility = 'visible';
         pageNameMaterialKonsAtapPenutupPost.textContent = urlMappingSekrupAtapPost[cleanUrlMaterialAtapPenutupPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingSekrupAtapPost[cleanUrlMaterialAtapPenutupPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Atap Penutup",
+                   "item": "https://www.betonjayareadymix.com/p/material-atap-penutup.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Sekrup Atap",
+                   "item": "https://www.betonjayareadymix.com/p/sekrup-atap.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingSekrupAtapPost[cleanUrlMaterialAtapPenutupPost],
+                   "item": cleanUrlMaterialAtapPenutupPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 });
 
