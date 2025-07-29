@@ -176,6 +176,52 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
         PanelFasadLink.style.visibility = 'visible';
         pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost];
     }
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Fasad Pelapis Eksterior",
+                   "item": "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html"
+               },
+	      
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Panel Fasad",
+                   "item": "https://www.betonjayareadymix.com/p/panel-fasad.html"
+               },
+		   
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost],
+                   "item": cleanUrlMaterialFasadPelapisEksteriorPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
        restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
        restoreCondition('ExpandedMetal');
@@ -224,4 +270,50 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
         pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost];
     }
 
+ // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Fasad Pelapis Eksterior",
+                   "item": "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html"
+               },
+	      
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Expanded Metal",
+                   "item": "https://www.betonjayareadymix.com/p/expanded-metal.html"
+               },
+		   
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost],
+                   "item": cleanUrlMaterialFasadPelapisEksteriorPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    });
