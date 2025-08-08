@@ -1,5 +1,6 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
      const urlMappingReadymixPost = {
+	"https://www.betonjayareadymix.com/2022/12/harga-jayamix-ready-mix-minimix.html": "Harga Jayamix Ready Mix Minimix",
     "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",
