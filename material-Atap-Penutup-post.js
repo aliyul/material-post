@@ -140,6 +140,7 @@ if (urlMappingGentengPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -226,6 +227,7 @@ if (urlMappingGentengTanahLiatPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -311,6 +313,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -396,6 +399,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -482,6 +486,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -568,6 +573,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -655,6 +661,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -742,6 +749,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
@@ -827,6 +835,7 @@ if (urlMappingGentengBetonPost[cleanUrlMaterialAtapPenutupPost]) {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
