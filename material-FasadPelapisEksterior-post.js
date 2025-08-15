@@ -140,6 +140,7 @@ if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
 	
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -233,6 +234,7 @@ if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
 	removeCondition('MaterialKonsAtapPenutupPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
