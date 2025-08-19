@@ -38,6 +38,15 @@ const urlMappingMaterialStrukturBangunan = {
   "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
 };
 
+//SUB READY MIX
+const urlMappingMaterialReadyMix = {
+  "https://www.betonjayareadymix.com/p/ready-mix-lokasi.html": "Ready Mix Lokasi",
+  "https://www.betonjayareadymix.com/p/ready-mix-mutu.html": "Ready Mix Mutu",
+  "https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html": "Ready Mix Kegunaan",
+  "https://www.betonjayareadymix.com/p/ready-mix-plant.html": "Ready Mix Plant",
+  "https://www.betonjayareadymix.com/p/ready-mix-panduan.html": "Ready Mix Panduan"
+};
+
 const urlMappingMaterialDindingPenutup = {
  "https://www.betonjayareadymix.com/p/bata-merah-tanah-liat.html": "Bata Merah Tanah Liat",
   "https://www.betonjayareadymix.com/p/batako-press-beton.html": "Batako Press / Beton",
