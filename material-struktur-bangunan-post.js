@@ -1,5 +1,5 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-     const urlMappingReadymixPost = {
+    const urlMappingReadymixPost = {
 	"https://www.betonjayareadymix.com/2022/12/harga-jayamix-ready-mix-minimix.html": "Harga Jayamix Ready Mix Minimix",
     "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
     "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
@@ -251,7 +251,8 @@
     "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html": "Harga Cor Beton K 225",
       "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-holcim-per-m3.html": "Harga Cor Beton Holcim per m3",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix.html": "Harga Cor Beton Ready Mix",
-
+//sampai sini
+		
   "https://www.betonjayareadymix.com/2021/03/ready-mix-jombang.html": "Ready Mix Jombang",
   "https://www.betonjayareadymix.com/2021/03/ready-mix-jogja.html": "Ready Mix Jogja",
   "https://www.betonjayareadymix.com/2021/03/ready-mix-pati.html": "Ready Mix Pati",
@@ -982,17 +983,265 @@
 
 const urlMappingReadymixLokasiPost = {
 
+//JAYAMIX ATAU READY MIX TEERDEEKAT
+"https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html": "Jayamix Terdekat",
+"https://www.betonjayareadymix.com/2021/03/ready-mix-terdekat.html": "Ready Mix Terdekat",
+"https://www.betonjayareadymix.com/2021/03/beton-ready-mix-terdekat.html": "Beton Ready Mix Terdekat",
+	
+//JAYAMIX PER KOTA/KABUPATEN
+  "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-karawang.html": "Jayamix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-kuningan.html": "Jayamix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-tasikmalaya.html": "Jayamix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-subang.html": "Jayamix Subang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-blitar.html": "Jayamix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-klaten.html": "Jayamix Klaten",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-jakarta.html": "Jayamix Jakarta",
+  "https://www.betonjayareadymix.com/2022/12/jayamix-serang.html": "Jayamix Serang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-purwakarta.html": "Jayamix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bogor.html": "Jayamix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bekasi.html": "Jayamix Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cikarang.html": "Jayamix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-depok.html": "Jayamix Depok",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cibubur.html": "Jayamix Cibubur",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bandung.html": "Jayamix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cirebon.html": "Jayamix Cirebon",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cianjur.html": "Jayamix Cianjur",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cikande.html": "Jayamix Cikande",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cilegon.html": "Jayamix Cilegon",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-ciamis.html": "Jayamix Ciamis",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-garut.html": "Jayamix Garut",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-tangerang.html": "Jayamix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-indramayu.html": "Jayamix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-jombang.html": "Jayamix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-boyolali.html": "Jayamix Boyolali",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cilacap.html": "Jayamix Cilacap",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-pati.html": "Jayamix Pati",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-gresik.html": "Jayamix Gresik",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-jogja.html": "Jayamix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-surabaya.html": "Jayamix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-semarang.html": "Jayamix Semarang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-kediri.html": "Jayamix Kediri",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-magelang.html": "Jayamix Magelang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cileungsi.html": "Jayamix Cileungsi",
+  "https://www.betonjayareadymix.com/2018/04/jayamix-sidoarjo.html": "Jayamix Sidoarjo",
+  "https://www.betonjayareadymix.com/2018/04/jayamix-malang.html": "Jayamix Malang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-majalengka.html": "Jayamix Majalengka",
+
+//READY MIX per kota/kabupaten:
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-karawang.html": "Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-sukabumi.html": "Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-purwakarta.html": "Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2022/12/ready-mix-serang.html": "Ready Mix Serang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-surabaya.html": "Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bogor.html": "Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-holcim-sidoarjo.html": "Ready Mix Holcim Sidoarjo",
+  "https://www.betonjayareadymix.com/2018/04/holcim-readymix-surabaya.html": "Holcim Readymix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-blitar.html": "Ready Mix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-sidoarjo.html": "Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-garut.html": "Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bandung.html": "Ready Mix Bandung",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-tasikmalaya.html": "Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-subang.html": "Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-sumedang.html": "Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-depok.html": "Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bekasi.html": "Ready Mix Bekasi",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-pangandaran.html": "Ready Mix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-kuningan.html": "Ready Mix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-jakarta.html": "Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-tangerang.html": "Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cirebon.html": "Ready Mix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cianjur.html": "Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-ciamis.html": "Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cilegon.html": "Ready Mix Cilegon",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cikande.html": "Ready Mix Cikande",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-indramayu.html": "Ready Mix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-malang.html": "Ready Mix Malang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cileungsi.html": "Ready Mix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cikarang.html": "Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-gresik.html": "Ready Mix Gresik",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cilacap.html": "Ready Mix Cilacap",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-klaten.html": "Ready Mix Klaten",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-magelang.html": "Ready Mix Magelang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-majalengka.html": "Ready Mix Majalengka",
+
+//BETON READY MIX
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-majalengka.html": "Beton Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-tasikmalaya.html": "Beton Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-garut.html": "Beton Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sukabumi.html": "Beton Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-purwakarta.html": "Beton Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sumedang.html": "Beton Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-karawang.html": "Beton Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-subang.html": "Beton Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-sidoarjo.html": "Beton Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-surabaya.html": "Beton Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-semarang.html": "Beton Ready Mix Semarang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jogja.html": "Beton Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-tangerang.html": "Beton Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jakarta.html": "Beton Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bogor.html": "Beton Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bandung.html": "Beton Ready Mix Bandung",
+
+//HARGA JAYAMIX
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-pati.html": "Harga Jayamix Pati",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-klaten.html": "Harga Jayamix Klaten",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-gresik.html": "Harga Jayamix Gresik",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-sidoarjo.html": "Harga Jayamix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jombang.html": "Harga Jayamix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jawa-timur.html": "Harga Jayamix Jawa Timur",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tangerang.html": "Harga Jayamix Tangerang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bogor.html": "Harga Jayamix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-garut.html": "Harga Jayamix Garut",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bandung.html": "Harga Jayamix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bekasi.html": "Harga Jayamix Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cikarang.html": "Harga Jayamix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibinong.html": "Harga Jayamix Cibinong",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cileungsi.html": "Harga Jayamix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cilegon.html": "Harga Jayamix Cilegon",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cinere.html": "Harga Jayamix Cinere",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-indramayu.html": "Harga Jayamix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-depok.html": "Harga Jayamix Depok",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-magelang.html": "Harga Jayamix Magelang",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-malang.html": "Harga Jayamix Malang",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-kediri.html": "Harga Jayamix Kediri",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-cilacap.html": "Harga Jayamix Cilacap",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-kuningan.html": "Harga Jayamix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-surabaya.html": "Harga Jayamix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-blitar.html": "Harga Jayamix Blitar",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-boyolali.html": "Harga Jayamix Boyolali",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cianjur.html": "Harga Jayamix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cirebon.html": "Harga Jayamix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-pangandaran.html": "Harga Jayamix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-karawang.html": "Harga Jayamix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-ciamis.html": "Harga Jayamix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-purwakarta.html": "Harga Jayamix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-subang.html": "Harga Jayamix Subang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sumedang.html": "Harga Jayamix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sukabumi.html": "Harga Jayamix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-majalengka.html": "Harga Jayamix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-tasikmalaya.html": "Harga Jayamix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-bogor.html": "Harga Jayamix Bogor",
+
+//HARGA READY MIX
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-gresik.html": "Harga Ready Mix Gresik",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cikarang.html": "Harga Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-depok.html": "Harga Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-bogor.html": "Harga Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html": "Harga Ready Mix Cibinong",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-pati.html": "Harga Ready Mix Pati",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-klaten.html": "Harga Ready Mix Klaten",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-magelang.html": "Harga Ready Mix Magelang",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-boyolali.html": "Harga Ready Mix Boyolali",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jogja.html": "Harga Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-surabaya.html": "Harga Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cilegon.html": "Harga Ready Mix Cilegon",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sumedang.html": "Harga Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tasikmalaya.html": "Harga Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-karawang.html": "Harga Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-gresik.html": "Harga Ready Mix Gresik",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cikarang.html": "Harga Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-depok.html": "Harga Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-bogor.html": "Harga Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html": "Harga Ready Mix Cibinong",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cileungsi.html": "Harga Ready Mix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cilacap.html": "Harga Ready Mix Cilacap",
+  "https://www.betonjayareadymix.com/2018/04/harga-readymix-bandung.html": "Harga Readymix Bandung",
+
+	
+
+ //HARGA BETON REDY MIX
+"https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-surabaya.html": "Harga Beton Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bandung.html": "Harga Beton Ready Mix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bogor.html": "Harga Beton Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-karawang.html": "Harga Beton Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-depok.html": "Harga Beton Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cikarang.html": "Harga Beton Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cirebon.html": "Harga Beton Ready Mix Cirebon",
+
+//HARGA BETON JAYAMIX
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-jayamix-jakarta.html": "Harga Beton Jayamix Jakarta"
+
+//
+
+
 };
 
 const urlMappingReadymixMutuPost = {
+//ANALISA MUTU
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k250.html": "Analisa Beton Ready Mix K250",
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k350.html": "Analisa Beton Ready Mix K350",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k100.html": "Analisa Beton Ready Mix K100",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k125.html": "Analisa Beton Ready Mix K125",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k175.html": "Analisa Beton Ready Mix K175",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k225.html": "Analisa Beton Ready Mix K225",
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k300.html": "Analisa Beton Ready Mix K300",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k375.html": "Analisa Beton Ready Mix K375",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400",
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450",
+
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html": "Harga Beton Ready Mix B0",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-350.html": "Harga Ready Mix K 350",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-300.html": "Harga Ready Mix K 300",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-250.html": "Harga Ready Mix K 250",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-225.html": "Harga Ready Mix K 225"
+
 
 };
 
 const urlMappingReadymixKegunaanPost = {
+"https://www.betonjayareadymix.com/2021/03/fungsi-beton-ready-mix.html": "Fungsi Beton Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/jenis-beton-ready-mix.html": "Jenis Beton Ready Mix"
 
 };
 
 const urlMappingReadymixPlantPost = {
+  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-ready-mix-minimix.html": "Harga Jayamix Ready Mix Minimix",
+  "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html": "SCG Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/holcim-ready-mix.html": "Holcim Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-merah-putih.html": "Ready Mix Merah Putih",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-tiga-roda.html": "Ready Mix Tiga Roda",
+
+    "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-pionir.html": "Harga Beton Ready Mix Pionir",
+  "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-adhimix.html": "Harga Beton Ready Mix Adhimix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-holcim.html": "Harga Beton Ready Mix Holcim",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-jayamix.html": "Harga Beton Ready Mix Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-merah-putih.html": "Harga Beton Ready Mix Merah Putih",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-holcim.html": "Harga Ready Mix Holcim",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-jayamix.html": "Harga Ready Mix Jayamix"
+
+
+
+ 
+
+};
+
+const urlMappingReadymixPanduanPost = {
+  "https://www.betonjayareadymix.com/2021/03/perbedaan-jayamix-dan-readymix.html": "Perbedaan Jayamix dan Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik",
+  "https://www.betonjayareadymix.com/2021/03/cara-pesan-jayamix.html": "Cara Pesan Jayamix",
+  
+  "https://www.betonjayareadymix.com/2021/03/jayamix-beton.html": "Jayamix Beton",
+  "https://www.betonjayareadymix.com/2021/03/cara-order-ready-mix.html": "Cara Order Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-murah.html": "Ready Mix Murah",
+
+  "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
+
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-per-m3.html": "Harga Beton Ready Mix Per M3",
+  "https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-termurah.html": "Harga Beton Ready Mix Termurah",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-terbaru.html": "Harga Beton Ready Mix Terbaru",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-per-kubik.html": "Harga Ready Mix Per Kubik",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-murah.html": "Harga Ready Mix Murah",
+  "https://www.betonjayareadymix.com/2021/03/harga-readymix-concrete.html": "Harga Readymix Concrete"
+
+
 
 };
 
