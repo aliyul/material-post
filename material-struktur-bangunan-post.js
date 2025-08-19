@@ -1126,6 +1126,12 @@ if (urlMappingDakBetonPost[cleanUrl]) {
      removeCondition('RingBalok');
      removeCondition('Sloof');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
@@ -1185,6 +1191,12 @@ if (urlMappingBekistingPost[cleanUrl]) {
      removeCondition('RingBalok');
      removeCondition('Sloof');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
@@ -1244,6 +1256,12 @@ if (urlMappingAluminiumPost[cleanUrl]) {
      removeCondition('RingBalok');
      removeCondition('Sloof');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
@@ -1303,6 +1321,12 @@ if (urlMappingRingBalokPost[cleanUrl]) {
      removeCondition('Aluminium');
      removeCondition('Sloof');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
@@ -1362,6 +1386,12 @@ if (urlMappingSloofPost[cleanUrl]) {
      removeCondition('Aluminium');
      removeCondition('RingBalok');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
@@ -1438,6 +1468,13 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
      removeCondition('BekistingKayu');
      removeCondition('MortarStruktural');
      removeCondition('PerekatBetonEpoxy');
+
+	   //hapus semua elemen sub readymix kecuali ready mix lokasi
+     	//removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
     
        // restoreCondition('MaterialKonsStukturPost');
        
@@ -1533,6 +1570,12 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
      removeCondition('RingBalok');
      removeCondition('Sloof');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBetonUlir');
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
@@ -1648,6 +1691,12 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
      removeCondition('Scaffolding');
      removeCondition('BekistingBaja');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenPutih');
      removeCondition('BekistingKayu');
      removeCondition('MortarStruktural');
@@ -1746,6 +1795,12 @@ if (urlMappingBajaKonvensionalPost[cleanUrl]) {
      removeCondition('Wiremesh');
      removeCondition('Bondex');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBangunan');
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
@@ -1849,6 +1904,12 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
      removeCondition('Wiremesh');
      removeCondition('Bondex');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBangunan');
      removeCondition('BajaKonvensional');
      removeCondition('BajaTulangan');
@@ -1954,6 +2015,12 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
      removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBangunan');
      removeCondition('Scaffolding');
      removeCondition('BekistingBaja');
@@ -2053,6 +2120,12 @@ if (urlMappingWiremeshPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Bondex');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBangunan');
      removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
@@ -2156,6 +2229,12 @@ if (urlMappingBondexPost[cleanUrl]) {
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBangunan');
      removeCondition('BajaKonvensional');
      removeCondition('BajaRinganStruktur');
@@ -2255,6 +2334,12 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
      removeCondition('Sloof');
      removeCondition('SemenPortland');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BesiBetonPolos');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
@@ -2358,6 +2443,12 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
      removeCondition('SemenPortland');
      removeCondition('BesiBetonUlir');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('Wiremesh');
      removeCondition('Bondex');
      removeCondition('BesiBangunan');
@@ -2469,6 +2560,12 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
      removeCondition('BajaTulangan');
      removeCondition('Scaffolding');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('SemenInstan');
      removeCondition('SemenPutih');
      removeCondition('BekistingKayu');
@@ -2575,6 +2672,12 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
      removeCondition('SemenInstan');
      removeCondition('SemenPutih');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('MortarStruktural');
      removeCondition('PerekatBetonEpoxy');
     
@@ -2673,6 +2776,12 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
      removeCondition('BajaRinganStruktur');
      removeCondition('BajaTulangan');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BekistingBaja');
      removeCondition('SemenInstan');
      removeCondition('SemenPutih');
@@ -2782,6 +2891,12 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
      removeCondition('BekistingKayu');
      removeCondition('MortarStruktural');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
     
        // restoreCondition('MaterialKonsStukturPost');
        
@@ -2884,6 +2999,12 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
      removeCondition('SemenPutih');
      removeCondition('BekistingKayu');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('PerekatBetonEpoxy');
     
        // restoreCondition('MaterialKonsStukturPost');
@@ -2984,6 +3105,12 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
      removeCondition('BekistingBaja');
      removeCondition('SemenInstan');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BekistingKayu');
      removeCondition('MortarStruktural');
      removeCondition('PerekatBetonEpoxy');
@@ -3086,6 +3213,12 @@ if (urlMappingBesiBangunanPost[cleanUrl]) {
      removeCondition('BekistingBaja');
      removeCondition('SemenInstan');
      removeCondition('readyMix');
+	   //hapus semua elemen sub readymix
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
      removeCondition('BekistingKayu');
      removeCondition('MortarStruktural');
      removeCondition('PerekatBetonEpoxy');
