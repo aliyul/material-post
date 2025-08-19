@@ -348,6 +348,27 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	   // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
      
@@ -421,6 +442,27 @@ if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -580,6 +622,7 @@ if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
        document.head.appendChild(script);
    }
 //AKHIR SUB PILLAR READY MIX
+	
 if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
        restoreCondition('MaterialDindingPenutup');
@@ -615,6 +658,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -698,6 +762,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -779,6 +864,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -862,6 +968,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -944,6 +1071,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -1024,6 +1172,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -1107,6 +1276,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -1188,6 +1378,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -1271,6 +1482,27 @@ if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	 // HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -1352,6 +1584,27 @@ if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
+
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
@@ -1435,6 +1688,27 @@ if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -1517,6 +1791,27 @@ if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
         removeCondition('MaterialStrukturBangunan');
         removeCondition('MaterialLainnya');
 
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
@@ -1598,6 +1893,27 @@ if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
         removeCondition('MaterialKonstruksiKelistrikan');
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialStrukturBangunan');
+
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA
+	   removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
 
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
