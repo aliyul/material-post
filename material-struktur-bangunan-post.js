@@ -244,7 +244,7 @@ const urlMappingReadymixMutuPost = {
 "https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-blitar.html": "Harga Jayamix Blitar",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-boyolali.html": "Harga Jayamix Boyolali",
-"https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang,
+"https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang",
   "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cianjur.html": "Harga Jayamix Cianjur",
   "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cirebon.html": "Harga Jayamix Cirebon",
   "https://www.betonjayareadymix.com/2021/08/harga-jayamix-pangandaran.html": "Harga Jayamix Pangandaran",
