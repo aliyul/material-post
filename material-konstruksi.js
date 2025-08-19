@@ -231,6 +231,27 @@ document.addEventListener("DOMContentLoaded", function() {
      var MaterialKonstruksiLink = document.getElementById("MaterialKonstruksi");
      //var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
      var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
+		var MaterialReadyMixLink = document.getElementById("MaterialReadyMix");
+		var MaterialBesiBetonUlirLink = document.getElementById("MaterialBesiBetonUlir");
+		var MaterialBesiBetonPolosLink = document.getElementById("MaterialBesiBetonPolos");
+		var MaterialBesiBangunanLink = document.getElementById("MaterialBesiBangunan");
+		var MaterialWiremeshLink = document.getElementById("MaterialWiremesh");
+		var MaterialBondexLink = document.getElementById("MaterialBondex");
+		var MaterialAluminiumLink = document.getElementById("MaterialAluminium");
+		var MaterialBajaKonvensionalLink = document.getElementById("MaterialBajaKonvensional");
+		var MaterialBajaRinganStrukturLink = document.getElementById("MaterialBajaRinganStruktur");
+		var MaterialBajaTulanganLink = document.getElementById("MaterialBajaTulangan");
+		var MaterialBekistingLink = document.getElementById("MaterialBekisting");
+		var MaterialBekistingBajaLink = document.getElementById("MaterialBekistingBaja");
+		var MaterialBekistingKayuLink = document.getElementById("MaterialBekistingKayu");
+		var MaterialSemenPortlandLink = document.getElementById("MaterialSemenPortland");
+		var MaterialSemenInstanLink = document.getElementById("MaterialSemenInstan");
+		var MaterialSemenPutihLink = document.getElementById("MaterialSemenPutih");
+		var MaterialMortarStrukturalLink = document.getElementById("MaterialMortarStruktural");
+		var MaterialPerekatBetonEpoxyLink = document.getElementById("MaterialPerekatBetonEpoxy");
+
+
+
      var MaterialDindingPenutupLink = document.getElementById("MaterialDindingPenutup");
      var MaterialPekerjaanTanahJalanLink = document.getElementById("MaterialPekerjaanTanahJalan");
      var MaterialPlumbingSaluranLink = document.getElementById("MaterialPlumbingSaluran");
