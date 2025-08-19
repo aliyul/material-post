@@ -1,6 +1,6 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 
-const urlMappingReadymixLokasiPost = {
+const urlMappingReadyMixLokasiPost = {
 //JAYAMIX ATAU READY MIX TEERDEEKAT
 "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html": "Jayamix Terdekat",
 "https://www.betonjayareadymix.com/2021/03/ready-mix-terdekat.html": "Ready Mix Terdekat",
@@ -121,7 +121,7 @@ const urlMappingReadymixLokasiPost = {
   "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat"
 };
 
-const urlMappingReadymixMutuPost = {
+const urlMappingReadyMixMutuPost = {
 //JAYAMIX BETON MUTU
 "https://www.betonjayareadymix.com/2021/03/jayamix-beton.html": "Jayamix Beton",
 	
@@ -564,7 +564,7 @@ const urlMappingReadymixMutuPost = {
 
 };
 
-const urlMappingReadymixKegunaanPost = {
+const urlMappingReadyMixKegunaanPost = {
 "https://www.betonjayareadymix.com/2021/03/fungsi-beton-ready-mix.html": "Fungsi Beton Ready Mix",
  
   "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
@@ -574,7 +574,7 @@ const urlMappingReadymixKegunaanPost = {
 
 };
 
-const urlMappingReadymixPlantPost = {
+const urlMappingReadyMixPlantPost = {
   "https://www.betonjayareadymix.com/2021/08/batching-plant-terdekat.html": "Batching Plant Terdekat",
 "https://www.betonjayareadymix.com/2018/08/batching-plant-depok.html": "Batching Plant Depok",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-tangerang.html": "Batching Plant Tangerang",
@@ -744,7 +744,7 @@ const urlMappingReadymixPlantPost = {
 	
 };
 
-const urlMappingReadymixPanduanPost = {
+const urlMappingReadyMixPanduanPost = {
   "https://www.betonjayareadymix.com/2021/03/perbedaan-jayamix-dan-readymix.html": "Perbedaan Jayamix dan Ready Mix",
   "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
   "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik",
@@ -1428,7 +1428,7 @@ if (urlMappingSloofPost[cleanUrl]) {
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
 //SUB PILLAR READY MIX
-if (urlMappingReadymixLokasiPost[cleanUrl]) {
+if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
 	
@@ -1499,10 +1499,10 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
         readyMixLink.style.visibility = 'visible';
         ReadyMixLokasiPostLink.style.visibility = 'visible';
 	
-        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixLokasiPost[cleanUrl];
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
     }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadymixLokasiPost[cleanUrl]) {
+   if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -1541,7 +1541,7 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
                {
                    "@type": "ListItem",
                    "position": 6,
-                   "name": urlMappingReadymixLokasiPost[cleanUrl],
+                   "name": urlMappingReadyMixLokasiPost[cleanUrl],
                    "item": cleanUrl
                }
            ]
