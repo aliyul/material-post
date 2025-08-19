@@ -1389,7 +1389,7 @@ if (urlMappingSloofPost[cleanUrl]) {
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
 
-if (urlMappingReadymixPost[cleanUrl]) {
+if (urlMappingReadymixLokasiPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
       
@@ -1446,10 +1446,10 @@ if (urlMappingReadymixPost[cleanUrl]) {
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
-        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixPost[cleanUrl];
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixLokasiPost[cleanUrl];
     }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadymixPost[cleanUrl]) {
+   if (urlMappingReadymixLokasiPost[cleanUrl]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
            "@type": "BreadcrumbList",
@@ -1479,10 +1479,16 @@ if (urlMappingReadymixPost[cleanUrl]) {
                    "name": "Ready Mix Beton Cor Jayamix Minimix",
                    "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
                },
-               {
+			   {
                    "@type": "ListItem",
                    "position": 5,
-                   "name": urlMappingReadymixPost[cleanUrl],
+                   "name": "Ready Mix Lokasi",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-lokasi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 6,
+                   "name": urlMappingReadymixLokasiPost[cleanUrl],
                    "item": cleanUrl
                }
            ]
