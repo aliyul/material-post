@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function() {
        document.head.appendChild(script);
    }
  //SUB PAGE MATERIAL KONSTRUKSI
-   if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
+if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
        restoreCondition('MaterialStrukturBangunan');
   
@@ -428,7 +428,97 @@ document.addEventListener("DOMContentLoaded", function() {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
- if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
+
+ //SUB PILLAR PAGE MATERIAL READY MIX
+if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
+       restoreCondition('MaterialKons');
+       restoreCondition('MaterialStrukturBangunan');
+  
+    
+         // hapus elemen id DIV Lain
+        removeCondition('ProdukInFur');
+        removeCondition('ProdukKons');
+        //removeCondition('ProdukKonsSaluran');
+        //removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+        removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsStruktur');
+       	removeCondition('JasaKons');
+        removeCondition('JasaKonsSub');
+        removeCondition('MenuKons');
+     
+       // HAPUS ELEMEN LAIN NYA SEMUA KECUALI MaterialStrukturBangunan
+        //removeCondition('MaterialStrukturBangunan');
+        removeCondition('MaterialDindingPenutup');
+        removeCondition('MaterialPekerjaanTanahJalan');
+        removeCondition('MaterialPlumbingSaluran');
+        removeCondition('MaterialAtapPenutup');
+        removeCondition('MaterialFasadPelapisEksterior');
+        removeCondition('MaterialFinishingInterior');
+        removeCondition('MaterialInsulasiAkustik');
+        removeCondition('MaterialWaterproofingPelapis');
+        removeCondition('MaterialGeosintetikDrainase');
+        removeCondition('MaterialKonstruksiKhusus');
+        removeCondition('MaterialKonstruksiKelistrikan');
+        removeCondition('MaterialModularPrefabrikasi');
+        removeCondition('MaterialLainnya');
+
+       MaterialKons.style.visibility = 'visible';
+       MaterialKonstruksiLink.style.visibility = 'visible';
+       
+       MaterialStrukturBangunanLink.style.visibility = 'visible';
+       //readyMixPostLink.style.visibility = 'visible';
+       pageNameMaterialKons.textContent = urlMappingMaterialReadyMix[cleanUrlMaterialKons];
+    }   
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+			    {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+              {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingMaterialReadyMix[cleanUrlMaterialKons],
+                   "item": cleanUrlMaterialKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+//AKHIR SUB PILLAR READY MIX
+if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
        restoreCondition('MaterialDindingPenutup');
   
