@@ -1,9 +1,6 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
     const urlMappingReadymixPost = {
 //sampai sini
-		
-  	     
-  
       "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",
   "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html": "Harga Ready Mix Tegalwaru Kab Karawang",
   "https://www.betonjayareadymix.com/2018/08/harga-jayamix-talagasari-kab-karawang.html": "Harga Jayamix Talagasari Kab Karawang",
@@ -864,7 +861,6 @@ const urlMappingReadymixLokasiPost = {
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-bandung.html": "Harga Cor Beton Bandung",
   "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-depok.html": "Harga Cor Beton Depok"
 
-
 };
 
 const urlMappingReadymixMutuPost = {
@@ -880,7 +876,10 @@ const urlMappingReadymixMutuPost = {
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400",
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450",
 
- //
+    "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",
+  "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton",
+
+ //HARGA MUTU
  
   "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html": "Harga Beton Ready Mix B0",
   "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-350.html": "Harga Ready Mix K 350",
@@ -892,6 +891,13 @@ const urlMappingReadymixMutuPost = {
     "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html": "Harga Cor Beton K 225",
     "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-k-175.html": "Harga Ready Mix K 175",
 
+    "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-300-per-m3.html": "Harga Cor Beton K 300 per m3",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-200.html": "Harga Cor Beton K 200",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-175.html": "Harga Cor Beton K 175",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-275.html": "Harga Cor Beton K 275",
+  "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-k225-per-m3.html": "Harga Cor Beton K225 Per M3",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k350.html": "Harga Cor Beton K350",
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html": "Harga Beton Cor K300 Holcim"
 
 };
 
