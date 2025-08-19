@@ -978,16 +978,32 @@
   "https://www.betonjayareadymix.com/2018/08/batching-plant-bekasi.html": "Batching Plant Bekasi",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-bogor.html": "Batching Plant Bogor"
   
+};
 
+const urlMappingReadymixLokasiPost = {
 
 };
+
+const urlMappingReadymixMutuPost = {
+
+};
+
+const urlMappingReadymixKegunaanPost = {
+
+};
+
+const urlMappingReadymixPlantPost = {
+
+};
+
+
 const urlMappingDakBetonPost = {
 
-}
+};
 
 const urlMappingPondasiPost = {
 
-}
+};
 const urlMappingSloofPost = {
 	
 };
