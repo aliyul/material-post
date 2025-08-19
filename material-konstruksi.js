@@ -472,6 +472,8 @@ if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
 if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
        restoreCondition('MaterialStrukturBangunan');
+
+	  restoreCondition('MaterialReadyMix');
   
     
          // hapus elemen id DIV Lain
@@ -505,11 +507,32 @@ if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
         removeCondition('MaterialModularPrefabrikasi');
         removeCondition('MaterialLainnya');
 
+	// HAPUS ELEMEN SUB MaterialStrukturBangunan SEMUA KECUALI MaterialReadyMix
+	   //removeCondition('MaterialReadyMix');
+	   removeCondition('MaterialBesiBetonUlir');
+	   removeCondition('MaterialBesiBetonPolos');
+	   removeCondition('MaterialBesiBangunan');
+	   removeCondition('MaterialWiremesh');
+	   removeCondition('MaterialBondex');
+	   removeCondition('MaterialAluminium');
+	   removeCondition('MaterialBajaKonvensional');
+	   removeCondition('MaterialBajaRinganStruktur');
+	   removeCondition('MaterialBajaTulangan');
+	   removeCondition('MaterialBekisting');
+	   removeCondition('MaterialBekistingBaja');
+	   removeCondition('MaterialBekistingKayu');
+	   removeCondition('MaterialSemenPortland');
+	   removeCondition('MaterialSemenInstan');
+	   removeCondition('MaterialSemenPutih');
+	   removeCondition('MaterialMortarStruktural');
+	   removeCondition('MaterialPerekatBetonEpoxy');	
+
        MaterialKons.style.visibility = 'visible';
        MaterialKonstruksiLink.style.visibility = 'visible';
        
        MaterialStrukturBangunanLink.style.visibility = 'visible';
-       //readyMixPostLink.style.visibility = 'visible';
+	
+       MaterialReadyMixLink.style.visibility = 'visible';
        pageNameMaterialKons.textContent = urlMappingMaterialReadyMix[cleanUrlMaterialKons];
     }   
   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
