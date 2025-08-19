@@ -1,8 +1,4 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-    const urlMappingReadymixPost = {
-//sampai sini      
-  
-};
 
 const urlMappingReadymixLokasiPost = {
 //JAYAMIX ATAU READY MIX TEERDEEKAT
@@ -1431,7 +1427,7 @@ if (urlMappingSloofPost[cleanUrl]) {
         SloofLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
-
+//SUB PILLAR READY MIX
 if (urlMappingReadymixLokasiPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
@@ -1556,6 +1552,499 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
+if (urlMappingReadyMixMutuPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+	
+       restoreCondition('ReadyMixMutuPost');
+       
+	
+	
+      
+    // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	  
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('DakBeton');
+     removeCondition('Pondasi');
+     removeCondition('Bekisting');
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+
+	   //hapus semua elemen sub readymix kecuali ready mix lokasi
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        ReadyMixMutuPostLink.style.visibility = 'visible';
+	
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixMutuPost[cleanUrl];
+    }
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingReadyMixMutuPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix Beton Cor Jayamix Minimix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+			   {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": "Ready Mix Mutu",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-mutu.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 6,
+                   "name": urlMappingReadyMixMutuPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+if (urlMappingReadyMixPlantPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+	
+       restoreCondition('ReadyMixPlantPost');
+       
+	
+	
+      
+    // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	  
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('DakBeton');
+     removeCondition('Pondasi');
+     removeCondition('Bekisting');
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+
+	   //hapus semua elemen sub readymix kecuali ready mix lokasi
+     	//removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixPanduanPost');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        ReadyMixPlantPostLink.style.visibility = 'visible';
+	
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixPlantPost[cleanUrl];
+    }
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingReadyMixPlantPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix Beton Cor Jayamix Minimix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+			   {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": "Ready Mix Plant",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-plant.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 6,
+                   "name": urlMappingReadyMixPlantPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+	
+       restoreCondition('ReadyMixKegunaanPost');
+      
+    // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	  
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('DakBeton');
+     removeCondition('Pondasi');
+     removeCondition('Bekisting');
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+
+	   //hapus semua elemen sub readymix kecuali ready mix lokasi
+     	//removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixPanduanPost');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        ReadyMixKegunaanPostLink.style.visibility = 'visible';
+	
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixKegunaanPost[cleanUrl];
+    }
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix Beton Cor Jayamix Minimix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+			   {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": "Ready Mix Kegunaan",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 6,
+                   "name": urlMappingReadyMixKegunaanPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+if (urlMappingReadyMixPanduanPost[cleanUrl]) {
+       restoreCondition('MaterialKonsStukturPost');
+       restoreCondition('readyMix');
+	
+       restoreCondition('ReadyMixPanduanPost');
+       
+
+    // hapus ID DIV Lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+	   removeCondition('ProdukKonsDindingModularPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+	removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	  
+   
+    //hapus elemen lain nya selain READY MIX
+     removeCondition('DakBeton');
+     removeCondition('Pondasi');
+     removeCondition('Bekisting');
+     removeCondition('Aluminium');
+     removeCondition('RingBalok');
+     removeCondition('Sloof');
+     removeCondition('SemenPortland');
+     removeCondition('BesiBetonUlir');
+     removeCondition('BesiBetonPolos');
+     removeCondition('Wiremesh');
+     removeCondition('Bondex');
+     removeCondition('BesiBangunan');
+     removeCondition('BajaKonvensional');
+     removeCondition('BajaRinganStruktur');
+     removeCondition('BajaTulangan');
+     removeCondition('Scaffolding');
+     removeCondition('BekistingBaja');
+     removeCondition('SemenInstan');
+     removeCondition('SemenPutih');
+     removeCondition('BekistingKayu');
+     removeCondition('MortarStruktural');
+     removeCondition('PerekatBetonEpoxy');
+
+	   //hapus semua elemen sub readymix kecuali ready mix lokasi
+     	//removeCondition('ReadyMixLokasiPost');
+     	removeCondition('ReadyMixMutuPost');
+     	removeCondition('ReadyMixPlantPost');
+     	removeCondition('ReadyMixKegunaanPost');
+     	removeCondition('ReadyMixLokasiPost');
+    
+       // restoreCondition('MaterialKonsStukturPost');
+       
+       MaterialKonsStukturPost.style.visibility = 'visible';
+       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+       
+        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+        readyMixLink.style.visibility = 'visible';
+        ReadyMixPanduanPostLink.style.visibility = 'visible';
+	
+        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixPanduanPost[cleanUrl];
+    }
+   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingReadyMixPanduanPost[cleanUrl]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+	       {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Material Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Material Struktur Bangunan",
+                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Ready Mix Beton Cor Jayamix Minimix",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
+               },
+			   {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": "Ready Mix Panduan",
+                   "item": "https://www.betonjayareadymix.com/p/ready-mix-panduan.html"
+               },
+               {
+                   "@type": "ListItem",
+                   "position": 6,
+                   "name": urlMappingReadyMixPanduanPost[cleanUrl],
+                   "item": cleanUrl
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
+//AKHIR SUB PILLAR READY MIX
  if (urlMappingSemenPortlandPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('SemenPortland');
