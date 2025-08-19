@@ -1034,6 +1034,13 @@ document.addEventListener("DOMContentLoaded", function() {
      var RingBalokLink = document.getElementById("RingBalok");
      var SloofLink = document.getElementById("Sloof");
      var readyMixLink = document.getElementById("readyMix");
+		//sub ready mix
+		var ReadyMixLokasiPostLink = document.getElementById("ReadyMixLokasiPost");
+	    var ReadyMixMutuPostLink = document.getElementById("ReadyMixMutuPost");
+	    var ReadyMixPlantPostLink = document.getElementById("ReadyMixPlantPost");
+	    var ReadyMixKegunaanPostLink = document.getElementById("ReadyMixKegunaanPost");
+	    var ReadyMixPanduanPostLink = document.getElementById("ReadyMixPanduanPost");
+	
      var SemenPortlandLink = document.getElementById("SemenPortland");
      var BesiBetonUlirLink = document.getElementById("BesiBetonUlir");
      var BesiBetonPolosLink = document.getElementById("BesiBetonPolos");
@@ -1065,6 +1072,12 @@ document.addEventListener("DOMContentLoaded", function() {
      RingBalokLink.style.visibility = 'hidden';
      SloofLink.style.visibility = 'hidden';
      readyMixLink.style.visibility = 'hidden';
+		ReadyMixLokasiPostLink.style.visibility = 'hidden';
+		ReadyMixMutuPostLink.style.visibility = 'hidden';
+		ReadyMixPlantPostLink.style.visibility = 'hidden';
+		ReadyMixKegunaanPostLink.style.visibility = 'hidden';
+		ReadyMixPanduanPostLink.style.visibility = 'hidden';
+
      SemenPortlandLink.style.visibility = 'hidden';
      BesiBetonUlirLink.style.visibility = 'hidden';
      BesiBetonPolosLink.style.visibility = 'hidden';
@@ -1422,6 +1435,11 @@ if (urlMappingSloofPost[cleanUrl]) {
 if (urlMappingReadymixLokasiPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
+	
+       restoreCondition('ReadyMixLokasiPost');
+       
+	
+	
       
     // hapus ID DIV Lain
 	removeCondition('JasaDesInPost');
@@ -1483,6 +1501,8 @@ if (urlMappingReadymixLokasiPost[cleanUrl]) {
        
         MaterialStrukturBangunanPostLink.style.visibility = 'visible';
         readyMixLink.style.visibility = 'visible';
+        ReadyMixLokasiPostLink.style.visibility = 'visible';
+	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadymixLokasiPost[cleanUrl];
     }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
