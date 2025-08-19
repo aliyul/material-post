@@ -292,7 +292,7 @@ const urlMappingReadymixMutuPost = {
   "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-indramayu.html": "Harga Beton Ready Mix Indramayu",
 
   //HARGA BETON JAYAMIX
-  "https://www.betonjayareadymix.com/2021/08/harga-beton-jayamix-jakarta.html": "Harga Beton Jayamix Jakarta"
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-jayamix-jakarta.html": "Harga Beton Jayamix Jakarta",
 
   //HARGA COR BETON
    "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix-bandung.html": "Harga Cor Beton Ready Mix Bandung",
