@@ -115,7 +115,6 @@ const urlMappingReadyMixLokasiPost = {
 "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bandung.html": "Beton Ready Mix Bandung",
 
 //COR BETON
- "https://www.betonjayareadymix.com/2021/08/pionir-beton-cor-bogor.html": "Pionir Beton Cor Bogor",
   "https://www.betonjayareadymix.com/2021/08/cor-beton-bekasi.html": "Cor Beton Bekasi",
   "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung",
   "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat"
@@ -684,6 +683,7 @@ const urlMappingReadyMixPlantPost = {
   "https://www.betonjayareadymix.com/2018/08/pionir-beton-bekasi.html": "Pionir Beton Bekasi",
   "https://www.betonjayareadymix.com/2018/08/pionir-beton-depok.html": "Pionir Beton Depok",
   "https://www.betonjayareadymix.com/2018/08/pionir-beton-bogor.html": "Pionir Beton Bogor",
+ "https://www.betonjayareadymix.com/2021/08/pionir-beton-cor-bogor.html": "Pionir Beton Cor Bogor",
 
   // Fresh Beton
   "https://www.betonjayareadymix.com/2018/08/fresh-beton-batching-plant.html": "Fresh Beton Batching Plant",
