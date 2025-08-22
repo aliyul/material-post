@@ -1,10 +1,11 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 
 const urlMappingReadyMixLokasiPost = {
-//JAYAMIX ATAU READY MIX TEERDEEKAT
+//JAYAMIX ATAU READY MIX ATAU COR BETON TEERDEEKAT
 "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html": "Jayamix Terdekat",
 "https://www.betonjayareadymix.com/2021/03/ready-mix-terdekat.html": "Ready Mix Terdekat",
 "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-terdekat.html": "Beton Ready Mix Terdekat",
+  "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat",
 	
 //JAYAMIX PER KOTA/KABUPATEN
 "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
@@ -116,8 +117,7 @@ const urlMappingReadyMixLokasiPost = {
 
 //COR BETON
   "https://www.betonjayareadymix.com/2021/08/cor-beton-bekasi.html": "Cor Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat"
+  "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung"
 };
 
 const urlMappingReadyMixMutuPost = {
