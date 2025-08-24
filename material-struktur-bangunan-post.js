@@ -509,9 +509,6 @@ const urlMappingReadyMixMutuPost = {
 	
  "https://www.betonjayareadymix.com/2021/03/ready-mix-murah.html": "Ready Mix Murah",
   "https://www.betonjayareadymix.com/2021/08/cor-beton-murah.html": "Cor Beton Murah",
-  "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
-"https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix",
-
 
   "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-k-200.html": "Harga Ready Mix K 200",
   "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html": "Harga Beton Ready Mix B0",
@@ -754,7 +751,10 @@ const urlMappingReadyMixPanduanPost = {
   "https://www.betonjayareadymix.com/2021/03/cara-order-ready-mix.html": "Cara Order Ready Mix",
  
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
-  "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3"
+  "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3",
+
+	 "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
+"https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix"
 
 
 
