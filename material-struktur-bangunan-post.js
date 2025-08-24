@@ -152,7 +152,6 @@ const urlMappingReadyMixLokasiPost = {
 "https://www.betonjayareadymix.com/2021/09/harga-jayamix-cilacap.html": "Harga Jayamix Cilacap",
 "https://www.betonjayareadymix.com/2021/08/harga-jayamix-kuningan.html": "Harga Jayamix Kuningan",
 "https://www.betonjayareadymix.com/2021/08/harga-jayamix-surabaya.html": "Harga Jayamix Surabaya",
-"https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-blitar.html": "Harga Jayamix Blitar",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-boyolali.html": "Harga Jayamix Boyolali",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang",
@@ -753,6 +752,8 @@ const urlMappingReadyMixPanduanPost = {
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
   "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3",
 
+	
+"https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
 	 "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
 "https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix"
 
