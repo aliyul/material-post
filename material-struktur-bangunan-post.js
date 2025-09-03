@@ -748,6 +748,7 @@ const urlMappingReadyMixPlantPost = {
 };
 
 const urlMappingReadyMixPanduanPost = {
+  "https://www.betonjayareadymix.com/2018/04/cara-ngecor.html": "Cara Ngecor",
   "https://www.betonjayareadymix.com/2021/03/perbedaan-jayamix-dan-readymix.html": "Perbedaan Jayamix dan Ready Mix",
   "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
   "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik",
