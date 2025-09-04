@@ -556,9 +556,6 @@ const urlMappingReadyMixMutuPost = {
   "https://www.betonjayareadymix.com/2018/08/harga-beton-adhimix.html": "Harga Beton Adhimix",
   "https://www.betonjayareadymix.com/2018/08/harga-adhimix-jayamix.html": "Harga Adhimix Jayamix",
 
-  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-untuk-rumah.html": "Harga Cor Beton Untuk Rumah",
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3",
-
  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-per-m3.html": "Harga Beton Ready Mix Per M3",
   "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-termurah.html": "Harga Beton Ready Mix Termurah",
   "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-terbaru.html": "Harga Beton Ready Mix Terbaru",
@@ -575,7 +572,10 @@ const urlMappingReadyMixKegunaanPost = {
   "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
   "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
 
- "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan"
+ "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",
+
+ "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-untuk-rumah.html": "Harga Cor Beton Untuk Rumah",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3"
 
 };
 
