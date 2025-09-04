@@ -480,9 +480,9 @@ const urlMappingReadyMixLokasiPost = {
 
 };
 
-cosnt urlMappingReadyMixPillarPost = {
+const urlMappingReadyMixPillarPost = {
    "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton.html": "Daftar Harga Cor Beton",
-	  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-kubik.html": "Harga Cor Beton per kubik",
+"https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-kubik.html": "Harga Cor Beton per kubik",
 "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
 "https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
 "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
