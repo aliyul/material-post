@@ -557,6 +557,7 @@ const urlMappingReadyMixPlantPost = {
 "https://www.betonjayareadymix.com/2021/03/jayamix-beton.html": "Jayamix Beton",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-beton.html": "Harga Jayamix Beton",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-m3.html": "Harga Jayamix Per M3",
+"https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-kubik.html": "Harga Jayamix Per Kubik",
 "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tiga-roda.html": "Harga Ready Mix Tiga Roda",
  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-minimix.html": "Harga Cor Beton Minimix",
  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix-per-kubik.html": "Harga Cor Beton Jayamix Per Kubik",
