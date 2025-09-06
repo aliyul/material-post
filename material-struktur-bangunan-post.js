@@ -172,6 +172,7 @@ const urlMappingReadyMixLokasiPost = {
   "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-gresik.html": "Harga Ready Mix Gresik",
   "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cikarang.html": "Harga Ready Mix Cikarang",
   "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tangerang.html": "Harga Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bekasi.html": "Harga Ready Mix Bekasi",
   "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-depok.html": "Harga Ready Mix Depok",
   "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bogor.html": "Harga Ready Mix Bogor",
   "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html": "Harga Ready Mix Cibinong",
