@@ -534,7 +534,8 @@ const urlMappingReadyMixMutuPost = {
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-275.html": "Harga Cor Beton K 275",
   "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-k225-per-m3.html": "Harga Cor Beton K225 Per M3",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k350.html": "Harga Cor Beton K350",
-  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html": "Harga Beton Cor K300 Holcim"	
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html": "Harga Beton Cor K300 Holcim",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-k300.html": "Harga Jayamix K300"
 };
 
 const urlMappingReadyMixKegunaanPost = {
