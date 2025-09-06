@@ -563,6 +563,7 @@ const urlMappingReadyMixPlantPost = {
  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-minimix.html": "Harga Cor Beton Minimix",
  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix-per-kubik.html": "Harga Cor Beton Jayamix Per Kubik",
  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",
+ "https://www.betonjayareadymix.com/2021/03/harga-1-molen-jayamix.html": "Harga 1 Molen Jayamix",
   "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton-jayamix.html": "Daftar Harga Cor Beton Jayamix",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-truk-molen.html": "Harga Cor Beton Per Truk Molen",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-molen.html": "Harga Cor Beton per Molen",
