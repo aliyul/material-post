@@ -756,7 +756,8 @@ const urlMappingReadyMixPanduanPost = {
   "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
   "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik",
   "https://www.betonjayareadymix.com/2021/03/cara-pesan-jayamix.html": "Cara Pesan Jayamix",
-  "https://www.betonjayareadymix.com/2021/03/cara-order-ready-mix.html": "Cara Order Ready Mix",
+  //"https://www.betonjayareadymix.com/2021/03/cara-order-ready-mix.html": "Cara Order Ready Mix",
+  "https://www.betonjayareadymix.com/2021/08/cara-order-ready-mix.html": "Cara Order Ready Mix",
  
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
   "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3"
