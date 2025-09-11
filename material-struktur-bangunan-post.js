@@ -484,6 +484,7 @@ const urlMappingReadyMixLokasiPost = {
 };
 
 const urlMappingReadyMixPillarPost = {
+"https://www.betonjayareadymix.com/2018/05/harga-cor-beton-bertulang-per-m3.html": "Harga Cor Beton Bertulang Per M3",
    "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton.html": "Daftar Harga Cor Beton",
 "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-kubik.html": "Harga Cor Beton per kubik",
 "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
