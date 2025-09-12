@@ -594,6 +594,7 @@ const urlMappingReadyMixPlantPost = {
   "https://www.betonjayareadymix.com/2018/08/batching-plant-prov-dki-jakarta.html": "Batching Plant Prov DKI Jakarta",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-bekasi.html": "Batching Plant Bekasi",
   "https://www.betonjayareadymix.com/2018/08/batching-plant-bogor.html": "Batching Plant Bogor",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-dynamix.html": "Batching Plant Dynamix",
 
   "https://www.betonjayareadymix.com/2018/08/dynamix-beton.html": "Dynamix Beton",
   "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html": "SCG Jayamix",
