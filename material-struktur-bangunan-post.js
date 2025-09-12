@@ -141,7 +141,7 @@ const urlMappingReadyMixLokasiPost = {
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bekasi.html": "Harga Jayamix Bekasi",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cikarang.html": "Harga Jayamix Cikarang",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibinong.html": "Harga Jayamix Cibinong",
-'https://www.betonjayareadymix.com/2018/08/harga-beton-jayamix-cibinong.html": "Harga Beton Jayamix Cibinong",
+"https://www.betonjayareadymix.com/2018/08/harga-beton-jayamix-cibinong.html": "Harga Beton Jayamix Cibinong",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cileungsi.html": "Harga Jayamix Cileungsi",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cilegon.html": "Harga Jayamix Cilegon",
 "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",
