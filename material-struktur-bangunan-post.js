@@ -120,6 +120,7 @@ const urlMappingReadyMixLokasiPost = {
   "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung",
 
 //HARGA BETON COR
+"https://www.betonjayareadymix.com/2021/12/harga-beton-cor-jabodetabek.html": "Harga Beton Cor Jabodetabek",
 "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html": "Harga Beton Cor Bogor",
   "https://www.betonjayareadymix.com/2018/09/harga-cor-beton-ready-mix-jakarta.html": "Harga Cor Beton Ready Mix Jakarta",
   "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-bekasi.html": "Harga Beton Cor Bekasi",
