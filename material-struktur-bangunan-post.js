@@ -553,6 +553,7 @@ const urlMappingReadyMixKegunaanPost = {
 
  "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",
 
+"https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jalan-per-m3.html": "Harga Cor Beton Jalan Per M3",
 "https://www.betonjayareadymix.com/2021/08/harga-cor-beton-dinding.html": "Harga Cor Beton Dinding",
  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-untuk-rumah.html": "Harga Cor Beton Untuk Rumah",
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3"
