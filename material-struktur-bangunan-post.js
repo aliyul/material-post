@@ -298,6 +298,7 @@ const urlMappingReadyMixLokasiPost = {
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sepatan.html": "Harga Ready Mix Sepatan",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisoka.html": "Harga Ready Mix Cisoka",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-batu-ceper.html": "Harga Ready Mix Batu Ceper",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-neglasari-kota-tangerang.html": "Harga Ready Mix Neglasari Kota Tangerang",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-benda-kota-tangerang.html": "Harga Ready Mix Benda Kota Tangerang",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibodas-kota-tangerang.html": "Harga Ready Mix Cibodas Kota Tangerang",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-setu-tangerang-selatan.html": "Harga Ready Mix Setu Tangerang Selatan",
