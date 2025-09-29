@@ -1522,7 +1522,6 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
     }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   /*
    if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
@@ -1573,7 +1572,6 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
-   */
 	
 if (urlMappingReadyMixPillarPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
