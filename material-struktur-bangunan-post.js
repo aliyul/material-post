@@ -1448,7 +1448,7 @@ if (urlMappingSloofPost[cleanUrl]) {
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
 //SUB PILLAR READY MIX
-/*if (urlMappingReadyMixLokasiPost[cleanUrl]) {
+if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
 	
@@ -1520,7 +1520,7 @@ if (urlMappingSloofPost[cleanUrl]) {
         ReadyMixLokasiPostLink.style.visibility = 'visible';
 	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
-    }*/
+    }
    // ✅ Tambahkan JSON-LD Breadcrumb otomatis
    if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        const jsonLDBreadcrumb = {
