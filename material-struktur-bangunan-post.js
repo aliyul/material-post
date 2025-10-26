@@ -1571,7 +1571,62 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+	   try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }
+
+}
 	
 if (urlMappingReadyMixPillarPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -1687,7 +1742,62 @@ if (urlMappingReadyMixPillarPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+
+try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }
+}
 
 if (urlMappingReadyMixMutuPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -1812,16 +1922,67 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+	try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }	
+}
 if (urlMappingReadyMixPlantPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
 	
        restoreCondition('ReadyMixPlantPost');
        
-	
-	
-      
     // hapus ID DIV Lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
@@ -1936,7 +2097,61 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+	   try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }
+}
 if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
@@ -2057,7 +2272,61 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+     try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }	   
+}
 if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
@@ -2179,7 +2448,61 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-   }
+
+   try {
+	    // --- pastikan data meta tersedia ---
+	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+	      return;
+	    }
+	
+	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
+	      const index = urls.indexOf(cleanUrl);
+	      const totalPosts = urls.length;
+	
+	      // --- adaptasi durasi offset ---
+	      let baseOffsetSec;
+	      if (totalPosts <= 50) baseOffsetSec = 30;
+	      else if (totalPosts <= 200) baseOffsetSec = 90;
+	      else baseOffsetSec = 240;
+	
+	      // --- deterministik offset ---
+	      const seed = index * 37 + (index % 7) * 13;
+	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
+	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
+	
+	      // --- buat tanggal akhir ---
+	      const baseDate = new Date(dateModified);
+	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
+	      const isoDate = finalDate.toISOString();
+	
+	      // --- update meta tag di head ---
+	      const metas = [
+	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+	        ['meta[name="dateModified"]', 'name', 'dateModified'],
+	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+	      ];
+	
+	      metas.forEach(([selector, attrName, attrValue]) => {
+	        let meta = document.querySelector(selector);
+	        if (!meta) {
+	          meta = document.createElement("meta");
+	          meta.setAttribute(attrName, attrValue);
+	          document.head.appendChild(meta);
+	        }
+	        meta.setAttribute("content", isoDate);
+	      });
+	
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
+	    } else {
+	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
+	    }
+	
+	  } catch (err) {
+	    console.error("[HybridDateModified] Error:", err);
+	  }	
+}
 
 //AKHIR SUB PILLAR READY MIX
  if (urlMappingSemenPortlandPost[cleanUrl]) {
