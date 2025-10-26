@@ -1454,9 +1454,6 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
 	
        restoreCondition('ReadyMixLokasiPost');
        
-	
-	
-      
     // hapus ID DIV Lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
@@ -1618,7 +1615,26 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);	   
-	
+
+		   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
+		   
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }
@@ -1787,7 +1803,24 @@ try {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	
+	      // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }
@@ -1961,6 +1994,24 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
 
+		// ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }	
@@ -2132,7 +2183,25 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    
+
+		   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }
@@ -2304,7 +2373,25 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	
+
+		 // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }	   
@@ -2477,7 +2564,25 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
+
+	   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
+			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+			if (schemaEl) {
+			  try {
+			    const schemaData = JSON.parse(schemaEl.textContent.trim());
+			    schemaData.dateModified = isoDate; // update dari variable terbaru
+			
+			    // optional: update jadwal perawatan berikutnya juga
+			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+			
+			    // tulis ulang schema dengan nilai terbaru
+			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+			  } catch (err) {
+			    console.error("❌ Gagal memperbarui schema maintenance:", err);
+			  }
+			}
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }	
