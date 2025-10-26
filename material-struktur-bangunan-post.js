@@ -1617,10 +1617,7 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
 	        meta.setAttribute("content", isoDate);
 	      });
 	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
+	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);	   
 	
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
@@ -1790,9 +1787,6 @@ try {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
 	
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
@@ -1969,10 +1963,7 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
-	
+
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }	
@@ -2144,10 +2135,7 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
-	
+	    
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }
@@ -2319,9 +2307,6 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
 	
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
@@ -2495,10 +2480,7 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
 	      });
 	
 	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    } else {
-	      console.warn(`[HybridDateModified] URL ${cleanUrl} tidak ada di mapping.`);
-	    }
-	
+	    	
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }	
