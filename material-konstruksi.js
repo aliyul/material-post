@@ -261,7 +261,7 @@ const cleanUrlMaterialKons = window.location.href.split(/[?#]/)[0]; // Menghilan
     }
      // === Tanggal nextUpdate1 global ===
 	const globalNextUpdate1 = "2026-02-17T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrlMaterialKons}`);
+	console.log(`🌐 [AutoMeta] Detected material-konstruksi page: ${cleanUrlMaterialKons}`);
 
     // Cek apakah meta sudah ada
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
