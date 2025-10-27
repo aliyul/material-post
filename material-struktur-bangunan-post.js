@@ -1,5 +1,4 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-
 const urlMappingReadyMixLokasiPost = {
 //JAYAMIX ATAU READY MIX ATAU COR BETON TEERDEEKAT
 "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html": "Jayamix Terdekat",
@@ -1003,6 +1002,14 @@ const urlMappingSemenPutihPost = {
 
 };
 
+function loadExternalJS(src) {
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true; // biar tidak menghambat eksekusi utama
+  document.head.appendChild(script);
+}
+
+
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsMaterialKonsStukturPost = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
@@ -1455,7 +1462,7 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        restoreCondition('ReadyMixLokasiPost');
        
     // hapus ID DIV Lain
-	removeCondition('JasaDesInPost');
+	    removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPembatasPost');
@@ -1569,6 +1576,28 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
+	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
 	   try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
@@ -1633,8 +1662,6 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
 			    console.error("❌ Gagal memperbarui schema maintenance:", err);
 			  }
 			}
-
-		   
 	  } catch (err) {
 	    console.error("[HybridDateModified] Error:", err);
 	  }
@@ -1757,7 +1784,29 @@ if (urlMappingReadyMixPillarPost[cleanUrl]) {
        document.head.appendChild(script);
 
 
-try {
+	   	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-19T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
+     try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
 	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
@@ -1947,6 +1996,28 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
+	   	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-20T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
 	try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
@@ -2137,6 +2208,30 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
+	   
+
+	   	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-21T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
 	   try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
@@ -2327,6 +2422,30 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
+	   
+
+	   	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-22T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
      try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
@@ -2518,6 +2637,28 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
+	   	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-23T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+// buat dateMofified teratur
    try {
 	    // --- pastikan data meta tersedia ---
 	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
