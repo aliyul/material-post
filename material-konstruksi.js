@@ -255,13 +255,13 @@ const cleanUrlMaterialKons = window.location.href.split(/[?#]/)[0]; // Menghilan
 
 
     // --- cek apakah URL termasuk dalam mapping gabungan ---
-    if (!urlMappingGabungan[cleanUrl]) {
-      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrl}`);
+    if (!urlMappingGabungan[cleanUrlMaterialKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialKons}`);
       return;
     }
      // === Tanggal nextUpdate1 global ===
 	const globalNextUpdate1 = "2026-02-17T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrlMaterialKons}`);
 
     // Cek apakah meta sudah ada
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
