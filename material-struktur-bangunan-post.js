@@ -1150,7 +1150,7 @@ document.addEventListener("DOMContentLoaded", function() {
       meta.setAttribute("content", isoDate);
     });
 
-    console.log(`✅ [HybridDateModified v2.5] ${cleanUrlMaterialKons} → ${isoDate} | type=${type || "-"}`);
+    console.log(`✅ [HybridDateModified v2.5] ${cleanUrl} → ${isoDate} | type=${type || "-"}`);
 
     // 🧩 Perbarui schema jika ada
     const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
