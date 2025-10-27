@@ -771,10 +771,6 @@ const urlMappingReadyMixPanduanPost = {
   "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",
   "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3"
 
-	
-
-
-
 };
 
 
@@ -1037,10 +1033,156 @@ function restoreCondition(conditionId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+	
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-  
+
+	
+	     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+	loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+
+	/* ==========================================================
+   🧩 HybridDateModified v2.4 — StableHash + Flexible Mapping
+   Fitur:
+   - Update <meta dateModified> hanya jika URL terdaftar di urlMappingGabungan
+   - Gunakan stable hash agar nilai dateModified tidak berubah selamanya
+   - Aman walau jumlah URL bertambah (urutan tidak pengaruh)
+   ========================================================== */
+(function runHybridDateModified() {
+  try {
+    // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},  
+		urlMappingReadyMixLokasiPost,
+		urlMappingReadyMixPillarPost,
+		urlMappingReadyMixMutuPost,
+		urlMappingReadyMixKegunaanPost,
+		urlMappingReadyMixPlantPost,
+		urlMappingReadyMixPanduanPost,
+		urlMappingDakBetonPost,
+		urlMappingPondasiPost,
+		urlMappingSloofPost,
+		urlMappingRingBalokPost,
+		urlMappingSemenPortlandPost,
+		urlMappingSemenInstanPost,
+		urlMappingBesiBangunanPost,
+		urlMappingBajaKonvensionalPost,
+		urlMappingBajaRinganStrukturPost,
+		urlMappingBekistingPost,
+		urlMappingAluminiumPost,
+		urlMappingBajaTulanganPost,
+		urlMappingWiremeshPost,
+		urlMappingBondexPost,
+		urlMappingBesiBetonUlirPost,
+		urlMappingBesiBetonPolosPost,
+		urlMappingBekistingBajaPost,
+		urlMappingBekistingKayuPost,
+		urlMappingScaffoldingPost,
+		urlMappingPerekatBetonEpoxyPost,
+		urlMappingMortarStrukturalPost,
+		urlMappingSemenPutihPost
+    );
+
+    // --- ambil URL aktif (tanpa query dan slash di akhir) ---
+    const cleanUrl = window.location.pathname.replace(/\/$/, "");
+
+    // --- cek apakah URL termasuk dalam mapping gabungan ---
+    if (!urlMappingGabungan[cleanUrl]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrl}`);
+      return;
+    }
+
+    // --- pastikan AEDMetaDates tersedia ---
+    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+      return;
+    }
+
+    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+
+    // ======================================================
+    // 🔒 STABLE HASH GENERATOR
+    // ======================================================
+    function stableHash(str) {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0; // ubah jadi 32-bit integer
+      }
+      return Math.abs(hash);
+    }
+
+    const hash = stableHash(cleanUrl);
+    const offsetSeconds = (hash % 86400); // offset stabil ≤ 24 jam
+    const baseDate = new Date(dateModified);
+    const finalDate = new Date(baseDate.getTime() + offsetSeconds * 1000);
+    const isoDate = finalDate.toISOString();
+
+    // ======================================================
+    // 🧱 UPDATE META TAG
+    // ======================================================
+    const metas = [
+      ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+      ['meta[name="dateModified"]', 'name', 'dateModified'],
+      ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+    ];
+
+    metas.forEach(([selector, attrName, attrValue]) => {
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute(attrName, attrValue);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute("content", isoDate);
+    });
+
+    console.log(
+      `✅ [HybridDateModified v2.4] ${cleanUrl} → ${isoDate} (stable) | type=${type || "-"}`
+    );
+
+    // ======================================================
+    // 🧩 UPDATE SCHEMA MAINTENANCE (opsional)
+    // ======================================================
+    const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
+    if (schemaEl) {
+      try {
+        const schemaData = JSON.parse(schemaEl.textContent.trim());
+        schemaData.dateModified = isoDate;
+        if (schemaData.maintenanceSchedule) {
+          schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
+        }
+        schemaEl.textContent = JSON.stringify(schemaData, null, 2);
+        console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+      } catch (err) {
+        console.error("❌ Gagal memperbarui schema maintenance:", err);
+      }
+    }
+
+  } catch (err) {
+    console.error("[HybridDateModified] Error:", err);
+  }
+})();
+
      // Menemukan elemen menggunakan ID
      var MaterialKonsStukturPost = document.getElementById("MaterialKonsStukturPost");
     if (!MaterialKonsStukturPost) {
@@ -1575,97 +1717,6 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-	   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixLokasiPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);	   
-
-		   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }
-
 }
 	
 if (urlMappingReadyMixPillarPost[cleanUrl]) {
@@ -1782,97 +1833,6 @@ if (urlMappingReadyMixPillarPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-
-	   	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-19T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-     try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixPillarPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	      // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }
 }
 
 if (urlMappingReadyMixMutuPost[cleanUrl]) {
@@ -1995,97 +1955,6 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-20T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-	try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixMutuPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-
-		// ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 if (urlMappingReadyMixPlantPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -2207,99 +2076,6 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-
-	   	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-21T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-	   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixPlantPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-
-		   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }
 }
 if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -2421,99 +2197,6 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-
-	   	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-22T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-     try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixKegunaanPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-
-		 // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	   
 }
 if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -2636,97 +2319,6 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-23T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-   loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
-// buat dateMofified teratur
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingReadyMixPanduanPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-
-	   // ---------- Jika konten berubah, update dateModified di schema maintenance ----------
-			const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-			if (schemaEl) {
-			  try {
-			    const schemaData = JSON.parse(schemaEl.textContent.trim());
-			    schemaData.dateModified = isoDate; // update dari variable terbaru
-			
-			    // optional: update jadwal perawatan berikutnya juga
-			    schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-			
-			    // tulis ulang schema dengan nilai terbaru
-			    schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-			    console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
-			  } catch (err) {
-			    console.error("❌ Gagal memperbarui schema maintenance:", err);
-			  }
-			}
-
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 
 //AKHIR SUB PILLAR READY MIX
@@ -2840,56 +2432,6 @@ if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingSemenPortlandPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }		   
 }
 if (urlMappingSemenInstanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -3001,58 +2543,6 @@ if (urlMappingSemenInstanPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingSemenInstanPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 if (urlMappingBajaKonvensionalPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -3162,58 +2652,6 @@ if (urlMappingBajaKonvensionalPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBajaKonvensionalPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }		   
 }
 if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -3323,58 +2761,6 @@ if (urlMappingBajaRinganStrukturPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBajaRinganStrukturPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 if (urlMappingBajaTulanganPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
@@ -3484,57 +2870,6 @@ if (urlMappingBajaTulanganPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBajaTulanganPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingWiremeshPost[cleanUrl]) {
@@ -3646,57 +2981,6 @@ if (urlMappingWiremeshPost[cleanUrl]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
 	   
-      
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingWiremeshPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	 
 }
 	
 if (urlMappingBondexPost[cleanUrl]) {
@@ -3806,58 +3090,6 @@ if (urlMappingBondexPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBondexPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingBesiBetonUlirPost[cleanUrl]) {
@@ -3967,58 +3199,6 @@ if (urlMappingBesiBetonUlirPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBesiBetonUlirPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingBesiBetonPolosPost[cleanUrl]) {
@@ -4129,58 +3309,6 @@ if (urlMappingBesiBetonPolosPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBesiBetonPolosPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingBekistingBajaPost[cleanUrl]) {
@@ -4291,58 +3419,6 @@ if (urlMappingBekistingBajaPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBekistingBajaPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingBekistingKayuPost[cleanUrl]) {
@@ -4452,58 +3528,6 @@ if (urlMappingBekistingKayuPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-     
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBekistingKayuPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }		   
 }
 	
 if (urlMappingScaffoldingPost[cleanUrl]) {
@@ -4614,58 +3638,6 @@ if (urlMappingScaffoldingPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-	   
-      
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingScaffoldingPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	   
 }
 	
 if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
@@ -4776,58 +3748,6 @@ if (urlMappingPerekatBetonEpoxyPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingPerekatBetonEpoxyPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingMortarStrukturalPost[cleanUrl]) {
@@ -4937,58 +3857,6 @@ if (urlMappingMortarStrukturalPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingMortarStrukturalPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingSemenPutihPost[cleanUrl]) {
@@ -5098,58 +3966,6 @@ if (urlMappingSemenPutihPost[cleanUrl]) {
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingSemenPutihPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
 }
 	
 if (urlMappingBesiBangunanPost[cleanUrl]) {
@@ -5259,59 +4075,6 @@ if (urlMappingBesiBangunanPost[cleanUrl]) {
        const script = document.createElement('script');
        script.type = 'application/ld+json';
        script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-
-	   
-   try {
-	    // --- pastikan data meta tersedia ---
-	    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-	      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
-	      return;
-	    }
-	
-	    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
-		  const urls = Object.keys(urlMappingBesiBangunanPost);
-	      const index = urls.indexOf(cleanUrl);
-	      const totalPosts = urls.length;
-	
-	      // --- adaptasi durasi offset ---
-	      let baseOffsetSec;
-	      if (totalPosts <= 50) baseOffsetSec = 30;
-	      else if (totalPosts <= 200) baseOffsetSec = 90;
-	      else baseOffsetSec = 240;
-	
-	      // --- deterministik offset ---
-	      const seed = index * 37 + (index % 7) * 13;
-	      const randomFactor = (seed % 50) + 10; // 10–60 detik stabil
-	      const totalOffsetSec = baseOffsetSec * index + randomFactor;
-	
-	      // --- buat tanggal akhir ---
-	      const baseDate = new Date(dateModified);
-	      const finalDate = new Date(baseDate.getTime() + totalOffsetSec * 1000);
-	      const isoDate = finalDate.toISOString();
-	
-	      // --- update meta tag di head ---
-	      const metas = [
-	        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-	        ['meta[name="dateModified"]', 'name', 'dateModified'],
-	        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-	      ];
-	
-	      metas.forEach(([selector, attrName, attrValue]) => {
-	        let meta = document.querySelector(selector);
-	        if (!meta) {
-	          meta = document.createElement("meta");
-	          meta.setAttribute(attrName, attrValue);
-	          document.head.appendChild(meta);
-	        }
-	        meta.setAttribute("content", isoDate);
-	      });
-	
-	      console.log(`✅ [HybridDateModified] ${cleanUrl} → ${isoDate} | index=${index + 1}/${totalPosts} | type=${type || "-"}`);
-	    	
-	  } catch (err) {
-	    console.error("[HybridDateModified] Error:", err);
-	  }	
-	
+       document.head.appendChild(script);	
    }
    });
