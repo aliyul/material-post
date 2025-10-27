@@ -998,12 +998,7 @@ const urlMappingSemenPutihPost = {
 
 };
 
-function loadExternalJS(src) {
-  const script = document.createElement("script");
-  script.src = src;
-  script.async = true; // biar tidak menghambat eksekusi utama
-  document.head.appendChild(script);
-}
+
 
 
 // Menyimpan elemen yang dihapus dalam variabel
@@ -1037,23 +1032,32 @@ document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-    // --- ambil URL aktif (tanpa query dan slash di akhir) ---
-    //const cleanUrl = window.location.pathname.replace(/\/$/, "");
-	
-	
-	/* ==========================================================
-   🧩 HybridDateModified v2.4 — StableHash + Flexible Mapping
+   
+/* ==========================================================
+   🧩 HybridDateModified v2.5 — StableHash + Safe Load Order
    Fitur:
-   - Update <meta dateModified> hanya jika URL terdaftar di urlMappingGabungan
-   - Gunakan stable hash agar nilai dateModified tidak berubah selamanya
-   - Aman walau jumlah URL bertambah (urutan tidak pengaruh)
+   - Menjamin detect-evergreen.js dimuat lebih dulu
+   - Update <meta dateModified> hanya jika URL terdaftar
+   - Stable hash → hasil dateModified konsisten
    ========================================================== */
-(function runHybridDateModified() {
+(async function runHybridDateModified() {
   try {
+    // --- helper untuk load eksternal JS secara promise ---
+    function loadExternalJSAsync(src) {
+      return new Promise((resolve, reject) => {
+        const s = document.createElement("script");
+        s.src = src;
+        s.async = true;
+        s.onload = () => resolve(src);
+        s.onerror = () => reject(new Error("Gagal load " + src));
+        document.head.appendChild(s);
+      });
+    }
+
     // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
-      {},  
-		urlMappingReadyMixLokasiPost,
+      {},
+      urlMappingReadyMixLokasiPost,
 		urlMappingReadyMixPillarPost,
 		urlMappingReadyMixMutuPost,
 		urlMappingReadyMixKegunaanPost,
@@ -1083,102 +1087,87 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingSemenPutihPost
     );
 
-
-    // --- cek apakah URL termasuk dalam mapping gabungan ---
+    // --- validasi URL terdaftar ---
     if (!urlMappingGabungan[cleanUrl]) {
       console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrl}`);
       return;
     }
-     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
 
-    // Cek apakah meta sudah ada
+    const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
+    console.log(`🌐 [AutoMeta] Detected material-struktur-bangunan-post: ${cleanUrl}`);
+
+    // --- pastikan meta nextUpdate1 ada ---
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
     if (!metaNextUpdate1) {
       metaNextUpdate1 = document.createElement("meta");
       metaNextUpdate1.setAttribute("name", "nextUpdate1");
       metaNextUpdate1.setAttribute("content", globalNextUpdate1);
       document.head.appendChild(metaNextUpdate1);
-
       console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
     } else {
       console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
     }
 
-	loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+    // --- pastikan detect-evergreen.js selesai dimuat ---
+    await loadExternalJSAsync("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+    console.log("✅ detect-evergreen.js selesai dimuat.");
 
-    // --- pastikan AEDMetaDates tersedia ---
+    // --- pastikan AEDMetaDates sudah tersedia ---
     if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan.");
+      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan, skip update.");
       return;
     }
 
-    const { dateModified, datePublished, nextUpdate, type } = window.AEDMetaDates;
+    const { dateModified, nextUpdate, type } = window.AEDMetaDates;
 
-    // ======================================================
-    // 🔒 STABLE HASH GENERATOR
-    // ======================================================
+    // 🔒 Stable hash untuk variasi waktu stabil
     function stableHash(str) {
       let hash = 0;
       for (let i = 0; i < str.length; i++) {
         hash = (hash << 5) - hash + str.charCodeAt(i);
-        hash |= 0; // ubah jadi 32-bit integer
+        hash |= 0;
       }
       return Math.abs(hash);
     }
 
     const hash = stableHash(cleanUrl);
-    const offsetSeconds = (hash % 86400); // offset stabil ≤ 24 jam
-    const baseDate = new Date(dateModified);
-    const finalDate = new Date(baseDate.getTime() + offsetSeconds * 1000);
+    const offsetSeconds = hash % 86400;
+    const finalDate = new Date(new Date(dateModified).getTime() + offsetSeconds * 1000);
     const isoDate = finalDate.toISOString();
 
-    // ======================================================
-    // 🧱 UPDATE META TAG
-    // ======================================================
-    const metas = [
+    // 🧱 Update meta dateModified
+    [
       ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
       ['meta[name="dateModified"]', 'name', 'dateModified'],
       ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-    ];
-
-    metas.forEach(([selector, attrName, attrValue]) => {
+    ].forEach(([selector, attr, val]) => {
       let meta = document.querySelector(selector);
       if (!meta) {
         meta = document.createElement("meta");
-        meta.setAttribute(attrName, attrValue);
+        meta.setAttribute(attr, val);
         document.head.appendChild(meta);
       }
       meta.setAttribute("content", isoDate);
     });
 
-    console.log(
-      `✅ [HybridDateModified v2.4] ${cleanUrl} → ${isoDate} (stable) | type=${type || "-"}`
-    );
+    console.log(`✅ [HybridDateModified v2.5] ${cleanUrlMaterialKons} → ${isoDate} | type=${type || "-"}`);
 
-    // ======================================================
-    // 🧩 UPDATE SCHEMA MAINTENANCE (opsional)
-    // ======================================================
+    // 🧩 Perbarui schema jika ada
     const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
     if (schemaEl) {
       try {
-        const schemaData = JSON.parse(schemaEl.textContent.trim());
-        schemaData.dateModified = isoDate;
-        if (schemaData.maintenanceSchedule) {
-          schemaData.maintenanceSchedule.scheduledTime = nextUpdate;
-        }
-        schemaEl.textContent = JSON.stringify(schemaData, null, 2);
-        console.log(`✅ [AED] Schema maintenance diperbarui: dateModified → ${isoDate}`);
+        const data = JSON.parse(schemaEl.textContent.trim());
+        data.dateModified = isoDate;
+        if (data.maintenanceSchedule) data.maintenanceSchedule.scheduledTime = nextUpdate;
+        schemaEl.textContent = JSON.stringify(data, null, 2);
+        console.log(`🔄 Schema maintenance diperbarui → dateModified: ${isoDate}`);
       } catch (err) {
-        console.error("❌ Gagal memperbarui schema maintenance:", err);
+        console.error("❌ Gagal update schema:", err);
       }
     }
 
   } catch (err) {
-    console.error("[HybridDateModified] Error:", err);
+    console.error("[HybridDateModified] Fatal error:", err);
   }
 })();
 
