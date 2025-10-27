@@ -1037,29 +1037,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrl = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-
+    // --- ambil URL aktif (tanpa query dan slash di akhir) ---
+    //const cleanUrl = window.location.pathname.replace(/\/$/, "");
 	
-	     // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
-
-    // Cek apakah meta sudah ada
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-
-    // Jika belum ada, buat meta baru
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-	loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-
+	
 	/* ==========================================================
    🧩 HybridDateModified v2.4 — StableHash + Flexible Mapping
    Fitur:
@@ -1102,14 +1083,32 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingSemenPutihPost
     );
 
-    // --- ambil URL aktif (tanpa query dan slash di akhir) ---
-    const cleanUrl = window.location.pathname.replace(/\/$/, "");
 
     // --- cek apakah URL termasuk dalam mapping gabungan ---
     if (!urlMappingGabungan[cleanUrl]) {
       console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrl}`);
       return;
     }
+     // === Tanggal nextUpdate1 global ===
+	const globalNextUpdate1 = "2026-02-18T00:00:00.000Z";
+	console.log(`🌐 [AutoMeta] Detected ReadyMix page: ${cleanUrl}`);
+
+    // Cek apakah meta sudah ada
+    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
+
+    // Jika belum ada, buat meta baru
+    if (!metaNextUpdate1) {
+      metaNextUpdate1 = document.createElement("meta");
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      document.head.appendChild(metaNextUpdate1);
+
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+    } else {
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+    }
+
+	loadExternalJS("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
 
     // --- pastikan AEDMetaDates tersedia ---
     if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
