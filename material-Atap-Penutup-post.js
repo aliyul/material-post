@@ -241,12 +241,6 @@ document.addEventListener("DOMContentLoaded", function() {
      AtapBitumenLink.style.visibility = 'hidden';
      TalangAtapLink.style.visibility = 'hidden';
      SekrupAtapLink.style.visibility = 'hidden';
-     CatEksteriorLink.style.visibility = 'hidden';
-     CatTembokLuarLink.style.visibility = 'hidden';
-     PlesterEksteriorLink.style.visibility = 'hidden';
-     BatuAlamDindingLink.style.visibility = 'hidden';
-     KeramikEksteriorLink.style.visibility = 'hidden';
-	
      pageNameMaterialKonsAtapPenutupPost.textContent = ""; 
  
     if (!MaterialKonstruksiAtapPenutupPostLink || !pageNameMaterialKonsAtapPenutupPost) {
