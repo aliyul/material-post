@@ -209,6 +209,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
      var MaterialKonstruksiAtapPenutupPostLink = document.getElementById("MaterialKonstruksiAtapPenutupPost");
      var MaterialAtapPenutupPostLink = document.getElementById("MaterialAtapPenutupPost");
+    // var MaterialKonsFasadPelapisEksteriorPostLink = document.getElementById("MaterialKonsFasadPelapisEksteriorPost");
+
+	
 	
      var GentengLink = document.getElementById("Genteng");
      var GentengTanahLiatLink = document.getElementById("GentengTanahLiat");
@@ -226,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
      //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
   
      MaterialAtapPenutupPost.style.visibility = 'hidden';
-    // MaterialKonstruksiFasadPelapisEksteriorPostLink.style.visibility = 'hidden';
+    // MaterialKonsFasadPelapisEksteriorPostLink.style.visibility = 'hidden';
      MaterialAtapPenutupPostLink.style.visibility = 'hidden';
      
      GentengLink.style.visibility = 'hidden';
