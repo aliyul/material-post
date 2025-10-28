@@ -1,4 +1,3 @@
- // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 //SUB MaterialFasadPelapisEksteriorPost
 const urlMappingPanelFasadPost = {
 
