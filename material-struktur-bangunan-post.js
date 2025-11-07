@@ -363,6 +363,14 @@ const urlMappingReadyMixLokasiPost = {
   "https://www.betonjayareadymix.com/2018/07/harga-jayamix-karangtengah-kota-tangerang.html": "Harga Jayamix Karangtengah Kota Tangerang",
   "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jatiuwung-kota-tangerang.html": "Harga Jayamix Jatiuwung Kota Tangerang",
   "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipondoh-kota-tangerang.html": "Harga Jayamix Cipondoh Kota Tangerang",
+
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciputat-timur.html": "Harga Jayamix Ciputat Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamulang.html": "Harga Jayamix Pamulang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pondok-aren.html": "Harga Jayamix Pondok Aren",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-ciputat.html": "Harga Ready Mix Ciputat",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pondok-aren.html": "Harga Ready Mix Pondok Aren",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pamulang.html": "Harga Ready Mix Pamulang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciputat-timur.html": "Harga Ready Mix Ciputat Timur",
 	  
     "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciomas-kab-bogor.html": "Harga Jayamix Ciomas Kab Bogor",
     "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciomas-kab-bogor.html": "Harga Ready Mix Ciomas Kab Bogor",
