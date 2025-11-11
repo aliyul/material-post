@@ -218,6 +218,26 @@ const urlMappingReadyMixLokasiPost = {
   "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-bandung.html": "Harga Cor Beton Bandung",
   "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-depok.html": "Harga Cor Beton Depok",
 
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kuningan.html": "Harga Ready Mix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-pangandaran.html": "Harga Ready Mix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-indramayu.html": "Harga Ready Mix Indramayu",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cirebon.html": "Harga Ready Mix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cianjur.html": "Harga Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-ciamis.html": "Harga Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sukabumi.html": "Harga Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-subang.html": "Harga Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-majalengka.html": "Harga Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-purwakarta.html": "Harga Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-garut.html": "Harga Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-blitar.html": "Harga Ready Mix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kediri.html": "Harga Ready Mix Kediri",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sidoarjo.html": "Harga Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-malang.html": "Harga Ready Mix Malang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-semarang.html": "Harga Ready Mix Semarang",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html": "Harga Ready Mix Jombang",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-jogja.html": "Harga Jayamix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-boyolali.html": "Ready Mix Boyolali",
+
 //HARGA PER KECAMATAN
   "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",
   "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html": "Harga Ready Mix Tegalwaru Kab Karawang",
@@ -626,7 +646,7 @@ const urlMappingReadyMixKegunaanPost = {
 //JENIS MUTU
  "https://www.betonjayareadymix.com/2021/03/jenis-beton-ready-mix.html": "Jenis Beton Ready Mix",
 "https://www.betonjayareadymix.com/2021/03/fungsi-beton-ready-mix.html": "Fungsi Beton Ready Mix",
- 
+   "https://www.betonjayareadymix.com/2021/03/ready-mix-asphalt.html": "Ready Mix Asphalt",
   "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
   "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
 
