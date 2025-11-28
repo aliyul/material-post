@@ -26,6 +26,7 @@ const urlMappingMaterialStrukturBangunan = {
   "https://www.betonjayareadymix.com/p/besi-beton-polos.html": "Besi Beton Polos",
   "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
   "https://www.betonjayareadymix.com/p/bondex.html": "Bondex",
+  "https://www.betonjayareadymix.com/p/scaffolding.html": "scaffolding",
   "https://www.betonjayareadymix.com/p/besi-bangunan.html": "Besi Bangunan",
   "https://www.betonjayareadymix.com/p/baja-konvensional.html": "Baja Konvensional",
   "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html": "Baja Ringan Struktur",
