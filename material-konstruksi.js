@@ -170,7 +170,7 @@ const urlMappingMaterialKonstruksiKhusus = {
 };
 const urlMappingMaterialKonstruksiKelistrikan = {
 "https://www.betonjayareadymix.com/p/kabel-listrik.html": "Kabel Listrik",
-    "https://www.betonjayareadymix.com/p/instalasi-listrik.html": "Instalasi Listrik",
+   // buat di jasa aja "https://www.betonjayareadymix.com/p/instalasi-listrik.html": "Instalasi Listrik",
     "https://www.betonjayareadymix.com/p/stopkontak.html": "Stopkontak",
     "https://www.betonjayareadymix.com/p/pipa-kabel.html": "Pipa Kabel",
     "https://www.betonjayareadymix.com/p/panel-listrik.html": "Panel Listrik",
