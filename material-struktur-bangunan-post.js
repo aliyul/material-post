@@ -1085,7 +1085,8 @@ const urlMappingAluminiumPost = {
 };
 
 const urlMappingBajaTulanganPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-beton.html": "Harga Besi Beton",
+  "https://www.betonjayareadymix.com/2019/05/besi-beton.html": "Besi Beton",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton.html": "Harga Besi Beton",
     "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-per-kg.html": "Harga Besi Beton per Kg",
   "https://www.betonjayareadymix.com/2019/05/daftar-harga-besi-beton.html": "Daftar Harga Besi Beton",
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm-per-batang.html": "Harga Besi Beton 12mm per Batang",
@@ -1109,9 +1110,10 @@ const urlMappingBajaTulanganPost = {
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang",
   "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir.html": "Besi Beton Ulir",
 	
-"https://www.betonjayareadymix.com/2019/04/harga-besi-behel.html": "Harga Besi Behel"
+  "https://www.betonjayareadymix.com/2019/05/besi-beton-polos.html": "Besi Beton Polos",
 
-
+"https://www.betonjayareadymix.com/2019/05/besi-behel.html": "Besi Behel",
+"https://www.betonjayareadymix.com/2019/05/harga-besi-behel.html": "Harga Besi Behel"
 };
 
 const urlMappingWiremeshPost = {
