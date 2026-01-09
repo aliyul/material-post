@@ -958,7 +958,6 @@ const urlMappingBajaKonvensionalPost = {
   "https://www.betonjayareadymix.com/2019/04/harga-besi-h-beam.html": "Harga Besi H Beam",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-pipa.html": "Harga Besi Pipa",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-plat.html": "Harga Besi Plat",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-behel.html": "Harga Besi Behel",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-siku.html": "Harga Besi Siku",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-unp.html": "Harga Besi UNP",
   "https://www.betonjayareadymix.com/2019/04/harga-besi-cnp.html": "Harga Besi CNP",
@@ -1107,7 +1106,11 @@ const urlMappingBajaTulanganPost = {
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-13-mm.html": "Harga Besi Beton Ulir 13 mm",
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-16-mm.html": "Harga Besi Beton Ulir 16 mm",
   "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-batang.html": "Harga Besi Beton Ulir per Batang",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang"
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang",
+  "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir.html": "Besi Beton Ulir",
+	
+"https://www.betonjayareadymix.com/2019/04/harga-besi-behel.html": "Harga Besi Behel"
+
 
 };
 
