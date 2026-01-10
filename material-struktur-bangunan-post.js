@@ -1123,11 +1123,30 @@ const urlMappingBajaTulanganPost = {
 };
 
 const urlMappingWiremeshPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-wiremesh.html": "Harga Besi Wiremesh"
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-wiremesh-dan-besi-beton.html": "Perbedaan Wiremesh dan Besi Beton",
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-jalan-beton.html": "Wiremesh untuk Jalan Beton",
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-plat-lantai.html": "Wiremesh untuk Plat Lantai",
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-m6.html": "Wiremesh M6",
+  "https://www.betonjayareadymix.com/2019/05/jenis-wiremesh.html": "Jenis Wiremesh",
+  "https://www.betonjayareadymix.com/2019/05/berat-wiremesh-per-lembar.html": "Berat Wiremesh per Lembar",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-wiremesh.html": "Ukuran Wiremesh",
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m10.html": "Harga Wiremesh M10",
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m8.html": "Harga Wiremesh M8",
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh.html": "Harga Wiremesh",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-wiremesh.html": "Harga Besi Wiremesh"
 
 };
 const urlMappingBondexPost = {
-
+"https://www.betonjayareadymix.com/2019/05/bondex-galvanis.html": "Bondex Galvanis",
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-bondex-dan-floordeck.html": "Perbedaan Bondex dan Floordeck",
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-dak-beton.html": "Bondex untuk Dak Beton",
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-plat-lantai.html": "Bondex untuk Plat Lantai",
+  "https://www.betonjayareadymix.com/2019/05/berat-bondex.html": "Berat Bondex",
+  "https://www.betonjayareadymix.com/2019/05/tebal-bondex.html": "Tebal Bondex",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bondex.html": "Ukuran Bondex",
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-meter.html": "Harga Bondex per Meter",
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-lembar.html": "Harga Bondex per Lembar",
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex.html": "Harga Bondex"
 
 };
 const urlMappingBesiBetonUlirPost = {
