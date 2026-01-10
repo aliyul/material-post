@@ -951,7 +951,13 @@ const urlMappingSemenInstanPost = {
 
 };
 const urlMappingBesiBangunanPost = {
-"https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan"
+"https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan",
+ "https://www.betonjayareadymix.com/2019/04/besi-bangunan-harga-terbaru.html": "Besi Bangunan Harga Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/toko-besi-bangunan-terdekat.html": "Toko Besi Bangunan Terdekat",
+  "https://www.betonjayareadymix.com/2019/04/distributor-besi-bangunan-terlengkap.html": "Distributor Besi Bangunan Terlengkap",
+  "https://www.betonjayareadymix.com/2019/04/supplier-besi-bangunan-harga-grosir.html": "Supplier Besi Bangunan Harga Grosir",
+  "https://www.betonjayareadymix.com/2019/04/daftar-produk-besi-bangunan.html": "Daftar Produk Besi Bangunan",
+  "https://www.betonjayareadymix.com/2019/04/promo-diskon-besi-bangunan.html": "Promo & Diskon Besi Bangunan"
  
 };
 const urlMappingBajaKonvensionalPost = {
