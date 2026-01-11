@@ -1181,7 +1181,15 @@ const urlMappingBekistingBajaPost = {
 	
 };
 const urlMappingBekistingKayuPost = {
-
+"https://www.betonjayareadymix.com/2019/05/harga-bekisting-kayu.html": "Harga Bekisting Kayu",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-dak-beton.html": "Bekisting Kayu untuk Dak Beton",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-kolom.html": "Bekisting Kayu untuk Kolom",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-sloof.html": "Bekisting Kayu untuk Sloof",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu--ring-balok.html": "Bekisting Kayu untuk Ring Balok",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bekisting-kayu.html": "Ukuran Bekisting Kayu",
+  "https://www.betonjayareadymix.com/2019/05/tebal-bekisting-kayu.html": "Tebal Bekisting Kayu",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-jalan-beton.html": "Bekisting Kayu untuk Jalan Beton",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-laminasi.html": "Bekisting Kayu Laminasi"
 
 };
 const urlMappingScaffoldingPost = {
