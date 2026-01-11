@@ -1082,7 +1082,17 @@ const urlMappingBajaRinganStrukturPost = {
 
   };
 const urlMappingBekistingPost = {
- // "https://www.betonjayareadymix.com/2019/04/harga-besi-aluminium.html": "Harga Besi Aluminium"
+ "https://www.betonjayareadymix.com/2019/05/harga-bekisting.html": "Harga Bekisting",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-panel.html": "Bekisting Panel",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-modular.html": "Bekisting Modular",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-plastik.html": "Bekisting Plastik",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-aluminum.html": "Bekisting Aluminum",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-dak-beton.html": "Bekisting Dak Beton",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kolom.html": "Bekisting Kolom",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-sloof.html": "Bekisting Sloof",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-ring-balok.html": "Bekisting Ring Balok",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-pracetak.html": "Bekisting Beton Pracetak",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-ready-mix.html": "Bekisting Beton Ready Mix"
 
 };
 const urlMappingAluminiumPost = {
@@ -1157,8 +1167,18 @@ const urlMappingBesiBetonPolosPost = {
 
 };
 const urlMappingBekistingBajaPost = {
-
-
+  "https://www.betonjayareadymix.com/2019/05/harga-bekisting-baja.html": "Harga Bekisting Baja",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ringan.html": "Bekisting Baja Ringan",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-modular.html": "Bekisting Baja Modular",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-dak.html": "Bekisting Baja Dak",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-kolom.html": "Bekisting Baja Kolom",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-sloof.html": "Bekisting Baja Sloof",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ring-balok.html": "Bekisting Baja Ring Balok",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-pracetak.html": "Bekisting Baja Pracetak",
+  "https://www.betonjayareadymix.com/2019/05/perbandingan-bekisting-baja-vs-kayu.html": "Perbandingan Bekisting Baja vs Kayu",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-untuk-jalan-beton.html": "Bekisting Baja untuk Jalan Beton",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-galvanis.html": "Bekisting Baja Galvanis"
+	
 };
 const urlMappingBekistingKayuPost = {
 
