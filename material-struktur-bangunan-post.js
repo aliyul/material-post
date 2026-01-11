@@ -1096,7 +1096,21 @@ const urlMappingBekistingPost = {
 
 };
 const urlMappingAluminiumPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-aluminium.html": "Harga Besi Aluminium"
+    "https://www.betonjayareadymix.com/2019/05/aluminium-anti-karat.html": "Aluminium Anti Karat untuk Konstruksi Bangunan",
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-aluminium-dan-baja-ringan.html": "Perbedaan Aluminium dan Baja Ringan untuk Konstruksi",
+  "https://www.betonjayareadymix.com/2019/05/jenis-aluminium-bangunan.html": "Jenis Aluminium Bangunan dan Kegunaannya",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-acp.html": "Harga Aluminium ACP Terbaru",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-acp.html": "Aluminium ACP (Aluminium Composite Panel)",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-foil-bangunan.html": "Aluminium Foil untuk Bangunan",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-profil.html": "Aluminium Profil untuk Konstruksi",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-kanopi.html": "Aluminium untuk Kanopi",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-partisi.html": "Aluminium untuk Partisi Bangunan",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-pintu-jendela.html": "Aluminium untuk Pintu dan Jendela",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-per-kg.html": "Harga Aluminium per Kg",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-lembaran.html": "Aluminium Lembaran untuk Konstruksi",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-hollow.html": "Harga Aluminium Hollow Terbaru",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-hollow.html": "Aluminium Hollow untuk Bangunan",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium.html": "Harga Aluminium Terbaru"
 
 };
 
