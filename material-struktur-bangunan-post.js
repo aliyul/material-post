@@ -1207,7 +1207,16 @@ const urlMappingBekistingKayuPost = {
 
 };
 const urlMappingScaffoldingPost = {
-
+"https://www.betonjayareadymix.com/2019/05/harga-scaffolding.html": "Harga Scaffolding Terbaru",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-frame.html": "Scaffolding Frame",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-andang.html": "Scaffolding Andang",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-pipa.html": "Scaffolding Pipa",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-ringlock.html": "Scaffolding Ringlock",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-cuplock.html": "Scaffolding Cuplock",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-galvanis.html": "Scaffolding Galvanis",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-baja.html": "Scaffolding Baja",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-modular.html": "Scaffolding Modular",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-scaffolding.html": "Ukuran Scaffolding Standar Proyek"
 
 };
 const urlMappingPerekatBetonEpoxyPost = {
