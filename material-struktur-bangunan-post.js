@@ -1452,15 +1452,46 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-     // Menemukan elemen menggunakan ID
-     var MaterialKonsStukturPost = document.getElementById("MaterialKonsStukturPost");
-    if (!MaterialKonsStukturPost) {
-        console.error("elemen Id MaterialKonsStukturPost kondisi terhapus");
-        return;
+	 // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+      urlMappingReadyMixLokasiPost,
+		urlMappingReadyMixPillarPost,
+		urlMappingReadyMixMutuPost,
+		urlMappingReadyMixKegunaanPost,
+		urlMappingReadyMixPlantPost,
+		urlMappingReadyMixPanduanPost,
+		urlMappingDakBetonPost,
+		urlMappingPondasiPost,
+		urlMappingSloofPost,
+		urlMappingRingBalokPost,
+		urlMappingSemenPortlandPost,
+		urlMappingSemenInstanPost,
+		urlMappingBesiBangunanPost,
+		urlMappingBajaKonvensionalPost,
+		urlMappingBajaRinganStrukturPost,
+		urlMappingBekistingPost,
+		urlMappingAluminiumPost,
+		urlMappingBajaTulanganPost,
+		urlMappingWiremeshPost,
+		urlMappingBondexPost,
+		urlMappingBesiBetonUlirPost,
+		urlMappingBesiBetonPolosPost,
+		urlMappingBekistingBajaPost,
+		urlMappingBekistingKayuPost,
+		urlMappingScaffoldingPost,
+		urlMappingPerekatBetonEpoxyPost,
+		urlMappingMortarStrukturalPost,
+		urlMappingSemenPutihPost
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrl]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrl}`);
+      return;
     }
 
-	         
-           	      	          (async function runHybridDateModified() {
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -1541,6 +1572,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+	
+     // Menemukan elemen menggunakan ID
+     var MaterialKonsStukturPost = document.getElementById("MaterialKonsStukturPost");
+    if (!MaterialKonsStukturPost) {
+        console.error("elemen Id MaterialKonsStukturPost kondisi terhapus");
+        return;
+    }
 	
      var MaterialKonstruksiStukturPostLink = document.getElementById("MaterialKonstruksiStukturPost");
      var MaterialStrukturBangunanPostLink = document.getElementById("MaterialStrukturBangunanPost");
