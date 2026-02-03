@@ -397,14 +397,35 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-     // Menemukan elemen menggunakan ID
-     var MaterialKons = document.getElementById("MaterialKons");
-    if (!MaterialKons) {
-        console.error("elemen Id MaterialKons kondisi terhapus");
-        return;
+
+	// --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+      urlMappingMaterialKons,
+      urlMappingMaterialStrukturBangunan,
+      urlMappingMaterialReadyMix,
+      urlMappingMaterialDindingPenutup,
+      urlMappingMaterialPekerjaanTanahJalan,
+      urlMappingMaterialPlumbingSaluran,
+      urlMappingMaterialAtapPenutup,
+      urlMappingMaterialFasadPelapisEksterior,
+      urlMappingMaterialFinishingInterior,
+      urlMappingMaterialInsulasiAkustik,
+      urlMappingMaterialWaterproofingPelapis,
+      urlMappingMaterialGeosintetikDrainase,
+      urlMappingMaterialKonstruksiKhusus,
+      urlMappingMaterialKonstruksiKelistrikan,
+      urlMappingMaterialModularPrefabrikasi,
+      urlMappingMaterialLainnya
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlMaterialKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialKons}`);
+      return;
     }
-	
-	    (async function runHybridDateModified() {
+
+     (async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -485,6 +506,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+	
+     // Menemukan elemen menggunakan ID
+     var MaterialKons = document.getElementById("MaterialKons");
+    if (!MaterialKons) {
+        console.error("elemen Id MaterialKons kondisi terhapus");
+        return;
+    }
 	
      var MaterialKonstruksiLink = document.getElementById("MaterialKonstruksi");
      //var MaterialStrukturBangunanLink = document.getElementById("MaterialStrukturBangunan");
