@@ -249,15 +249,28 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-	
-     // Menemukan elemen menggunakan ID
-     var MaterialAtapPenutupPost = document.getElementById("MaterialAtapPenutupPost");
-    if (!MaterialAtapPenutupPost) {
-        console.error("elemen Id MaterialAtapPenutupPost kondisi terhapus");
-        return;
+
+	 // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingGentengPost,
+		urlMappingGentengTanahLiatPost,
+		urlMappingGentengBetonPost,
+		urlMappingGentengKeramikPost,
+		urlMappingAtapSpandekPost,
+		urlMappingAtapZincalumePost,
+		urlMappingAtapBitumenPost,
+		urlMappingTalangAtapPost,
+		urlMappingSekrupAtapPost
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlMaterialAtapPenutupPost]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialAtapPenutupPost}`);
+      return;
     }
 
-           	      	          (async function runHybridDateModified() {
+	 (async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -338,6 +351,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+	
+     // Menemukan elemen menggunakan ID
+     var MaterialAtapPenutupPost = document.getElementById("MaterialAtapPenutupPost");
+    if (!MaterialAtapPenutupPost) {
+        console.error("elemen Id MaterialAtapPenutupPost kondisi terhapus");
+        return;
+    }
 
 
      var MaterialKonstruksiAtapPenutupPostLink = document.getElementById("MaterialKonstruksiAtapPenutupPost");
