@@ -246,14 +246,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-     // Menemukan elemen menggunakan ID
-     var MaterialKonsFasadPelapisEksteriorPost = document.getElementById("MaterialKonsFasadPelapisEksteriorPost");
-    if (!MaterialKonsFasadPelapisEksteriorPost) {
-        console.error("elemen Id MaterialKonsFasadPelapisEksteriorPost kondisi terhapus");
-        return;
+
+	 // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingPanelFasadPost,
+		urlMappingExpandedMetalPost,
+		urlMappingGranitExteriorPost,
+		urlMappingCladdingFasadPost,
+		urlMappingGrcFasadPost,
+		urlMappingLouversPost,
+		urlMappingSunShadingPost,
+		urlMappingCatEksteriorPost,
+		urlMappingCatTembokLuarPost,
+	 	urlMappingPlesterEksteriorPost,
+		urlMappingBatuAlamDindingPost,
+		urlMappingKeramikEksteriorPost
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlMaterialFasadPelapisEksteriorPost]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialFasadPelapisEksteriorPost}`);
+      return;
     }
-       
-           	      	          (async function runHybridDateModified() {
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -334,6 +350,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+     // Menemukan elemen menggunakan ID
+     var MaterialKonsFasadPelapisEksteriorPost = document.getElementById("MaterialKonsFasadPelapisEksteriorPost");
+    if (!MaterialKonsFasadPelapisEksteriorPost) {
+        console.error("elemen Id MaterialKonsFasadPelapisEksteriorPost kondisi terhapus");
+        return;
+    }
 
      var MaterialKonstruksiFasadPelapisEksteriorPostLink = document.getElementById("MaterialKonstruksiFasadPelapisEksteriorPost");
      var MaterialFasadPelapisEksteriorPostLink = document.getElementById("MaterialFasadPelapisEksteriorPost");
