@@ -10,44 +10,136 @@
 */
 
 //SUB MaterialAtapPenutupPost
-const urlMappingGentengPost = {
+// ============================================================
+// MATERIAL ATAP PENUTUP - GENTENG & TURUNAN
+// Parent: Material Atap Penutup (/p/material-atap-penutup.html)
+// ============================================================
 
+// ============================================================
+// [VARIANT] - GENTENG (PAGE)
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Genteng
+// ============================================================
+
+const urlMappingGentengPost = {
+  // "https://www.betonjayareadymix.com/p/genteng.html": "Genteng [VARIANT]",
+  // "https://www.betonjayareadymix.com/2021/06/harga-genteng-terbaru.html": "Harga Genteng Terbaru [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/jenis-genteng-rumah.html": "Jenis Genteng Rumah [SUB1]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - GENTENG TANAH LIAT
+// 🧠 STATUS: SEMUA URL DI BAWAH INI ADALAH [MONEY PAGE] - TIDAK ADA KONTEN (hanya navigasi)
+// 📌 SARAN: Buat konten lengkap atau redirect ke halaman utama Genteng Tanah Liat
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Genteng Tanah Liat > [Nama Post]
+// ============================================================
 
 const urlMappingGentengTanahLiatPost = {
-    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-asli.html": "Genteng Karang Pilang Asli",
-    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-jakarta.html": "Genteng Karang Pilang Jakarta",
-    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-di-bogor.html": "Genteng Karang Pilang Di Bogor",
-    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-anti-lumut.html": "Genteng Karang Pilang Anti Lumut",
-    "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-ambulu.html": "Genteng Karang Pilang Ambulu"
-
+  // [MONEY PAGE] - GENTENG KARANG PILANG
+  // 🧠 STATUS: KONTEN KOSONG (hanya navigasi) - PERLU DILENGKAPI
+  "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-asli.html": "Genteng Karang Pilang Asli",
+  "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-jakarta.html": "Genteng Karang Pilang Jakarta",
+  "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-di-bogor.html": "Genteng Karang Pilang Di Bogor",
+  "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-anti-lumut.html": "Genteng Karang Pilang Anti Lumut",
+  "https://www.betonjayareadymix.com/2021/06/genteng-karang-pilang-ambulu.html": "Genteng Karang Pilang Ambulu"
 };
+
+// ============================================================
+// [SUB-VARIANT] - GENTENG BETON
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Genteng Beton > [Nama Post]
+// ============================================================
 
 const urlMappingGentengBetonPost = {
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-genteng-beton.html": "Harga Genteng Beton [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/genteng-beton-murah.html": "Genteng Beton Murah [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/genteng-beton-pasir.html": "Genteng Beton Pasir [VARIANT]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - GENTENG KERAMIK
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Genteng Keramik > [Nama Post]
+// ============================================================
 
 const urlMappingGentengKeramikPost = {
-  
+  // "https://www.betonjayareadymix.com/2021/06/harga-genteng-keramik.html": "Harga Genteng Keramik [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/genteng-keramik-roman.html": "Genteng Keramik Roman [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/genteng-keramik-malaysia.html": "Genteng Keramik Malaysia [MONEY PAGE]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - ATAP SPANDEK
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Atap Spandek > [Nama Post]
+// ============================================================
 
 const urlMappingAtapSpandekPost = {
-
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-atap-spandek.html": "Harga Atap Spandek [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/atap-spandek-per-meter.html": "Atap Spandek Per Meter [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/atap-spandek-warna.html": "Atap Spandek Warna [VARIANT]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - ATAP ZINCALUME
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Atap Zincalume > [Nama Post]
+// ============================================================
+
 const urlMappingAtapZincalumePost = {
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-atap-zincalume.html": "Harga Atap Zincalume [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/atap-zincalume-per-meter.html": "Atap Zincalume Per Meter [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/zincalume-vs-spandek.html": "Zincalume vs Spandek [SUB1]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - ATAP BITUMEN
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Atap Bitumen > [Nama Post]
+// ============================================================
+
 const urlMappingAtapBitumenPost = {
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-atap-bitumen.html": "Harga Atap Bitumen [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/atap-bitumen-onduline.html": "Atap Bitumen Onduline [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/kelebihan-atap-bitumen.html": "Kelebihan Atap Bitumen [SUB1]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - TALANG ATAP
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Talang Atap > [Nama Post]
+// ============================================================
+
 const urlMappingTalangAtapPost = {
-
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-talang-atap.html": "Harga Talang Atap [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/talang-atap-seng.html": "Talang Atap Seng [VARIANT]",
+  // "https://www.betonjayareadymix.com/2021/06/talang-atap-pvc.html": "Talang Atap PVC [VARIANT]"
 };
+
+// ============================================================
+// [SUB-VARIANT] - SEKRUP ATAP
+// 🧠 STATUS: PERLU DIBUAT
+// Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > Sekrup Atap > [Nama Post]
+// ============================================================
+
 const urlMappingSekrupAtapPost = {
-
+  // "https://www.betonjayareadymix.com/2021/06/harga-sekrup-atap.html": "Harga Sekrup Atap [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2021/06/sekrup-atap-galvanis.html": "Sekrup Atap Galvanis [VARIANT]",
+  // "https://www.betonjayareadymix.com/2021/06/sekrup-atap-baja-ringan.html": "Sekrup Atap Baja Ringan [VARIANT]"
 };
+/*
+Jenis TYPE yang digunakan:
+
+[VARIANT] — halaman material spesifik di bawah SUB2
+
+[SUB-VARIANT] — halaman turunan dari VARIANT
+
+[MONEY PAGE] — halaman transaksional (harga, jual, beli)
+
+[SUB1] — halaman panduan/bridge
+
+
+*/
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsMaterialAtapPenutupPost = {};
