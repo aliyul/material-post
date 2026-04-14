@@ -1,49 +1,150 @@
 //SUB MaterialFasadPelapisEksteriorPost
-const urlMappingPanelFasadPost = {
+// ============================================================
+// MATERIAL FASAD PELAPIS EKSTERIOR - POST
+// Parent: Material Fasad Pelapis Eksterior (/p/material-fasad-pelapis-eksterior.html)
+// 🧠 SEO NOTE: Semua URL di bawah ini adalah [MONEY PAGE] untuk target keyword material fasad.
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > [Nama Material]
+// ============================================================
 
+// ============================================================
+// [VARIANT] - PANEL FASAD
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Panel Fasad
+// ============================================================
+
+const urlMappingPanelFasadPost = {
+  // "https://www.betonjayareadymix.com/2019/04/harga-panel-fasad.html": "Harga Panel Fasad [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/jenis-panel-fasad.html": "Jenis Panel Fasad [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/04/cara-pasang-panel-fasad.html": "Cara Pasang Panel Fasad [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - EXPANDED METAL
+// 🧠 STATUS: AKTIF (konten lengkap)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Expanded Metal
+// ============================================================
 
 const urlMappingExpandedMetalPost = {
-"https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal"
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal"
 };
+
+// ============================================================
+// [VARIANT] - GRANIT EXTERIOR
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Granit Exterior
+// ============================================================
 
 const urlMappingGranitExteriorPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-granit-exterior.html": "Harga Granit Exterior [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/ukuran-granit-exterior.html": "Ukuran Granit Exterior [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - CLADDING FASAD
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cladding Fasad
+// ============================================================
+
 const urlMappingCladdingFasadPost = {
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-cladding-fasad.html": "Harga Cladding Fasad [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/jenis-cladding-fasad.html": "Jenis Cladding Fasad [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - GRC FASAD
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > GRC Fasad
+// ============================================================
+
 const urlMappingGrcFasadPost = {
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-grc-fasad.html": "Harga GRC Fasad [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/ukuran-grc-fasad.html": "Ukuran GRC Fasad [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - LOUVERS
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Louvers
+// ============================================================
+
 const urlMappingLouversPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-louvers.html": "Harga Louvers [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/jenis-louvers-ventilasi.html": "Jenis Louvers Ventilasi [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - SUN SHADING
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Sun Shading
+// ============================================================
+
 const urlMappingSunShadingPost = {
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-sun-shading.html": "Harga Sun Shading [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/jenis-sun-shading-fasad.html": "Jenis Sun Shading Fasad [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - CAT EKSTERIOR
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cat Eksterior
+// ============================================================
+
 const urlMappingCatEksteriorPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-cat-eksterior.html": "Harga Cat Eksterior [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/merk-cat-eksterior-terbaik.html": "Merk Cat Eksterior Terbaik [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - CAT TEMBOK LUAR
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cat Tembok Luar
+// ============================================================
+
 const urlMappingCatTembokLuarPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-cat-tembok-luar.html": "Harga Cat Tembok Luar [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/cara-memilih-cat-tembok-luar.html": "Cara Memilih Cat Tembok Luar [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - PLESTER EKSTERIOR
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Plester Eksterior
+// ============================================================
+
 const urlMappingPlesterEksteriorPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-plester-eksterior.html": "Harga Plester Eksterior [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/cara-plester-eksterior.html": "Cara Plester Eksterior [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - BATU ALAM DINDING
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Batu Alam Dinding
+// ============================================================
+
 const urlMappingBatuAlamDindingPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-batu-alam-dinding.html": "Harga Batu Alam Dinding [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/jenis-batu-alam-dinding.html": "Jenis Batu Alam Dinding [SUB1]"
 };
+
+// ============================================================
+// [VARIANT] - KERAMIK EKSTERIOR
+// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Keramik Eksterior
+// ============================================================
+
 const urlMappingKeramikEksteriorPost = {
-
-
+  // "https://www.betonjayareadymix.com/2019/04/harga-keramik-eksterior.html": "Harga Keramik Eksterior [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/04/ukuran-keramik-eksterior.html": "Ukuran Keramik Eksterior [SUB1]"
 };
+
+/*
+Jenis TYPE yang digunakan:
+
+[MONEY PAGE] — halaman transaksional (harga, jual, beli)
+
+[SUB1] — halaman panduan/pendidikan (bridge ke MONEY page)
+*/
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsMaterialKonsFasadPelapisEksteriorPost = {};
