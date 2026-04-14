@@ -1,66 +1,350 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
-const urlMappingMaterialKons = {
- //"https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix Beton Cor Jayamix Minimix"
-   "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",
-  "https://www.betonjayareadymix.com/p/material-dinding-penutup.html": "Material Dinding Penutup",
-  "https://www.betonjayareadymix.com/p/material-pekerjaan-tanah-jalan.html": "Material Pekerjaan Tanah Jalan",
-  "https://www.betonjayareadymix.com/p/material-plumbing-saluran.html": "Material Plumbing Saluran",
-  "https://www.betonjayareadymix.com/p/material-atap-penutup.html": "Material Atap Penutup",
-  "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html": "Material Fasad Pelapis Eksterior",
-  "https://www.betonjayareadymix.com/p/material-finishing-interior.html": "Material Finishing Interior",
-  "https://www.betonjayareadymix.com/p/material-insulasi-akustik.html": "Material Insulasi Akustik",
-  "https://www.betonjayareadymix.com/p/material-waterproofing-pelapis.html": "Material Waterproofing Pelapis",
-  "https://www.betonjayareadymix.com/p/material-geosintetik-drainase.html": "Material Geosintetik Drainase",
-  "https://www.betonjayareadymix.com/p/material-konstruksi-khusus.html": "Material Konstruksi Khusus",
-  "https://www.betonjayareadymix.com/p/material-konstruksi-kelistrikan.html": "Material Konstruksi Kelistrikan",
-  "https://www.betonjayareadymix.com/p/material-modular-prefabrikasi.html": "Material Modular Prefabrikasi",
-  "https://www.betonjayareadymix.com/p/material-lainnya.html": "Material Lainnya"
+// ============================================================
+// MATERIAL KONSTRUKSI (PILLAR) - SUB2 & VARIANT
+// ============================================================
+// 🧠 SEO NOTE: Setiap item adalah sub dari nama mapping-nya sendiri.
+// Parent: Material Konstruksi (/p/material-konstruksi.html)
+// ============================================================
 
+const urlMappingMaterialKons = {
+  // ============================================================
+  // [SUB2] - MATERIAL STRUKTUR BANGUNAN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",
+
+  // ============================================================
+  // [SUB2] - MATERIAL DINDING PENUTUP
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-dinding-penutup.html": "Material Dinding Penutup",
+
+  // ============================================================
+  // [SUB2] - MATERIAL PEKERJAAN TANAH JALAN
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Pekerjaan Tanah Jalan
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-pekerjaan-tanah-jalan.html": "Material Pekerjaan Tanah Jalan",
+
+  // ============================================================
+  // [SUB2] - MATERIAL PLUMBING SALURAN
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Plumbing Saluran
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-plumbing-saluran.html": "Material Plumbing Saluran",
+
+  // ============================================================
+  // [SUB2] - MATERIAL ATAP PENUTUP
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Atap Penutup
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-atap-penutup.html": "Material Atap Penutup",
+
+  // ============================================================
+  // [SUB2] - MATERIAL FASAD PELAPIS EKSTERIOR
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html": "Material Fasad Pelapis Eksterior",
+
+  // ============================================================
+  // [SUB2] - MATERIAL FINISHING INTERIOR
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Finishing Interior
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-finishing-interior.html": "Material Finishing Interior",
+
+  // ============================================================
+  // [SUB2] - MATERIAL INSULASI AKUSTIK
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Insulasi Akustik
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-insulasi-akustik.html": "Material Insulasi Akustik",
+
+  // ============================================================
+  // [SUB2] - MATERIAL WATERPROOFING PELAPIS
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Waterproofing Pelapis
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-waterproofing-pelapis.html": "Material Waterproofing Pelapis",
+
+  // ============================================================
+  // [SUB2] - MATERIAL GEOSINTETIK DRAINASE
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Geosintetik Drainase
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-geosintetik-drainase.html": "Material Geosintetik Drainase",
+
+  // ============================================================
+  // [SUB2] - MATERIAL KONSTRUKSI KHUSUS
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Khusus
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-konstruksi-khusus.html": "Material Konstruksi Khusus",
+
+  // ============================================================
+  // [SUB2] - MATERIAL KONSTRUKSI KELISTRIKAN
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Kelistrikan
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-konstruksi-kelistrikan.html": "Material Konstruksi Kelistrikan",
+
+  // ============================================================
+  // [SUB2] - MATERIAL MODULAR PREFABRIKASI
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Modular Prefabrikasi
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-modular-prefabrikasi.html": "Material Modular Prefabrikasi",
+
+  // ============================================================
+  // [SUB2] - MATERIAL LAINNYA
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Lainnya
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/material-lainnya.html": "Material Lainnya"
 };
+
+// ============================================================
+// SUB MAPPING - MATERIAL STRUKTUR BANGUNAN
+// ============================================================
+
 const urlMappingMaterialStrukturBangunan = {
-"https://www.betonjayareadymix.com/p/bekisting.html": "Bekisting",
-"https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
+  // ============================================================
+  // [VARIANT] - BEKISTING
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/bekisting.html": "Bekisting",
+
+  // ============================================================
+  // [VARIANT] - ALUMINIUM
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Aluminium
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
+
+  // ============================================================
+  // [VARIANT] - READY MIX
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix",
+
+  // ============================================================
+  // [VARIANT] - SEMEN PORTLAND
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland
+  // ============================================================
   "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
- // "https://www.betonjayareadymix.com/p/besi-beton-ulir.html": "Besi Beton Ulir",
-  //"https://www.betonjayareadymix.com/p/besi-beton-polos.html": "Besi Beton Polos",
+
+  // ============================================================
+  // [VARIANT] - WIREMESH
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Wiremesh
+  // ============================================================
   "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
+
+  // ============================================================
+  // [VARIANT] - BONDEX
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bondex
+  // ============================================================
   "https://www.betonjayareadymix.com/p/bondex.html": "Bondex",
-  "https://www.betonjayareadymix.com/p/scaffolding.html": "scaffolding",
+
+  // ============================================================
+  // [VARIANT] - SCAFFOLDING
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Scaffolding
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/scaffolding.html": "Scaffolding",
+
+  // ============================================================
+  // [VARIANT] - BESI BANGUNAN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Besi Bangunan
+  // ============================================================
   "https://www.betonjayareadymix.com/p/besi-bangunan.html": "Besi Bangunan",
+
+  // ============================================================
+  // [VARIANT] - BAJA KONVENSIONAL
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Konvensional
+  // ============================================================
   "https://www.betonjayareadymix.com/p/baja-konvensional.html": "Baja Konvensional",
+
+  // ============================================================
+  // [VARIANT] - BAJA RINGAN STRUKTUR
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Ringan Struktur
+  // ============================================================
   "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html": "Baja Ringan Struktur",
+
+  // ============================================================
+  // [VARIANT] - BAJA TULANGAN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Tulangan
+  // ============================================================
   "https://www.betonjayareadymix.com/p/baja-tulangan.html": "Baja Tulangan",
+
+  // ============================================================
+  // [VARIANT] - BEKISTING BAJA
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting Baja
+  // ============================================================
   "https://www.betonjayareadymix.com/p/bekisting-baja.html": "Bekisting Baja",
+
+  // ============================================================
+  // [VARIANT] - SEMEN INSTAN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan
+  // ============================================================
   "https://www.betonjayareadymix.com/p/semen-instan.html": "Semen Instan",
+
+  // ============================================================
+  // [VARIANT] - SEMEN PUTIH
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Putih
+  // ============================================================
   "https://www.betonjayareadymix.com/p/semen-putih.html": "Semen Putih",
+
+  // ============================================================
+  // [VARIANT] - BEKISTING KAYU
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting Kayu
+  // ============================================================
   "https://www.betonjayareadymix.com/p/bekisting-kayu.html": "Bekisting Kayu",
+
+  // ============================================================
+  // [VARIANT] - MORTAR STRUKTURAL
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Mortar Struktural
+  // ============================================================
   "https://www.betonjayareadymix.com/p/mortar-struktural.html": "Mortar Struktural",
+
+  // ============================================================
+  // [VARIANT] - PEREKAT BETON EPOXY
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Perekat Beton Epoxy
+  // ============================================================
   "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
 };
 
-//SUB READY MIX
+// ============================================================
+// SUB MAPPING - MATERIAL READY MIX
+// ============================================================
+
 const urlMappingMaterialReadyMix = {
+  // ============================================================
+  // [SUB-VARIANT] - READY MIX LOKASI
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Ready Mix Lokasi
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-lokasi.html": "Ready Mix Lokasi",
+
+  // ============================================================
+  // [SUB-VARIANT] - READY MIX MUTU
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Ready Mix Mutu
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-mutu.html": "Ready Mix Mutu",
+
+  // ============================================================
+  // [SUB-VARIANT] - READY MIX KEGUNAAN
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Ready Mix Kegunaan
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html": "Ready Mix Kegunaan",
+
+  // ============================================================
+  // [SUB-VARIANT] - READY MIX PLANT
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Ready Mix Plant
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-plant.html": "Ready Mix Plant",
+
+  // ============================================================
+  // [SUB-VARIANT] - READY MIX PANDUAN
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Ready Mix Panduan
+  // ============================================================
   "https://www.betonjayareadymix.com/p/ready-mix-panduan.html": "Ready Mix Panduan"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL DINDING PENUTUP
+// ============================================================
+
 const urlMappingMaterialDindingPenutup = {
- "https://www.betonjayareadymix.com/p/bata-merah-tanah-liat.html": "Bata Merah Tanah Liat",
+  // ============================================================
+  // [VARIANT] - BATA MERAH TANAH LIAT
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Bata Merah Tanah Liat
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/bata-merah-tanah-liat.html": "Bata Merah Tanah Liat",
+
+  // ============================================================
+  // [VARIANT] - BATAKO PRESS / BETON
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Batako Press / Beton
+  // ============================================================
   "https://www.betonjayareadymix.com/p/batako-press-beton.html": "Batako Press / Beton",
+
+  // ============================================================
+  // [VARIANT] - BATA RINGAN HEBEL / AAC BLOCK
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Bata Ringan Hebel / AAC Block
+  // ============================================================
   "https://www.betonjayareadymix.com/p/bata-ringan-hebel-aac.html": "Bata Ringan Hebel / AAC Block",
-  "https://www.betonjayareadymix.com/p/grc-board.html": "GRC Board (Glassfiber Reinforced Cement)",
+
+  // ============================================================
+  // [VARIANT] - GRC BOARD
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > GRC Board
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/grc-board.html": "GRC Board",
+
+  // ============================================================
+  // [VARIANT] - PAPAN SEMEN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Papan Semen
+  // ============================================================
   "https://www.betonjayareadymix.com/p/papan-semen.html": "Papan Semen",
+
+  // ============================================================
+  // [VARIANT] - GYPSUM BOARD
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Gypsum Board
+  // ============================================================
   "https://www.betonjayareadymix.com/p/gypsum-board.html": "Gypsum Board",
+
+  // ============================================================
+  // [VARIANT] - PAPAN FIBER SEMEN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Papan Fiber Semen
+  // ============================================================
   "https://www.betonjayareadymix.com/p/papan-fiber-semen.html": "Papan Fiber Semen",
+
+  // ============================================================
+  // [VARIANT] - PLESTERAN SEMEN
+  // 🧠 STATUS: AKTIF (konten lengkap)
+  // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup > Plesteran Semen
+  // ============================================================
   "https://www.betonjayareadymix.com/p/plesteran-semen.html": "Plesteran Semen"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL PEKERJAAN TANAH JALAN
+// ============================================================
+
 const urlMappingMaterialPekerjaanTanahJalan = {
-"https://www.betonjayareadymix.com/p/tanah-urug-padat.html": "Tanah Urug Padat",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Pekerjaan Tanah Jalan > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/tanah-urug-padat.html": "Tanah Urug Padat",
   "https://www.betonjayareadymix.com/p/tanah-merah-urugan.html": "Tanah Merah",
   "https://www.betonjayareadymix.com/p/pasir-urug.html": "Pasir Urug",
   "https://www.betonjayareadymix.com/p/pasir-beton.html": "Pasir Beton",
@@ -76,7 +360,16 @@ const urlMappingMaterialPekerjaanTanahJalan = {
   "https://www.betonjayareadymix.com/p/aspal-emulsi.html": "Aspal Emulsi"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL PLUMBING SALURAN
+// ============================================================
+
 const urlMappingMaterialPlumbingSaluran = {
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Plumbing Saluran > [Nama Material]
+  // ============================================================
   "https://www.betonjayareadymix.com/p/pipa-pvc.html": "Pipa PVC",
   "https://www.betonjayareadymix.com/p/pipa-hdpe.html": "Pipa HDPE (High-Density Polyethylene)",
   "https://www.betonjayareadymix.com/p/pipa-ppr.html": "Pipa PPR (Polypropylene Random)",
@@ -88,10 +381,19 @@ const urlMappingMaterialPlumbingSaluran = {
   "https://www.betonjayareadymix.com/p/talang-air.html": "Talang Air"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL ATAP PENUTUP
+// ============================================================
+
 const urlMappingMaterialAtapPenutup = {
-   "https://www.betonjayareadymix.com/p/genteng.html": "Genteng",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Atap Penutup > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/genteng.html": "Genteng",
   "https://www.betonjayareadymix.com/p/genteng-tanah-liat.html": "Genteng Tanah Liat",
-"https://www.betonjayareadymix.com/p/genteng-beton.html": "Genteng Beton",
+  "https://www.betonjayareadymix.com/p/genteng-beton.html": "Genteng Beton",
   "https://www.betonjayareadymix.com/p/genteng-keramik.html": "Genteng Keramik",
   "https://www.betonjayareadymix.com/p/atap-spandek.html": "Atap Spandek",
   "https://www.betonjayareadymix.com/p/atap-zincalume.html": "Atap Zincalume",
@@ -100,8 +402,17 @@ const urlMappingMaterialAtapPenutup = {
   "https://www.betonjayareadymix.com/p/sekrup-atap.html": "Sekrup Atap"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL FASAD PELAPIS EKSTERIOR
+// ============================================================
+
 const urlMappingMaterialFasadPelapisEksterior = {
- "https://www.betonjayareadymix.com/p/beton-ekspos-eksterior.html": "Beton Ekspos Eksterior",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/beton-ekspos-eksterior.html": "Beton Ekspos Eksterior",
   "https://www.betonjayareadymix.com/p/panel-fasad.html": "Panel Fasad",
   "https://www.betonjayareadymix.com/p/expanded-metal.html": "Expanded Metal",
   "https://www.betonjayareadymix.com/p/granit-exterior.html": "Granit Exterior",
@@ -116,9 +427,18 @@ const urlMappingMaterialFasadPelapisEksterior = {
   "https://www.betonjayareadymix.com/p/keramik-eksterior.html": "Keramik Eksterior"
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL FINISHING INTERIOR
+// ============================================================
+
 const urlMappingMaterialFinishingInterior = {
- "https://www.betonjayareadymix.com/p/beton-ekspos-interior.html": "Beton Ekspos Interior",
-"https://www.betonjayareadymix.com/p/keramik-lantai.html": "Keramik Lantai",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Finishing Interior > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/beton-ekspos-interior.html": "Beton Ekspos Interior",
+  "https://www.betonjayareadymix.com/p/keramik-lantai.html": "Keramik Lantai",
   "https://www.betonjayareadymix.com/p/keramik-dinding.html": "Keramik Dinding",
   "https://www.betonjayareadymix.com/p/granit-interior.html": "Granit Interior",
   "https://www.betonjayareadymix.com/p/vinyl-lantai.html": "Vinyl Lantai",
@@ -128,10 +448,18 @@ const urlMappingMaterialFinishingInterior = {
   "https://www.betonjayareadymix.com/p/plafon-gypsum.html": "Plafon Gypsum",
   "https://www.betonjayareadymix.com/p/plafon-pvc.html": "Plafon PVC",
   "https://www.betonjayareadymix.com/p/wallpaper.html": "Wallpaper"
-
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL INSULASI AKUSTIK
+// ============================================================
+
 const urlMappingMaterialInsulasiAkustik = {
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Insulasi Akustik > [Nama Material]
+  // ============================================================
   "https://www.betonjayareadymix.com/p/insulasi-panas.html": "Insulasi Panas",
   "https://www.betonjayareadymix.com/p/insulasi-suara.html": "Insulasi Suara",
   "https://www.betonjayareadymix.com/p/glasswool.html": "Glasswool",
@@ -139,11 +467,19 @@ const urlMappingMaterialInsulasiAkustik = {
   "https://www.betonjayareadymix.com/p/peredam-akustik.html": "Peredam Akustik",
   "https://www.betonjayareadymix.com/p/polyurethane-foam.html": "Polyurethane Foam",
   "https://www.betonjayareadymix.com/p/bubble-foil.html": "Bubble Foil"
-
 };
 
+// ============================================================
+// SUB MAPPING - MATERIAL WATERPROOFING PELAPIS
+// ============================================================
+
 const urlMappingMaterialWaterproofingPelapis = {
-"https://www.betonjayareadymix.com/p/pelapis-anti-bocor.html": "Pelapis Anti Bocor",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Waterproofing Pelapis > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/pelapis-anti-bocor.html": "Pelapis Anti Bocor",
   "https://www.betonjayareadymix.com/p/membrane-waterproofing.html": "Membrane Waterproofing",
   "https://www.betonjayareadymix.com/p/coating-waterproofing.html": "Coating Waterproofing",
   "https://www.betonjayareadymix.com/p/sika-waterproofing.html": "Sika Waterproofing",
@@ -151,49 +487,103 @@ const urlMappingMaterialWaterproofingPelapis = {
   "https://www.betonjayareadymix.com/p/sealant.html": "Sealant",
   "https://www.betonjayareadymix.com/p/waterstop.html": "Waterstop"
 };
+
+// ============================================================
+// SUB MAPPING - MATERIAL GEOSINTETIK DRAINASE
+// ============================================================
+
 const urlMappingMaterialGeosintetikDrainase = {
-"https://www.betonjayareadymix.com/p/geotextile.html": "Geotextile",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Geosintetik Drainase > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/geotextile.html": "Geotextile",
   "https://www.betonjayareadymix.com/p/geomembrane.html": "Geomembrane",
   "https://www.betonjayareadymix.com/p/geogrid.html": "Geogrid",
   "https://www.betonjayareadymix.com/p/geocell.html": "Geocell",
   "https://www.betonjayareadymix.com/p/pipa-drainase.html": "Pipa Drainase",
   "https://www.betonjayareadymix.com/p/subdrain.html": "Subdrain",
   "https://www.betonjayareadymix.com/p/biopori-modul.html": "Biopori Modul"
-
 };
+
+// ============================================================
+// SUB MAPPING - MATERIAL KONSTRUKSI KHUSUS
+// ============================================================
+
 const urlMappingMaterialKonstruksiKhusus = {
-"https://www.betonjayareadymix.com/p/fiber-optik-ducting.html": "Fiber Optik Ducting",
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Khusus > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/fiber-optik-ducting.html": "Fiber Optik Ducting",
   "https://www.betonjayareadymix.com/p/baja-konstruksi-tambang.html": "Baja Konstruksi Tambang",
   "https://www.betonjayareadymix.com/p/material-jembatan.html": "Material Jembatan",
   "https://www.betonjayareadymix.com/p/railway-sleeper.html": "Railway Sleeper",
   "https://www.betonjayareadymix.com/p/blast-resistant-material.html": "Blast Resistant Material"
 };
-const urlMappingMaterialKonstruksiKelistrikan = {
-"https://www.betonjayareadymix.com/p/kabel-listrik.html": "Kabel Listrik",
-   // buat di jasa aja "https://www.betonjayareadymix.com/p/instalasi-listrik.html": "Instalasi Listrik",
-    "https://www.betonjayareadymix.com/p/stopkontak.html": "Stopkontak",
-    "https://www.betonjayareadymix.com/p/pipa-kabel.html": "Pipa Kabel",
-    "https://www.betonjayareadymix.com/p/panel-listrik.html": "Panel Listrik",
-    "https://www.betonjayareadymix.com/p/lampu-proyek.html": "Lampu Proyek"
 
+// ============================================================
+// SUB MAPPING - MATERIAL KONSTRUKSI KELISTRIKAN
+// ============================================================
+
+const urlMappingMaterialKonstruksiKelistrikan = {
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Kelistrikan > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/kabel-listrik.html": "Kabel Listrik",
+  "https://www.betonjayareadymix.com/p/stopkontak.html": "Stopkontak",
+  "https://www.betonjayareadymix.com/p/pipa-kabel.html": "Pipa Kabel",
+  "https://www.betonjayareadymix.com/p/panel-listrik.html": "Panel Listrik",
+  "https://www.betonjayareadymix.com/p/lampu-proyek.html": "Lampu Proyek"
 };
+
+// ============================================================
+// SUB MAPPING - MATERIAL MODULAR PREFABRIKASI
+// ============================================================
+
 const urlMappingMaterialModularPrefabrikasi = {
-"https://www.betonjayareadymix.com/p/rumah-modular.html": "Rumah Modular",
-    "https://www.betonjayareadymix.com/p/kantor-container.html": "Kantor Container",
-    "https://www.betonjayareadymix.com/p/lantai-modular.html": "Lantai Modular",
-    "https://www.betonjayareadymix.com/p/dinding-modular.html": "Dinding Modular",
-    "https://www.betonjayareadymix.com/p/atap-modular.html": "Atap Modular",
-    "https://www.betonjayareadymix.com/p/kamar-mandi-prefab.html": "Kamar Mandi Prefab"
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Modular Prefabrikasi > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/rumah-modular.html": "Rumah Modular",
+  "https://www.betonjayareadymix.com/p/kantor-container.html": "Kantor Container",
+  "https://www.betonjayareadymix.com/p/lantai-modular.html": "Lantai Modular",
+  "https://www.betonjayareadymix.com/p/dinding-modular.html": "Dinding Modular",
+  "https://www.betonjayareadymix.com/p/atap-modular.html": "Atap Modular",
+  "https://www.betonjayareadymix.com/p/kamar-mandi-prefab.html": "Kamar Mandi Prefab"
 };
+
+// ============================================================
+// SUB MAPPING - MATERIAL LAINNYA
+// ============================================================
 
 const urlMappingMaterialLainnya = {
-"https://www.betonjayareadymix.com/p/perekat-serbaguna.html": "Perekat Serbaguna",
-    "https://www.betonjayareadymix.com/p/sealant-serbaguna.html": "Sealant Serbaguna",
-    "https://www.betonjayareadymix.com/p/alat-bantu-material.html": "Alat Bantu Material",
-    "https://www.betonjayareadymix.com/p/produk-ekstra-konstruksi.html": "Produk Ekstra Konstruksi"
-
+  // ============================================================
+  // [VARIANT] - SEMUA ITEM DI BAWAH INI ADALAH [VARIANT]
+  // 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
+  // Breadcrumb: Home > Material Konstruksi > Material Lainnya > [Nama Material]
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/perekat-serbaguna.html": "Perekat Serbaguna",
+  "https://www.betonjayareadymix.com/p/sealant-serbaguna.html": "Sealant Serbaguna",
+  "https://www.betonjayareadymix.com/p/alat-bantu-material.html": "Alat Bantu Material",
+  "https://www.betonjayareadymix.com/p/produk-ekstra-konstruksi.html": "Produk Ekstra Konstruksi"
 };
 
+/*
+Jenis TYPE yang digunakan:
+
+[SUB2] — halaman kategori utama di bawah PILLAR Material Konstruksi
+
+[VARIANT] — halaman material spesifik di bawah SUB2
+
+[SUB-VARIANT] — halaman turunan dari VARIANT (contoh: Ready Mix Lokasi)
+*/
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsMaterialKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
