@@ -518,288 +518,692 @@ MATERIAL STRUKTUR BANGUNAN (SUB2 - /p/material-struktur-bangunan.html)
 │
 └── [VARIANT] Material Lainnya (Besi, Baja, Bekisting, dll)
 */
+// ============================================================
+// SEMEN PORTLAND POST - MONEY PAGE
+// ============================================================
+// 🧠 SEO NOTE: Semua URL di bawah ini adalah [MONEY PAGE] untuk target keyword semen portland.
+// Parent: Semen Portland (/p/semen-portland.html)
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > [Nama Post]
+// ============================================================
+
+const urlMappingSemenPortlandPost = {
+  // ============================================================
+  // SARAN ITEM BARU - HARGA SEMEN PORTLAND
+  // Status: [MONEY PAGE] - di bawah Semen Portland
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Harga Semen Portland
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-portland.html": "Harga Semen Portland [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-portland-per-sak.html": "Harga Semen Portland per Sak [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-portland-50kg.html": "Harga Semen Portland 50kg [MONEY PAGE]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - JUAL SEMEN PORTLAND
+  // Status: [MONEY PAGE] - di bawah Semen Portland
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jual Semen Portland
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/jual-semen-portland-terdekat.html": "Jual Semen Portland Terdekat [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/supplier-semen-portland.html": "Supplier Semen Portland [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/distributor-semen-portland.html": "Distributor Semen Portland [MONEY PAGE]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - JENIS & SPESIFIKASI SEMEN PORTLAND
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jenis Semen Portland
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-portland.html": "Jenis Semen Portland [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-portland.html": "Spesifikasi Semen Portland [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-portland.html": "Kelebihan Semen Portland [SUB1]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - PERBANDINGAN SEMEN
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Perbandingan Semen Portland vs Semen Biasa
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-portland-dan-semen-biasa.html": "Perbedaan Semen Portland dan Semen Biasa [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/semen-portland-vs-semen-putih.html": "Semen Portland vs Semen Putih [SUB1]"
+};
+
+// ============================================================
+// 🟡 SEO NOTES - SEMEN PORTLAND
+// ============================================================
+/*
+📌 KETERANGAN:
+
+| Status | Jumlah URL | Keterangan |
+|--------|------------|-------------|
+| [MONEY PAGE] | 0 (perlu 6-9 URL) | Halaman harga, jual, distributor |
+| [SUB1] | 0 (perlu 5-7 URL) | Panduan, spesifikasi, perbandingan |
+
+📌 SARAN URL YANG DAPAT DIBUAT:
+
+1. [MONEY PAGE] - Harga
+   - harga-semen-portland.html
+   - harga-semen-portland-per-sak.html
+   - harga-semen-portland-50kg.html
+   - harga-semen-portland-termurah.html
+
+2. [MONEY PAGE] - Jual / Distributor
+   - jual-semen-portland-terdekat.html
+   - supplier-semen-portland.html
+   - distributor-semen-portland.html
+   - toko-semen-portland-terdekat.html
+
+3. [SUB1] - Panduan
+   - jenis-semen-portland.html
+   - spesifikasi-semen-portland.html
+   - kelebihan-semen-portland.html
+   - fungsi-semen-portland-untuk-bangunan.html
+   - cara-memilih-semen-portland.html
+
+4. [SUB1] - Perbandingan
+   - perbedaan-semen-portland-dan-semen-biasa.html
+   - semen-portland-vs-semen-putih.html
+   - semen-portland-vs-semen-pozzolan.html
+
+📌 BREADCRUMB 4 LEVEL (SKIP PILLAR Jasa Konstruksi):
+
+| Halaman | Breadcrumb |
+|---------|------------|
+| Harga Semen Portland | Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Harga Semen Portland |
+| Jual Semen Portland | Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jual Semen Portland |
+| Jenis Semen Portland | Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jenis Semen Portland |
+
+📌 CATATAN:
+- Saat ini const kosong. Perlu dibuat konten untuk mengisi cluster ini.
+- Semen Portland adalah material struktural utama, sebaiknya memiliki halaman sendiri.
+- Gunakan internal link dari /p/semen-portland.html ke post-post ini.
+*/
+// ============================================================
+// SEMEN INSTAN POST - MONEY PAGE
+// ============================================================
+// 🧠 SEO NOTE: Semua URL di bawah ini adalah [MONEY PAGE] untuk target keyword semen instan.
+// Parent: Semen Instan (/p/semen-instan.html)
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > [Nama Post]
+// ============================================================
+
+const urlMappingSemenInstanPost = {
+  // ============================================================
+  // SARAN ITEM BARU - HARGA SEMEN INSTAN
+  // Status: [MONEY PAGE] - di bawah Semen Instan
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Harga Semen Instan
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-instan.html": "Harga Semen Instan [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-instan-per-sak.html": "Harga Semen Instan per Sak [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/harga-semen-instan-40kg.html": "Harga Semen Instan 40kg [MONEY PAGE]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - JUAL SEMEN INSTAN
+  // Status: [MONEY PAGE] - di bawah Semen Instan
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jual Semen Instan
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/jual-semen-instan-terdekat.html": "Jual Semen Instan Terdekat [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/08/supplier-semen-instan.html": "Supplier Semen Instan [MONEY PAGE]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - JENIS & SPESIFIKASI SEMEN INSTAN
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jenis Semen Instan
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-instan.html": "Jenis Semen Instan [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-instan.html": "Spesifikasi Semen Instan [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-instan.html": "Kelebihan Semen Instan [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/kekurangan-semen-instan.html": "Kekurangan Semen Instan [SUB1]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - APLIKASI SEMEN INSTAN
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Aplikasi Semen Instan
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/aplikasi-semen-instan-untuk-renovasi.html": "Aplikasi Semen Instan untuk Renovasi [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-dinding.html": "Semen Instan untuk Dinding [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-lantai.html": "Semen Instan untuk Lantai [SUB1]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - PERBANDINGAN SEMEN INSTAN
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Perbandingan Semen Instan vs Semen Biasa
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-instan-dan-semen-biasa.html": "Perbedaan Semen Instan dan Semen Biasa [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-vs-semen-portland.html": "Semen Instan vs Semen Portland [SUB1]",
+  
+  // ============================================================
+  // SARAN ITEM BARU - CARA PENGGUNAAN SEMEN INSTAN
+  // Status: [SUB1] - Panduan (bridge ke MONEY page)
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Cara Penggunaan Semen Instan
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2019/08/cara-penggunaan-semen-instan.html": "Cara Penggunaan Semen Instan [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/08/takaran-semen-instan.html": "Takaran Semen Instan [SUB1]"
+};
+
+// ============================================================
+// 🟡 SEO NOTES - SEMEN INSTAN
+// ============================================================
+/*
+📌 KETERANGAN:
+
+| Status | Jumlah URL | Keterangan |
+|--------|------------|-------------|
+| [MONEY PAGE] | 0 (perlu 5-8 URL) | Harga, jual, distributor |
+| [SUB1] | 0 (perlu 10-12 URL) | Panduan, spesifikasi, aplikasi, perbandingan |
+
+📌 SARAN URL YANG DAPAT DIBUAT:
+
+1. [MONEY PAGE] - Harga
+   - harga-semen-instan.html
+   - harga-semen-instan-per-sak.html
+   - harga-semen-instan-40kg.html
+   - harga-semen-instan-termurah.html
+
+2. [MONEY PAGE] - Jual / Distributor
+   - jual-semen-instan-terdekat.html
+   - supplier-semen-instan.html
+   - distributor-semen-instan.html
+   - toko-semen-instan-terdekat.html
+
+3. [SUB1] - Panduan Dasar
+   - jenis-semen-instan.html
+   - spesifikasi-semen-instan.html
+   - kelebihan-semen-instan.html
+   - kekurangan-semen-instan.html
+   - fungsi-semen-instan-untuk-konstruksi.html
+
+4. [SUB1] - Aplikasi
+   - aplikasi-semen-instan-untuk-renovasi.html
+   - semen-instan-untuk-dinding.html
+   - semen-instan-untuk-lantai.html
+   - semen-instan-untuk-plester.html
+   - semen-instan-untuk-acian.html
+
+5. [SUB1] - Perbandingan
+   - perbedaan-semen-instan-dan-semen-biasa.html
+   - semen-instan-vs-semen-portland.html
+   - semen-instan-vs-mortar-instan.html
+
+6. [SUB1] - Cara Penggunaan
+   - cara-penggunaan-semen-instan.html
+   - takaran-semen-instan.html
+   - waktu-pengerasan-semen-instan.html
+
+📌 BREADCRUMB 4 LEVEL (SKIP PILLAR Jasa Konstruksi):
+
+| Halaman | Breadcrumb |
+|---------|------------|
+| Harga Semen Instan | Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Harga Semen Instan |
+| Jual Semen Instan | Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jual Semen Instan |
+| Jenis Semen Instan | Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jenis Semen Instan |
+| Aplikasi Semen Instan | Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Aplikasi Semen Instan |
+
+📌 CATATAN:
+- Saat ini const kosong. Perlu dibuat konten untuk mengisi cluster ini.
+- Semen Instan berbeda dengan Semen Portland (waktu pengerasan lebih cepat, praktis).
+- Semen Instan banyak digunakan untuk proyek renovasi dan perbaikan.
+- Gunakan internal link dari /p/semen-instan.html ke post-post ini.
+*/
+/*
+enis TYPE yang digunakan:
+
+[MONEY PAGE] — halaman transaksional (harga, jual, beli, distributor, supplier)
+
+[SUB1] — halaman panduan/bridge (jenis, spesifikasi, kelebihan, aplikasi, perbandingan, cara penggunaan)
+*/
+
+// ============================================================
+// BESI BANGUNAN POST - MONEY PAGE (HARGA & TOKO)
+// Parent: Besi Bangunan (/p/besi-bangunan.html)
+// 🧠 SEO NOTE: Semua URL di bawah ini adalah [MONEY PAGE] untuk target keyword harga besi.
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Besi Bangunan > [Nama Post]
+// ============================================================
 
 const urlMappingBesiBangunanPost = {
-"https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan",
- "https://www.betonjayareadymix.com/2019/04/besi-bangunan-harga-terbaru.html": "Besi Bangunan Harga Terbaru",
-  "https://www.betonjayareadymix.com/2019/04/toko-besi-bangunan-terdekat.html": "Toko Besi Bangunan Terdekat",
-  "https://www.betonjayareadymix.com/2019/04/distributor-besi-bangunan-terlengkap.html": "Distributor Besi Bangunan Terlengkap",
-  "https://www.betonjayareadymix.com/2019/04/supplier-besi-bangunan-harga-grosir.html": "Supplier Besi Bangunan Harga Grosir",
-  "https://www.betonjayareadymix.com/2019/04/daftar-produk-besi-bangunan.html": "Daftar Produk Besi Bangunan",
-  "https://www.betonjayareadymix.com/2019/04/promo-diskon-besi-bangunan.html": "Promo & Diskon Besi Bangunan"
- 
+  // [MONEY PAGE] - HARGA BESI BANGUNAN (MASTER)
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan [MONEY PAGE]",
+  
+  // [MONEY PAGE] - VARIASI HARGA
+  "https://www.betonjayareadymix.com/2019/04/besi-bangunan-harga-terbaru.html": "Besi Bangunan Harga Terbaru [MONEY PAGE]",
+  
+  // [MONEY PAGE] - TOKO & DISTRIBUTOR
+  "https://www.betonjayareadymix.com/2019/04/toko-besi-bangunan-terdekat.html": "Toko Besi Bangunan Terdekat [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/distributor-besi-bangunan-terlengkap.html": "Distributor Besi Bangunan Terlengkap [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/supplier-besi-bangunan-harga-grosir.html": "Supplier Besi Bangunan Harga Grosir [MONEY PAGE]",
+  
+  // [SUB1] - DAFTAR PRODUK & PROMO (INFORMASIONAL)
+  "https://www.betonjayareadymix.com/2019/04/daftar-produk-besi-bangunan.html": "Daftar Produk Besi Bangunan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/promo-diskon-besi-bangunan.html": "Promo & Diskon Besi Bangunan [SUB1]"
 };
+
+// ============================================================
+// BAJA KONVENSIONAL POST - MONEY PAGE (HARGA PROFIL BAJA)
+// Parent: Baja Konvensional (/p/baja-konvensional.html)
+// 🧠 SEO NOTE: Semua URL adalah [MONEY PAGE] untuk harga profil baja (H Beam, Pipa, Plat, Siku, UNP, CNP, Hollow)
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Konvensional > [Nama Post]
+// ============================================================
+
 const urlMappingBajaKonvensionalPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-h-beam.html": "Harga Besi H Beam",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-pipa.html": "Harga Besi Pipa",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-plat.html": "Harga Besi Plat",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-siku.html": "Harga Besi Siku",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-unp.html": "Harga Besi UNP",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-cnp.html": "Harga Besi CNP",
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-hollow.html": "Harga Besi Hollow"
-
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-h-beam.html": "Harga Besi H Beam [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-pipa.html": "Harga Besi Pipa [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-plat.html": "Harga Besi Plat [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-siku.html": "Harga Besi Siku [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-unp.html": "Harga Besi UNP [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-cnp.html": "Harga Besi CNP [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-besi-hollow.html": "Harga Besi Hollow [MONEY PAGE]"
 };
+
+// ============================================================
+// BAJA RINGAN STRUKTUR POST - MONEY PAGE & SUB1
+// Parent: Baja Ringan Struktur (/p/baja-ringan-struktur.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], edukasi/panduan adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Ringan Struktur > [Nama Post]
+// ============================================================
+
 const urlMappingBajaRinganStrukturPost = {
-"https://www.betonjayareadymix.com/2019/04/baja-ringan-harga.html": "Baja Ringan Harga",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan.html": "Harga Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/04/reng-baja-ringan-harga.html": "Reng Baja Ringan Harga",
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-6-meter.html": "Harga Reng Baja Ringan 6 Meter",
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-per-batang.html": "Harga Reng Baja Ringan Per Batang",
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan.html": "Harga Reng Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-reng.html": "Harga Baja Ringan Reng",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-reng.html": "Baja Ringan Reng",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-kaso.html": "Baja Ringan Kaso",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-kilogram.html": "Harga Baja Ringan Per Kilogram",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lembar.html": "Harga Baja Ringan Per Lembar",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lonjor.html": "Harga Baja Ringan Per Lonjor",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-meter.html": "Harga Baja Ringan Per Meter",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-meter.html": "Baja Ringan Per Meter",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang",
-	
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-murah.html": "Harga Baja Ringan Murah",
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan.html": "Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan.html": "Harga Baja Ringan",
-"https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-termurah.html": "Harga Baja Ringan Termurah",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-lembaran.html": "Harga Baja Ringan Lembaran",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-saat-ini.html": "Harga Baja Ringan Saat Ini",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-lengkap.html": "Harga Baja Ringan Lengkap",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-075-full.html": "Harga Baja Ringan 0.75 Full",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-full.html": "Harga Baja Ringan Full",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-untuk-eternit.html": "Harga Baja Ringan Untuk Eternit",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-segi-empat.html": "Harga Baja Ringan Segi Empat",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-dan-reng.html": "Harga Baja Ringan dan Reng",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-cnp.html": "Harga Baja Ringan CNP",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-canal-c-75.html": "Harga Baja Ringan Canal C75",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-cnp-075.html": "Harga Baja Ringan CNP 0.75",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-c75.html": "Harga Baja Ringan C75",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-buat-kanopi.html": "Harga Baja Ringan Buat Kanopi",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-buat-atap-rumah.html": "Harga Baja Ringan Buat Atap Rumah",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-bekas-per-kilo.html": "Harga Baja Ringan Bekas per Kilo",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-bekas.html": "Harga Baja Ringan Bekas",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-batangan.html": "Harga Baja Ringan Batangan",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-rumah.html": "Harga Baja Ringan Atap Rumah",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-genteng.html": "Harga Baja Ringan Atap Genteng",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-spandek-per-meter.html": "Harga Baja Ringan Atap Spandek per Meter",
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-spandek.html": "Harga Baja Ringan Atap Spandek",
-	
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-di-jakarta.html": "Harga Baja Ringan di Jakarta",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bogor.html": "Harga Baja Ringan Bogor",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-depok.html": "Harga Baja Ringan Depok",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-tangerang.html": "Harga Baja Ringan Tangerang",
-	
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bekasi.html": "Harga Baja Ringan Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-kota-bekasi.html": "Harga Baja Ringan Kota Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cikarang.html": "Harga Baja Ringan Cikarang",
-	
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang.html": "Harga Baja Ringan Karawang",
-	
-"https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sumedang-utara.html": "Harga Baja Ringan Sumedang Utara",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileunyi.html": "Harga Baja Ringan Cileunyi",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cimahi.html": "Harga Baja Ringan Cimahi",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-caringin.html": "Harga Baja Ringan Caringin",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-barat.html": "Harga Baja Ringan Karawang Barat",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-gunung-putri.html": "Harga Baja Ringan Gunung Putri",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sukaraja.html": "Harga Baja Ringan Sukaraja",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-timur.html": "Harga Baja Ringan Karawang Timur",
+  // [MONEY PAGE] - HARGA BAJA RINGAN (UMUM & PER UNIT)
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-harga.html": "Baja Ringan Harga [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan.html": "Harga Baja Ringan [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-murah.html": "Harga Baja Ringan Murah [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan.html": "Baja Ringan [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-termurah.html": "Harga Baja Ringan Termurah [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-lembaran.html": "Harga Baja Ringan Lembaran [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-saat-ini.html": "Harga Baja Ringan Saat Ini [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-lengkap.html": "Harga Baja Ringan Lengkap [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-075-full.html": "Harga Baja Ringan 0.75 Full [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-full.html": "Harga Baja Ringan Full [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-untuk-eternit.html": "Harga Baja Ringan Untuk Eternit [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-segi-empat.html": "Harga Baja Ringan Segi Empat [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-dan-reng.html": "Harga Baja Ringan dan Reng [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-cnp.html": "Harga Baja Ringan CNP [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-canal-c-75.html": "Harga Baja Ringan Canal C75 [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-cnp-075.html": "Harga Baja Ringan CNP 0.75 [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-c75.html": "Harga Baja Ringan C75 [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-buat-kanopi.html": "Harga Baja Ringan Buat Kanopi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-buat-atap-rumah.html": "Harga Baja Ringan Buat Atap Rumah [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-bekas-per-kilo.html": "Harga Baja Ringan Bekas per Kilo [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-bekas.html": "Harga Baja Ringan Bekas [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-batangan.html": "Harga Baja Ringan Batangan [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-rumah.html": "Harga Baja Ringan Atap Rumah [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-genteng.html": "Harga Baja Ringan Atap Genteng [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-spandek-per-meter.html": "Harga Baja Ringan Atap Spandek per Meter [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-atap-spandek.html": "Harga Baja Ringan Atap Spandek [MONEY PAGE]",
+  
+  // [MONEY PAGE] - HARGA PER KOTA/KABUPATEN
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-di-jakarta.html": "Harga Baja Ringan di Jakarta [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bogor.html": "Harga Baja Ringan Bogor [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-depok.html": "Harga Baja Ringan Depok [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-tangerang.html": "Harga Baja Ringan Tangerang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bekasi.html": "Harga Baja Ringan Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-kota-bekasi.html": "Harga Baja Ringan Kota Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cikarang.html": "Harga Baja Ringan Cikarang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang.html": "Harga Baja Ringan Karawang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sumedang-utara.html": "Harga Baja Ringan Sumedang Utara [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileunyi.html": "Harga Baja Ringan Cileunyi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cimahi.html": "Harga Baja Ringan Cimahi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-caringin.html": "Harga Baja Ringan Caringin [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-barat.html": "Harga Baja Ringan Karawang Barat [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-gunung-putri.html": "Harga Baja Ringan Gunung Putri [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-sukaraja.html": "Harga Baja Ringan Sukaraja [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-karawang-timur.html": "Harga Baja Ringan Karawang Timur [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bandung.html": "Harga Baja Ringan Bandung [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-garut.html": "Harga Baja Ringan Garut [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-purwakarta.html": "Harga Baja Ringan Purwakarta [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cikampek.html": "Harga Baja Ringan Cikampek [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cirebon.html": "Harga Baja Ringan Cirebon [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-telukjambe-timur.html": "Harga Baja Ringan Telukjambe Timur [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-jatibarang.html": "Harga Baja Ringan Jatibarang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-parung-panjang.html": "Harga Baja Ringan Parung Panjang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cibinong.html": "Harga Baja Ringan Cibinong [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileungsi.html": "Harga Baja Ringan Cileungsi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bojong-gede.html": "Harga Baja Ringan Bojong Gede [MONEY PAGE]",
+  
+  // [MONEY PAGE] - BAJA RINGAN HARGA (VARIASI KEYWORD)
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-karawang-timur.html": "Baja Ringan Harga Karawang Timur [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-gunung-putri.html": "Baja Ringan Harga Gunung Putri [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-ciomas.html": "Baja Ringan Harga Ciomas [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kota-bekasi.html": "Baja Ringan Harga Kota Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cikampek.html": "Baja Ringan Harga Cikampek [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-lembang.html": "Baja Ringan Harga Lembang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cianjur.html": "Baja Ringan Harga Cianjur [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-caringin.html": "Baja Ringan Harga Caringin [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-purwakarta.html": "Baja Ringan Harga Purwakarta [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cirebon.html": "Baja Ringan Harga Cirebon [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cimahi.html": "Baja Ringan Harga Cimahi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bogor.html": "Baja Ringan Harga Bogor [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-dramaga.html": "Baja Ringan Harga Dramaga [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cibinong.html": "Baja Ringan Harga Cibinong [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cileungsi.html": "Baja Ringan Harga Cileungsi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-telukjambe-timur.html": "Baja Ringan Harga Telukjambe Timur [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bojong-gede.html": "Baja Ringan Harga Bojong Gede [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-parung-panjang.html": "Baja Ringan Harga Parung Panjang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kemang.html": "Baja Ringan Harga Kemang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-tajur-halang.html": "Baja Ringan Harga Tajur Halang [MONEY PAGE]",
+  
+  // [MONEY PAGE] - RENG BAJA RINGAN HARGA
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bandung.html": "Reng Baja Ringan Harga Bandung [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bogor.html": "Reng Baja Ringan Harga Bogor [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-depok.html": "Reng Baja Ringan Harga Depok [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-kota-bekasi.html": "Reng Baja Ringan Harga Kota Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bekasi.html": "Reng Baja Ringan Harga Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-sukabumi.html": "Reng Baja Ringan Harga Sukabumi [MONEY PAGE]",
+  
+  // [SUB1] - UKURAN & PERHITUNGAN (INFORMASIONAL)
+  "https://www.betonjayareadymix.com/2019/04/reng-baja-ringan-harga.html": "Reng Baja Ringan Harga [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-6-meter.html": "Harga Reng Baja Ringan 6 Meter [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-per-batang.html": "Harga Reng Baja Ringan Per Batang [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan.html": "Harga Reng Baja Ringan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-reng.html": "Harga Baja Ringan Reng [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-reng.html": "Baja Ringan Reng [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-kaso.html": "Baja Ringan Kaso [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-kilogram.html": "Harga Baja Ringan Per Kilogram [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lembar.html": "Harga Baja Ringan Per Lembar [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lonjor.html": "Harga Baja Ringan Per Lonjor [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-meter.html": "Harga Baja Ringan Per Meter [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-meter.html": "Baja Ringan Per Meter [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang [SUB1]",
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang [SUB1]"
+};
 
-"https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bandung.html": "Harga Baja Ringan Bandung",
+// ============================================================
+// BEKISTING POST - SUB1 & MONEY PAGE
+// Parent: Bekisting (/p/bekisting.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], jenis/edukasi adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting > [Nama Post]
+// ============================================================
 
-    "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-garut.html": "Harga Baja Ringan Garut",
-	
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-purwakarta.html": "Harga Baja Ringan Purwakarta",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cikampek.html": "Harga Baja Ringan Cikampek",
-	
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cirebon.html": "Harga Baja Ringan Cirebon",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-telukjambe-timur.html": "Harga Baja Ringan Telukjambe Timur",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-jatibarang.html": "Harga Baja Ringan Jatibarang",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-parung-panjang.html": "Harga Baja Ringan Parung Panjang",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cibinong.html": "Harga Baja Ringan Cibinong",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-cileungsi.html": "Harga Baja Ringan Cileungsi",
-  "https://www.betonjayareadymix.com/2019/05/harga-baja-ringan-bojong-gede.html": "Harga Baja Ringan Bojong Gede",
-	
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-karawang-timur.html": "Baja Ringan Harga Karawang Timur",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-gunung-putri.html": "Baja Ringan Harga Gunung Putri",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-ciomas.html": "Baja Ringan Harga Ciomas",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kota-bekasi.html": "Baja Ringan Harga Kota Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cikampek.html": "Baja Ringan Harga Cikampek",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-lembang.html": "Baja Ringan Harga Lembang",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cianjur.html": "Baja Ringan Harga Cianjur",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-caringin.html": "Baja Ringan Harga Caringin",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-purwakarta.html": "Baja Ringan Harga Purwakarta",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cirebon.html": "Baja Ringan Harga Cirebon",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cimahi.html": "Baja Ringan Harga Cimahi",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bogor.html": "Baja Ringan Harga Bogor",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-dramaga.html": "Baja Ringan Harga Dramaga",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cibinong.html": "Baja Ringan Harga Cibinong",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-cileungsi.html": "Baja Ringan Harga Cileungsi",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-telukjambe-timur.html": "Baja Ringan Harga Telukjambe Timur",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-bojong-gede.html": "Baja Ringan Harga Bojong Gede",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-parung-panjang.html": "Baja Ringan Harga Parung Panjang",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-kemang.html": "Baja Ringan Harga Kemang",
-  "https://www.betonjayareadymix.com/2019/05/baja-ringan-harga-tajur-halang.html": "Baja Ringan Harga Tajur Halang",
-
-	
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bandung.html": "Reng Baja Ringan Harga Bandung",
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bogor.html": "Reng Baja Ringan Harga Bogor",
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-depok.html": "Reng Baja Ringan Harga Depok",
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-kota-bekasi.html": "Reng Baja Ringan Harga Kota Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-bekasi.html": "Reng Baja Ringan Harga Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/reng-baja-ringan-harga-sukabumi.html": "Reng Baja Ringan Harga Sukabumi"
-
-  };
 const urlMappingBekistingPost = {
- "https://www.betonjayareadymix.com/2019/05/harga-bekisting.html": "Harga Bekisting",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-panel.html": "Bekisting Panel",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-modular.html": "Bekisting Modular",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-plastik.html": "Bekisting Plastik",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-aluminum.html": "Bekisting Aluminum",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-dak-beton.html": "Bekisting Dak Beton",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kolom.html": "Bekisting Kolom",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-sloof.html": "Bekisting Sloof",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-ring-balok.html": "Bekisting Ring Balok",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-pracetak.html": "Bekisting Beton Pracetak",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-ready-mix.html": "Bekisting Beton Ready Mix"
-
+  // [MONEY PAGE] - HARGA BEKISTING
+  "https://www.betonjayareadymix.com/2019/05/harga-bekisting.html": "Harga Bekisting [MONEY PAGE]",
+  
+  // [SUB1] - JENIS & APLIKASI BEKISTING (INFORMASIONAL)
+  "https://www.betonjayareadymix.com/2019/05/bekisting-panel.html": "Bekisting Panel [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-modular.html": "Bekisting Modular [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-plastik.html": "Bekisting Plastik [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-aluminum.html": "Bekisting Aluminum [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-dak-beton.html": "Bekisting Dak Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kolom.html": "Bekisting Kolom [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-sloof.html": "Bekisting Sloof [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-ring-balok.html": "Bekisting Ring Balok [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-pracetak.html": "Bekisting Beton Pracetak [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-ready-mix.html": "Bekisting Beton Ready Mix [SUB1]"
 };
+
+// ============================================================
+// ALUMINIUM POST - SUB1 (EDUKASI) & MONEY PAGE (HARGA)
+// Parent: Aluminium (/p/aluminium.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], edukasi/perbedaan adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Aluminium > [Nama Post]
+// ============================================================
+
 const urlMappingAluminiumPost = {
-    "https://www.betonjayareadymix.com/2019/05/aluminium-anti-karat.html": "Aluminium Anti Karat untuk Konstruksi Bangunan",
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-aluminium-dan-baja-ringan.html": "Perbedaan Aluminium dan Baja Ringan untuk Konstruksi",
-  "https://www.betonjayareadymix.com/2019/05/jenis-aluminium-bangunan.html": "Jenis Aluminium Bangunan dan Kegunaannya",
-  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-acp.html": "Harga Aluminium ACP Terbaru",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-acp.html": "Aluminium ACP (Aluminium Composite Panel)",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-foil-bangunan.html": "Aluminium Foil untuk Bangunan",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-profil.html": "Aluminium Profil untuk Konstruksi",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-kanopi.html": "Aluminium untuk Kanopi",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-partisi.html": "Aluminium untuk Partisi Bangunan",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-pintu-jendela.html": "Aluminium untuk Pintu dan Jendela",
-  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-per-kg.html": "Harga Aluminium per Kg",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-lembaran.html": "Aluminium Lembaran untuk Konstruksi",
-  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-hollow.html": "Harga Aluminium Hollow Terbaru",
-  "https://www.betonjayareadymix.com/2019/05/aluminium-hollow.html": "Aluminium Hollow untuk Bangunan",
-  "https://www.betonjayareadymix.com/2019/05/harga-aluminium.html": "Harga Aluminium Terbaru"
-
+  // [SUB1] - EDUKASI & PERBEDAAN ALUMINIUM
+  "https://www.betonjayareadymix.com/2019/05/aluminium-anti-karat.html": "Aluminium Anti Karat untuk Konstruksi Bangunan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-aluminium-dan-baja-ringan.html": "Perbedaan Aluminium dan Baja Ringan untuk Konstruksi [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/jenis-aluminium-bangunan.html": "Jenis Aluminium Bangunan dan Kegunaannya [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-acp.html": "Aluminium ACP (Aluminium Composite Panel) [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-foil-bangunan.html": "Aluminium Foil untuk Bangunan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-profil.html": "Aluminium Profil untuk Konstruksi [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-kanopi.html": "Aluminium untuk Kanopi [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-partisi.html": "Aluminium untuk Partisi Bangunan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-pintu-jendela.html": "Aluminium untuk Pintu dan Jendela [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-lembaran.html": "Aluminium Lembaran untuk Konstruksi [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/aluminium-hollow.html": "Aluminium Hollow untuk Bangunan [SUB1]",
+  
+  // [MONEY PAGE] - HARGA ALUMINIUM
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-acp.html": "Harga Aluminium ACP Terbaru [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-per-kg.html": "Harga Aluminium per Kg [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium-hollow.html": "Harga Aluminium Hollow Terbaru [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-aluminium.html": "Harga Aluminium Terbaru [MONEY PAGE]"
 };
+
+// ============================================================
+// BAJA TULANGAN POST - MONEY PAGE (HARGA BESI BETON)
+// Parent: Baja Tulangan (/p/baja-tulangan.html)
+// 🧠 SEO NOTE: Semua URL adalah [MONEY PAGE] untuk harga besi beton, besi behel, dll.
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Baja Tulangan > [Nama Post]
+// ============================================================
 
 const urlMappingBajaTulanganPost = {
-  "https://www.betonjayareadymix.com/2019/05/besi-beton.html": "Besi Beton",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton.html": "Harga Besi Beton",
-    "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-per-kg.html": "Harga Besi Beton per Kg",
-  "https://www.betonjayareadymix.com/2019/05/daftar-harga-besi-beton.html": "Daftar Harga Besi Beton",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm-per-batang.html": "Harga Besi Beton 12mm per Batang",
-    "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-garut.html": "Harga Besi Beton Garut",
-    "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bandung.html": "Harga Besi Beton Bandung",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-karawang.html": "Harga Besi Beton Karawang",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bekasi.html": "Harga Besi Beton Bekasi",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-tangerang.html": "Harga Besi Beton Tangerang",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-depok.html": "Harga Besi Beton Depok",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bogor.html": "Harga Besi Beton Bogor",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-jakarta.html": "Harga Besi Beton Jakarta",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-10mm.html": "Harga Besi Beton 10mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm",
-
-	  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-kg.html": "Harga Besi Beton Ulir per Kg",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-10-mm.html": "Harga Besi Beton Ulir 10 mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm.html": "Harga Besi Beton Ulir 12 mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-13-mm.html": "Harga Besi Beton Ulir 13 mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-16-mm.html": "Harga Besi Beton Ulir 16 mm",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-batang.html": "Harga Besi Beton Ulir per Batang",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang",
-  "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir.html": "Besi Beton Ulir",
-	
-  "https://www.betonjayareadymix.com/2019/05/besi-beton-polos.html": "Besi Beton Polos",
-
-"https://www.betonjayareadymix.com/2019/05/besi-behel.html": "Besi Behel",
-"https://www.betonjayareadymix.com/2019/05/harga-besi-behel.html": "Harga Besi Behel"
+  // [MONEY PAGE] - BESI BETON (UMUM)
+  "https://www.betonjayareadymix.com/2019/05/besi-beton.html": "Besi Beton [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton.html": "Harga Besi Beton [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-per-kg.html": "Harga Besi Beton per Kg [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/daftar-harga-besi-beton.html": "Daftar Harga Besi Beton [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm-per-batang.html": "Harga Besi Beton 12mm per Batang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-10mm.html": "Harga Besi Beton 10mm [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-12mm.html": "Harga Besi Beton 12mm [MONEY PAGE]",
+  
+  // [MONEY PAGE] - HARGA PER KOTA
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-garut.html": "Harga Besi Beton Garut [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bandung.html": "Harga Besi Beton Bandung [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-karawang.html": "Harga Besi Beton Karawang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bekasi.html": "Harga Besi Beton Bekasi [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-tangerang.html": "Harga Besi Beton Tangerang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-depok.html": "Harga Besi Beton Depok [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-bogor.html": "Harga Besi Beton Bogor [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-jakarta.html": "Harga Besi Beton Jakarta [MONEY PAGE]",
+  
+  // [MONEY PAGE] - BESI BETON ULIR
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-kg.html": "Harga Besi Beton Ulir per Kg [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-10-mm.html": "Harga Besi Beton Ulir 10 mm [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm.html": "Harga Besi Beton Ulir 12 mm [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-13-mm.html": "Harga Besi Beton Ulir 13 mm [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-16-mm.html": "Harga Besi Beton Ulir 16 mm [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-batang.html": "Harga Besi Beton Ulir per Batang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-12-mm-per-batang.html": "Harga Besi Beton Ulir 12 mm per Batang [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir.html": "Besi Beton Ulir [MONEY PAGE]",
+  
+  // [MONEY PAGE] - BESI BETON POLOS
+  "https://www.betonjayareadymix.com/2019/05/besi-beton-polos.html": "Besi Beton Polos [MONEY PAGE]",
+  
+  // [MONEY PAGE] - BESI BEHEL
+  "https://www.betonjayareadymix.com/2019/05/besi-behel.html": "Besi Behel [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-behel.html": "Harga Besi Behel [MONEY PAGE]"
 };
+
+// ============================================================
+// WIREMESH POST - SUB1 & MONEY PAGE
+// Parent: Wiremesh (/p/wiremesh.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], edukasi/perbedaan adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Wiremesh > [Nama Post]
+// ============================================================
 
 const urlMappingWiremeshPost = {
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-wiremesh-dan-besi-beton.html": "Perbedaan Wiremesh dan Besi Beton",
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-jalan-beton.html": "Wiremesh untuk Jalan Beton",
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-plat-lantai.html": "Wiremesh untuk Plat Lantai",
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-m6.html": "Wiremesh M6",
-  "https://www.betonjayareadymix.com/2019/05/jenis-wiremesh.html": "Jenis Wiremesh",
-  "https://www.betonjayareadymix.com/2019/05/berat-wiremesh-per-lembar.html": "Berat Wiremesh per Lembar",
-  "https://www.betonjayareadymix.com/2019/05/ukuran-wiremesh.html": "Ukuran Wiremesh",
-  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m10.html": "Harga Wiremesh M10",
-  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m8.html": "Harga Wiremesh M8",
-  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh.html": "Harga Wiremesh",
-  "https://www.betonjayareadymix.com/2019/05/harga-besi-wiremesh.html": "Harga Besi Wiremesh"
-
+  // [SUB1] - EDUKASI & PERBEDAAN WIREMESH
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-wiremesh-dan-besi-beton.html": "Perbedaan Wiremesh dan Besi Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-jalan-beton.html": "Wiremesh untuk Jalan Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-plat-lantai.html": "Wiremesh untuk Plat Lantai [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/jenis-wiremesh.html": "Jenis Wiremesh [SUB1]",
+  
+  // [SUB1] - SPESIFIKASI WIREMESH
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-m6.html": "Wiremesh M6 [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/berat-wiremesh-per-lembar.html": "Berat Wiremesh per Lembar [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-wiremesh.html": "Ukuran Wiremesh [SUB1]",
+  
+  // [MONEY PAGE] - HARGA WIREMESH
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m10.html": "Harga Wiremesh M10 [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh-m8.html": "Harga Wiremesh M8 [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-wiremesh.html": "Harga Wiremesh [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-besi-wiremesh.html": "Harga Besi Wiremesh [MONEY PAGE]"
 };
+
+// ============================================================
+// BONDEX POST - SUB1 & MONEY PAGE
+// Parent: Bondex (/p/bondex.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], edukasi/perbedaan adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bondex > [Nama Post]
+// ============================================================
+
 const urlMappingBondexPost = {
-"https://www.betonjayareadymix.com/2019/05/bondex-galvanis.html": "Bondex Galvanis",
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-bondex-dan-floordeck.html": "Perbedaan Bondex dan Floordeck",
-  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-dak-beton.html": "Bondex untuk Dak Beton",
-  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-plat-lantai.html": "Bondex untuk Plat Lantai",
-  "https://www.betonjayareadymix.com/2019/05/berat-bondex.html": "Berat Bondex",
-  "https://www.betonjayareadymix.com/2019/05/tebal-bondex.html": "Tebal Bondex",
-  "https://www.betonjayareadymix.com/2019/05/ukuran-bondex.html": "Ukuran Bondex",
-  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-meter.html": "Harga Bondex per Meter",
-  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-lembar.html": "Harga Bondex per Lembar",
-  "https://www.betonjayareadymix.com/2019/05/harga-bondex.html": "Harga Bondex"
-
+  // [SUB1] - EDUKASI & PERBEDAAN BONDEX
+  "https://www.betonjayareadymix.com/2019/05/bondex-galvanis.html": "Bondex Galvanis [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-bondex-dan-floordeck.html": "Perbedaan Bondex dan Floordeck [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-dak-beton.html": "Bondex untuk Dak Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-plat-lantai.html": "Bondex untuk Plat Lantai [SUB1]",
+  
+  // [SUB1] - SPESIFIKASI BONDEX
+  "https://www.betonjayareadymix.com/2019/05/berat-bondex.html": "Berat Bondex [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/tebal-bondex.html": "Tebal Bondex [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bondex.html": "Ukuran Bondex [SUB1]",
+  
+  // [MONEY PAGE] - HARGA BONDEX
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-meter.html": "Harga Bondex per Meter [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex-per-lembar.html": "Harga Bondex per Lembar [MONEY PAGE]",
+  "https://www.betonjayareadymix.com/2019/05/harga-bondex.html": "Harga Bondex [MONEY PAGE]"
 };
+
+/*
+// ============================================================
+// 🔴 URL YANG PERLU DIPERBAIKI
+// ============================================================
+
+/*
+| URL | Masalah | Solusi |
+|-----|---------|--------|
+| /2019/04/distributor-besi-bangunan-terlengkap.html | 404 (tidak ditemukan) | Buat konten atau redirect ke /2019/04/harga-besi-bangunan.html |
+
+📌 CATATAN: URL di atas tidak dimasukkan ke const karena mengembalikan status 404.
+*/
+*/
+
+// ============================================================
+// BESI BETON ULIR POST - KOSONG (PERLU DIBUAT)
+// Parent: Besi Beton Ulir (/p/besi-beton-ulir.html)
+// 🧠 SEO NOTE: Const ini kosong. Jika diperlukan, tambahkan URL post untuk besi beton ulir.
+// ============================================================
+
 const urlMappingBesiBetonUlirPost = {
-
+  // SARAN ITEM BARU:
+  // "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-ulir-per-batang.html": "Harga Besi Beton Ulir per Batang [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/daftar-harga-besi-beton-ulir.html": "Daftar Harga Besi Beton Ulir [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir-sni.html": "Besi Beton Ulir SNI [SUB1]"
 };
+
+// ============================================================
+// BESI BETON POLOS POST - KOSONG (PERLU DIBUAT)
+// Parent: Besi Beton Polos (/p/besi-beton-polos.html)
+// 🧠 SEO NOTE: Const ini kosong. Jika diperlukan, tambahkan URL post untuk besi beton polos.
+// ============================================================
+
 const urlMappingBesiBetonPolosPost = {
-
-
+  // SARAN ITEM BARU:
+  // "https://www.betonjayareadymix.com/2019/05/harga-besi-beton-polos-per-batang.html": "Harga Besi Beton Polos per Batang [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/daftar-harga-besi-beton-polos.html": "Daftar Harga Besi Beton Polos [MONEY PAGE]"
 };
+
+// ============================================================
+// BEKISTING BAJA POST - SUB1 (EDUKASI) & MONEY PAGE (HARGA)
+// Parent: Bekisting Baja (/p/bekisting-baja.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], jenis/edukasi adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting Baja > [Nama Post]
+// ============================================================
+
 const urlMappingBekistingBajaPost = {
-  "https://www.betonjayareadymix.com/2019/05/harga-bekisting-baja.html": "Harga Bekisting Baja",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ringan.html": "Bekisting Baja Ringan",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-modular.html": "Bekisting Baja Modular",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-dak.html": "Bekisting Baja Dak",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-kolom.html": "Bekisting Baja Kolom",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-sloof.html": "Bekisting Baja Sloof",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ring-balok.html": "Bekisting Baja Ring Balok",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-pracetak.html": "Bekisting Baja Pracetak",
-  "https://www.betonjayareadymix.com/2019/05/perbandingan-bekisting-baja-vs-kayu.html": "Perbandingan Bekisting Baja vs Kayu",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-untuk-jalan-beton.html": "Bekisting Baja untuk Jalan Beton",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-galvanis.html": "Bekisting Baja Galvanis"
-	
+  // [MONEY PAGE] - HARGA BEKISTING BAJA
+  "https://www.betonjayareadymix.com/2019/05/harga-bekisting-baja.html": "Harga Bekisting Baja [MONEY PAGE]",
+  
+  // [SUB1] - JENIS & APLIKASI BEKISTING BAJA (INFORMASIONAL)
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ringan.html": "Bekisting Baja Ringan [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-modular.html": "Bekisting Baja Modular [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-dak.html": "Bekisting Baja Dak [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-kolom.html": "Bekisting Baja Kolom [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-sloof.html": "Bekisting Baja Sloof [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ring-balok.html": "Bekisting Baja Ring Balok [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-pracetak.html": "Bekisting Baja Pracetak [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/perbandingan-bekisting-baja-vs-kayu.html": "Perbandingan Bekisting Baja vs Kayu [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-untuk-jalan-beton.html": "Bekisting Baja untuk Jalan Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-galvanis.html": "Bekisting Baja Galvanis [SUB1]"
 };
+
+// ============================================================
+// BEKISTING KAYU POST - SUB1 (EDUKASI) & MONEY PAGE (HARGA)
+// Parent: Bekisting Kayu (/p/bekisting-kayu.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], edukasi/spesifikasi adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting Kayu > [Nama Post]
+// ============================================================
+
 const urlMappingBekistingKayuPost = {
-"https://www.betonjayareadymix.com/2019/05/harga-bekisting-kayu.html": "Harga Bekisting Kayu",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-dak-beton.html": "Bekisting Kayu untuk Dak Beton",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-kolom.html": "Bekisting Kayu untuk Kolom",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-sloof.html": "Bekisting Kayu untuk Sloof",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu--ring-balok.html": "Bekisting Kayu untuk Ring Balok",
-  "https://www.betonjayareadymix.com/2019/05/ukuran-bekisting-kayu.html": "Ukuran Bekisting Kayu",
-  "https://www.betonjayareadymix.com/2019/05/tebal-bekisting-kayu.html": "Tebal Bekisting Kayu",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-jalan-beton.html": "Bekisting Kayu untuk Jalan Beton",
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-laminasi.html": "Bekisting Kayu Laminasi"
-
+  // [MONEY PAGE] - HARGA BEKISTING KAYU
+  "https://www.betonjayareadymix.com/2019/05/harga-bekisting-kayu.html": "Harga Bekisting Kayu [MONEY PAGE]",
+  
+  // [SUB1] - APLIKASI & SPESIFIKASI BEKISTING KAYU
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-dak-beton.html": "Bekisting Kayu untuk Dak Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-kolom.html": "Bekisting Kayu untuk Kolom [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-sloof.html": "Bekisting Kayu untuk Sloof [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu--ring-balok.html": "Bekisting Kayu untuk Ring Balok [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bekisting-kayu.html": "Ukuran Bekisting Kayu [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/tebal-bekisting-kayu.html": "Tebal Bekisting Kayu [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-jalan-beton.html": "Bekisting Kayu untuk Jalan Beton [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-laminasi.html": "Bekisting Kayu Laminasi [SUB1]"
 };
+
+// ============================================================
+// SCAFFOLDING POST - SUB1 (EDUKASI) & MONEY PAGE (HARGA)
+// Parent: Scaffolding (/p/scaffolding.html)
+// 🧠 SEO NOTE: Harga adalah [MONEY PAGE], jenis/ukuran adalah [SUB1]
+// Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Scaffolding > [Nama Post]
+// ============================================================
+
 const urlMappingScaffoldingPost = {
-"https://www.betonjayareadymix.com/2019/05/harga-scaffolding.html": "Harga Scaffolding Terbaru",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-frame.html": "Scaffolding Frame",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-andang.html": "Scaffolding Andang",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-pipa.html": "Scaffolding Pipa",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-ringlock.html": "Scaffolding Ringlock",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-cuplock.html": "Scaffolding Cuplock",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-galvanis.html": "Scaffolding Galvanis",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-baja.html": "Scaffolding Baja",
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-modular.html": "Scaffolding Modular",
-  "https://www.betonjayareadymix.com/2019/05/ukuran-scaffolding.html": "Ukuran Scaffolding Standar Proyek"
-
+  // [MONEY PAGE] - HARGA SCAFFOLDING
+  "https://www.betonjayareadymix.com/2019/05/harga-scaffolding.html": "Harga Scaffolding Terbaru [MONEY PAGE]",
+  
+  // [SUB1] - JENIS SCAFFOLDING
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-frame.html": "Scaffolding Frame [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-andang.html": "Scaffolding Andang [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-pipa.html": "Scaffolding Pipa [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-ringlock.html": "Scaffolding Ringlock [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-cuplock.html": "Scaffolding Cuplock [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-galvanis.html": "Scaffolding Galvanis [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-baja.html": "Scaffolding Baja [SUB1]",
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-modular.html": "Scaffolding Modular [SUB1]",
+  
+  // [SUB1] - SPESIFIKASI SCAFFOLDING
+  "https://www.betonjayareadymix.com/2019/05/ukuran-scaffolding.html": "Ukuran Scaffolding Standar Proyek [SUB1]"
 };
+
+// ============================================================
+// PEREKAT BETON EPOXY POST - KOSONG (PERLU DIBUAT)
+// Parent: Perekat Beton Epoxy (/p/perekat-beton-epoxy.html)
+// 🧠 SEO NOTE: Const ini kosong. Jika diperlukan, tambahkan URL post untuk perekat beton epoxy.
+// ============================================================
+
 const urlMappingPerekatBetonEpoxyPost = {
-
+  // SARAN ITEM BARU:
+  // "https://www.betonjayareadymix.com/2019/05/harga-epoxy-beton.html": "Harga Epoxy Beton [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/jenis-epoxy-beton.html": "Jenis Epoxy Beton [SUB1]",
+  // "https://www.betonjayareadymix.com/2019/05/cara-aplikasi-epoxy-beton.html": "Cara Aplikasi Epoxy Beton [SUB1]"
 };
+
+// ============================================================
+// MORTAR STRUKTURAL POST - KOSONG (PERLU DIBUAT)
+// Parent: Mortar Struktural (/p/mortar-struktural.html)
+// 🧠 SEO NOTE: Const ini kosong. Jika diperlukan, tambahkan URL post untuk mortar struktural.
+// ============================================================
 
 const urlMappingMortarStrukturalPost = {
-
+  // SARAN ITEM BARU:
+  // "https://www.betonjayareadymix.com/2019/05/harga-mortar-struktural.html": "Harga Mortar Struktural [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/jenis-mortar-struktural.html": "Jenis Mortar Struktural [SUB1]"
 };
+
+// ============================================================
+// SEMEN PUTIH POST - KOSONG (PERLU DIBUAT)
+// Parent: Semen Putih (/p/semen-putih.html)
+// 🧠 SEO NOTE: Const ini kosong. Jika diperlukan, tambahkan URL post untuk semen putih.
+// ============================================================
 
 const urlMappingSemenPutihPost = {
-
+  // SARAN ITEM BARU:
+  // "https://www.betonjayareadymix.com/2019/05/harga-semen-putih.html": "Harga Semen Putih [MONEY PAGE]",
+  // "https://www.betonjayareadymix.com/2019/05/fungsi-semen-putih.html": "Fungsi Semen Putih [SUB1]"
 };
 
+/*
+Jenis TYPE yang digunakan:
+
+[MONEY PAGE] — halaman transaksional (harga, jual, beli, sewa, toko, distributor)
+
+[SUB1] — halaman informasional (edukasi, jenis, spesifikasi, perbandingan, panduan)
+
+*/
 
 
 
