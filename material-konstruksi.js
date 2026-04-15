@@ -237,7 +237,11 @@ const urlMappingMaterialStrukturBangunanBridge = {
   // ============================================================
   "https://www.betonjayareadymix.com/p/cara-memilih-material-struktur-bangunan.html": "Cara Memilih Material Struktur Bangunan"
 };
-
+const urlMappingMaterialStrukturBangunanBridgeToMoneyMaster = {
+// MONEY PAGE (LANGSUNG dari SUB2) ✅ REKOMENDASI
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Harga Material Struktur Bangunan
+  "https://www.betonjayareadymix.com/p/harga-material-struktur-bangunan.html": "Harga Material Struktur Bangunan"
+};
 // ============================================================
 // SUB MAPPING - MATERIAL READY MIX
 // ============================================================
