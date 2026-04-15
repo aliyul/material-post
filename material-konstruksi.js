@@ -230,6 +230,13 @@ const urlMappingMaterialStrukturBangunan = {
   // ============================================================
   "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
 };
+const urlMappingMaterialStrukturBangunanBridge = {
+// ==================== SUB-PILLAR Tipe 1 (Bridge ke Money) ====================
+  // 🔥 PRIORITAS HIGH: Menjembatani edukasi ke transaksi
+  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Cara Memilih Material Struktur Bangunan
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/cara-memilih-material-struktur-bangunan.html": "Cara Memilih Material Struktur Bangunan"
+};
 
 // ============================================================
 // SUB MAPPING - MATERIAL READY MIX
