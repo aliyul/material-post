@@ -2090,8 +2090,8 @@ if (urlMappingSloofPost[cleanUrl]) {
         SloofLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
-
 	*/
+	
 //SUB PILLAR READY MIX
 if (urlMappingReadyMixLokasiPost[cleanUrl]) {
     restoreCondition('MaterialKonsStukturPost');
