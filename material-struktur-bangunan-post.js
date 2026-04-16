@@ -1426,6 +1426,201 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
+	// ============================================================
+// FUNGSI GENERATE BREADCRUMB - DENGAN URL ABSOLUT (LENGKAP)
+// ============================================================
+
+function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = [], pillarType = 'JASA_KONSTRUKSI') {
+    
+    const MAX_LEVEL = 4;
+    const DOMAIN = 'https://www.betonjayareadymix.com';
+    
+    // Validasi pillar type
+    const validPillarTypes = ['PRODUK_KONSTRUKSI', 'MATERIAL_KONSTRUKSI', 'JASA_KONSTRUKSI', 'PRODUK_INTERIOR', 'JASA_DESAIN_INTERIOR'];
+    if (!validPillarTypes.includes(pillarType)) {
+        console.error(`❌ ERROR: "${pillarType}" BUKAN PILLAR TYPE yang valid!`);
+        return null;
+    }
+    
+    const pageTitle = mappingObj[currentUrl];
+    if (!pageTitle) {
+        console.error(`❌ ERROR: URL "${currentUrl}" tidak ditemukan di mapping`);
+        return null;
+    }
+    
+    // ============================================================
+    // FUNGSI DETEKSI TYPE OTOMATIS DARI NAMA
+    // ============================================================
+    function detectPageType(pageName) {
+        const lowerName = pageName.toLowerCase();
+        
+        // Money Child (ada nama kota)
+        const cities = ['jakarta', 'surabaya', 'bandung', 'bekasi', 'tangerang', 'depok', 'bogor', 'cikarang', 'karawang'];
+        for (const city of cities) {
+            if (lowerName.endsWith(city) || lowerName.includes(' ' + city)) return 'MONEY_CHILD';
+        }
+        
+        // Money Lead Gen
+        if (lowerName.startsWith('konsultasi')) return 'MONEY_LEADGEN';
+        
+        // Money Master
+        if (lowerName.startsWith('harga ') || lowerName.startsWith('sewa ')) {
+            if (lowerName.includes('panduan')) return 'SUB1';
+            return 'MONEY_MASTER';
+        }
+        
+        // SUB1 (Panduan)
+        if (lowerName.startsWith('panduan ') || lowerName.startsWith('cara memilih ')) return 'SUB1';
+        
+        // VARIANT
+        if (lowerName.includes(' mini') || lowerName.includes(' long arm') || lowerName.match(/k\d{3}/)) return 'VARIANT';
+        
+        // SUB2_TURUNAN
+        if (lowerName.startsWith('sewa alat ') || lowerName === 'sewa alat konstruksi' ||
+            lowerName === 'sewa alat berat' || lowerName === 'sewa alat ringan') return 'SUB2_TURUNAN';
+        
+        // PILLAR
+        const pillars = ['produk konstruksi', 'material konstruksi', 'jasa konstruksi', 'produk interior', 'jasa desain interior'];
+        if (pillars.includes(lowerName)) return 'PILLAR';
+        
+        // Default SUB2
+        return 'SUB2';
+    }
+    
+    // ============================================================
+    // FUNGSI GENERATE URL ABSOLUT (LENGKAP DENGAN DOMAIN)
+    // ============================================================
+    function generateAbsoluteUrl(pageName) {
+        const slug = pageName.toLowerCase().replace(/ /g, '-');
+        return `${DOMAIN}/p/${slug}.html`;
+    }
+    
+    // ============================================================
+    // GENERATE ID DARI NAMA
+    // ============================================================
+    function generateIdFromName(name) {
+        let id = name.replace(/[^a-zA-Z0-9]/g, '');
+        if (id === 'ProdukInterior') return 'ProdukInteriorPost';
+        if (id === 'Furniture') return 'FurniturePost';
+        return id + 'Post';
+    }
+    
+    // ============================================================
+    // BANGUN LEVELS DARI ARRAY NAMA
+    // ============================================================
+    const allLevels = [];
+    for (let i = 0; i < breadcrumbNames.length; i++) {
+        const name = breadcrumbNames[i];
+        allLevels.push({
+            name: name,
+            url: generateAbsoluteUrl(name),  // ✅ URL ABSOLUT!
+            type: detectPageType(name),
+            id: generateIdFromName(name)
+        });
+    }
+    
+    // ============================================================
+    // TENTUKAN LEVEL YANG AKAN DITAMPILKAN (SKIP OTOMATIS)
+    // ============================================================
+    const selectedLevels = [];
+    
+    // Home (BJR) - WAJIB
+    selectedLevels.push({
+        name: 'BJR',
+        url: DOMAIN,
+        isHome: true
+    });
+    
+    // Parent terdekat (level terakhir) - WAJIB tampil
+    if (allLevels.length > 0) {
+        selectedLevels.push(allLevels[allLevels.length - 1]);
+    }
+    
+    // Level lainnya (boleh skip)
+    for (let i = 0; i < allLevels.length - 1; i++) {
+        const level = allLevels[i];
+        if (selectedLevels.length >= MAX_LEVEL) {
+            console.log(`📌 Skip "${level.name}" karena batas ${MAX_LEVEL} level`);
+            continue;
+        }
+        if (level.type === 'PILLAR' || level.type === 'SUB2' || level.type === 'SUB2_TURUNAN') {
+            console.log(`📌 Skip "${level.name}" (${level.type}) karena type boleh skip`);
+            continue;
+        }
+        selectedLevels.push(level);
+    }
+    
+    // ============================================================
+    // GENERATE HTML BREADCRUMB
+    // ============================================================
+    let breadcrumbHtml = `<div class="breadcrumbs">\n<span>\n`;
+    breadcrumbHtml += `<a href="${DOMAIN}/" itemprop="item" title="Beton Jaya Readymix">`;
+    breadcrumbHtml += `<meta content="1" itemprop="position">`;
+    breadcrumbHtml += `<span itemprop="name">BJR</span></a>\n`;
+    breadcrumbHtml += `</span>\n &nbsp;›&nbsp;\n\n`;
+    breadcrumbHtml += `<span>\n<div id="JasaKonsAlatKonstruksiPost" style="display: inline;">\n`;
+    
+    for (let i = 1; i < selectedLevels.length; i++) {
+        const level = selectedLevels[i];
+        if (i < selectedLevels.length - 1) {
+            breadcrumbHtml += `<a href="${level.url}" id="${level.id}" title="${level.name.toUpperCase()}" style="visibility: visible;">`;
+            breadcrumbHtml += `<span id="${level.id}Name">${level.name}</span>&nbsp;›&nbsp;\n`;
+            breadcrumbHtml += `</a>\n`;
+        } else {
+            breadcrumbHtml += `<span id="pageNameJasaKonsAlatKonstruksiPost">${pageTitle}</span>\n`;
+        }
+    }
+    
+    breadcrumbHtml += `</div>\n</span>\n</div>`;
+    
+    // ============================================================
+    // GENERATE JSON-LD DENGAN URL ABSOLUT
+    // ============================================================
+    const jsonLdItems = [
+        { position: 1, name: 'Beton Jaya Readymix', item: DOMAIN }
+    ];
+    
+    let position = 2;
+    for (let i = 1; i < selectedLevels.length; i++) {
+        jsonLdItems.push({
+            position: position++,
+            name: selectedLevels[i].name,
+            item: selectedLevels[i].url  // ✅ URL ABSOLUT!
+        });
+    }
+    
+    jsonLdItems.push({
+        position: position,
+        name: pageTitle,
+        item: currentUrl.startsWith('http') ? currentUrl : DOMAIN + currentUrl
+    });
+    
+    // ============================================================
+    // INJECT KE DOM
+    // ============================================================
+    document.querySelector('.breadcrumbs')?.remove();
+    document.querySelector('script[data-breadcrumb="true"]')?.remove();
+    
+    const mainContent = document.querySelector('main, article, .content, #main-content, .post-content');
+    if (mainContent?.firstChild) {
+        mainContent.insertAdjacentHTML('afterbegin', breadcrumbHtml);
+    } else {
+        document.body.insertAdjacentHTML('afterbegin', breadcrumbHtml);
+    }
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-breadcrumb', 'true');
+    script.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": jsonLdItems
+    }, null, 2);
+    document.head.appendChild(script);
+    
+    console.log(`✅ Breadcrumb: ${selectedLevels.map(l => l.name).join(' → ')} → ${pageTitle}`);
+    return breadcrumbHtml;
+}
 	 // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
@@ -1897,125 +2092,78 @@ if (urlMappingSloofPost[cleanUrl]) {
     }
 //SUB PILLAR READY MIX
 if (urlMappingReadyMixLokasiPost[cleanUrl]) {
-       restoreCondition('MaterialKonsStukturPost');
-       restoreCondition('readyMix');
-	
-       restoreCondition('ReadyMixLokasiPost');
-       
-    // hapus ID DIV Lain
-	    removeCondition('JasaDesInPost');
-        removeCondition('ProdukInFurPost');
-        removeCondition('ProdukKonsSaluranPost');
-        removeCondition('ProdukKonsPembatasPost');
-	   removeCondition('ProdukKonsDindingModularPost');
-        removeCondition('ProdukKonsPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-        removeCondition('JasaKonsPerbaikanPost');
-	removeCondition('JasaKonsCuttingBetonPost');
-	removeCondition('JasaKonsBongkarBangunanPost');
-        removeCondition('JasaKonsPengeboranPost'); 
-	removeCondition('JasaKonsFinishingPost');
-        removeCondition('JasaKonsStrukturPost');
-        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
-	removeCondition('MaterialKonsAtapPenutupPost');
-        removeCondition('JasaKonsAlatKonstruksiPost');
-        removeCondition('JasaKonsJalanPerkerasanPost');
-	  
-   
-    //hapus elemen lain nya selain READY MIX
-     ////removeCondition('DakBeton');
-     //removeCondition('Pondasi');
-     removeCondition('Bekisting');
-     removeCondition('Aluminium');
-     //removeCondition('RingBalok');
-     //removeCondition('Sloof');
-     removeCondition('SemenPortland');
-     removeCondition('BesiBetonUlir');
-     removeCondition('BesiBetonPolos');
-     removeCondition('Wiremesh');
-     removeCondition('Bondex');
-     removeCondition('BesiBangunan');
-     removeCondition('BajaKonvensional');
-     removeCondition('BajaRinganStruktur');
-     removeCondition('BajaTulangan');
-     removeCondition('Scaffolding');
-     removeCondition('BekistingBaja');
-     removeCondition('SemenInstan');
-     removeCondition('SemenPutih');
-     removeCondition('BekistingKayu');
-     removeCondition('MortarStruktural');
-     removeCondition('PerekatBetonEpoxy');
-
-	   //hapus semua elemen sub readymix kecuali ready mix lokasi
-     	//removeCondition('ReadyMixLokasiPost');
-     	removeCondition('ReadyMixMutuPost');
-     	removeCondition('ReadyMixPlantPost');
-     	removeCondition('ReadyMixKegunaanPost');
-     	removeCondition('ReadyMixPanduanPost');
+    restoreCondition('MaterialKonsStukturPost');
+    restoreCondition('readyMix');
+    restoreCondition('ReadyMixLokasiPost');
     
-       // restoreCondition('MaterialKonsStukturPost');
-       
-       MaterialKonsStukturPost.style.visibility = 'visible';
-       MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
-       
-        MaterialStrukturBangunanPostLink.style.visibility = 'visible';
-        readyMixLink.style.visibility = 'visible';
-        ReadyMixLokasiPostLink.style.visibility = 'visible';
-	
-        pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
-    }
-   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadyMixLokasiPost[cleanUrl]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-	       {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Struktur Bangunan",
-                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
-               },
-              
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Ready Mix Beton Cor Jayamix Minimix",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
-               },
-			   {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": "Ready Mix Lokasi",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-lokasi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 6,
-                   "name": urlMappingReadyMixLokasiPost[cleanUrl],
-                   "item": cleanUrl
-               }
-           ]
-       };
-
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
+    // hapus ID DIV Lain
+    removeCondition('JasaDesInPost');
+    removeCondition('ProdukInFurPost');
+    removeCondition('ProdukKonsSaluranPost');
+    removeCondition('ProdukKonsPembatasPost');
+    removeCondition('ProdukKonsDindingModularPost');
+    removeCondition('ProdukKonsPost');
+    removeCondition('JasaKonsPembatasPost');
+    removeCondition('JasaKonsPondasiTanahPost');
+    removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+    removeCondition('JasaKonsPerbaikanPost');
+    removeCondition('JasaKonsCuttingBetonPost');
+    removeCondition('JasaKonsBongkarBangunanPost');
+    removeCondition('JasaKonsPengeboranPost');
+    removeCondition('JasaKonsFinishingPost');
+    removeCondition('JasaKonsStrukturPost');
+    removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+    removeCondition('MaterialKonsAtapPenutupPost');
+    removeCondition('JasaKonsAlatKonstruksiPost');
+    removeCondition('JasaKonsJalanPerkerasanPost');
+    
+    // hapus elemen lain nya selain READY MIX
+    removeCondition('Bekisting');
+    removeCondition('Aluminium');
+    removeCondition('SemenPortland');
+    removeCondition('BesiBetonUlir');
+    removeCondition('BesiBetonPolos');
+    removeCondition('Wiremesh');
+    removeCondition('Bondex');
+    removeCondition('BesiBangunan');
+    removeCondition('BajaKonvensional');
+    removeCondition('BajaRinganStruktur');
+    removeCondition('BajaTulangan');
+    removeCondition('Scaffolding');
+    removeCondition('BekistingBaja');
+    removeCondition('SemenInstan');
+    removeCondition('SemenPutih');
+    removeCondition('BekistingKayu');
+    removeCondition('MortarStruktural');
+    removeCondition('PerekatBetonEpoxy');
+    
+    // hapus semua elemen sub readymix kecuali ready mix lokasi
+    removeCondition('ReadyMixMutuPost');
+    removeCondition('ReadyMixPlantPost');
+    removeCondition('ReadyMixKegunaanPost');
+    removeCondition('ReadyMixPanduanPost');
+    
+    // set visibility
+    MaterialKonsStukturPost.style.visibility = 'visible';
+    MaterialKonstruksiStukturPostLink.style.visibility = 'visible';
+    MaterialStrukturBangunanPostLink.style.visibility = 'visible';
+    readyMixLink.style.visibility = 'visible';
+    ReadyMixLokasiPostLink.style.visibility = 'visible';
+    
+    pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
+    
+    // ✅ 1 BARIS PANGGIL FUNGSI (GANTI SEMUA JSON-LD MANUAL)
+    generateBreadcrumbForMapping(
+        urlMappingReadyMixLokasiPost,
+        cleanUrl,
+        [
+            'Material Konstruksi',
+            'Material Struktur Bangunan',
+            'Ready Mix Beton Cor Jayamix Minimix',
+            'Ready Mix Lokasi'
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
 }
 	
 if (urlMappingReadyMixPillarPost[cleanUrl]) {
