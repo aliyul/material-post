@@ -1959,6 +1959,7 @@ if (urlMappingAluminiumPost[cleanUrl]) {
         AluminiumLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingAluminiumPost[cleanUrl];
     }
+/*
 if (urlMappingRingBalokPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('RingBalok');
@@ -2089,6 +2090,8 @@ if (urlMappingSloofPost[cleanUrl]) {
         SloofLink.style.visibility = 'visible';
         pageNameMaterialKonsStukturPost.textContent = urlMappingSloofPost[cleanUrl];
     }
+
+	*/
 //SUB PILLAR READY MIX
 if (urlMappingReadyMixLokasiPost[cleanUrl]) {
     restoreCondition('MaterialKonsStukturPost');
