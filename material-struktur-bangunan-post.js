@@ -1629,7 +1629,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
 		urlMappingReadyMixKegunaanPost,
 		urlMappingReadyMixPlantPost,
 		urlMappingReadyMixPanduanPost,
-		urlMappingDakBetonPost,
+		//urlMappingDakBetonPost,
 		urlMappingPondasiPost,
 		urlMappingSloofPost,
 		urlMappingRingBalokPost,
