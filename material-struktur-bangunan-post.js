@@ -1756,19 +1756,18 @@ const urlMappingSemenPutihPost = {
 // TANPA PENGEKUSUSAN SUB2_TURUNAN
 // ============================================================
 
-function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = [], pillarType = 'JASA_KONSTRUKSI') {
+function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], pillarType = 'JASA_KONSTRUKSI') {
     
     const MAX_LEVEL = 4;
     const DOMAIN = 'https://www.betonjayareadymix.com';
     
     // ============================================================
-    // 1. VALIDASI PILLAR TYPE
+    // 1. VALIDASI
     // ============================================================
     const validPillarTypes = ['PRODUK_KONSTRUKSI', 'MATERIAL_KONSTRUKSI', 'JASA_KONSTRUKSI', 
                                'PRODUK_INTERIOR', 'JASA_DESAIN_INTERIOR'];
     if (!validPillarTypes.includes(pillarType)) {
         console.error(`❌ ERROR: "${pillarType}" BUKAN PILLAR TYPE yang valid!`);
-        console.error(`   Gunakan salah satu dari: ${validPillarTypes.join(', ')}`);
         return null;
     }
     
@@ -1789,7 +1788,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
     }
     
     // ============================================================
-    // 3. DETEKSI TYPE OTOMATIS (VERSI TERCANGGIH - TANPA SUB2_TURUNAN)
+    // 3. DETEKSI TYPE OTOMATIS
     // ============================================================
     function detectPageType(pageName, position, totalLevels) {
         const lowerName = pageName.toLowerCase();
@@ -1798,47 +1797,27 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
         const firstWord = parts[0].toLowerCase();
         const wordCount = parts.length;
         
-        // ============================================================
-        // LAPISAN 1: PILLAR (berdasarkan posisi)
-        // ============================================================
-        if (position === 0) {
-            return 'PILLAR';
-        }
+        // PILLAR: posisi pertama
+        if (position === 0) return 'PILLAR';
         
-        // ============================================================
-        // LAPISAN 2: MONEY_LEADGEN
-        // ============================================================
-        if (lowerName.startsWith('konsultasi')) {
-            return 'MONEY_LEADGEN';
-        }
+        // MONEY_LEADGEN
+        if (lowerName.startsWith('konsultasi')) return 'MONEY_LEADGEN';
         
-        // ============================================================
-        // LAPISAN 3: MONEY_MASTER (deteksi transaksi - awal/tengah/akhir)
-        // ============================================================
-        const transactionWords = [
-            'harga', 'sewa', 'jual', 'beli', 'pesan', 'booking', 'order', 'rental',
-            'biaya', 'tarif', 'rate', 'cost', 'price', 'fee', 'charge',
-            'promo', 'diskon', 'obral', 'gratis', 'voucher', 'cashback',
-            'cicilan', 'kredit', 'dp', 'angsuran', 'quote', 'penawaran', 'estimasi'
-        ];
+        // MONEY_MASTER (deteksi transaksi)
+        const transactionWords = ['harga', 'sewa', 'jual', 'beli', 'pesan', 'booking', 'order', 'rental',
+            'biaya', 'tarif', 'rate', 'cost', 'price', 'fee', 'charge', 'promo', 'diskon', 'obral',
+            'gratis', 'voucher', 'cashback', 'cicilan', 'kredit', 'dp', 'angsuran', 'quote', 'penawaran', 'estimasi'];
         
         for (const word of transactionWords) {
-            if (lowerName.startsWith(word + ' ') ||
-                lowerName.includes(' ' + word + ' ') ||
-                lowerName.endsWith(' ' + word)) {
+            if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
                 return 'MONEY_MASTER';
             }
         }
         
-        // ============================================================
-        // LAPISAN 4: SUB1 (deteksi panduan)
-        // ============================================================
-        const guideWords = [
-            'panduan', 'cara', 'tips', 'tutorial', 'langkah', 'petunjuk', 'pedoman', 'instruksi',
-            'guide', 'how to', 'step by step', 'strategi', 'metode', 'teknik',
-            'rahasia', 'kunci sukses', 'wajib tahu', 'perlu diketahui', 'edukasi',
-            'belajar', 'mempelajari', 'pemahaman', 'solusi', 'jawaban'
-        ];
+        // SUB1 (deteksi panduan)
+        const guideWords = ['panduan', 'cara', 'tips', 'tutorial', 'langkah', 'petunjuk', 'pedoman', 'instruksi',
+            'guide', 'how to', 'step by step', 'strategi', 'metode', 'teknik', 'rahasia', 'kunci sukses',
+            'wajib tahu', 'perlu diketahui', 'edukasi', 'belajar', 'mempelajari', 'pemahaman', 'solusi', 'jawaban'];
         
         for (const word of guideWords) {
             if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ')) {
@@ -1846,23 +1825,15 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
             }
         }
         
-        // ============================================================
-        // LAPISAN 5: VARIANT (deteksi angka atau kata kunci)
-        // ============================================================
-        if (/\d/.test(lowerName)) {
-            return 'VARIANT';
-        }
+        // VARIANT (deteksi angka atau kata kunci)
+        if (/\d/.test(lowerName)) return 'VARIANT';
         
-        const variantWords = [
-            'tipe', 'type', 'ukuran', 'model', 'varian', 'warna', 'bentuk', 'seri', 'versi',
-            'grade', 'kelas', 'standar', 'jenis', 'macam', 'ragam', 'kategori',
-            'spesifikasi', 'detail', 'rinci', 'kapasitas', 'volume', 'berat',
-            'panjang', 'lebar', 'tinggi', 'tebal', 'diameter', 'radius', 'luas',
-            'bahan', 'material', 'komposisi', 'kualitas', 'mutu', 'kode',
-            'plus', 'minus', 'kelebihan', 'kekurangan', 'baru', 'lama', 'bekas',
-            'second', 'original', 'kw', 'putih', 'hitam', 'merah', 'biru', 'hijau',
-            'kecil', 'besar', 'sedang', 'mini', 'maxi', 'jumbo', 'extra', 'super'
-        ];
+        const variantWords = ['tipe', 'type', 'ukuran', 'model', 'varian', 'warna', 'bentuk', 'seri', 'versi',
+            'grade', 'kelas', 'standar', 'jenis', 'macam', 'ragam', 'kategori', 'spesifikasi', 'detail', 'rinci',
+            'kapasitas', 'volume', 'berat', 'panjang', 'lebar', 'tinggi', 'tebal', 'diameter', 'radius', 'luas',
+            'bahan', 'material', 'komposisi', 'kualitas', 'mutu', 'kode', 'plus', 'minus', 'kelebihan', 'kekurangan',
+            'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'putih', 'hitam', 'merah', 'biru', 'hijau',
+            'kecil', 'besar', 'sedang', 'mini', 'maxi', 'jumbo', 'extra', 'super'];
         
         for (const word of variantWords) {
             if (lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
@@ -1870,101 +1841,102 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
             }
         }
         
-        // ============================================================
-        // LAPISAN 6: MONEY_CHILD (deteksi lokasi di akhir kata)
-        // ============================================================
+        // MONEY_CHILD (deteksi lokasi)
         function isLikelyLocation(word) {
             if (word.length < 3 || word.length > 25) return false;
             if (!/^[a-zA-Z]+$/.test(word)) return false;
             if (word === firstWord) return false;
             
-            // Blacklist kata yang bukan lokasi
-            const notLocationWords = [
-                'mini', 'maxi', 'super', 'extra', 'plus', 'pro', 'max', 'ultra',
-                'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'grade',
-                'murah', 'mahal', 'hemat', 'premium', 'standar', 'ekonomis',
-                'kecil', 'besar', 'sedang', 'panjang', 'pendek', 'tebal', 'tipis',
-                'putih', 'hitam', 'merah', 'biru', 'hijau', 'kuning', 'ungu', 'abu', 'coklat'
-            ];
+            const notLocationWords = ['mini', 'maxi', 'super', 'extra', 'plus', 'pro', 'max', 'ultra',
+                'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'grade', 'murah', 'mahal', 'hemat',
+                'premium', 'standar', 'ekonomis', 'kecil', 'besar', 'sedang', 'panjang', 'pendek', 'tebal', 'tipis',
+                'putih', 'hitam', 'merah', 'biru', 'hijau', 'kuning', 'ungu', 'abu', 'coklat'];
             if (notLocationWords.includes(word)) return false;
             
-            // Cek apakah dikenal sebagai produk dari mapping
-            const isKnownProduct = knownPages.some(known => 
-                known === word || (known.includes(word) && word.length > 3)
-            );
+            const isKnownProduct = knownPages.some(known => known === word || (known.includes(word) && word.length > 3));
             if (isKnownProduct) return false;
             
-            // Pola nama lokasi
             if (word.length >= 4 && word.length <= 12) return true;
             if (/[aiueo]$/.test(word) && word.length >= 4) return true;
             
-            const locationPatterns = [
-                'ang', 'ung', 'eng', 'ong', 'an', 'in', 'un', 'en', 
-                'ap', 'ip', 'op', 'ar', 'ur', 'er', 'or',
-                'karta', 'jaya', 'pura', 'sari', 'mulya', 'agung', 'asih', 'ayem'
-            ];
+            const locationPatterns = ['ang', 'ung', 'eng', 'ong', 'an', 'in', 'un', 'en', 
+                'ap', 'ip', 'op', 'ar', 'ur', 'er', 'or', 'karta', 'jaya', 'pura', 'sari', 'mulya', 'agung', 'asih', 'ayem'];
             for (const pattern of locationPatterns) {
                 if (word.endsWith(pattern) && word.length >= 4) return true;
             }
             
             if (word.length >= 5 && /[aiueo].*[aiueo]/.test(word)) return true;
-            
             return false;
         }
         
-        if (wordCount >= 2 && isLikelyLocation(lastWord)) {
-            return 'MONEY_CHILD';
-        }
+        if (wordCount >= 2 && isLikelyLocation(lastWord)) return 'MONEY_CHILD';
         
-        // ============================================================
-        // LAPISAN 7: DEFAULT (SUB2)
-        // SUB2 mencakup semua level (termasuk turunan/child)
-        // ============================================================
         return 'SUB2';
     }
     
     // ============================================================
     // 4. FUNGSI BANTUAN
     // ============================================================
-    function generateAbsoluteUrl(pageName) {
-        const slug = pageName.toLowerCase().replace(/ /g, '-');
-        return `${DOMAIN}/p/${slug}.html`;
-    }
-    
     function generateIdFromName(name) {
         return name.replace(/[^a-zA-Z0-9]/g, '') + 'Post';
     }
     
     // ============================================================
-    // 5. BANGUN LEVELS DARI ARRAY NAMA
+    // 5. BANGUN LEVELS DARI ARRAY OBJECT (NAMA + URL)
     // ============================================================
     const allLevels = [];
-    for (let i = 0; i < breadcrumbNames.length; i++) {
-        const name = breadcrumbNames[i];
+    for (let i = 0; i < breadcrumbItems.length; i++) {
+        const item = breadcrumbItems[i];
+        const name = typeof item === 'string' ? item : item.name;
+        const url = typeof item === 'string' ? null : item.url;
+        
         allLevels.push({
             name: name,
-            url: generateAbsoluteUrl(name),
-            type: detectPageType(name, i, breadcrumbNames.length),
+            url: url,  // Bisa null, akan diisi fallback nanti
+            type: detectPageType(name, i, breadcrumbItems.length),
             id: generateIdFromName(name),
             position: i
         });
     }
     
     // ============================================================
-    // 6. TENTUKAN LEVEL YANG AKAN DITAMPILKAN (MAX 4 LEVEL)
+    // 6. VALIDASI & FALLBACK URL
+    // ============================================================
+    for (const level of allLevels) {
+        if (!level.url) {
+            // Fallback: cari di mappingObj
+            let foundUrl = null;
+            for (const [url, name] of Object.entries(mappingObj)) {
+                if (name === level.name) {
+                    foundUrl = url.startsWith('http') ? url : DOMAIN + url;
+                    break;
+                }
+            }
+            // Jika masih tidak ada, buat slug
+            if (!foundUrl) {
+                const slug = level.name.toLowerCase().replace(/ /g, '-');
+                foundUrl = `${DOMAIN}/p/${slug}.html`;
+            }
+            level.url = foundUrl;
+        } else if (!level.url.startsWith('http')) {
+            level.url = DOMAIN + level.url;
+        }
+    }
+    
+    // ============================================================
+    // 7. TENTUKAN LEVEL YANG AKAN DITAMPILKAN (MAX 4 LEVEL)
     // ============================================================
     const selectedLevels = [];
     
     // Level 1: Home (WAJIB)
     selectedLevels.push({ name: 'BJR', url: DOMAIN, isHome: true });
     
-    // Hitung slot tersisa (MAX_LEVEL - 1 untuk home - 1 untuk halaman saat ini)
     let remainingSlots = MAX_LEVEL - 2;
     
     console.log(`📊 ========================================`);
     console.log(`📊 Breadcrumb Generator - SEO Tercanggih`);
     console.log(`📊 Max level: ${MAX_LEVEL}, slot untuk parent: ${remainingSlots}`);
-    console.log(`📊 Breadcrumb names: ${breadcrumbNames.join(' → ')}`);
+    console.log(`📊 Breadcrumb items: ${allLevels.map(l => l.name).join(' → ')}`);
     console.log(`📊 ========================================`);
     
     // Parent terdekat (level terakhir) - WAJIB tampil
@@ -1977,10 +1949,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
     }
     
     // Level lainnya (dari awal sampai sebelum parent terdekat)
-    // Diproses dari yang paling dekat ke parent (bottom-up)
     const otherLevels = [...allLevels.slice(0, allLevels.length - 1)].reverse();
-    
-    // Type yang BOLEH skip (PILLAR dan SUB2)
     const canSkipTypes = ['PILLAR', 'SUB2'];
     
     for (const level of otherLevels) {
@@ -1994,13 +1963,12 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
             continue;
         }
         
-        // Tambahkan di posisi setelah Home (index 1)
         selectedLevels.splice(1, 0, level);
         remainingSlots--;
         console.log(`✅ TAMBAH: "${level.name}" (${level.type}) - sisa slot: ${remainingSlots}`);
     }
     
-    // Halaman saat ini (WAJIB) - level terakhir
+    // Halaman saat ini (WAJIB)
     const currentFullUrl = currentUrl.startsWith('http') ? currentUrl : DOMAIN + currentUrl;
     selectedLevels.push({
         name: pageTitle,
@@ -2008,17 +1976,15 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
         isCurrent: true
     });
     
-    // Update position semua level
+    // Update position
     for (let i = 0; i < selectedLevels.length; i++) {
         selectedLevels[i].position = i + 1;
     }
     
-    console.log(`📊 ========================================`);
     console.log(`✅ FINAL (${selectedLevels.length} level): ${selectedLevels.map(l => l.name).join(' → ')}`);
-    console.log(`📊 ========================================`);
     
     // ============================================================
-    // 7. GENERATE HTML BREADCRUMB
+    // 8. GENERATE HTML BREADCRUMB
     // ============================================================
     let breadcrumbHtml = `<div class="breadcrumbs">\n<span>\n`;
     breadcrumbHtml += `<a href="${DOMAIN}/" itemprop="item" title="Beton Jaya Readymix">`;
@@ -2043,19 +2009,11 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
     breadcrumbHtml += `</div>\n</span>\n</div>`;
     
     // ============================================================
-    // 8. GENERATE JSON-LD SCHEMA (FORMAT MINIFIED)
+    // 9. GENERATE JSON-LD SCHEMA
     // ============================================================
     const jsonLdItems = [];
+    jsonLdItems.push({ "@type": "ListItem", "position": 1, "name": "Beton Jaya Readymix", "item": DOMAIN });
     
-    // Level 1: Home
-    jsonLdItems.push({
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Beton Jaya Readymix",
-        "item": DOMAIN
-    });
-    
-    // Level 2, 3, 4, dst dari selectedLevels (tanpa Home)
     for (let i = 1; i < selectedLevels.length; i++) {
         jsonLdItems.push({
             "@type": "ListItem",
@@ -2066,17 +2024,11 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
     }
     
     // ============================================================
-    // 9. INJECT KE DOM
+    // 10. INJECT KE DOM
     // ============================================================
-    // Hapus breadcrumb lama
-    const oldBreadcrumb = document.querySelector('.breadcrumbs');
-    if (oldBreadcrumb) oldBreadcrumb.remove();
+    document.querySelector('.breadcrumbs')?.remove();
+    document.querySelector('script[data-breadcrumb="true"]')?.remove();
     
-    // Hapus JSON-LD lama
-    const oldJsonLd = document.querySelector('script[data-breadcrumb="true"]');
-    if (oldJsonLd) oldJsonLd.remove();
-    
-    // Inject HTML breadcrumb
     const mainContent = document.querySelector('main, article, .content, #main-content, .post-content');
     if (mainContent?.firstChild) {
         mainContent.insertAdjacentHTML('afterbegin', breadcrumbHtml);
@@ -2084,7 +2036,6 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
         document.body.insertAdjacentHTML('afterbegin', breadcrumbHtml);
     }
     
-    // Inject JSON-LD (minified, tanpa indentasi)
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.setAttribute('data-breadcrumb', 'true');
@@ -2093,7 +2044,6 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbNames = 
         "@type": "BreadcrumbList",
         "itemListElement": jsonLdItems
     });
-    
     document.head.appendChild(script);
     
     console.log(`✅ Breadcrumb injected ke DOM`);
