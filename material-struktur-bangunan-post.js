@@ -2803,17 +2803,18 @@ if (urlMappingReadyMixLokasiPost[cleanUrl]) {
     pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixLokasiPost[cleanUrl];
     
     // ✅ 1 BARIS PANGGIL FUNGSI (GANTI SEMUA JSON-LD MANUAL)
-    generateBreadcrumbForMapping(
-        urlMappingReadyMixLokasiPost,
-        cleanUrl,
-        [
-            'Material Konstruksi',
-            'Material Struktur Bangunan',
-            'Ready Mix Beton Cor Jayamix Minimix',
-            'Ready Mix Lokasi'
-        ],
-        'MATERIAL_KONSTRUKSI'
-    );
+   // ✅ PANGGILAN DENGAN URL MANUAL PER LEVEL
+		generateBreadcrumbForMapping(
+		    urlMappingReadyMixLokasiPost,
+		    cleanUrl,
+		    [
+		        { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+		        { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+		        { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
+		        { name: 'Ready Mix Lokasi', url: 'https://www.betonjayareadymix.com/p/ready-mix-lokasi.html' }
+		    ],
+		    'MATERIAL_KONSTRUKSI'
+		);
 }
 	
 if (urlMappingReadyMixPillarPost[cleanUrl]) {
@@ -2886,17 +2887,16 @@ if (urlMappingReadyMixPillarPost[cleanUrl]) {
 	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixPillarPost[cleanUrl];
 
-	   // ✅ 1 BARIS PANGGIL FUNGSI (GANTI SEMUA JSON-LD MANUAL)
-    generateBreadcrumbForMapping(
-        urlMappingReadyMixPillarPost,
-        cleanUrl,
-        [
-            'Material Konstruksi',
-            'Material Struktur Bangunan',
-            'Ready Mix Beton Cor Jayamix Minimix'
-        ],
-        'MATERIAL_KONSTRUKSI'
-    );
+	   generateBreadcrumbForMapping(
+		    urlMappingReadyMixPillarPost,
+		    cleanUrl,
+		    [
+		        { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+		        { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+		        { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' }
+		    ],
+		    'MATERIAL_KONSTRUKSI'
+		);
 }
 
 if (urlMappingReadyMixMutuPost[cleanUrl]) {
