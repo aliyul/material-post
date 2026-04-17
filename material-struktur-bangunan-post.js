@@ -3018,58 +3018,21 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
         ReadyMixMutuPostLink.style.visibility = 'visible';
 	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixMutuPost[cleanUrl];
-    }
-   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadyMixMutuPost[cleanUrl]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-	       {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Struktur Bangunan",
-                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
-               },
-              
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Ready Mix Beton Cor Jayamix Minimix",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
-               },
-			   {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": "Ready Mix Mutu",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-mutu.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 6,
-                   "name": urlMappingReadyMixMutuPost[cleanUrl],
-                   "item": cleanUrl
-               }
-           ]
-       };
 
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-}
+	    // ✅ 1 BARIS PANGGIL FUNGSI (GANTI SEMUA JSON-LD MANUAL)
+	    generateBreadcrumbForMapping(
+	        urlMappingReadyMixMutuPost,
+	        cleanUrl,
+	        [
+	            'Material Konstruksi',
+	            'Material Struktur Bangunan',
+	            'Ready Mix Beton Cor Jayamix Minimix',
+	            'Ready Mix Mutu'
+	        ],
+	        'MATERIAL_KONSTRUKSI'
+	    );
+    }
+
 if (urlMappingReadyMixPlantPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
