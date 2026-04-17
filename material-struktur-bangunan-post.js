@@ -2984,17 +2984,17 @@ if (urlMappingReadyMixMutuPost[cleanUrl]) {
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixMutuPost[cleanUrl];
 
 	    // ✅ 1 BARIS PANGGIL FUNGSI (GANTI SEMUA JSON-LD MANUAL)
-	    generateBreadcrumbForMapping(
-	        urlMappingReadyMixMutuPost,
-	        cleanUrl,
-	        [
-	            'Material Konstruksi',
-	            'Material Struktur Bangunan',
-	            'Ready Mix Beton Cor Jayamix Minimix',
-	            'Ready Mix Mutu'
-	        ],
-	        'MATERIAL_KONSTRUKSI'
-	    );
+	   		generateBreadcrumbForMapping(
+		    urlMappingReadyMixMutuPost,
+		    cleanUrl,
+		    [
+		        { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+		        { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+		        { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
+		        { name: 'Ready Mix Mutu', url: 'https://www.betonjayareadymix.com/p/ready-mix-mutu.html' }
+		    ],
+		    'MATERIAL_KONSTRUKSI'
+		);
     }
 
 if (urlMappingReadyMixPlantPost[cleanUrl]) {
@@ -3066,58 +3066,20 @@ if (urlMappingReadyMixPlantPost[cleanUrl]) {
         ReadyMixPlantPostLink.style.visibility = 'visible';
 	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixPlantPost[cleanUrl];
+	
+	    generateBreadcrumbForMapping(
+		    urlMappingReadyMixPlantPost,
+		    cleanUrl,
+		    [
+		        { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+		        { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+		        { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
+		        { name: 'Ready Mix Plant', url: 'https://www.betonjayareadymix.com/p/ready-mix-plant.html' }
+		    ],
+		    'MATERIAL_KONSTRUKSI'
+		);
     }
-   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadyMixPlantPost[cleanUrl]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-	       {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Struktur Bangunan",
-                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
-               },
-              
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Ready Mix Beton Cor Jayamix Minimix",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
-               },
-			   {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": "Ready Mix Plant",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-plant.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 6,
-                   "name": urlMappingReadyMixPlantPost[cleanUrl],
-                   "item": cleanUrl
-               }
-           ]
-       };
-
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-}
+   
 if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
@@ -3187,58 +3149,20 @@ if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
         ReadyMixKegunaanPostLink.style.visibility = 'visible';
 	
         pageNameMaterialKonsStukturPost.textContent = urlMappingReadyMixKegunaanPost[cleanUrl];
-    }
-   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-	       {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Struktur Bangunan",
-                   "item": "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html"
-               },
-              
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Ready Mix Beton Cor Jayamix Minimix",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html"
-               },
-			   {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": "Ready Mix Kegunaan",
-                   "item": "https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 6,
-                   "name": urlMappingReadyMixKegunaanPost[cleanUrl],
-                   "item": cleanUrl
-               }
-           ]
-       };
 
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-}
+	     generateBreadcrumbForMapping(
+		    urlMappingReadyMixKegunaanPost,
+		    cleanUrl,
+		    [
+		        { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+		        { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+		        { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
+		        { name: 'Ready Mix Kegunaan', url: 'https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html' }
+		    ],
+		    'MATERIAL_KONSTRUKSI'
+		);
+    }
+
 if (urlMappingReadyMixPanduanPost[cleanUrl]) {
        restoreCondition('MaterialKonsStukturPost');
        restoreCondition('readyMix');
