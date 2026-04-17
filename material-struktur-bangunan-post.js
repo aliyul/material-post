@@ -1756,18 +1756,26 @@ const urlMappingSemenPutihPost = {
 // TANPA PENGEKUSUSAN SUB2_TURUNAN
 // ============================================================
 
+// ============================================================
+// FUNGSI GENERATE BREADCRUMB - VERSI FINAL
+// UNTUK SEMUA PILLAR (PRODUK, MATERIAL, JASA, INTERIOR, DLL)
+// MAX_LEVEL = 4 (TERMASUK HOME)
+// SKIP LEVEL BEKERJA UNTUK PILLAR & SUB2
+// ============================================================
+
 function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], pillarType = 'JASA_KONSTRUKSI') {
     
     const MAX_LEVEL = 4;
     const DOMAIN = 'https://www.betonjayareadymix.com';
     
     // ============================================================
-    // 1. VALIDASI
+    // 1. VALIDASI PILLAR TYPE
     // ============================================================
     const validPillarTypes = ['PRODUK_KONSTRUKSI', 'MATERIAL_KONSTRUKSI', 'JASA_KONSTRUKSI', 
                                'PRODUK_INTERIOR', 'JASA_DESAIN_INTERIOR'];
     if (!validPillarTypes.includes(pillarType)) {
         console.error(`❌ ERROR: "${pillarType}" BUKAN PILLAR TYPE yang valid!`);
+        console.error(`   Gunakan salah satu dari: ${validPillarTypes.join(', ')}`);
         return null;
     }
     
@@ -1892,7 +1900,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
         
         allLevels.push({
             name: name,
-            url: url,  // Bisa null, akan diisi fallback nanti
+            url: url,
             type: detectPageType(name, i, breadcrumbItems.length),
             id: generateIdFromName(name),
             position: i
@@ -1904,7 +1912,6 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
     // ============================================================
     for (const level of allLevels) {
         if (!level.url) {
-            // Fallback: cari di mappingObj
             let foundUrl = null;
             for (const [url, name] of Object.entries(mappingObj)) {
                 if (name === level.name) {
@@ -1912,7 +1919,6 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
                     break;
                 }
             }
-            // Jika masih tidak ada, buat slug
             if (!foundUrl) {
                 const slug = level.name.toLowerCase().replace(/ /g, '-');
                 foundUrl = `${DOMAIN}/p/${slug}.html`;
@@ -1931,6 +1937,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
     // Level 1: Home (WAJIB)
     selectedLevels.push({ name: 'BJR', url: DOMAIN, isHome: true });
     
+    // Hitung slot tersisa (MAX_LEVEL - 1 untuk home - 1 untuk halaman saat ini)
     let remainingSlots = MAX_LEVEL - 2;
     
     console.log(`📊 ========================================`);
@@ -2024,11 +2031,17 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
     }
     
     // ============================================================
-    // 10. INJECT KE DOM
+    // 10. HAPUS BREADCRUMB LAMA & INJECT YANG BARU
     // ============================================================
-    document.querySelector('.breadcrumbs')?.remove();
-    document.querySelector('script[data-breadcrumb="true"]')?.remove();
+    // Hapus semua breadcrumb lama (manual)
+    const oldBreadcrumbs = document.querySelectorAll('.breadcrumbs, .breadcrumb-nav, [aria-label="Breadcrumb"]');
+    oldBreadcrumbs.forEach(el => el.remove());
     
+    // Hapus JSON-LD lama
+    const oldJsonLd = document.querySelector('script[data-breadcrumb="true"]');
+    if (oldJsonLd) oldJsonLd.remove();
+    
+    // Inject HTML breadcrumb baru
     const mainContent = document.querySelector('main, article, .content, #main-content, .post-content');
     if (mainContent?.firstChild) {
         mainContent.insertAdjacentHTML('afterbegin', breadcrumbHtml);
@@ -2036,6 +2049,7 @@ function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = 
         document.body.insertAdjacentHTML('afterbegin', breadcrumbHtml);
     }
     
+    // Inject JSON-LD baru
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.setAttribute('data-breadcrumb', 'true');
