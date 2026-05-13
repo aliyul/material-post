@@ -119,6 +119,12 @@ const urlMappingMaterialKonsFromPillarSub2 = {
   // ============================================================
   "https://www.betonjayareadymix.com/p/material-lainnya.html": "Material Lainnya"  // TYPE: SUB2
 };
+const urlMappingMaterialStrukturBangunanFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html": "Perbandingan Material Struktur Bangunan"  // TYPE: SUB1
+}
+const urlMappingMaterialDindingPenutupFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-dinding-penutup.html": "Perbandingan Material Dinding Penutup"  // TYPE: SUB1
+}
 
 // ============================================================
 // SUB MAPPING - MATERIAL STRUKTUR BANGUNAN (VARIANT)
