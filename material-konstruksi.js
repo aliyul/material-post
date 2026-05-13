@@ -125,6 +125,39 @@ const urlMappingMaterialStrukturBangunanFromSub2Sub1 = {
 const urlMappingMaterialDindingPenutupFromSub2Sub1 = {
    "https://www.betonjayareadymix.com/p/perbandingan-material-dinding-penutup.html": "Perbandingan Material Dinding Penutup"  // TYPE: SUB1
 }
+const urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-tanah-jalan.html": "Perbandingan Material Pekerjaan Tanah Jalan"  // TYPE: SUB1
+}
+const urlMappingMaterialPlumbingSaluranFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-plumbing-saluran.html": "Perbandingan Material Plumbing Saluran"  // TYPE: SUB1
+}
+const urlMappingMaterialAtapPenutupFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-atap-penutup.html": "Perbandingan Material Atap Penutup"  // TYPE: SUB1
+}
+const urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-fasad.html": "Perbandingan Material Fasad Pelapis Eksterior"  // TYPE: SUB1
+}
+const urlMappingMaterialFinishingInteriorFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-finishing-interior.html": "Perbandingan Material Finishing Interior"  // TYPE: SUB1
+}
+const urlMappingMaterialInsulasiAkustikFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-insulasi-akustik.html": "Perbandingan Material Insulasi Akustik"  // TYPE: SUB1
+}
+const urlMappingMaterialWaterproofingPelapisFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-waterproofing-pelapis.html": "Perbandingan Material Waterproofing Pelapis"  // TYPE: SUB1
+}
+const urlMappingMaterialGeosintetikDrainasepFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-geosintetik-drainase.html": "Perbandingan Material Geosintetik Drainase"  // TYPE: SUB1
+}
+const urlMappingMaterialKonstruksiKhususDindingPenutupFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-konstruksi-khusus.html": "Perbandingan Material Konstruksi Khusus"  // TYPE: SUB1
+}
+const urlMappingMaterialKelistrikanFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-material-kelistrikan.html": "Perbandingan Material Kelistrikan"  // TYPE: SUB1
+}
+const urlMappingMaterialModularPrefabrikasiFromSub2Sub1 = {
+   "https://www.betonjayareadymix.com/p/perbandingan-modular-prefabrikasi.html": "Perbandingan Material Modular Prefabrikasi"  // TYPE: SUB1
+}
 
 // ============================================================
 // SUB MAPPING - MATERIAL STRUKTUR BANGUNAN (VARIANT)
@@ -137,7 +170,7 @@ const urlMappingMaterialStrukturBangunan = {
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Bekisting
   // ============================================================
-  "https://www.betonjayareadymix.com/p/bekisting.html": "Bekisting",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/bekisting.html": "Harga Bekisting",  // TYPE: VARIANT
 
   // ============================================================
   // [VARIANT] - ALUMINIUM
