@@ -744,7 +744,7 @@ Jenis TYPE yang digunakan:
  * @date 2026-01-15
  */
 
-function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], entityType = 'PRODUK_INTERIOR') {
+function generateBreadcrumbMaterialKonstruksi(mappingObj, currentUrl, breadcrumbItems = [], entityType = 'PRODUK_INTERIOR') {
     
     // ============================================================
     // 1. KONSTANTA & VALIDASI
@@ -2180,7 +2180,7 @@ document.addEventListener("DOMContentLoaded", function() {
      
        pageNameMaterialKons.textContent = urlMappingMaterialKonsFromPillarSub2[cleanUrlMaterialKons];
 	   
-	 generateBreadcrumbProdukKonstruksi(
+	 generateBreadcrumbMaterialKonstruksi(
         urlMappingMaterialKonsFromPillarSub2,
         cleanUrlMaterialKons,
        [
