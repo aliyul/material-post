@@ -1960,7 +1960,21 @@ document.addEventListener("DOMContentLoaded", function() {
 	// --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
-      urlMappingMaterialKonsFromPillarSub2,
+      	urlMappingMaterialKonsFromPillarSub2,
+	 	urlMappingMaterialStrukturBangunanFromSub2Sub1,
+	 	urlMappingMaterialDindingPenutupFromSub2Sub1,
+	 	urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1,
+		urlMappingMaterialPlumbingSaluranFromSub2Sub1,
+		urlMappingMaterialAtapPenutupFromSub2Sub1,
+		urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1,
+		urlMappingMaterialFinishingInteriorFromSub2Sub1,
+		urlMappingMaterialInsulasiAkustikFromSub2Sub1,
+		urlMappingMaterialWaterproofingPelapisFromSub2Sub1,
+		urlMappingMaterialGeosintetikDrainaseFromSub2Sub1,
+		urlMappingMaterialKonstruksiKhususFromSub2Sub1,
+		urlMappingMaterialKelistrikanFromSub2Sub1,
+		urlMappingMaterialModularPrefabrikasiFromSub2Sub1,
+		
       urlMappingMaterialStrukturBangunan,
       urlMappingMaterialReadyMix,
       urlMappingMaterialDindingPenutup,
