@@ -146,10 +146,10 @@ const urlMappingMaterialInsulasiAkustikFromSub2Sub1 = {
 const urlMappingMaterialWaterproofingPelapisFromSub2Sub1 = {
    "https://www.betonjayareadymix.com/p/perbandingan-waterproofing-pelapis.html": "Perbandingan Material Waterproofing Pelapis"  // TYPE: SUB1
 }
-const urlMappingMaterialGeosintetikDrainasepFromSub2Sub1 = {
+const urlMappingMaterialGeosintetikDrainaseFromSub2Sub1 = {
    "https://www.betonjayareadymix.com/p/perbandingan-geosintetik-drainase.html": "Perbandingan Material Geosintetik Drainase"  // TYPE: SUB1
 }
-const urlMappingMaterialKonstruksiKhususDindingPenutupFromSub2Sub1 = {
+const urlMappingMaterialKonstruksiKhususFromSub2Sub1 = {
    "https://www.betonjayareadymix.com/p/perbandingan-material-konstruksi-khusus.html": "Perbandingan Material Konstruksi Khusus"  // TYPE: SUB1
 }
 const urlMappingMaterialKelistrikanFromSub2Sub1 = {
