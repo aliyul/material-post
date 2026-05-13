@@ -2620,7 +2620,190 @@ document.addEventListener("DOMContentLoaded", function() {
        document.head.appendChild(script);
    }
    */
-	
+
+ if (urlMappingMaterialStrukturBangunanFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialStrukturBangunanFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialStrukturBangunanFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialStrukturBangunanFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+ if (urlMappingMaterialDindingPenutupFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialDindingPenutupFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Dinding Penutup', url: 'https://www.betonjayareadymix.com/p/daftar-material-dinding-penutup.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Pekerjaan Tanah Jalan', url: 'https://www.betonjayareadymix.com/p/daftar-material-pekerjaan-tanah-jalan.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialPlumbingSaluranFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialPlumbingSaluranFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Plumbing Saluran', url: 'https://www.betonjayareadymix.com/p/daftar-material-plumbing-saluran.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialAtapPenutupFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialAtapPenutupFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Atap Penutup', url: 'https://www.betonjayareadymix.com/p/daftar-material-atap-penutup.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/daftar-material-fasad-pelapis-eksterior.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialFinishingInteriorFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialFinishingInteriorFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Finishing Interior', url: 'https://www.betonjayareadymix.com/p/daftar-material-finishing-interior.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialInsulasiAkustikFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialInsulasiAkustikFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Insulasi Akustik', url: 'https://www.betonjayareadymix.com/p/daftar-material-insulasi-akustik.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialWaterproofingPelapisFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialWaterproofingPelapisFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Waterproofing Pelapis', url: 'https://www.betonjayareadymix.com/p/daftar-material-waterproofing-pelapis.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialGeosintetikDrainaseFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialGeosintetikDrainaseFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Geosintetik Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-material-geosintetik-drainase.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialKonstruksiKhususFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialKonstruksiKhususFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Konstruksi Khusus', url: 'https://www.betonjayareadymix.com/p/daftar-material-konstruksi-khusus.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialKelistrikanFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialKelistrikanFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Konstruksi Kelistrikan', url: 'https://www.betonjayareadymix.com/p/daftar-material-konstruksi-kelistrikan.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+ if (urlMappingMaterialModularPrefabrikasiFromSub2Sub1[cleanUrlMaterialKons]) {
+	generateBreadcrumbMaterialKonstruksi(
+        urlMappingMaterialModularPrefabrikasiFromSub2Sub1,
+        cleanUrlMaterialKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+           { name: 'Daftar Material Modular Prefabrikasi', url: 'https://www.betonjayareadymix.com/p/daftar-material-modular-prefabrikasi.html' }
+        ],
+        'MATERIAL_KONSTRUKSI'
+    );
+ }
+
+
+
  //SUB PAGE MATERIAL KONSTRUKSI
 if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
        restoreCondition('MaterialKons');
