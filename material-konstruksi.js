@@ -13,7 +13,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-struktur-bangunan.html": "Material Struktur Bangunan",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html": "Daftar Material Struktur Bangunan",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL DINDING PENUTUP
@@ -21,7 +21,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: AKTIF (konten lengkap)
   // Breadcrumb: Home > Material Konstruksi > Material Dinding Penutup
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-dinding-penutup.html": "Material Dinding Penutup",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-dinding-penutup.html": "Daftar Material Dinding Penutup",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL PEKERJAAN TANAH JALAN
@@ -29,7 +29,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Pekerjaan Tanah Jalan
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-pekerjaan-tanah-jalan.html": "Material Pekerjaan Tanah Jalan",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-pekerjaan-tanah-jalan.html": "Daftar Material Pekerjaan Tanah Jalan",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL PLUMBING SALURAN
@@ -37,7 +37,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Plumbing Saluran
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-plumbing-saluran.html": "Material Plumbing Saluran",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-plumbing-saluran.html": "Daftar Material Plumbing Saluran",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL ATAP PENUTUP
@@ -45,7 +45,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Atap Penutup
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-atap-penutup.html": "Material Atap Penutup",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-atap-penutup.html": "Daftar Material Atap Penutup",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL FASAD PELAPIS EKSTERIOR
@@ -53,7 +53,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html": "Material Fasad Pelapis Eksterior",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html": "Daftar Material Fasad Pelapis Eksterior",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL FINISHING INTERIOR
@@ -61,7 +61,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Finishing Interior
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-finishing-interior.html": "Material Finishing Interior",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-finishing-interior.html": "Daftar Material Finishing Interior",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL INSULASI AKUSTIK
@@ -69,7 +69,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Insulasi Akustik
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-insulasi-akustik.html": "Material Insulasi Akustik",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-insulasi-akustik.html": "Daftar Material Insulasi Akustik",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL WATERPROOFING PELAPIS
@@ -77,7 +77,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Waterproofing Pelapis
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-waterproofing-pelapis.html": "Material Waterproofing Pelapis",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-waterproofing-pelapis.html": "Daftar Material Waterproofing Pelapis",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL GEOSINTETIK DRAINASE
@@ -85,7 +85,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Geosintetik Drainase
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-geosintetik-drainase.html": "Material Geosintetik Drainase",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-geosintetik-drainase.html": "Daftar Material Geosintetik Drainase",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL KONSTRUKSI KHUSUS
@@ -93,7 +93,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Khusus
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-konstruksi-khusus.html": "Material Konstruksi Khusus",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-konstruksi-khusus.html": "Daftar Material Konstruksi Khusus",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL KONSTRUKSI KELISTRIKAN
@@ -101,7 +101,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Konstruksi Kelistrikan
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-konstruksi-kelistrikan.html": "Material Konstruksi Kelistrikan",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-konstruksi-kelistrikan.html": "Daftar Material Konstruksi Kelistrikan",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL MODULAR PREFABRIKASI
@@ -109,7 +109,7 @@ const urlMappingMaterialKons = {
   // 🧠 STATUS: PERLU DICEK (belum ada konten)
   // Breadcrumb: Home > Material Konstruksi > Material Modular Prefabrikasi
   // ============================================================
-  "https://www.betonjayareadymix.com/p/material-modular-prefabrikasi.html": "Material Modular Prefabrikasi",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-material-modular-prefabrikasi.html": "Daftar Material Modular Prefabrikasi",  // TYPE: SUB2
 
   // ============================================================
   // [SUB2] - MATERIAL LAINNYA
