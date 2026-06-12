@@ -1155,7 +1155,8 @@ const urlMappingBesiBangunanPost = {
   // [MONEY PAGE] - HARGA BESI BANGUNAN (MASTER)
   // ============================================================
   "https://www.betonjayareadymix.com/2019/04/harga-besi-bangunan.html": "Harga Besi Bangunan",  // TYPE: MONEY_MASTER
-  
+  //buat dibawah Harga Besi Bangunan untuk Harga Pagar Besi Ulir
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-besi-ulir.html": "Harga Pagar Besi Ulir",
   // ============================================================
   // [MONEY PAGE] - VARIASI HARGA
   // ============================================================
