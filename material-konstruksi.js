@@ -84,7 +84,7 @@ const urlMappingMaterialModularPrefabrikasiFromSub2Sub1 = {
 const urlMappingMaterialStrukturBangunan = {
     "https://www.betonjayareadymix.com/p/bekisting.html": "Harga Bekisting",
     "https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
-    "https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html": "Ready Mix",
+    "https://www.betonjayareadymix.com/p/ready-mix.html": "Ready Mix",
     "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
     "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
     "https://www.betonjayareadymix.com/p/bondex.html": "Bondex",
