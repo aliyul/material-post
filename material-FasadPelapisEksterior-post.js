@@ -1,1003 +1,339 @@
-//SUB MaterialFasadPelapisEksteriorPost
 // ============================================================
-// MATERIAL FASAD PELAPIS EKSTERIOR - POST
-// Parent: Material Fasad Pelapis Eksterior (/p/material-fasad-pelapis-eksterior.html)
-// 🧠 SEO NOTE: Semua URL di bawah ini adalah [MONEY PAGE] untuk target keyword material fasad.
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > [Nama Material]
+// MATERIAL FASAD PELAPIS EKSTERIOR — POST
+// v3.0.0 — Clean Refactor: generateBreadcrumbShared Only
 // ============================================================
 
-// ============================================================
-// [VARIANT] - PANEL FASAD
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Panel Fasad
-// ============================================================
+console.log('[material-fasad-post] 📄 File loaded, waiting for DOM...');
+
+// ═══════════════════════════════════════════════════════════
+// [BAGIAN 1] DEFINISI SEMUA MAPPING
+// ═══════════════════════════════════════════════════════════
 
 const urlMappingPanelFasadPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-panel-fasad.html": "Harga Panel Fasad [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/jenis-panel-fasad.html": "Jenis Panel Fasad [SUB1]",
-  // "https://www.betonjayareadymix.com/2019/04/cara-pasang-panel-fasad.html": "Cara Pasang Panel Fasad [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-panel-fasad.html": "Harga Panel Fasad",
+    // "https://www.betonjayareadymix.com/2019/04/jenis-panel-fasad.html": "Jenis Panel Fasad",
+    // "https://www.betonjayareadymix.com/2019/04/cara-pasang-panel-fasad.html": "Cara Pasang Panel Fasad"
 };
-
-// ============================================================
-// [VARIANT] - EXPANDED METAL
-// 🧠 STATUS: AKTIF (konten lengkap)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Expanded Metal
-// ============================================================
 
 const urlMappingExpandedMetalPost = {
-  "https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal"
+    "https://www.betonjayareadymix.com/2019/04/harga-besi-expanded-metal.html": "Harga Besi Expanded Metal"
 };
-
-// ============================================================
-// [VARIANT] - GRANIT EXTERIOR
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Granit Exterior
-// ============================================================
 
 const urlMappingGranitExteriorPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-granit-exterior.html": "Harga Granit Exterior [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/ukuran-granit-exterior.html": "Ukuran Granit Exterior [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-granit-exterior.html": "Harga Granit Exterior",
+    // "https://www.betonjayareadymix.com/2019/04/ukuran-granit-exterior.html": "Ukuran Granit Exterior"
 };
-
-// ============================================================
-// [VARIANT] - CLADDING FASAD
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cladding Fasad
-// ============================================================
 
 const urlMappingCladdingFasadPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-cladding-fasad.html": "Harga Cladding Fasad [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/jenis-cladding-fasad.html": "Jenis Cladding Fasad [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-cladding-fasad.html": "Harga Cladding Fasad",
+    // "https://www.betonjayareadymix.com/2019/04/jenis-cladding-fasad.html": "Jenis Cladding Fasad"
 };
-
-// ============================================================
-// [VARIANT] - GRC FASAD
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > GRC Fasad
-// ============================================================
 
 const urlMappingGrcFasadPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-grc-fasad.html": "Harga GRC Fasad [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/ukuran-grc-fasad.html": "Ukuran GRC Fasad [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-grc-fasad.html": "Harga GRC Fasad",
+    // "https://www.betonjayareadymix.com/2019/04/ukuran-grc-fasad.html": "Ukuran GRC Fasad"
 };
-
-// ============================================================
-// [VARIANT] - LOUVERS
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Louvers
-// ============================================================
 
 const urlMappingLouversPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-louvers.html": "Harga Louvers [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/jenis-louvers-ventilasi.html": "Jenis Louvers Ventilasi [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-louvers.html": "Harga Louvers",
+    // "https://www.betonjayareadymix.com/2019/04/jenis-louvers-ventilasi.html": "Jenis Louvers Ventilasi"
 };
-
-// ============================================================
-// [VARIANT] - SUN SHADING
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Sun Shading
-// ============================================================
 
 const urlMappingSunShadingPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-sun-shading.html": "Harga Sun Shading [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/jenis-sun-shading-fasad.html": "Jenis Sun Shading Fasad [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-sun-shading.html": "Harga Sun Shading",
+    // "https://www.betonjayareadymix.com/2019/04/jenis-sun-shading-fasad.html": "Jenis Sun Shading Fasad"
 };
-
-// ============================================================
-// [VARIANT] - CAT EKSTERIOR
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cat Eksterior
-// ============================================================
 
 const urlMappingCatEksteriorPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-cat-eksterior.html": "Harga Cat Eksterior [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/merk-cat-eksterior-terbaik.html": "Merk Cat Eksterior Terbaik [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-cat-eksterior.html": "Harga Cat Eksterior",
+    // "https://www.betonjayareadymix.com/2019/04/merk-cat-eksterior-terbaik.html": "Merk Cat Eksterior Terbaik"
 };
-
-// ============================================================
-// [VARIANT] - CAT TEMBOK LUAR
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Cat Tembok Luar
-// ============================================================
 
 const urlMappingCatTembokLuarPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-cat-tembok-luar.html": "Harga Cat Tembok Luar [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/cara-memilih-cat-tembok-luar.html": "Cara Memilih Cat Tembok Luar [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-cat-tembok-luar.html": "Harga Cat Tembok Luar",
+    // "https://www.betonjayareadymix.com/2019/04/cara-memilih-cat-tembok-luar.html": "Cara Memilih Cat Tembok Luar"
 };
-
-// ============================================================
-// [VARIANT] - PLESTER EKSTERIOR
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Plester Eksterior
-// ============================================================
 
 const urlMappingPlesterEksteriorPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-plester-eksterior.html": "Harga Plester Eksterior [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/cara-plester-eksterior.html": "Cara Plester Eksterior [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-plester-eksterior.html": "Harga Plester Eksterior",
+    // "https://www.betonjayareadymix.com/2019/04/cara-plester-eksterior.html": "Cara Plester Eksterior"
 };
-
-// ============================================================
-// [VARIANT] - BATU ALAM DINDING
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Batu Alam Dinding
-// ============================================================
 
 const urlMappingBatuAlamDindingPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-batu-alam-dinding.html": "Harga Batu Alam Dinding [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/jenis-batu-alam-dinding.html": "Jenis Batu Alam Dinding [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-batu-alam-dinding.html": "Harga Batu Alam Dinding",
+    // "https://www.betonjayareadymix.com/2019/04/jenis-batu-alam-dinding.html": "Jenis Batu Alam Dinding"
 };
-
-// ============================================================
-// [VARIANT] - KERAMIK EKSTERIOR
-// 🧠 STATUS: PERLU DICEK (belum ada konten dari URL yang diberikan)
-// Breadcrumb: Home > Material Konstruksi > Material Fasad Pelapis Eksterior > Keramik Eksterior
-// ============================================================
 
 const urlMappingKeramikEksteriorPost = {
-  // "https://www.betonjayareadymix.com/2019/04/harga-keramik-eksterior.html": "Harga Keramik Eksterior [MONEY PAGE]",
-  // "https://www.betonjayareadymix.com/2019/04/ukuran-keramik-eksterior.html": "Ukuran Keramik Eksterior [SUB1]"
+    // "https://www.betonjayareadymix.com/2019/04/harga-keramik-eksterior.html": "Harga Keramik Eksterior",
+    // "https://www.betonjayareadymix.com/2019/04/ukuran-keramik-eksterior.html": "Ukuran Keramik Eksterior"
 };
 
-/*
-Jenis TYPE yang digunakan:
+// ═══════════════════════════════════════════════════════════
+// [BAGIAN 2] EARLY EXIT GUARD
+// ═══════════════════════════════════════════════════════════
 
-[MONEY PAGE] — halaman transaksional (harga, jual, beli)
+(function() {
+    'use strict';
 
-[SUB1] — halaman panduan/pendidikan (bridge ke MONEY page)
-*/
-// ============================================================
-// FUNGSI GENERATE BREADCRUMB - VERSI FINAL
-// UNTUK SEMUA PILLAR (PRODUK, MATERIAL, JASA, INTERIOR, DLL)
-// MAX_LEVEL = 4 (TERMASUK HOME)
-// SKIP LEVEL BEKERJA UNTUK PILLAR & SUB2
-// ============================================================
+    var cleanUrl = window.location.href.split(/[?#]/)[0];
+    console.log('[material-fasad-post] 🔍 Check URL: ' + cleanUrl);
 
-function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], pillarType = 'JASA_KONSTRUKSI') {
-    
-    const MAX_LEVEL = 4;
-    const DOMAIN = 'https://www.betonjayareadymix.com';
-    
-    // ============================================================
-    // 1. VALIDASI PILLAR TYPE
-    // ============================================================
-    const validPillarTypes = ['PRODUK_KONSTRUKSI', 'MATERIAL_KONSTRUKSI', 'JASA_KONSTRUKSI', 
-                               'PRODUK_INTERIOR', 'JASA_DESAIN_INTERIOR'];
-    if (!validPillarTypes.includes(pillarType)) {
-        console.error(`❌ ERROR: "${pillarType}" BUKAN PILLAR TYPE yang valid!`);
-        console.error(`   Gunakan salah satu dari: ${validPillarTypes.join(', ')}`);
-        return null;
-    }
-    
-    const pageTitle = mappingObj[currentUrl];
-    if (!pageTitle) {
-        console.error(`❌ ERROR: URL "${currentUrl}" tidak ditemukan di mapping`);
-        return null;
-    }
-    
-    // ============================================================
-    // 2. KUMPULKAN SEMUA NAMA HALAMAN DARI MAPPING (UNTUK REFERENSI)
-    // ============================================================
-    const knownPages = [];
-    for (const [url, name] of Object.entries(mappingObj)) {
-        if (name && typeof name === 'string') {
-            knownPages.push(name.toLowerCase());
+    var ALL_MAPPINGS = [
+        urlMappingPanelFasadPost,
+        urlMappingExpandedMetalPost,
+        urlMappingGranitExteriorPost,
+        urlMappingCladdingFasadPost,
+        urlMappingGrcFasadPost,
+        urlMappingLouversPost,
+        urlMappingSunShadingPost,
+        urlMappingCatEksteriorPost,
+        urlMappingCatTembokLuarPost,
+        urlMappingPlesterEksteriorPost,
+        urlMappingBatuAlamDindingPost,
+        urlMappingKeramikEksteriorPost
+    ];
+
+    var foundIndex = -1;
+    var foundMappingName = '';
+
+    for (var i = 0; i < ALL_MAPPINGS.length; i++) {
+        if (!ALL_MAPPINGS[i] || typeof ALL_MAPPINGS[i] !== 'object') continue;
+        if (ALL_MAPPINGS[i][cleanUrl]) {
+            foundIndex = i;
+            foundMappingName = ALL_MAPPINGS[i][cleanUrl];
+            break;
         }
     }
-    
-    // ============================================================
-    // 3. DETEKSI TYPE OTOMATIS
-    // ============================================================
-    function detectPageType(pageName, position, totalLevels) {
-        const lowerName = pageName.toLowerCase();
-        const parts = pageName.split(' ');
-        const lastWord = parts[parts.length - 1].toLowerCase();
-        const firstWord = parts[0].toLowerCase();
-        const wordCount = parts.length;
-        
-        // PILLAR: posisi pertama
-        if (position === 0) return 'PILLAR';
-        
-        // MONEY_LEADGEN
-        if (lowerName.startsWith('konsultasi')) return 'MONEY_LEADGEN';
-        
-        // MONEY_MASTER (deteksi transaksi)
-        const transactionWords = ['harga', 'sewa', 'jual', 'beli', 'pesan', 'booking', 'order', 'rental',
-            'biaya', 'tarif', 'rate', 'cost', 'price', 'fee', 'charge', 'promo', 'diskon', 'obral',
-            'gratis', 'voucher', 'cashback', 'cicilan', 'kredit', 'dp', 'angsuran', 'quote', 'penawaran', 'estimasi'];
-        
-        for (const word of transactionWords) {
-            if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
-                return 'MONEY_MASTER';
-            }
-        }
-        
-        // SUB1 (deteksi panduan)
-        const guideWords = ['panduan', 'cara', 'tips', 'tutorial', 'langkah', 'petunjuk', 'pedoman', 'instruksi',
-            'guide', 'how to', 'step by step', 'strategi', 'metode', 'teknik', 'rahasia', 'kunci sukses',
-            'wajib tahu', 'perlu diketahui', 'edukasi', 'belajar', 'mempelajari', 'pemahaman', 'solusi', 'jawaban'];
-        
-        for (const word of guideWords) {
-            if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ')) {
-                return 'SUB1';
-            }
-        }
-        
-        // VARIANT (deteksi angka atau kata kunci)
-        if (/\d/.test(lowerName)) return 'VARIANT';
-        
-        const variantWords = ['tipe', 'type', 'ukuran', 'model', 'varian', 'warna', 'bentuk', 'seri', 'versi',
-            'grade', 'kelas', 'standar', 'jenis', 'macam', 'ragam', 'kategori', 'spesifikasi', 'detail', 'rinci',
-            'kapasitas', 'volume', 'berat', 'panjang', 'lebar', 'tinggi', 'tebal', 'diameter', 'radius', 'luas',
-            'bahan', 'material', 'komposisi', 'kualitas', 'mutu', 'kode', 'plus', 'minus', 'kelebihan', 'kekurangan',
-            'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'putih', 'hitam', 'merah', 'biru', 'hijau',
-            'kecil', 'besar', 'sedang', 'mini', 'maxi', 'jumbo', 'extra', 'super'];
-        
-        for (const word of variantWords) {
-            if (lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
-                return 'VARIANT';
-            }
-        }
-        
-        // MONEY_CHILD (deteksi lokasi)
-        function isLikelyLocation(word) {
-            if (word.length < 3 || word.length > 25) return false;
-            if (!/^[a-zA-Z]+$/.test(word)) return false;
-            if (word === firstWord) return false;
-            
-            const notLocationWords = ['mini', 'maxi', 'super', 'extra', 'plus', 'pro', 'max', 'ultra',
-                'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'grade', 'murah', 'mahal', 'hemat',
-                'premium', 'standar', 'ekonomis', 'kecil', 'besar', 'sedang', 'panjang', 'pendek', 'tebal', 'tipis',
-                'putih', 'hitam', 'merah', 'biru', 'hijau', 'kuning', 'ungu', 'abu', 'coklat'];
-            if (notLocationWords.includes(word)) return false;
-            
-            const isKnownProduct = knownPages.some(known => known === word || (known.includes(word) && word.length > 3));
-            if (isKnownProduct) return false;
-            
-            if (word.length >= 4 && word.length <= 12) return true;
-            if (/[aiueo]$/.test(word) && word.length >= 4) return true;
-            
-            const locationPatterns = ['ang', 'ung', 'eng', 'ong', 'an', 'in', 'un', 'en', 
-                'ap', 'ip', 'op', 'ar', 'ur', 'er', 'or', 'karta', 'jaya', 'pura', 'sari', 'mulya', 'agung', 'asih', 'ayem'];
-            for (const pattern of locationPatterns) {
-                if (word.endsWith(pattern) && word.length >= 4) return true;
-            }
-            
-            if (word.length >= 5 && /[aiueo].*[aiueo]/.test(word)) return true;
-            return false;
-        }
-        
-        if (wordCount >= 2 && isLikelyLocation(lastWord)) return 'MONEY_CHILD';
-        
-        return 'SUB2';
-    }
-    
-    // ============================================================
-    // 4. FUNGSI BANTUAN
-    // ============================================================
-    function generateIdFromName(name) {
-        return name.replace(/[^a-zA-Z0-9]/g, '') + 'Post';
-    }
-    
-    // ============================================================
-    // 5. BANGUN LEVELS DARI ARRAY OBJECT (NAMA + URL)
-    // ============================================================
-    const allLevels = [];
-    for (let i = 0; i < breadcrumbItems.length; i++) {
-        const item = breadcrumbItems[i];
-        const name = typeof item === 'string' ? item : item.name;
-        const url = typeof item === 'string' ? null : item.url;
-        
-        allLevels.push({
-            name: name,
-            url: url,
-            type: detectPageType(name, i, breadcrumbItems.length),
-            id: generateIdFromName(name),
-            position: i
-        });
-    }
-    
-    // ============================================================
-    // 6. VALIDASI & FALLBACK URL
-    // ============================================================
-    for (const level of allLevels) {
-        if (!level.url) {
-            let foundUrl = null;
-            for (const [url, name] of Object.entries(mappingObj)) {
-                if (name === level.name) {
-                    foundUrl = url.startsWith('http') ? url : DOMAIN + url;
-                    break;
-                }
-            }
-            if (!foundUrl) {
-                const slug = level.name.toLowerCase().replace(/ /g, '-');
-                foundUrl = `${DOMAIN}/p/${slug}.html`;
-            }
-            level.url = foundUrl;
-        } else if (!level.url.startsWith('http')) {
-            level.url = DOMAIN + level.url;
-        }
-    }
-    
-    // ============================================================
-    // 7. TENTUKAN LEVEL YANG AKAN DITAMPILKAN (MAX 4 LEVEL)
-    // ============================================================
-    const selectedLevels = [];
-    
-    // Level 1: Home (WAJIB)
-    selectedLevels.push({ name: 'BJR', url: DOMAIN, isHome: true });
-    
-    // Hitung slot tersisa (MAX_LEVEL - 1 untuk home - 1 untuk halaman saat ini)
-    let remainingSlots = MAX_LEVEL - 2;
-    
-    console.log(`📊 ========================================`);
-    console.log(`📊 Breadcrumb Generator - SEO Tercanggih`);
-    console.log(`📊 Max level: ${MAX_LEVEL}, slot untuk parent: ${remainingSlots}`);
-    console.log(`📊 Breadcrumb items: ${allLevels.map(l => l.name).join(' → ')}`);
-    console.log(`📊 ========================================`);
-    
-    // Parent terdekat (level terakhir) - WAJIB tampil
-    let parentTerdekat = null;
-    if (allLevels.length > 0) {
-        parentTerdekat = allLevels[allLevels.length - 1];
-        selectedLevels.push(parentTerdekat);
-        remainingSlots--;
-        console.log(`✅ WAJIB: "${parentTerdekat.name}" (${parentTerdekat.type}) - sisa slot: ${remainingSlots}`);
-    }
-    
-    // Level lainnya (dari awal sampai sebelum parent terdekat)
-    const otherLevels = [...allLevels.slice(0, allLevels.length - 1)].reverse();
-    const canSkipTypes = ['PILLAR', 'SUB2'];
-    
-    for (const level of otherLevels) {
-        if (remainingSlots <= 0) {
-            console.log(`📌 SKIP: "${level.name}" (${level.type}) - tidak ada slot tersisa`);
-            continue;
-        }
-        
-        if (canSkipTypes.includes(level.type)) {
-            console.log(`📌 SKIP: "${level.name}" (${level.type}) - type boleh skip`);
-            continue;
-        }
-        
-        selectedLevels.splice(1, 0, level);
-        remainingSlots--;
-        console.log(`✅ TAMBAH: "${level.name}" (${level.type}) - sisa slot: ${remainingSlots}`);
-    }
-    
-    // Halaman saat ini (WAJIB)
-    const currentFullUrl = currentUrl.startsWith('http') ? currentUrl : DOMAIN + currentUrl;
-    selectedLevels.push({
-        name: pageTitle,
-        url: currentFullUrl,
-        isCurrent: true
-    });
-    
-    // Update position
-    for (let i = 0; i < selectedLevels.length; i++) {
-        selectedLevels[i].position = i + 1;
-    }
-    
-    console.log(`✅ FINAL (${selectedLevels.length} level): ${selectedLevels.map(l => l.name).join(' → ')}`);
-    
-    // ============================================================
-    // 8. GENERATE HTML BREADCRUMB
-    // ============================================================
-    let breadcrumbHtml = `<div class="breadcrumbs">\n<span>\n`;
-    breadcrumbHtml += `<a href="${DOMAIN}/" itemprop="item" title="Beton Jaya Readymix">`;
-    breadcrumbHtml += `<meta content="1" itemprop="position">`;
-    breadcrumbHtml += `<span itemprop="name">BJR</span></a>\n`;
-    breadcrumbHtml += `</span>\n &nbsp;›&nbsp;\n\n`;
-    breadcrumbHtml += `<span>\n<div id="breadcrumbContainer" style="display: inline;">\n`;
-    
-    for (let i = 1; i < selectedLevels.length; i++) {
-        const level = selectedLevels[i];
-        const isLast = (i === selectedLevels.length - 1);
-        
-        if (!isLast) {
-            breadcrumbHtml += `<a href="${level.url}" id="${level.id}" title="${level.name.toUpperCase()}" style="visibility: visible;">`;
-            breadcrumbHtml += `<span id="${level.id}Name">${level.name}</span>&nbsp;›&nbsp;\n`;
-            breadcrumbHtml += `</a>\n`;
-        } else {
-            breadcrumbHtml += `<span id="pageNameBreadcrumb">${level.name}</span>\n`;
-        }
-    }
-    
-    breadcrumbHtml += `</div>\n</span>\n</div>`;
-    
-    // ============================================================
-    // 9. GENERATE JSON-LD SCHEMA
-    // ============================================================
-    const jsonLdItems = [];
-    jsonLdItems.push({ "@type": "ListItem", "position": 1, "name": "Beton Jaya Readymix", "item": DOMAIN });
-    
-    for (let i = 1; i < selectedLevels.length; i++) {
-        jsonLdItems.push({
-            "@type": "ListItem",
-            "position": i + 1,
-            "name": selectedLevels[i].name,
-            "item": selectedLevels[i].url
-        });
-    }
-    
-    // ============================================================
-    // 10. HAPUS BREADCRUMB LAMA & INJECT YANG BARU
-    // ============================================================
-    // Hapus semua breadcrumb lama (manual)
-    const oldBreadcrumbs = document.querySelectorAll('.breadcrumbs, .breadcrumb-nav, [aria-label="Breadcrumb"]');
-    oldBreadcrumbs.forEach(el => el.remove());
-    
-    // Hapus JSON-LD lama
-    const oldJsonLd = document.querySelector('script[data-breadcrumb="true"]');
-    if (oldJsonLd) oldJsonLd.remove();
-    
-    // Inject HTML breadcrumb baru
-    const mainContent = document.querySelector('main, article, .content, #main-content, .post-content');
-    if (mainContent?.firstChild) {
-        mainContent.insertAdjacentHTML('afterbegin', breadcrumbHtml);
-    } else {
-        document.body.insertAdjacentHTML('afterbegin', breadcrumbHtml);
-    }
-    
-    // Inject JSON-LD baru
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.setAttribute('data-breadcrumb', 'true');
-    script.textContent = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": jsonLdItems
-    });
-    document.head.appendChild(script);
-    
-    console.log(`✅ Breadcrumb injected ke DOM`);
-    return breadcrumbHtml;
-}
 
-// Menyimpan elemen yang dihapus dalam variabel
-let removedElementsMaterialKonsFasadPelapisEksteriorPost = {};
-// Fungsi untuk menghapus elemen berdasarkan ID
-function removeCondition(conditionId) {
-    const conditionElement = document.getElementById(conditionId);
-
-    if (conditionElement) {
-        // Menyimpan elemen yang dihapus dalam objek untuk bisa dikembalikan
-        removedElementsMaterialKonsFasadPelapisEksteriorPost[conditionId] = conditionElement;
-        conditionElement.remove(); // Menghapus elemen tersebut
-    }
-}
-
-// Fungsi untuk mengembalikan elemen yang telah dihapus
-function restoreCondition(conditionId) {
-    const breadcrumb = document.querySelector('.breadcrumb');
-    const elementToRestore = removedElementsMaterialKonsFasadPelapisEksteriorPost[conditionId]; // Mendapatkan elemen yang disimpan
-
-    if (elementToRestore) {
-        breadcrumb.appendChild(elementToRestore); // Menambahkan elemen kembali ke dalam breadcrumb
-        delete removedElementsMaterialKonsFasadPelapisEksteriorPost[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
-    } else {
-        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElementsMaterialKonsFasadPelapisEksteriorPost.`);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    // var currentUrl = window.location.href;
-     //const cleanUrlMaterialFasadPelapisEksteriorPost = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
-    const cleanUrlMaterialFasadPelapisEksteriorPost = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-
-/* ==========================================================
-   🧩 HybridDateModified v2.5 — StableHash + Safe Load Order
-   Fitur:
-   - Menjamin detect-evergreen.js dimuat lebih dulu
-   - Update <meta dateModified> hanya jika URL terdaftar
-   - Stable hash → hasil dateModified konsisten
-   ========================================================== */
-/*
-(async function runHybridDateModified() {
-  try {
-    // --- helper untuk load eksternal JS secara promise ---
-    function loadExternalJSAsync(src) {
-      return new Promise((resolve, reject) => {
-        const s = document.createElement("script");
-        s.src = src;
-        s.async = true;
-        s.onload = () => resolve(src);
-        s.onerror = () => reject(new Error("Gagal load " + src));
-        document.head.appendChild(s);
-      });
+    if (foundIndex === -1) {
+        console.log('[material-fasad-post] ⏭️ SKIP — URL tidak cocok');
+        window.__materialFasadPostActive = false;
+        return;
     }
 
-	
-     // --- loader evergreen JS dengan sessionStorage (anti 429) ---
-    async function loadEvergreenScript() {
-      const KEY = "evergreenScriptLoaded";
+    window.__materialFasadPostActive = true;
+    window.__materialFasadPostMatchIndex = foundIndex;
+    window.__materialFasadPostMatchMappingName = foundMappingName;
 
-      const needReload =
-        !sessionStorage.getItem(KEY) ||
-        !window.AEDMetaDates ||
-        !window.detectEvergreenReady;
-
-      if (!needReload) {
-        console.log("⚡ detect-evergreen.js sudah aktif & variable ready — SKIP load");
-      } else {
-        console.log("⏳ load detect-evergreen.js dari GitHack…");
-        try {
-          await loadExternalJSAsync(
-            "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
-          );
-          window.detectEvergreenReady = true;
-          sessionStorage.setItem(KEY, "true");
-          console.log("✅ detect-evergreen.js LOADED & READY");
-        } catch (err) {
-          console.error("❌ Gagal load detect-evergreen.js", err);
-          sessionStorage.removeItem(KEY);
-        }
-      }
-
-      // --- ALWAYS run evergreen check tiap halaman ---
-      if (typeof window.runEvergreenCheck === "function") {
-        console.log("🔁 Running evergreen check for this page...");
-        window.runEvergreenCheck();
-      } else {
-        console.warn("⚠️ runEvergreenCheck tidak ditemukan!");
-      }
-    }
-	  
-    // --- gabungkan semua mapping ---
-    const urlMappingGabungan = Object.assign(
-      {},
-		urlMappingPanelFasadPost,
-		urlMappingExpandedMetalPost,
-		urlMappingGranitExteriorPost,
-		urlMappingCladdingFasadPost,
-		urlMappingGrcFasadPost,
-		urlMappingLouversPost,
-		urlMappingSunShadingPost,
-		urlMappingCatEksteriorPost,
-		urlMappingCatTembokLuarPost,
-		urlMappingPlesterEksteriorPost,
-		urlMappingBatuAlamDindingPost,
-		urlMappingKeramikEksteriorPost
-    );
-
-    // --- validasi URL terdaftar ---
-    if (!urlMappingGabungan[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialFasadPelapisEksteriorPost}`);
-      return;
-    }
-  
-  // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-19T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected material-FasadPelapisEksterior-post: ${cleanUrlMaterialFasadPelapisEksteriorPost}`);
-
-    // --- pastikan meta nextUpdate1 ada ---
-    let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
-    if (!metaNextUpdate1) {
-      metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
-      document.head.appendChild(metaNextUpdate1);
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
-    } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
-    }
-
-    // --- pastikan detect-evergreen.js selesai dimuat ---
-    await loadEvergreenScript();
-    console.log("✅ detect-evergreen.js selesai dimuat.");
-
-    // --- pastikan AEDMetaDates sudah tersedia ---
-    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
-      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan, skip update.");
-      return;
-    }
-
-    const { dateModified, nextUpdate, type } = window.AEDMetaDates;
-
-    // 🔒 Stable hash untuk variasi waktu stabil
-    function stableHash(str) {
-      let hash = 0;
-      for (let i = 0; i < str.length; i++) {
-        hash = (hash << 5) - hash + str.charCodeAt(i);
-        hash |= 0;
-      }
-      return Math.abs(hash);
-    }
-
-    const hash = stableHash(cleanUrlMaterialFasadPelapisEksteriorPost);
-    const offsetSeconds = hash % 86400;
-    const finalDate = new Date(new Date(dateModified).getTime() + offsetSeconds * 1000);
-    const isoDate = finalDate.toISOString();
-
-    // 🧱 Update meta dateModified
-    [
-      ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
-      ['meta[name="dateModified"]', 'name', 'dateModified'],
-      ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
-    ].forEach(([selector, attr, val]) => {
-      let meta = document.querySelector(selector);
-      if (!meta) {
-        meta = document.createElement("meta");
-        meta.setAttribute(attr, val);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute("content", isoDate);
-    });
-	
-				// Pastikan AEDMetaDates sudah ada minimal sebagai objek kosong
-	window.AEDMetaDates = window.AEDMetaDates || {};
-	
-	// Update hanya properti dateModified tanpa menghapus lainnya
-	window.AEDMetaDates = {
-	  ...window.AEDMetaDates,
-	  dateModified: isoDate
-	};
-	
-	console.log("✅ AEDMetaDates updated material-FasadPelapisEksterior-post:", window.AEDMetaDates); 
-    console.log(`✅ [HybridDateModified v2.5] ${cleanUrlMaterialFasadPelapisEksteriorPost} → ${isoDate} | type=${type || "-"}`);
-
-    // 🧩 Perbarui schema jika ada
-    const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
-    if (schemaEl) {
-      try {
-        const data = JSON.parse(schemaEl.textContent.trim());
-        data.dateModified = isoDate;
-        if (data.maintenanceSchedule) data.maintenanceSchedule.scheduledTime = nextUpdate;
-        schemaEl.textContent = JSON.stringify(data, null, 2);
-        console.log(`🔄 Schema maintenance diperbarui → dateModified: ${isoDate}`);
-      } catch (err) {
-        console.error("❌ Gagal update schema:", err);
-      }
-    }
-
-  } catch (err) {
-    console.error("[HybridDateModified] Fatal error:", err);
-  }
+    console.log('[material-fasad-post] ✅ Match #' + (foundIndex + 1) + ' — "' + foundMappingName + '"');
 })();
-*/
 
-	 // --- gabungkan semua mapping ---
-    const urlMappingGabungan = Object.assign(
-      {},
-		urlMappingPanelFasadPost,
-		urlMappingExpandedMetalPost,
-		urlMappingGranitExteriorPost,
-		urlMappingCladdingFasadPost,
-		urlMappingGrcFasadPost,
-		urlMappingLouversPost,
-		urlMappingSunShadingPost,
-		urlMappingCatEksteriorPost,
-		urlMappingCatTembokLuarPost,
-	 	urlMappingPlesterEksteriorPost,
-		urlMappingBatuAlamDindingPost,
-		urlMappingKeramikEksteriorPost
-    );
+// ═══════════════════════════════════════════════════════════
+// [BAGIAN 3] FUNGSI UTAMA
+// ═══════════════════════════════════════════════════════════
 
-    // --- validasi URL terdaftar ---
-    if (!urlMappingGabungan[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlMaterialFasadPelapisEksteriorPost}`);
-      return;
-    }
-	(async function runHybridDateModified() {
-		  try {
-		
-		    function loadExternalJS(src) {
-		      return new Promise((resolve) => {
-		        if (document.querySelector(`script[src="${src}"]`)) {
-		          resolve();
-		          return;
-		        }
-		
-		        const s = document.createElement("script");
-		        s.src = src;
-		        s.defer = true; // 🔥 PENTING
-		        s.onload = resolve;
-		        s.onerror = () => {
-		          console.warn("[Evergreen] Gagal load:", src);
-		          resolve(); // ❗ jangan reject
-		        };
-		        document.head.appendChild(s);
-		      });
-		    }
-		
-		    function waitForDetectEvergreen() {
-		      return new Promise((resolve) => {
-		        if (
-		          window.__detectEvergreenReady &&
-		          typeof window.detectEvergreen === "function"
-		        ) {
-		          resolve(true);
-		        } else {
-		          window.addEventListener(
-		            "detectEvergreenReady",
-		            () => resolve(true),
-		            { once: true }
-		          );
-		        }
-		      });
-		    }
-		
-		    async function loadEvergreenScript(manualDate = null) {
-		
-		      if (typeof window.detectEvergreen !== "function") {
-		        console.log("⏳ Loading detectEvergreen...");
-		
-		        await loadExternalJS(
-		          "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
-		        );
-		
-		        await waitForDetectEvergreen();
-		        console.log("✅ detectEvergreen READY");
-		      } else {
-		        console.log("⚡ detectEvergreen already available");
-		      }
-		
-		      const config = manualDate
-		        ? { customDateModified: manualDate }
-		        : {};
-		
-		      console.log("🧠 detectEvergreen config:", config);
-		
-		      try {
-		        window.detectEvergreen(config);
-		      } catch (e) {
-		        console.error("[Evergreen] Execution failed:", e);
-		      }
-		    }
-		
-		    // =============================
-		    // MODE PEMANGGILAN
-		    // =============================
-		
-		    // ✔ MANUAL (ONCE UPDATE EVERGREEN)
-		    await loadEvergreenScript("2026-01-25T10:30:00+07:00");
-		
-		    // ✔ AUTO MODE
-		    // await loadEvergreenScript();
-		
-		  } catch (err) {
-		    console.error("[HybridDateModified] Fatal:", err);
-		  }
-		})();
-     // Menemukan elemen menggunakan ID
-     var MaterialKonsFasadPelapisEksteriorPost = document.getElementById("MaterialKonsFasadPelapisEksteriorPost");
-    if (!MaterialKonsFasadPelapisEksteriorPost) {
-        console.error("elemen Id MaterialKonsFasadPelapisEksteriorPost kondisi terhapus");
+function initMaterialFasadPost() {
+    // ⚡ Guard flag
+    if (!window.__materialFasadPostActive) {
+        console.log('[material-fasad-post] ⏭️ Execute SKIP');
         return;
     }
 
-     var MaterialKonstruksiFasadPelapisEksteriorPostLink = document.getElementById("MaterialKonstruksiFasadPelapisEksteriorPost");
-     var MaterialFasadPelapisEksteriorPostLink = document.getElementById("MaterialFasadPelapisEksteriorPost");
-     
-     var PanelFasadLink = document.getElementById("PanelFasad");
-     var ExpandedMetalLink = document.getElementById("ExpandedMetal");
-     var GranitExteriorLink = document.getElementById("GranitExterior");
-     var CladdingFasadLink = document.getElementById("CladdingFasad");
-     var GrcFasadLink = document.getElementById("GrcFasad");
-     var LouversLink = document.getElementById("Louvers");
-     var SunShadingLink = document.getElementById("SunShading");
-     var CatEksteriorLink = document.getElementById("CatEksterior");
-     var CatTembokLuarLink = document.getElementById("CatTembokLuar");
-     var PlesterEksteriorLink = document.getElementById("PlesterEksterior");
-     var BatuAlamDindingLink = document.getElementById("BatuAlamDinding");
-     var KeramikEksteriorLink = document.getElementById("KeramikEksterior");
-	
-     var pageNameMaterialKonsFasadPelapisEksteriorPost = document.getElementById("pageNameMaterialKonsFasadPelapisEksteriorPost");
- 
-     // Default untuk menyembunyikan elemen
-     //JasaKonstruksiPerbaikan.remove(); // Menghapus elemen tersebut
-  
-     MaterialKonsFasadPelapisEksteriorPost.style.visibility = 'hidden';
-     MaterialKonstruksiFasadPelapisEksteriorPostLink.style.visibility = 'hidden';
-     MaterialFasadPelapisEksteriorPostLink.style.visibility = 'hidden';
-	
-     PanelFasadLink.style.visibility = 'hidden';
-     ExpandedMetalLink.style.visibility = 'hidden';
-     GranitExteriorLink.style.visibility = 'hidden';
-     CladdingFasadLink.style.visibility = 'hidden';
-     GrcFasadLink.style.visibility = 'hidden';
-     LouversLink.style.visibility = 'hidden';
-     SunShadingLink.style.visibility = 'hidden';
-     CatEksteriorLink.style.visibility = 'hidden';
-     CatTembokLuarLink.style.visibility = 'hidden';
-     PlesterEksteriorLink.style.visibility = 'hidden';
-     BatuAlamDindingLink.style.visibility = 'hidden';
-     KeramikEksteriorLink.style.visibility = 'hidden';
-	
-     pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = ""; 
- 
-    if (!MaterialKonstruksiFasadPelapisEksteriorPostLink || !pageNameMaterialKonsFasadPelapisEksteriorPost) {
-        console.error("Salah satu elemen MaterialKonsFasadPelapisEksteriorPost tidak ditemukan!");
-        return;
+    console.log('[material-fasad-post] 🚀 Execute');
+
+    var cleanUrl = window.location.href.split(/[?#]/)[0];
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 1] PANEL FASAD
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingPanelFasadPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingPanelFasadPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Panel Fasad', url: 'https://www.betonjayareadymix.com/p/panel-fasad.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
     }
 
-if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-       restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
-       restoreCondition('PanelFasad');
-      
-    // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
-	removeCondition('JasaDesInPost');
-        removeCondition('ProdukInFurPost');
-        removeCondition('MaterialKonsStukturPost');        
-	removeCondition('MaterialKonsAtapPenutupPost');
-	
-        removeCondition('ProdukKonsSaluranPost');
-        removeCondition('ProdukKonsPembatasPost');
-	   removeCondition('ProdukKonsDindingModularPost');
-        removeCondition('ProdukKonsPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-        removeCondition('JasaKonsPerbaikanPost');
-	removeCondition('JasaKonsCuttingBetonPost');
-	removeCondition('JasaKonsBongkarBangunanPost');
-        removeCondition('JasaKonsPengeboranPost'); 
-	removeCondition('JasaKonsFinishingPost');
-        removeCondition('JasaKonsStrukturPost');
-        removeCondition('JasaKonsAlatKonstruksiPost');
-        removeCondition('JasaKonsJalanPerkerasanPost');
-        //removeCondition('MaterialKonsFasadPelapisEksteriorPost');
-
-    //hapus elemen lain nya selain PanelFasad
-     removeCondition('ExpandedMetal');
-     removeCondition('GranitExterior');
-     removeCondition('CladdingFasad');
-     removeCondition('GrcFasad');
-     removeCondition('Louvers');
-     removeCondition('SunShading');
-     removeCondition('CatEksterior');
-     removeCondition('CatTembokLuar');
-     removeCondition('PlesterEksterior');
-     removeCondition('BatuAlamDinding');
-     removeCondition('KeramikEksterior');
-	  
-       // restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
-       
-       MaterialKonsFasadPelapisEksteriorPost.style.visibility = 'visible';
-       MaterialKonstruksiFasadPelapisEksteriorPostLink.style.visibility = 'visible';
-       
-        MaterialFasadPelapisEksteriorPostLink.style.visibility = 'visible';
-        PanelFasadLink.style.visibility = 'visible';
-        pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost];
-    }
- // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-               {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Fasad Pelapis Eksterior",
-                   "item": "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html"
-               },
-	      
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Panel Fasad",
-                   "item": "https://www.betonjayareadymix.com/p/panel-fasad.html"
-               },
-		   
-              {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": urlMappingPanelFasadPost[cleanUrlMaterialFasadPelapisEksteriorPost],
-                   "item": cleanUrlMaterialFasadPelapisEksteriorPost
-               }
-           ]
-       };
-
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-   }
-if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-       restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
-       restoreCondition('ExpandedMetal');
-      
-    // hapus ID DIV Lain KECUALI MaterialKonsFasadPelapisEksteriorPost
-	removeCondition('JasaDesInPost');
-        removeCondition('ProdukInFurPost');
-        removeCondition('MaterialKonsStukturPost');
-	removeCondition('MaterialKonsAtapPenutupPost');
-        removeCondition('ProdukKonsSaluranPost');
-        removeCondition('ProdukKonsPembatasPost');
-	   removeCondition('ProdukKonsDindingModularPost');
-        removeCondition('ProdukKonsPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-        removeCondition('JasaKonsPerbaikanPost');
-	removeCondition('JasaKonsCuttingBetonPost');
-	removeCondition('JasaKonsBongkarBangunanPost');
-        removeCondition('JasaKonsPengeboranPost'); 
-	removeCondition('JasaKonsFinishingPost');
-        removeCondition('JasaKonsStrukturPost');
-        removeCondition('JasaKonsAlatKonstruksiPost');
-        removeCondition('JasaKonsJalanPerkerasanPost');
-       /// removeCondition('MaterialKonsFasadPelapisEksteriorPost');
-
-    //hapus elemen lain nya selain PanelFasad
-     removeCondition('PanelFasad');
-     removeCondition('GranitExterior');
-     removeCondition('CladdingFasad');
-     removeCondition('GrcFasad');
-     removeCondition('Louvers');
-     removeCondition('SunShading');
-     removeCondition('CatEksterior');
-     removeCondition('CatTembokLuar');
-     removeCondition('PlesterEksterior');
-     removeCondition('BatuAlamDinding');
-     removeCondition('KeramikEksterior');
-	  
-       // restoreCondition('MaterialKonsFasadPelapisEksteriorPost');
-       
-       MaterialKonsFasadPelapisEksteriorPost.style.visibility = 'visible';
-       MaterialKonstruksiFasadPelapisEksteriorPostLink.style.visibility = 'visible';
-       
-        MaterialFasadPelapisEksteriorPostLink.style.visibility = 'visible';
-        ExpandedMetalLink.style.visibility = 'visible';
-        pageNameMaterialKonsFasadPelapisEksteriorPost.textContent = urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost];
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 2] EXPANDED METAL
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingExpandedMetalPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingExpandedMetalPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Expanded Metal', url: 'https://www.betonjayareadymix.com/p/expanded-metal.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
     }
 
- // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-               {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Material Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/material-konstruksi.html"
-               },
-               {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Material Fasad Pelapis Eksterior",
-                   "item": "https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html"
-               },
-	      
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": "Expanded Metal",
-                   "item": "https://www.betonjayareadymix.com/p/expanded-metal.html"
-               },
-		   
-              {
-                   "@type": "ListItem",
-                   "position": 5,
-                   "name": urlMappingExpandedMetalPost[cleanUrlMaterialFasadPelapisEksteriorPost],
-                   "item": cleanUrlMaterialFasadPelapisEksteriorPost
-               }
-           ]
-       };
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 3] GRANIT EXTERIOR
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingGranitExteriorPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingGranitExteriorPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Granit Exterior', url: 'https://www.betonjayareadymix.com/p/granit-exterior.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
 
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
-   }
-   });
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 4] CLADDING FASAD
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingCladdingFasadPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingCladdingFasadPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Cladding Fasad', url: 'https://www.betonjayareadymix.com/p/cladding-fasad.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 5] GRC FASAD
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingGrcFasadPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingGrcFasadPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'GRC Fasad', url: 'https://www.betonjayareadymix.com/p/grc-fasad.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 6] LOUVERS
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingLouversPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingLouversPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Louvers', url: 'https://www.betonjayareadymix.com/p/louvers.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 7] SUN SHADING
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingSunShadingPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingSunShadingPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Sun Shading', url: 'https://www.betonjayareadymix.com/p/sun-shading.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 8] CAT EKSTERIOR
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingCatEksteriorPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingCatEksteriorPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Cat Eksterior', url: 'https://www.betonjayareadymix.com/p/cat-eksterior.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 9] CAT TEMBOK LUAR
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingCatTembokLuarPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingCatTembokLuarPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Cat Tembok Luar', url: 'https://www.betonjayareadymix.com/p/cat-tembok-luar.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 10] PLESTER EKSTERIOR
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingPlesterEksteriorPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingPlesterEksteriorPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Plester Eksterior', url: 'https://www.betonjayareadymix.com/p/plester-eksterior.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 11] BATU ALAM DINDING
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingBatuAlamDindingPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingBatuAlamDindingPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Batu Alam Dinding', url: 'https://www.betonjayareadymix.com/p/batu-alam-dinding.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // [BLOK 12] KERAMIK EKSTERIOR
+    // ═══════════════════════════════════════════════════════
+    if (urlMappingKeramikEksteriorPost[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingKeramikEksteriorPost,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Material Fasad Pelapis Eksterior', url: 'https://www.betonjayareadymix.com/p/material-fasad-pelapis-eksterior.html' },
+                { name: 'Keramik Eksterior', url: 'https://www.betonjayareadymix.com/p/keramik-eksterior.html' }
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+
+} // <-- penutup fungsi initMaterialFasadPost
+
+// ═══════════════════════════════════════════════════════════
+// [BAGIAN 4] AUTO-INIT
+// ═══════════════════════════════════════════════════════════
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMaterialFasadPost);
+} else {
+    initMaterialFasadPost();
+}
