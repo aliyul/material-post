@@ -1880,8 +1880,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
-                { name: 'Ready Mix Lokasi', url: 'https://www.betonjayareadymix.com/p/ready-mix-lokasi.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
@@ -1897,7 +1896,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
@@ -1913,8 +1912,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
-                { name: 'Ready Mix Mutu', url: 'https://www.betonjayareadymix.com/p/ready-mix-mutu.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
@@ -1930,8 +1928,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
-                { name: 'Ready Mix Plant', url: 'https://www.betonjayareadymix.com/p/ready-mix-plant.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
@@ -1947,8 +1944,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
-                { name: 'Ready Mix Kegunaan', url: 'https://www.betonjayareadymix.com/p/ready-mix-kegunaan.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
@@ -1964,8 +1960,7 @@ function initMaterialStrukturPost() {
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
                 { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix Beton Cor Jayamix Minimix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' },
-                { name: 'Ready Mix Panduan', url: 'https://www.betonjayareadymix.com/p/ready-mix-panduan.html' }
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
