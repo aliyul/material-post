@@ -1,6 +1,6 @@
 // ============================================================
 // MATERIAL KONSTRUKSI — PILLAR + SUB2 + SUB1 + VARIANT
-// v2.0.0 — Early Exit + generateBreadcrumbMaterialKonstruksi + Fix Bug
+// v2.0.0 — Early Exit + generateBreadcrumbShared + Fix Bug
 // ============================================================
 
 console.log('[material-konstruksi] 📄 File loaded, waiting for DOM...');
@@ -413,7 +413,7 @@ function initMaterialKons() {
     // [BLOK 0] PILLAR — MATERIAL KONSTRUKSI (2 level)
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialKonstruksiPillar[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKonstruksiPillar,
             cleanUrlMaterialKons,
             [],
@@ -425,7 +425,7 @@ function initMaterialKons() {
     // [BLOK 1] SUB2 — DAFTAR MATERIAL (3 level)
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialKonsFromPillarSub2[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKonsFromPillarSub2,
             cleanUrlMaterialKons,
             [
@@ -439,7 +439,7 @@ function initMaterialKons() {
     // [BLOK 2] SUB1 — PERBANDINGAN (4 level)
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialStrukturBangunanFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialStrukturBangunanFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -451,7 +451,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialDindingPenutupFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialDindingPenutupFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -463,7 +463,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialPekerjaanTanahJalanFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -475,7 +475,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialPlumbingSaluranFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialPlumbingSaluranFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -487,7 +487,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialAtapPenutupFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialAtapPenutupFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -499,7 +499,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialFasadPelapisEksteriorFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -511,7 +511,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialFinishingInteriorFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialFinishingInteriorFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -523,7 +523,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialInsulasiAkustikFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialInsulasiAkustikFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -535,7 +535,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialWaterproofingPelapisFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialWaterproofingPelapisFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -547,7 +547,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialGeosintetikDrainaseFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialGeosintetikDrainaseFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -559,7 +559,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialKonstruksiKhususFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKonstruksiKhususFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -571,7 +571,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialKelistrikanFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKelistrikanFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -583,7 +583,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialModularPrefabrikasiFromSub2Sub1[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialModularPrefabrikasiFromSub2Sub1,
             cleanUrlMaterialKons,
             [
@@ -598,7 +598,7 @@ function initMaterialKons() {
     // [BLOK 3] BRIDGE + MONEY_MASTER — MATERIAL STRUKTUR BANGUNAN
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialStrukturBangunanBridge[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialStrukturBangunanBridge,
             cleanUrlMaterialKons,
             [
@@ -611,7 +611,7 @@ function initMaterialKons() {
     }
 
     if (urlMappingMaterialStrukturBangunanBridgeToMoneyMaster[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialStrukturBangunanBridgeToMoneyMaster,
             cleanUrlMaterialKons,
             [
@@ -628,7 +628,7 @@ function initMaterialKons() {
     // [BLOK 4] VARIANT — MATERIAL STRUKTUR BANGUNAN (4 level)
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialStrukturBangunan,
             cleanUrlMaterialKons,
             [
@@ -643,7 +643,7 @@ function initMaterialKons() {
     // [BLOK 5] SUB2/VARIANT — MATERIAL READY MIX (5 level)
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialReadyMix,
             cleanUrlMaterialKons,
             [
@@ -659,7 +659,7 @@ function initMaterialKons() {
     // [BLOK 6] VARIANT — DINDING PENUTUP
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialDindingPenutup[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialDindingPenutup,
             cleanUrlMaterialKons,
             [
@@ -674,7 +674,7 @@ function initMaterialKons() {
     // [BLOK 7] VARIANT — PEKERJAAN TANAH JALAN
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialPekerjaanTanahJalan[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialPekerjaanTanahJalan,
             cleanUrlMaterialKons,
             [
@@ -689,7 +689,7 @@ function initMaterialKons() {
     // [BLOK 8] SUB2/VARIANT — PLUMBING SALURAN
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialPlumbingSaluran[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialPlumbingSaluran,
             cleanUrlMaterialKons,
             [
@@ -704,7 +704,7 @@ function initMaterialKons() {
     // [BLOK 9] SUB2/VARIANT — ATAP PENUTUP
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialAtapPenutup[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialAtapPenutup,
             cleanUrlMaterialKons,
             [
@@ -719,7 +719,7 @@ function initMaterialKons() {
     // [BLOK 10] SUB2 — FASAD PELAPIS EKSTERIOR
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialFasadPelapisEksterior[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialFasadPelapisEksterior,
             cleanUrlMaterialKons,
             [
@@ -734,7 +734,7 @@ function initMaterialKons() {
     // [BLOK 11] SUB2 — FINISHING INTERIOR
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialFinishingInterior[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialFinishingInterior,
             cleanUrlMaterialKons,
             [
@@ -749,7 +749,7 @@ function initMaterialKons() {
     // [BLOK 12] SUB2 — INSULASI AKUSTIK
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialInsulasiAkustik[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialInsulasiAkustik,
             cleanUrlMaterialKons,
             [
@@ -764,7 +764,7 @@ function initMaterialKons() {
     // [BLOK 13] SUB2 — WATERPROOFING PELAPIS
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialWaterproofingPelapis[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialWaterproofingPelapis,
             cleanUrlMaterialKons,
             [
@@ -779,7 +779,7 @@ function initMaterialKons() {
     // [BLOK 14] SUB2 — GEOSINTETIK DRAINASE
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialGeosintetikDrainase[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialGeosintetikDrainase,
             cleanUrlMaterialKons,
             [
@@ -794,7 +794,7 @@ function initMaterialKons() {
     // [BLOK 15] SUB2 — KONSTRUKSI KHUSUS
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialKonstruksiKhusus[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKonstruksiKhusus,
             cleanUrlMaterialKons,
             [
@@ -809,7 +809,7 @@ function initMaterialKons() {
     // [BLOK 16] SUB2 — KONSTRUKSI KELISTRIKAN
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialKonstruksiKelistrikan[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialKonstruksiKelistrikan,
             cleanUrlMaterialKons,
             [
@@ -824,7 +824,7 @@ function initMaterialKons() {
     // [BLOK 17] SUB2 — MODULAR PREFABRIKASI
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialModularPrefabrikasi[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialModularPrefabrikasi,
             cleanUrlMaterialKons,
             [
@@ -839,7 +839,7 @@ function initMaterialKons() {
     // [BLOK 18] SUB2 — MATERIAL LAINNYA
     // ───────────────────────────────────────────────────────
     if (urlMappingMaterialLainnya[cleanUrlMaterialKons]) {
-        generateBreadcrumbMaterialKonstruksi(
+        generateBreadcrumbShared(
             urlMappingMaterialLainnya,
             cleanUrlMaterialKons,
             [
