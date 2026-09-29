@@ -84,7 +84,12 @@ const urlMappingMaterialModularPrefabrikasiFromSub2Sub1 = {
 const urlMappingMaterialStrukturBangunan = {
     "https://www.betonjayareadymix.com/p/bekisting.html": "Harga Bekisting",
     "https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
+    //MASTER READY MIX
     "https://www.betonjayareadymix.com/p/ready-mix.html": "Ready Mix",
+    "https://www.betonjayareadymix.com/p/ready-mix-murah.html": "Ready Mix Murah",
+    "https://www.betonjayareadymix.com/p/harga-ready-mix.html": "Harga Ready Mix",
+    "https://www.betonjayareadymix.com/p/harga-ready-mix-murah.html": "Harga Ready Mix Murah",
+    
     "https://www.betonjayareadymix.com/p/semen-portland.html": "Semen Portland",
     "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
     "https://www.betonjayareadymix.com/p/bondex.html": "Bondex",
