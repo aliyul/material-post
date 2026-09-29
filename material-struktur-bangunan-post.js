@@ -901,18 +901,18 @@ const urlMappingReadyMixFromMoneyMasterVariant = {
    "https://www.betonjayareadymix.com/2018/04/cara-ngecor.html": "Cara Ngecor", 
  "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3",
   "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
-  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k250.html": "Analisa Beton Ready Mix K250",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k350.html": "Analisa Beton Ready Mix K350",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k100.html": "Analisa Beton Ready Mix K100",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k125.html": "Analisa Beton Ready Mix K125",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k175.html": "Analisa Beton Ready Mix K175",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k225.html": "Analisa Beton Ready Mix K225",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k300.html": "Analisa Beton Ready Mix K300",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k375.html": "Analisa Beton Ready Mix K375",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k250.html": "Analisa Beton Ready Mix K250", 
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k350.html": "Analisa Beton Ready Mix K350", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k100.html": "Analisa Beton Ready Mix K100", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k125.html": "Analisa Beton Ready Mix K125", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k175.html": "Analisa Beton Ready Mix K175", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k225.html": "Analisa Beton Ready Mix K225", 
+  "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k300.html": "Analisa Beton Ready Mix K300", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k375.html": "Analisa Beton Ready Mix K375", 
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400", 
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450"
- // "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",  // TYPE: SUB1
- // "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton",  // TYPE: SUB1
+ // "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225", 
+ // "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton", 
 
   
 };
@@ -1003,20 +1003,20 @@ const urlMappingSemenPortlandPost = {
   
   // ============================================================
   // [SUB1] - JENIS & SPESIFIKASI SEMEN PORTLAND
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jenis Semen Portland
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-portland.html": "Jenis Semen Portland",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-portland.html": "Spesifikasi Semen Portland",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-portland.html": "Kelebihan Semen Portland",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-portland.html": "Jenis Semen Portland", 
+  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-portland.html": "Spesifikasi Semen Portland", 
+  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-portland.html": "Kelebihan Semen Portland", 
   
   // ============================================================
   // [SUB1] - PERBANDINGAN SEMEN PORTLAND
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Perbandingan Semen Portland
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-portland-dan-semen-biasa.html": "Perbedaan Semen Portland dan Semen Biasa",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/semen-portland-vs-semen-putih.html": "Semen Portland vs Semen Putih",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-portland-dan-semen-biasa.html": "Perbedaan Semen Portland dan Semen Biasa", 
+  // "https://www.betonjayareadymix.com/2019/08/semen-portland-vs-semen-putih.html": "Semen Portland vs Semen Putih", 
 };
 
 // ============================================================
@@ -1043,38 +1043,38 @@ const urlMappingSemenInstanPost = {
   
   // ============================================================
   // [SUB1] - JENIS & SPESIFIKASI SEMEN INSTAN
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jenis Semen Instan
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-instan.html": "Jenis Semen Instan",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-instan.html": "Spesifikasi Semen Instan",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-instan.html": "Kelebihan Semen Instan",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/kekurangan-semen-instan.html": "Kekurangan Semen Instan",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/jenis-semen-instan.html": "Jenis Semen Instan", 
+  // "https://www.betonjayareadymix.com/2019/08/spesifikasi-semen-instan.html": "Spesifikasi Semen Instan", 
+  // "https://www.betonjayareadymix.com/2019/08/kelebihan-semen-instan.html": "Kelebihan Semen Instan", 
+  // "https://www.betonjayareadymix.com/2019/08/kekurangan-semen-instan.html": "Kekurangan Semen Instan", 
   
   // ============================================================
   // [SUB1] - APLIKASI SEMEN INSTAN
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Aplikasi Semen Instan
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/aplikasi-semen-instan-untuk-renovasi.html": "Aplikasi Semen Instan untuk Renovasi",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-dinding.html": "Semen Instan untuk Dinding",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-lantai.html": "Semen Instan untuk Lantai",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/aplikasi-semen-instan-untuk-renovasi.html": "Aplikasi Semen Instan untuk Renovasi", 
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-dinding.html": "Semen Instan untuk Dinding", 
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-untuk-lantai.html": "Semen Instan untuk Lantai", 
   
   // ============================================================
   // [SUB1] - PERBANDINGAN SEMEN INSTAN
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Perbandingan Semen Instan
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-instan-dan-semen-biasa.html": "Perbedaan Semen Instan dan Semen Biasa",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/semen-instan-vs-semen-portland.html": "Semen Instan vs Semen Portland",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-instan-dan-semen-biasa.html": "Perbedaan Semen Instan dan Semen Biasa", 
+  // "https://www.betonjayareadymix.com/2019/08/semen-instan-vs-semen-portland.html": "Semen Instan vs Semen Portland", 
   
   // ============================================================
   // [SUB1] - CARA PENGGUNAAN SEMEN INSTAN
-  // TYPE: SUB1 (WAJIB tampil di breadcrumb - bridge ke MONEY)
+  (WAJIB tampil di breadcrumb - bridge ke MONEY)
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Cara Penggunaan Semen Instan
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/08/cara-penggunaan-semen-instan.html": "Cara Penggunaan Semen Instan",  // TYPE: SUB1
-  // "https://www.betonjayareadymix.com/2019/08/takaran-semen-instan.html": "Takaran Semen Instan",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/08/cara-penggunaan-semen-instan.html": "Cara Penggunaan Semen Instan", 
+  // "https://www.betonjayareadymix.com/2019/08/takaran-semen-instan.html": "Takaran Semen Instan", 
 };
 
 // ============================================================
@@ -1107,8 +1107,8 @@ const urlMappingBesiBangunanPost = {
   // [SUB1] - DAFTAR PRODUK & PROMO (INFORMASIONAL)
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/04/daftar-produk-besi-bangunan.html": "Daftar Produk Besi Bangunan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/promo-diskon-besi-bangunan.html": "Promo & Diskon Besi Bangunan"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/daftar-produk-besi-bangunan.html": "Daftar Produk Besi Bangunan", 
+  "https://www.betonjayareadymix.com/2019/04/promo-diskon-besi-bangunan.html": "Promo & Diskon Besi Bangunan" 
 };
 
 // ============================================================
@@ -1243,21 +1243,21 @@ const urlMappingBajaRinganStrukturPost = {
   // [SUB1] - UKURAN & PERHITUNGAN (INFORMASIONAL)
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/04/reng-baja-ringan-harga.html": "Reng Baja Ringan Harga",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-6-meter.html": "Harga Reng Baja Ringan 6 Meter",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-per-batang.html": "Harga Reng Baja Ringan Per Batang",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan.html": "Harga Reng Baja Ringan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-reng.html": "Harga Baja Ringan Reng",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-reng.html": "Baja Ringan Reng",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-kaso.html": "Baja Ringan Kaso",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-kilogram.html": "Harga Baja Ringan Per Kilogram",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lembar.html": "Harga Baja Ringan Per Lembar",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lonjor.html": "Harga Baja Ringan Per Lonjor",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-meter.html": "Harga Baja Ringan Per Meter",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-meter.html": "Baja Ringan Per Meter",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/reng-baja-ringan-harga.html": "Reng Baja Ringan Harga", 
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-6-meter.html": "Harga Reng Baja Ringan 6 Meter", 
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan-per-batang.html": "Harga Reng Baja Ringan Per Batang", 
+  "https://www.betonjayareadymix.com/2019/04/harga-reng-baja-ringan.html": "Harga Reng Baja Ringan", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-reng.html": "Harga Baja Ringan Reng", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-kaso.html": "Harga Baja Ringan Kaso", 
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-reng.html": "Baja Ringan Reng", 
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-kaso.html": "Baja Ringan Kaso", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-kilogram.html": "Harga Baja Ringan Per Kilogram", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lembar.html": "Harga Baja Ringan Per Lembar", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-lonjor.html": "Harga Baja Ringan Per Lonjor", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-meter.html": "Harga Baja Ringan Per Meter", 
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-meter.html": "Baja Ringan Per Meter", 
+  "https://www.betonjayareadymix.com/2019/04/harga-baja-ringan-per-batang.html": "Harga Baja Ringan Per Batang", 
+  "https://www.betonjayareadymix.com/2019/04/baja-ringan-per-batang.html": "Baja Ringan Per Batang" 
 };
 // ============================================================
 // BEKISTING POST - SUB1 & MONEY PAGE
@@ -1275,16 +1275,16 @@ const urlMappingBekistingPost = {
   // ============================================================
   // [SUB1] - JENIS & APLIKASI BEKISTING (INFORMASIONAL, WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/bekisting-panel.html": "Bekisting Panel",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-modular.html": "Bekisting Modular",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-plastik.html": "Bekisting Plastik",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-aluminum.html": "Bekisting Aluminum",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-dak-beton.html": "Bekisting Dak Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kolom.html": "Bekisting Kolom",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-sloof.html": "Bekisting Sloof",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-ring-balok.html": "Bekisting Ring Balok",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-pracetak.html": "Bekisting Beton Pracetak",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-ready-mix.html": "Bekisting Beton Ready Mix"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/bekisting-panel.html": "Bekisting Panel", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-modular.html": "Bekisting Modular", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-plastik.html": "Bekisting Plastik", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-aluminum.html": "Bekisting Aluminum", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-dak-beton.html": "Bekisting Dak Beton", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kolom.html": "Bekisting Kolom", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-sloof.html": "Bekisting Sloof", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-ring-balok.html": "Bekisting Ring Balok", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-pracetak.html": "Bekisting Beton Pracetak", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-beton-ready-mix.html": "Bekisting Beton Ready Mix" 
 };
 
 // ============================================================
@@ -1298,17 +1298,17 @@ const urlMappingAluminiumPost = {
   // ============================================================
   // [SUB1] - EDUKASI & PERBEDAAN ALUMINIUM (WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/aluminium-anti-karat.html": "Aluminium Anti Karat untuk Konstruksi Bangunan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-aluminium-dan-baja-ringan.html": "Perbedaan Aluminium dan Baja Ringan untuk Konstruksi",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/jenis-aluminium-bangunan.html": "Jenis Aluminium Bangunan dan Kegunaannya",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-acp.html": "Aluminium ACP (Aluminium Composite Panel)",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-foil-bangunan.html": "Aluminium Foil untuk Bangunan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-profil.html": "Aluminium Profil untuk Konstruksi",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-kanopi.html": "Aluminium untuk Kanopi",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-partisi.html": "Aluminium untuk Partisi Bangunan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-pintu-jendela.html": "Aluminium untuk Pintu dan Jendela",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-lembaran.html": "Aluminium Lembaran untuk Konstruksi",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/aluminium-hollow.html": "Aluminium Hollow untuk Bangunan",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/aluminium-anti-karat.html": "Aluminium Anti Karat untuk Konstruksi Bangunan", 
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-aluminium-dan-baja-ringan.html": "Perbedaan Aluminium dan Baja Ringan untuk Konstruksi", 
+  "https://www.betonjayareadymix.com/2019/05/jenis-aluminium-bangunan.html": "Jenis Aluminium Bangunan dan Kegunaannya", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-acp.html": "Aluminium ACP (Aluminium Composite Panel)", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-foil-bangunan.html": "Aluminium Foil untuk Bangunan", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-profil.html": "Aluminium Profil untuk Konstruksi", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-kanopi.html": "Aluminium untuk Kanopi", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-partisi.html": "Aluminium untuk Partisi Bangunan", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-untuk-pintu-jendela.html": "Aluminium untuk Pintu dan Jendela", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-lembaran.html": "Aluminium Lembaran untuk Konstruksi", 
+  "https://www.betonjayareadymix.com/2019/05/aluminium-hollow.html": "Aluminium Hollow untuk Bangunan", 
   
   // ============================================================
   // [MONEY PAGE] - HARGA ALUMINIUM (WAJIB TAMPIL)
@@ -1385,17 +1385,17 @@ const urlMappingWiremeshPost = {
   // ============================================================
   // [SUB1] - EDUKASI & PERBEDAAN WIREMESH (WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-wiremesh-dan-besi-beton.html": "Perbedaan Wiremesh dan Besi Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-jalan-beton.html": "Wiremesh untuk Jalan Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-plat-lantai.html": "Wiremesh untuk Plat Lantai",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/jenis-wiremesh.html": "Jenis Wiremesh",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-wiremesh-dan-besi-beton.html": "Perbedaan Wiremesh dan Besi Beton", 
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-jalan-beton.html": "Wiremesh untuk Jalan Beton", 
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-untuk-plat-lantai.html": "Wiremesh untuk Plat Lantai", 
+  "https://www.betonjayareadymix.com/2019/05/jenis-wiremesh.html": "Jenis Wiremesh", 
   
   // ============================================================
   // [SUB1] - SPESIFIKASI WIREMESH (WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/wiremesh-m6.html": "Wiremesh M6",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/berat-wiremesh-per-lembar.html": "Berat Wiremesh per Lembar",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/ukuran-wiremesh.html": "Ukuran Wiremesh",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/wiremesh-m6.html": "Wiremesh M6", 
+  "https://www.betonjayareadymix.com/2019/05/berat-wiremesh-per-lembar.html": "Berat Wiremesh per Lembar", 
+  "https://www.betonjayareadymix.com/2019/05/ukuran-wiremesh.html": "Ukuran Wiremesh", 
   
   // ============================================================
   // [MONEY PAGE] - HARGA WIREMESH (WAJIB TAMPIL)
@@ -1417,17 +1417,17 @@ const urlMappingBondexPost = {
   // ============================================================
   // [SUB1] - EDUKASI & PERBEDAAN BONDEX (WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/bondex-galvanis.html": "Bondex Galvanis",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/perbedaan-bondex-dan-floordeck.html": "Perbedaan Bondex dan Floordeck",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-dak-beton.html": "Bondex untuk Dak Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-plat-lantai.html": "Bondex untuk Plat Lantai",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/bondex-galvanis.html": "Bondex Galvanis", 
+  "https://www.betonjayareadymix.com/2019/05/perbedaan-bondex-dan-floordeck.html": "Perbedaan Bondex dan Floordeck", 
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-dak-beton.html": "Bondex untuk Dak Beton", 
+  "https://www.betonjayareadymix.com/2019/05/bondex-untuk-plat-lantai.html": "Bondex untuk Plat Lantai", 
   
   // ============================================================
   // [SUB1] - SPESIFIKASI BONDEX (WAJIB TAMPIL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/berat-bondex.html": "Berat Bondex",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/tebal-bondex.html": "Tebal Bondex",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/ukuran-bondex.html": "Ukuran Bondex",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/berat-bondex.html": "Berat Bondex", 
+  "https://www.betonjayareadymix.com/2019/05/tebal-bondex.html": "Tebal Bondex", 
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bondex.html": "Ukuran Bondex", 
   
   // ============================================================
   // [MONEY PAGE] - HARGA BONDEX (WAJIB TAMPIL)
@@ -1474,7 +1474,7 @@ const urlMappingBesiBetonUlirPost = {
   // 🧠 TYPE: SUB1
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Besi Beton Ulir > Besi Beton Ulir SNI
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir-sni.html": "Besi Beton Ulir SNI"  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/05/besi-beton-ulir-sni.html": "Besi Beton Ulir SNI" 
 };
 
 // ============================================================
@@ -1517,21 +1517,21 @@ const urlMappingBekistingBajaPost = {
   // [SUB1] - JENIS & APLIKASI BEKISTING BAJA (INFORMASIONAL)
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb karena edukasi)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ringan.html": "Bekisting Baja Ringan",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-modular.html": "Bekisting Baja Modular",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-dak.html": "Bekisting Baja Dak",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-kolom.html": "Bekisting Baja Kolom",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-sloof.html": "Bekisting Baja Sloof",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ring-balok.html": "Bekisting Baja Ring Balok",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-pracetak.html": "Bekisting Baja Pracetak",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ringan.html": "Bekisting Baja Ringan", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-modular.html": "Bekisting Baja Modular", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-dak.html": "Bekisting Baja Dak", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-kolom.html": "Bekisting Baja Kolom", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-sloof.html": "Bekisting Baja Sloof", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-ring-balok.html": "Bekisting Baja Ring Balok", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-pracetak.html": "Bekisting Baja Pracetak", 
   
   // ============================================================
   // [SUB1] - PERBANDINGAN & APLIKASI KHUSUS
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb karena edukasi)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/perbandingan-bekisting-baja-vs-kayu.html": "Perbandingan Bekisting Baja vs Kayu",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-untuk-jalan-beton.html": "Bekisting Baja untuk Jalan Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-galvanis.html": "Bekisting Baja Galvanis"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/perbandingan-bekisting-baja-vs-kayu.html": "Perbandingan Bekisting Baja vs Kayu", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-untuk-jalan-beton.html": "Bekisting Baja untuk Jalan Beton", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-baja-galvanis.html": "Bekisting Baja Galvanis" 
 };
 
 // ============================================================
@@ -1552,14 +1552,14 @@ const urlMappingBekistingKayuPost = {
   // [SUB1] - APLIKASI & SPESIFIKASI BEKISTING KAYU
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb karena edukasi)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-dak-beton.html": "Bekisting Kayu untuk Dak Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-kolom.html": "Bekisting Kayu untuk Kolom",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-sloof.html": "Bekisting Kayu untuk Sloof",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu--ring-balok.html": "Bekisting Kayu untuk Ring Balok",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/ukuran-bekisting-kayu.html": "Ukuran Bekisting Kayu",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/tebal-bekisting-kayu.html": "Tebal Bekisting Kayu",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-jalan-beton.html": "Bekisting Kayu untuk Jalan Beton",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-laminasi.html": "Bekisting Kayu Laminasi"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-dak-beton.html": "Bekisting Kayu untuk Dak Beton", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-kolom.html": "Bekisting Kayu untuk Kolom", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-sloof.html": "Bekisting Kayu untuk Sloof", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu--ring-balok.html": "Bekisting Kayu untuk Ring Balok", 
+  "https://www.betonjayareadymix.com/2019/05/ukuran-bekisting-kayu.html": "Ukuran Bekisting Kayu", 
+  "https://www.betonjayareadymix.com/2019/05/tebal-bekisting-kayu.html": "Tebal Bekisting Kayu", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-untuk-jalan-beton.html": "Bekisting Kayu untuk Jalan Beton", 
+  "https://www.betonjayareadymix.com/2019/05/bekisting-kayu-laminasi.html": "Bekisting Kayu Laminasi" 
 };
 
 // ============================================================
@@ -1580,20 +1580,20 @@ const urlMappingScaffoldingPost = {
   // [SUB1] - JENIS SCAFFOLDING
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb karena edukasi)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-frame.html": "Scaffolding Frame",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-andang.html": "Scaffolding Andang",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-pipa.html": "Scaffolding Pipa",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-ringlock.html": "Scaffolding Ringlock",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-cuplock.html": "Scaffolding Cuplock",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-galvanis.html": "Scaffolding Galvanis",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-baja.html": "Scaffolding Baja",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2019/05/scaffolding-modular.html": "Scaffolding Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-frame.html": "Scaffolding Frame", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-andang.html": "Scaffolding Andang", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-pipa.html": "Scaffolding Pipa", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-ringlock.html": "Scaffolding Ringlock", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-cuplock.html": "Scaffolding Cuplock", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-galvanis.html": "Scaffolding Galvanis", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-baja.html": "Scaffolding Baja", 
+  "https://www.betonjayareadymix.com/2019/05/scaffolding-modular.html": "Scaffolding Modular", 
   
   // ============================================================
   // [SUB1] - SPESIFIKASI SCAFFOLDING
   // 🧠 TYPE: SUB1 (WAJIB tampil di breadcrumb karena edukasi)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/05/ukuran-scaffolding.html": "Ukuran Scaffolding Standar Proyek"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/05/ukuran-scaffolding.html": "Ukuran Scaffolding Standar Proyek" 
 };
 
 // ============================================================
@@ -1615,14 +1615,14 @@ const urlMappingPerekatBetonEpoxyPost = {
   // 🧠 TYPE: SUB1
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Perekat Beton Epoxy > Jenis Epoxy Beton
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/05/jenis-epoxy-beton.html": "Jenis Epoxy Beton",  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/05/jenis-epoxy-beton.html": "Jenis Epoxy Beton", 
   
   // ============================================================
   // [SUB1] - CARA APLIKASI EPOXY BETON (EDUKASI)
   // 🧠 TYPE: SUB1
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Perekat Beton Epoxy > Cara Aplikasi Epoxy Beton
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/05/cara-aplikasi-epoxy-beton.html": "Cara Aplikasi Epoxy Beton"  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/05/cara-aplikasi-epoxy-beton.html": "Cara Aplikasi Epoxy Beton" 
 };
 
 // ============================================================
@@ -1644,7 +1644,7 @@ const urlMappingMortarStrukturalPost = {
   // 🧠 TYPE: SUB1
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Mortar Struktural > Jenis Mortar Struktural
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/05/jenis-mortar-struktural.html": "Jenis Mortar Struktural"  // TYPE: SUB1
+  // "https://www.betonjayareadymix.com/2019/05/jenis-mortar-struktural.html": "Jenis Mortar Struktural" 
 };
 
 // ============================================================
@@ -1669,7 +1669,7 @@ const urlMappingSemenPutihPost = {
   // ⚠️ STATUS: 404 - Perlu dibuat kontennya
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Putih > Fungsi Semen Putih
   // ============================================================
-  // "https://www.betonjayareadymix.com/2019/05/fungsi-semen-putih.html": "Fungsi Semen Putih"  // TYPE: SUB1 (404 - PERLU DIBUAT)
+  // "https://www.betonjayareadymix.com/2019/05/fungsi-semen-putih.html": "Fungsi Semen Putih"  (404 - PERLU DIBUAT)
 };
 
 // ============================================================
