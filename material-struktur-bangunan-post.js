@@ -910,7 +910,7 @@ const urlMappingReadyMixFromMoneyMasterVariant = {
   "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k300.html": "Analisa Beton Ready Mix K300",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k375.html": "Analisa Beton Ready Mix K375",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450"
  // "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",  // TYPE: SUB1
  // "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton",  // TYPE: SUB1
 
