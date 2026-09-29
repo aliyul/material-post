@@ -38,7 +38,7 @@ const urlMappingReadyMixMoneyMasterMoneyChild = {
   "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat",
   "https://www.betonjayareadymix.com/2021/03/ready-mix-terdekat.html": "Ready Mix Terdekat",
   "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-terdekat.html": "Beton Ready Mix Terdekat",
-  "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html" "Jayamix Terdekat",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html" : "Jayamix Terdekat",
   
   // ═══ JAYAMIX PER KOTA ═══
   "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
