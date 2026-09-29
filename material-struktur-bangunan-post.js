@@ -774,7 +774,7 @@ const urlMappingReadyMixFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",
 
   // ═══ DARI PANDUAN POST (non SUB1) ═══
-  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix"
+  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
 
   "https://www.betonjayareadymix.com/2018/08/batching-plant-dynamix.html": "Batching Plant Dynamix",
   "https://www.betonjayareadymix.com/2018/08/dynamix-beton.html": "Dynamix Beton",
