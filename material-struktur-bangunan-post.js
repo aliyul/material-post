@@ -1003,7 +1003,7 @@ const urlMappingSemenPortlandPost = {
   
   // ============================================================
   // [SUB1] - JENIS & SPESIFIKASI SEMEN PORTLAND
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Jenis Semen Portland
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/jenis-semen-portland.html": "Jenis Semen Portland", 
@@ -1012,7 +1012,7 @@ const urlMappingSemenPortlandPost = {
   
   // ============================================================
   // [SUB1] - PERBANDINGAN SEMEN PORTLAND
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Portland > Perbandingan Semen Portland
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-portland-dan-semen-biasa.html": "Perbedaan Semen Portland dan Semen Biasa", 
@@ -1043,7 +1043,7 @@ const urlMappingSemenInstanPost = {
   
   // ============================================================
   // [SUB1] - JENIS & SPESIFIKASI SEMEN INSTAN
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Jenis Semen Instan
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/jenis-semen-instan.html": "Jenis Semen Instan", 
@@ -1053,7 +1053,7 @@ const urlMappingSemenInstanPost = {
   
   // ============================================================
   // [SUB1] - APLIKASI SEMEN INSTAN
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Aplikasi Semen Instan
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/aplikasi-semen-instan-untuk-renovasi.html": "Aplikasi Semen Instan untuk Renovasi", 
@@ -1062,7 +1062,7 @@ const urlMappingSemenInstanPost = {
   
   // ============================================================
   // [SUB1] - PERBANDINGAN SEMEN INSTAN
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Perbandingan Semen Instan
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/perbedaan-semen-instan-dan-semen-biasa.html": "Perbedaan Semen Instan dan Semen Biasa", 
@@ -1070,7 +1070,7 @@ const urlMappingSemenInstanPost = {
   
   // ============================================================
   // [SUB1] - CARA PENGGUNAAN SEMEN INSTAN
-  (WAJIB tampil di breadcrumb - bridge ke MONEY)
+
   // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Semen Instan > Cara Penggunaan Semen Instan
   // ============================================================
   // "https://www.betonjayareadymix.com/2019/08/cara-penggunaan-semen-instan.html": "Cara Penggunaan Semen Instan", 
