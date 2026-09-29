@@ -762,6 +762,9 @@ const urlMappingHargaReadyMixMoneyMasterMoneyChild = {
 // ============================================================
 
 const urlMappingReadyMixFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/2021/03/cara-pesan-jayamix.html": "Cara Pesan Jayamix",    
+  "https://www.betonjayareadymix.com/2021/08/cara-order-ready-mix.html": "Cara Order Ready Mix",
+  
   "https://www.betonjayareadymix.com/2021/08/cor-beton-murah.html": "Cor Beton Murah",
 
  // ═══ BRAND & PLANT (PLANT POST) ═══
@@ -885,11 +888,14 @@ const urlMappingHargaReadyMixFromMoneyMasterMoneyPage = {
 // 🧠 SEO NOTE: Analisa mutu adalah [SUB1] (bridge), harga mutu adalah [MONEY PAGE]
 // ============================================================
 
-const urlMappingReadyMixMutuPost = {
+const urlMappingReadyMixFromMoneyMasterVariant = {
   // ============================================================
   // [SUB1] - ANALISA MUTU (INFORMASIONAL, PRE-COMMERCIAL)
   // WAJIB tampil di breadcrumb (tidak boleh skip)
   // ============================================================
+   "https://www.betonjayareadymix.com/2018/04/cara-ngecor.html": "Cara Ngecor", 
+ "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3",
+  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
   "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k250.html": "Analisa Beton Ready Mix K250",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2021/03/analisa-beton-ready-mix-k350.html": "Analisa Beton Ready Mix K350",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k100.html": "Analisa Beton Ready Mix K100",  // TYPE: SUB1
@@ -900,221 +906,26 @@ const urlMappingReadyMixMutuPost = {
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k375.html": "Analisa Beton Ready Mix K375",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k400.html": "Analisa Beton Ready Mix K400",  // TYPE: SUB1
   "https://www.betonjayareadymix.com/2022/02/analisa-beton-ready-mix-k450.html": "Analisa Beton Ready Mix K450",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton",  // TYPE: SUB1
+ // "https://www.betonjayareadymix.com/2018/04/analisa-beton-k-225.html": "Analisa Beton K 225",  // TYPE: SUB1
+ // "https://www.betonjayareadymix.com/2018/04/macam-macam-mutu-beton.html": "Macam macam mutu beton",  // TYPE: SUB1
 
-  // ============================================================
-  // [MONEY PAGE] - HARGA MUTU
-  // WAJIB tampil di breadcrumb (halaman transaksi)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-k-200.html": "Harga Ready Mix K 200",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html": "Harga Beton Ready Mix B0",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-350.html": "Harga Ready Mix K 350",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-300.html": "Harga Ready Mix K 300",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-250.html": "Harga Ready Mix K 250",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-225.html": "Harga Ready Mix K 225",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-k-275.html": "Harga Ready Mix K 275",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-250.html": "Harga Cor Beton K 250",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html": "Harga Cor Beton K 225",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-k-175.html": "Harga Ready Mix K 175",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-300-per-m3.html": "Harga Cor Beton K 300 per m3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-200.html": "Harga Cor Beton K 200",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-175.html": "Harga Cor Beton K 175",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-275.html": "Harga Cor Beton K 275",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-k225-per-m3.html": "Harga Cor Beton K225 Per M3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k350.html": "Harga Cor Beton K350",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html": "Harga Beton Cor K300 Holcim",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-k300.html": "Harga Jayamix K300"  // TYPE: MONEY_PAGE
+  
 };
+const urlMappingReadyMixFromMoneyMasterSubVariant = {
+   "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik", 
+  "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton"
 
+};
 // ============================================================
 // READY MIX KEGUNAAN POST - SUB1 & MONEY PAGE
 // Parent: Ready Mix Kegunaan (/p/ready-mix-kegunaan.html)
 // ============================================================
 
-const urlMappingReadyMixKegunaanPost = {
-  // ============================================================
-  // [SUB1] - JENIS & FUNGSI (INFORMASIONAL)
-  // WAJIB tampil di breadcrumb (tidak boleh skip)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/jenis-beton-ready-mix.html": "Jenis Beton Ready Mix",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2021/03/fungsi-beton-ready-mix.html": "Fungsi Beton Ready Mix",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-asphalt.html": "Ready Mix Asphalt",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",  // TYPE: SUB1
-
-  // ============================================================
-  // [MONEY PAGE] - HARGA COR PER APLIKASI
-  // WAJIB tampil di breadcrumb (halaman transaksi)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jalan-per-m3.html": "Harga Cor Beton Jalan Per M3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-cor-beton-dinding.html": "Harga Cor Beton Dinding",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-untuk-rumah.html": "Harga Cor Beton Untuk Rumah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3"  // TYPE: MONEY_PAGE
-};
 
 // ============================================================
 // READY MIX PLANT POST - MONEY PAGE (BRAND & LOKASI PLANT)
 // Parent: Ready Mix Plant (/p/ready-mix-plant.html)
 // ============================================================
-
-const urlMappingReadyMixPlantPost = {
-  // ============================================================
-  // [MONEY PAGE] - JAYAMIX & READY MIX BRAND
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/jayamix-beton.html": "Jayamix Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-beton.html": "Harga Jayamix Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-murah.html": "Harga Jayamix Murah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-m3.html": "Harga Jayamix Per M3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-kubik.html": "Harga Jayamix Per Kubik",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tiga-roda.html": "Harga Ready Mix Tiga Roda",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix-per-kubik.html": "Harga Cor Beton Jayamix Per Kubik",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-1-molen-jayamix.html": "Harga 1 Molen Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton-jayamix.html": "Daftar Harga Cor Beton Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-ready-mix-minimix.html": "Harga Jayamix Ready Mix Minimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-pionir.html": "Harga Beton Ready Mix Pionir",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-holcim.html": "Harga Beton Ready Mix Holcim",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-jayamix.html": "Harga Beton Ready Mix Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-merah-putih.html": "Harga Beton Ready Mix Merah Putih",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-holcim.html": "Harga Ready Mix Holcim",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-jayamix.html": "Harga Ready Mix Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-holcim-per-m3.html": "Harga Cor Beton Holcim per m3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-adhimix.html": "Harga Beton Ready Mix Adhimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-adhimix.html": "Harga Cor Beton Adhimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/harga-beton-adhimix.html": "Harga Beton Adhimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/harga-adhimix-jayamix.html": "Harga Adhimix Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/batching-plant-terdekat.html": "Batching Plant Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-depok.html": "Batching Plant Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-tangerang.html": "Batching Plant Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-prov-dki-jakarta.html": "Batching Plant Prov DKI Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-bekasi.html": "Batching Plant Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-bogor.html": "Batching Plant Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-dynamix.html": "Batching Plant Dynamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/dynamix-beton.html": "Dynamix Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html": "SCG Jayamix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/holcim-ready-mix.html": "Holcim Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-merah-putih.html": "Ready Mix Merah Putih",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-tiga-roda.html": "Ready Mix Tiga Roda",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/04/scg-readymix.html": "SCG Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/scg-beton.html": "SCG Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/pt-scg-readymix-indonesia.html": "PT SCG Ready Mix Indonesia",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/scg-readymix-indonesia.html": "SCG Ready Mix Indonesia",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/scg-batching-plant.html": "SCG Batching Plant",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/office-kantor-scg-kalibata.html": "Office Kantor SCG Kalibata",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/beton-cor-merah-putih.html": "Beton Cor Merah Putih",  // TYPE: MONEY_PAGE
-  
-  // ============================================================
-  // [MONEY PAGE] - BATCHING PLANT SCG LOKASI
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang.html": "Batching Plant SCG Subang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-karawang.html": "Batching Plant SCG Karawang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-sukabumi.html": "Batching Plant Sukabumi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-purwakarta.html": "Batching Plant SCG Purwakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-majalengka.html": "Batching Plant SCG Majalengka",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bandung.html": "Batching Plant SCG Bandung",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cirebon.html": "Batching Plant SCG Cirebon",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cianjur.html": "Batching Plant SCG Cianjur",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bogor.html": "Batching Plant SCG Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bekasi.html": "Batching Plant SCG Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/scg-jakarta.html": "SCG Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/scg-jayamix-dki-jakarta.html": "SCG Jayamix DKI Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/04/scg-readymix-jakarta.html": "SCG Ready Mix Jakarta",  // TYPE: MONEY_PAGE
-
-  // ============================================================
-  // [MONEY PAGE] - ADHIMIX
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-adhimix.html": "Batching Plant Adhimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-ready-mix.html": "Adhimix Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-rmc.html": "Adhimix RMC",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-retail.html": "Adhimix Retail",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-group.html": "Adhimix Group",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-terdekat.html": "Adhimix Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-beton.html": "Adhimix Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-bogor.html": "Adhimix Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-bekasi.html": "Adhimix Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-jakarta.html": "Adhimix Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-tangerang.html": "Adhimix Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-depok.html": "Adhimix Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-bandung.html": "Adhimix Bandung",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-cirebon.html": "Adhimix Cirebon",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-karawang.html": "Adhimix Karawang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-subang.html": "Adhimix Subang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-majalengka.html": "Adhimix Majalengka",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-sukabumi.html": "Adhimix Sukabumi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-purwakarta.html": "Adhimix Purwakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-sumedang.html": "Adhimix Sumedang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-indramayu.html": "Adhimix Indramayu",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-kuningan.html": "Adhimix Kuningan",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-cianjur.html": "Adhimix Cianjur",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-ciamis.html": "Adhimix Ciamis",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-serang.html": "Adhimix Serang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-cilegon.html": "Adhimix Cilegon",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-lebak.html": "Adhimix Lebak",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-pandeglang.html": "Adhimix Pandeglang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-kendal.html": "Adhimix Kendal",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-semarang.html": "Adhimix Semarang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-surabaya.html": "Adhimix Surabaya",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-gresik.html": "Adhimix Gresik",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/adhimix-sidoarjo.html": "Adhimix Sidoarjo",  // TYPE: MONEY_PAGE
-
-  // ============================================================
-  // [MONEY PAGE] - PIONIR
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-terdekat.html": "Pionir Beton Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-pionirbeton.html": "Batching Plant Pionirbeton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-jakarta.html": "Pionir Beton Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-tangerang.html": "Pionir Beton Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-bekasi.html": "Pionir Beton Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-depok.html": "Pionir Beton Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/pionir-beton-bogor.html": "Pionir Beton Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/pionir-beton-cor-bogor.html": "Pionir Beton Cor Bogor",  // TYPE: MONEY_PAGE
-
-  // ============================================================
-  // [MONEY PAGE] - FRESH BETON
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-batching-plant.html": "Fresh Beton Batching Plant",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-terdekat.html": "Fresh Beton Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-bogor.html": "Fresh Beton Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-bekasi.html": "Fresh Beton Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-jakarta.html": "Fresh Beton Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-tangerang.html": "Fresh Beton Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-depok.html": "Fresh Beton Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-sukabumi.html": "Fresh Beton Sukabumi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/fresh-beton-cianjur.html": "Fresh Beton Cianjur",  // TYPE: MONEY_PAGE
-
-  // ============================================================
-  // [MONEY PAGE] - KARYA BETON
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-terdekat.html": "Karya Beton Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-sudhira.html": "Karya Beton Sudhira",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/batching-plant-karya-beton.html": "Batching Plant Karya Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-readymix.html": "Karya Beton Readymix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-bekasi.html": "Karya Beton Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-cikarang.html": "Karya Beton Cikarang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-bogor.html": "Karya Beton Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-depok.html": "Karya Beton Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-jakarta.html": "Karya Beton Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-tangerang.html": "Karya Beton Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-karawang.html": "Karya Beton Karawang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-jogja.html": "Karya Beton Jogja",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/karya-beton-bali.html": "Karya Beton Bali",  // TYPE: MONEY_PAGE
-
-  // ============================================================
-  // [MONEY PAGE] - FARIKA BETON
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/plant-farika-beton.html": "Plant Farika Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-terdekat.html": "Farika Beton Terdekat",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-jakarta.html": "Farika Beton Jakarta",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-bogor.html": "Farika Beton Bogor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-bekasi.html": "Farika Beton Bekasi",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-depok.html": "Farika Beton Depok",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-tangerang.html": "Farika Beton Tangerang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-cilegon-prov-banten.html": "Farika Beton Cilegon Prov Banten",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-serang.html": "Farika Beton Serang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"  // TYPE: MONEY_PAGE
-};
 
 // ============================================================
 // READY MIX PANDUAN POST - SUB1 (PANDUAN / BRIDGE)
@@ -1123,55 +934,6 @@ const urlMappingReadyMixPlantPost = {
 // TYPE: SUB1 (WAJIB tampil di breadcrumb, tidak boleh skip)
 // ============================================================
 
-const urlMappingReadyMixPanduanPost = {
-  // ============================================================
-  // [SUB1] - PANDUAN CARA NGECOR
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/04/cara-ngecor.html": "Cara Ngecor",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN PERBEDAAN JAYAMIX DAN READY MIX
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/perbedaan-jayamix-dan-readymix.html": "Perbedaan Jayamix dan Ready Mix",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN UKURAN JAYAMIX
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN 1 MOBIL JAYAMIX BERAPA KUBIK
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/1-mobil-jayamix-berapa-kubik.html": "1 Mobil Jayamix Berapa Kubik",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN CARA PESAN JAYAMIX
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/cara-pesan-jayamix.html": "Cara Pesan Jayamix",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN CARA ORDER READY MIX
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/cara-order-ready-mix.html": "Cara Order Ready Mix",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN CARA MENGHITUNG KUBIKASI BETON
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/04/cara-menghitung-kubikasi-beton.html": "Cara menghitung kubikasi beton",  // TYPE: SUB1
-
-  // ============================================================
-  // [SUB1] - PANDUAN 1 TRUK MOLEN BERAPA M3
-  // TYPE: SUB1 (WAJIB tampil)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/04/1-truk-molen-berapa-m3.html": "1 Truk molen berapa m3"  // TYPE: SUB1
-};
 /*
 📋 RINGKASAN TYPE
 No	Nama Halaman	Type	Boleh Skip?
@@ -1937,10 +1699,9 @@ const urlMappingSemenPutihPost = {
         urlMappingReadyMixMoneyMasterMoneyChild,
         urlMappingHargaReadyMixMoneyMasterMoneyChild,
         urlMappingReadyMixFromMoneyMasterMoneyPage,
-        urlMappingReadyMixMutuPost,
-        urlMappingReadyMixKegunaanPost,
-        urlMappingReadyMixPlantPost,
-        urlMappingReadyMixPanduanPost,
+        urlMappingReadyMixFromMoneyMasterVariant,
+       urlMappingReadyMixFromMoneyMasterSubVariant,
+
         urlMappingSemenPortlandPost,
         urlMappingSemenInstanPost,
         urlMappingBesiBangunanPost,
@@ -2059,67 +1820,34 @@ function initMaterialStrukturPost() {
     // ═══════════════════════════════════════════════════════
     // [BLOK 3] SUB PILLAR — READY MIX MUTU
     // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixMutuPost[cleanUrl]) {
+    if (urlMappingReadyMixFromMoneyMasterVariant[cleanUrl]) {
         generateBreadcrumbShared(
-            urlMappingReadyMixMutuPost,
+            urlMappingReadyMixFromMoneyMasterVariant,
             cleanUrl,
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+                 { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
+                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+    if (urlMappingReadyMixFromMoneyMasterSubVariant[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingReadyMixFromMoneyMasterSubVariant,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                 { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
                 { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
     }
 
-    // ═══════════════════════════════════════════════════════
-    // [BLOK 4] SUB PILLAR — READY MIX PLANT
-    // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixPlantPost[cleanUrl]) {
-        generateBreadcrumbShared(
-            urlMappingReadyMixPlantPost,
-            cleanUrl,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
-    // ═══════════════════════════════════════════════════════
-    // [BLOK 5] SUB PILLAR — READY MIX KEGUNAAN
-    // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixKegunaanPost[cleanUrl]) {
-        generateBreadcrumbShared(
-            urlMappingReadyMixKegunaanPost,
-            cleanUrl,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
-    // ═══════════════════════════════════════════════════════
-    // [BLOK 6] SUB PILLAR — READY MIX PANDUAN
-    // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixPanduanPost[cleanUrl]) {
-        generateBreadcrumbShared(
-            urlMappingReadyMixPanduanPost,
-            cleanUrl,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
+  
       // ═══════════════════════════════════════════════════════
     // [BLOK 7] SUB PILLAR — SEMEN PORTLAND
     // ═══════════════════════════════════════════════════════
