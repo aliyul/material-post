@@ -81,7 +81,7 @@ const urlMappingMaterialModularPrefabrikasiFromSub2Sub1 = {
 // ============================================================
 // [VARIANT] - MATERIAL STRUKTUR BANGUNAN
 // ============================================================
-const urlMappingMaterialStrukturBangunan = {
+const urlMappingMaterialStrukturBangunanFromSub1MoneyMaster = {
     "https://www.betonjayareadymix.com/p/bekisting.html": "Harga Bekisting",
     "https://www.betonjayareadymix.com/p/aluminium.html": "Aluminium",
     //MASTER READY MIX
@@ -107,22 +107,9 @@ const urlMappingMaterialStrukturBangunan = {
 };
 
 // ============================================================
-// [SUB1] - BRIDGE MATERIAL STRUKTUR BANGUNAN
-// ============================================================
-const urlMappingMaterialStrukturBangunanBridge = {
-    "https://www.betonjayareadymix.com/p/cara-memilih-material-struktur-bangunan.html": "Cara Memilih Material Struktur Bangunan"
-};
-
-// ============================================================
-// [MONEY_MASTER] - HARGA MATERIAL STRUKTUR BANGUNAN
-// ============================================================
-const urlMappingMaterialStrukturBangunanBridgeToMoneyMaster = {
-    "https://www.betonjayareadymix.com/p/harga-material-struktur-bangunan.html": "Harga Material Struktur Bangunan"
-};
-
-// ============================================================
 // [SUB2] - MATERIAL READY MIX
 // ============================================================
+/*
 const urlMappingMaterialReadyMix = {
     "https://www.betonjayareadymix.com/p/ready-mix-lokasi.html": "Ready Mix Lokasi",
     "https://www.betonjayareadymix.com/p/ready-mix-mutu.html": "Ready Mix Mutu",
@@ -130,7 +117,7 @@ const urlMappingMaterialReadyMix = {
     "https://www.betonjayareadymix.com/p/ready-mix-plant.html": "Ready Mix Plant",
     "https://www.betonjayareadymix.com/p/ready-mix-panduan.html": "Ready Mix Panduan"
 };
-
+*/
 // ============================================================
 // [VARIANT] - MATERIAL DINDING PENUTUP
 // ============================================================
@@ -341,11 +328,9 @@ const urlMappingMaterialLainnya = {
         urlMappingMaterialKonstruksiKhususFromSub2Sub1,
         urlMappingMaterialKelistrikanFromSub2Sub1,
         urlMappingMaterialModularPrefabrikasiFromSub2Sub1,
-        urlMappingMaterialStrukturBangunan,
-        // ✅ FIX: Bridge & Money Master dimasukkan
-        urlMappingMaterialStrukturBangunanBridge,
-        urlMappingMaterialStrukturBangunanBridgeToMoneyMaster,
-        urlMappingMaterialReadyMix,
+        urlMappingMaterialStrukturBangunanFromSub1MoneyMaster,
+     
+       // urlMappingMaterialReadyMix,
         urlMappingMaterialDindingPenutup,
         urlMappingMaterialPekerjaanTanahJalan,
         urlMappingMaterialPlumbingSaluran,
@@ -598,13 +583,12 @@ function initMaterialKons() {
             'MATERIAL_KONSTRUKSI'
         );
     }
-
+    
+   
     // ───────────────────────────────────────────────────────
-    // [BLOK 3] BRIDGE + MONEY_MASTER — MATERIAL STRUKTUR BANGUNAN
-    // ───────────────────────────────────────────────────────
-    if (urlMappingMaterialStrukturBangunanBridge[cleanUrlMaterialKons]) {
+    if (urlMappingMaterialStrukturBangunanFromSub1MoneyMaster[cleanUrlMaterialKons]) {
         generateBreadcrumbShared(
-            urlMappingMaterialStrukturBangunanBridge,
+            urlMappingMaterialStrukturBangunanFromSub1MoneyMaster,
             cleanUrlMaterialKons,
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
@@ -615,51 +599,7 @@ function initMaterialKons() {
         );
     }
 
-    if (urlMappingMaterialStrukturBangunanBridgeToMoneyMaster[cleanUrlMaterialKons]) {
-        generateBreadcrumbShared(
-            urlMappingMaterialStrukturBangunanBridgeToMoneyMaster,
-            cleanUrlMaterialKons,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
-                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' }
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
-    // ───────────────────────────────────────────────────────
-    // [BLOK 4] VARIANT — MATERIAL STRUKTUR BANGUNAN (4 level)
-    // ───────────────────────────────────────────────────────
-    if (urlMappingMaterialStrukturBangunan[cleanUrlMaterialKons]) {
-        generateBreadcrumbShared(
-            urlMappingMaterialStrukturBangunan,
-            cleanUrlMaterialKons,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' }
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
-    // ───────────────────────────────────────────────────────
-    // [BLOK 5] SUB2/VARIANT — MATERIAL READY MIX (5 level)
-    // ───────────────────────────────────────────────────────
-    if (urlMappingMaterialReadyMix[cleanUrlMaterialKons]) {
-        generateBreadcrumbShared(
-            urlMappingMaterialReadyMix,
-            cleanUrlMaterialKons,
-            [
-                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
-                { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix-beton-cor-jayamix-minimix.html' }
-            ],
-            'MATERIAL_KONSTRUKSI'
-        );
-    }
-
+   
     // ───────────────────────────────────────────────────────
     // [BLOK 6] VARIANT — DINDING PENUTUP
     // ───────────────────────────────────────────────────────
