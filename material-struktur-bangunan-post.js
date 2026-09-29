@@ -34,683 +34,722 @@ console.log('[material-struktur-post] 📄 File loaded, waiting for DOM...');
 
 // ============================================================
 
-const urlMappingReadyMixLokasiPost = {
-  // ============================================================
-  // [MONEY_MASTER] - LAYANAN TERDEKAT (GENERAL)
-  // 🧠 TYPE: MONEY_MASTER (WAJIB tampil di breadcrumb)
-  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > [Halaman]
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/jayamix-terdekat.html": "Jayamix Terdekat",  // TYPE: MONEY_MASTER
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-terdekat.html": "Ready Mix Terdekat",  // TYPE: MONEY_MASTER
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-terdekat.html": "Beton Ready Mix Terdekat",  // TYPE: MONEY_MASTER
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-terdekat.html": "Cor Beton Terdekat",  // TYPE: MONEY_MASTER
+const urlMappingReadyMixMoneyMasterMoneyChild = {
+  // ═══ JAYAMIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-karawang.html": "Jayamix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-kuningan.html": "Jayamix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-tasikmalaya.html": "Jayamix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-subang.html": "Jayamix Subang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-blitar.html": "Jayamix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-klaten.html": "Jayamix Klaten",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-jakarta.html": "Jayamix Jakarta",
+  "https://www.betonjayareadymix.com/2022/12/jayamix-serang.html": "Jayamix Serang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-purwakarta.html": "Jayamix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bogor.html": "Jayamix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bekasi.html": "Jayamix Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cikarang.html": "Jayamix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-depok.html": "Jayamix Depok",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cibubur.html": "Jayamix Cibubur",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-bandung.html": "Jayamix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cirebon.html": "Jayamix Cirebon",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cianjur.html": "Jayamix Cianjur",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cikande.html": "Jayamix Cikande",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cilegon.html": "Jayamix Cilegon",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-ciamis.html": "Jayamix Ciamis",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-garut.html": "Jayamix Garut",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-tangerang.html": "Jayamix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/jayamix-indramayu.html": "Jayamix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-jombang.html": "Jayamix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-boyolali.html": "Jayamix Boyolali",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cilacap.html": "Jayamix Cilacap",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-pati.html": "Jayamix Pati",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-gresik.html": "Jayamix Gresik",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-jogja.html": "Jayamix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-surabaya.html": "Jayamix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-semarang.html": "Jayamix Semarang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-kediri.html": "Jayamix Kediri",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-magelang.html": "Jayamix Magelang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-cileungsi.html": "Jayamix Cileungsi",
+  "https://www.betonjayareadymix.com/2018/04/jayamix-sidoarjo.html": "Jayamix Sidoarjo",
+  "https://www.betonjayareadymix.com/2018/04/jayamix-malang.html": "Jayamix Malang",
+  "https://www.betonjayareadymix.com/2021/03/jayamix-majalengka.html": "Jayamix Majalengka",
 
-  // ============================================================
-  // [MONEY_CHILD] - JAYAMIX PER KOTA/KABUPATEN
-  // 🧠 TYPE: MONEY_CHILD (WAJIB tampil di breadcrumb)
-  // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > Jayamix [Kota]
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/jayamix-pangandaran.html": "Jayamix Pangandaran",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-sumedang.html": "Jayamix Sumedang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-sukabumi.html": "Jayamix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-karawang.html": "Jayamix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-kuningan.html": "Jayamix Kuningan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-tasikmalaya.html": "Jayamix Tasikmalaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-subang.html": "Jayamix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-blitar.html": "Jayamix Blitar",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-klaten.html": "Jayamix Klaten",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-jakarta.html": "Jayamix Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2022/12/jayamix-serang.html": "Jayamix Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-purwakarta.html": "Jayamix Purwakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-bogor.html": "Jayamix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-bekasi.html": "Jayamix Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cikarang.html": "Jayamix Cikarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-depok.html": "Jayamix Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cibubur.html": "Jayamix Cibubur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-bandung.html": "Jayamix Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cirebon.html": "Jayamix Cirebon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cianjur.html": "Jayamix Cianjur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cikande.html": "Jayamix Cikande",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cilegon.html": "Jayamix Cilegon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-ciamis.html": "Jayamix Ciamis",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-garut.html": "Jayamix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-tangerang.html": "Jayamix Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/jayamix-indramayu.html": "Jayamix Indramayu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-jombang.html": "Jayamix Jombang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-boyolali.html": "Jayamix Boyolali",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cilacap.html": "Jayamix Cilacap",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-pati.html": "Jayamix Pati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-gresik.html": "Jayamix Gresik",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-jogja.html": "Jayamix Jogja",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-surabaya.html": "Jayamix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-semarang.html": "Jayamix Semarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-kediri.html": "Jayamix Kediri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-magelang.html": "Jayamix Magelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-cileungsi.html": "Jayamix Cileungsi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/jayamix-sidoarjo.html": "Jayamix Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/jayamix-malang.html": "Jayamix Malang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/jayamix-majalengka.html": "Jayamix Majalengka",  // TYPE: MONEY_CHILD
+  // ═══ READY MIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-karawang.html": "Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-sukabumi.html": "Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-purwakarta.html": "Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2022/12/ready-mix-serang.html": "Ready Mix Serang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-surabaya.html": "Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bogor.html": "Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-holcim-sidoarjo.html": "Ready Mix Holcim Sidoarjo",
+  "https://www.betonjayareadymix.com/2018/04/holcim-readymix-surabaya.html": "Holcim Readymix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-blitar.html": "Ready Mix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-sidoarjo.html": "Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-garut.html": "Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bandung.html": "Ready Mix Bandung",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-tasikmalaya.html": "Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-subang.html": "Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-sumedang.html": "Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-depok.html": "Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-bekasi.html": "Ready Mix Bekasi",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-pangandaran.html": "Ready Mix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-kuningan.html": "Ready Mix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-jakarta.html": "Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-tangerang.html": "Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cirebon.html": "Ready Mix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cianjur.html": "Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-ciamis.html": "Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cilegon.html": "Ready Mix Cilegon",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cikande.html": "Ready Mix Cikande",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-indramayu.html": "Ready Mix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-malang.html": "Ready Mix Malang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cileungsi.html": "Ready Mix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cikarang.html": "Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-gresik.html": "Ready Mix Gresik",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-cilacap.html": "Ready Mix Cilacap",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-klaten.html": "Ready Mix Klaten",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-magelang.html": "Ready Mix Magelang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-majalengka.html": "Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-jombang.html": "Ready Mix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-jogja.html": "Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-pati.html": "Ready Mix Pati",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-ambon.html": "Ready Mix Ambon",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-makassar.html": "Ready Mix Makassar",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-kediri.html": "Ready Mix Kediri",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-semarang.html": "Ready Mix Semarang",
+  "https://www.betonjayareadymix.com/2021/08/ready-mix-cor-bandung.html": "Ready Mix Cor Bandung",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-boyolali.html": "Ready Mix Boyolali",
 
-  // ============================================================
-  // [MONEY_CHILD] - READY MIX PER KOTA/KABUPATEN
-  // 🧠 TYPE: MONEY_CHILD (WAJIB tampil di breadcrumb)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-karawang.html": "Ready Mix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-sukabumi.html": "Ready Mix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-purwakarta.html": "Ready Mix Purwakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2022/12/ready-mix-serang.html": "Ready Mix Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-surabaya.html": "Ready Mix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-bogor.html": "Ready Mix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-holcim-sidoarjo.html": "Ready Mix Holcim Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/holcim-readymix-surabaya.html": "Holcim Readymix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-blitar.html": "Ready Mix Blitar",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-sidoarjo.html": "Ready Mix Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-garut.html": "Ready Mix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-bandung.html": "Ready Mix Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-tasikmalaya.html": "Ready Mix Tasikmalaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-subang.html": "Ready Mix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-sumedang.html": "Ready Mix Sumedang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-depok.html": "Ready Mix Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-bekasi.html": "Ready Mix Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-pangandaran.html": "Ready Mix Pangandaran",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-kuningan.html": "Ready Mix Kuningan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-jakarta.html": "Ready Mix Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-tangerang.html": "Ready Mix Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-cirebon.html": "Ready Mix Cirebon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-cianjur.html": "Ready Mix Cianjur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-ciamis.html": "Ready Mix Ciamis",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-cilegon.html": "Ready Mix Cilegon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-cikande.html": "Ready Mix Cikande",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-indramayu.html": "Ready Mix Indramayu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-malang.html": "Ready Mix Malang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-cileungsi.html": "Ready Mix Cileungsi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-cikarang.html": "Ready Mix Cikarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-gresik.html": "Ready Mix Gresik",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-cilacap.html": "Ready Mix Cilacap",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-klaten.html": "Ready Mix Klaten",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-magelang.html": "Ready Mix Magelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-majalengka.html": "Ready Mix Majalengka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-jombang.html": "Ready Mix Jombang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-jogja.html": "Ready Mix Jogja",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-pati.html": "Ready Mix Pati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-ambon.html": "Ready Mix Ambon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-makassar.html": "Ready Mix Makassar",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-kediri.html": "Ready Mix Kediri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-semarang.html": "Ready Mix Semarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/ready-mix-cor-bandung.html": "Ready Mix Cor Bandung",  // TYPE: MONEY_CHILD
+  // ═══ BETON READY MIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-majalengka.html": "Beton Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-tasikmalaya.html": "Beton Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-garut.html": "Beton Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sukabumi.html": "Beton Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-purwakarta.html": "Beton Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sumedang.html": "Beton Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-karawang.html": "Beton Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-subang.html": "Beton Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-sidoarjo.html": "Beton Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-surabaya.html": "Beton Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-semarang.html": "Beton Ready Mix Semarang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jogja.html": "Beton Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-tangerang.html": "Beton Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jakarta.html": "Beton Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bogor.html": "Beton Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bandung.html": "Beton Ready Mix Bandung",
 
-  // ============================================================
-  // [MONEY_CHILD] - BETON READY MIX PER KOTA
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-majalengka.html": "Beton Ready Mix Majalengka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-tasikmalaya.html": "Beton Ready Mix Tasikmalaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-garut.html": "Beton Ready Mix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sukabumi.html": "Beton Ready Mix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-purwakarta.html": "Beton Ready Mix Purwakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-sumedang.html": "Beton Ready Mix Sumedang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-karawang.html": "Beton Ready Mix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/beton-ready-mix-subang.html": "Beton Ready Mix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-sidoarjo.html": "Beton Ready Mix Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-surabaya.html": "Beton Ready Mix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-semarang.html": "Beton Ready Mix Semarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jogja.html": "Beton Ready Mix Jogja",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-tangerang.html": "Beton Ready Mix Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-jakarta.html": "Beton Ready Mix Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bogor.html": "Beton Ready Mix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/beton-ready-mix-bandung.html": "Beton Ready Mix Bandung",  // TYPE: MONEY_CHILD
+  // ═══ COR BETON PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/08/cor-beton-bekasi.html": "Cor Beton Bekasi",
+  "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung",
 
-  // ============================================================
-  // [MONEY_CHILD] - COR BETON PER KOTA
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-bekasi.html": "Cor Beton Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-bandung.html": "Cor Beton Bandung",  // TYPE: MONEY_CHILD
+  // ═══ Batching Plant PER KOTA ═══
+ "https://www.betonjayareadymix.com/2021/08/batching-plant-terdekat.html": "Batching Plant Terdekat",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-depok.html": "Batching Plant Depok",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-tangerang.html": "Batching Plant Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-prov-dki-jakarta.html": "Batching Plant Prov DKI Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-bekasi.html": "Batching Plant Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-bogor.html": "Batching Plant Bogor",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA BETON COR PER KOTA
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-jabodetabek.html": "Harga Beton Cor Jabodetabek",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html": "Harga Beton Cor Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/09/harga-cor-beton-ready-mix-jakarta.html": "Harga Cor Beton Ready Mix Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-bekasi.html": "Harga Beton Cor Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-tangerang.html": "Harga Beton Cor Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2022/12/harga-beton-cor-serang.html": "Harga Beton Cor Serang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-subang.html": "Batching Plant SCG Subang",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-karawang.html": "Batching Plant SCG Karawang",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-sukabumi.html": "Batching Plant Sukabumi",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-purwakarta.html": "Batching Plant SCG Purwakarta",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-majalengka.html": "Batching Plant SCG Majalengka",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bandung.html": "Batching Plant SCG Bandung",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cirebon.html": "Batching Plant SCG Cirebon",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-cianjur.html": "Batching Plant SCG Cianjur",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bogor.html": "Batching Plant SCG Bogor",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-scg-bekasi.html": "Batching Plant SCG Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/scg-jakarta.html": "SCG Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/scg-jayamix-dki-jakarta.html": "SCG Jayamix DKI Jakarta",
+  "https://www.betonjayareadymix.com/2018/04/scg-readymix-jakarta.html": "SCG Ready Mix Jakarta",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA JAYAMIX PER KOTA/KECAMATAN
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-pati.html": "Harga Jayamix Pati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-klaten.html": "Harga Jayamix Klaten",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-gresik.html": "Harga Jayamix Gresik",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-sidoarjo.html": "Harga Jayamix Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jombang.html": "Harga Jayamix Jombang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jawa-timur.html": "Harga Jayamix Jawa Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tangerang.html": "Harga Jayamix Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bogor.html": "Harga Jayamix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-garut.html": "Harga Jayamix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bandung.html": "Harga Jayamix Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bekasi.html": "Harga Jayamix Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cikarang.html": "Harga Jayamix Cikarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibinong.html": "Harga Jayamix Cibinong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-beton-jayamix-cibinong.html": "Harga Beton Jayamix Cibinong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cileungsi.html": "Harga Jayamix Cileungsi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cilegon.html": "Harga Jayamix Cilegon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cinere.html": "Harga Jayamix Cinere",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-indramayu.html": "Harga Jayamix Indramayu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-depok.html": "Harga Jayamix Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-magelang.html": "Harga Jayamix Magelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-malang.html": "Harga Jayamix Malang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-kediri.html": "Harga Jayamix Kediri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-cilacap.html": "Harga Jayamix Cilacap",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-kuningan.html": "Harga Jayamix Kuningan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-surabaya.html": "Harga Jayamix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-blitar.html": "Harga Jayamix Blitar",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-boyolali.html": "Harga Jayamix Boyolali",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cianjur.html": "Harga Jayamix Cianjur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cirebon.html": "Harga Jayamix Cirebon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-pangandaran.html": "Harga Jayamix Pangandaran",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-karawang.html": "Harga Jayamix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-ciamis.html": "Harga Jayamix Ciamis",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-purwakarta.html": "Harga Jayamix Purwakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-subang.html": "Harga Jayamix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sumedang.html": "Harga Jayamix Sumedang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sukabumi.html": "Harga Jayamix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-majalengka.html": "Harga Jayamix Majalengka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-tasikmalaya.html": "Harga Jayamix Tasikmalaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-bogor.html": "Harga Jayamix Bogor",  // TYPE: MONEY_CHILD
+    "https://www.betonjayareadymix.com/2018/08/adhimix-terdekat.html": "Adhimix Terdekat",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-beton.html": "Adhimix Beton",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-bogor.html": "Adhimix Bogor",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-bekasi.html": "Adhimix Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-jakarta.html": "Adhimix Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-tangerang.html": "Adhimix Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-depok.html": "Adhimix Depok",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-bandung.html": "Adhimix Bandung",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-cirebon.html": "Adhimix Cirebon",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-karawang.html": "Adhimix Karawang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-subang.html": "Adhimix Subang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-majalengka.html": "Adhimix Majalengka",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-sukabumi.html": "Adhimix Sukabumi",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-purwakarta.html": "Adhimix Purwakarta",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-sumedang.html": "Adhimix Sumedang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-indramayu.html": "Adhimix Indramayu",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-kuningan.html": "Adhimix Kuningan",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-cianjur.html": "Adhimix Cianjur",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-ciamis.html": "Adhimix Ciamis",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-serang.html": "Adhimix Serang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-cilegon.html": "Adhimix Cilegon",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-lebak.html": "Adhimix Lebak",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-pandeglang.html": "Adhimix Pandeglang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-kendal.html": "Adhimix Kendal",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-semarang.html": "Adhimix Semarang",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-surabaya.html": "Adhimix Surabaya",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-gresik.html": "Adhimix Gresik",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-sidoarjo.html": "Adhimix Sidoarjo",
+  "https://www.betonjayareadymix.com/2018/08/pionir-beton-terdekat.html": "Pionir Beton Terdekat",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA READY MIX PER KOTA/KECAMATAN
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-gresik.html": "Harga Ready Mix Gresik",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cikarang.html": "Harga Ready Mix Cikarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-jakarta.html": "Harga Ready Mix Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tangerang.html": "Harga Ready Mix Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bekasi.html": "Harga Ready Mix Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-depok.html": "Harga Ready Mix Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bogor.html": "Harga Ready Mix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html": "Harga Ready Mix Cibinong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-pati.html": "Harga Ready Mix Pati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-klaten.html": "Harga Ready Mix Klaten",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-magelang.html": "Harga Ready Mix Magelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-boyolali.html": "Harga Ready Mix Boyolali",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jogja.html": "Harga Ready Mix Jogja",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-surabaya.html": "Harga Ready Mix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cilegon.html": "Harga Ready Mix Cilegon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sumedang.html": "Harga Ready Mix Sumedang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tasikmalaya.html": "Harga Ready Mix Tasikmalaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-karawang.html": "Harga Ready Mix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cileungsi.html": "Harga Ready Mix Cileungsi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cilacap.html": "Harga Ready Mix Cilacap",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-readymix-bandung.html": "Harga Readymix Bandung",  // TYPE: MONEY_CHILD
+    "https://www.betonjayareadymix.com/2018/08/pionir-beton-jakarta.html": "Pionir Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/pionir-beton-tangerang.html": "Pionir Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/pionir-beton-bekasi.html": "Pionir Beton Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/pionir-beton-depok.html": "Pionir Beton Depok",
+  "https://www.betonjayareadymix.com/2018/08/pionir-beton-bogor.html": "Pionir Beton Bogor",
+  "https://www.betonjayareadymix.com/2021/08/pionir-beton-cor-bogor.html": "Pionir Beton Cor Bogor",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA BETON READY MIX PER KOTA
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-surabaya.html": "Harga Beton Ready Mix Surabaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bandung.html": "Harga Beton Ready Mix Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bogor.html": "Harga Beton Ready Mix Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-karawang.html": "Harga Beton Ready Mix Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-depok.html": "Harga Beton Ready Mix Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cikarang.html": "Harga Beton Ready Mix Cikarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cirebon.html": "Harga Beton Ready Mix Cirebon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-garut.html": "Harga Beton Ready Mix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-majalengka.html": "Harga Beton Ready Mix Majalengka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-subang.html": "Harga Beton Ready Mix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-sukabumi.html": "Harga Beton Ready Mix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-ciamis.html": "Harga Beton Ready Mix Ciamis",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cianjur.html": "Harga Beton Ready Mix Cianjur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-indramayu.html": "Harga Beton Ready Mix Indramayu",  // TYPE: MONEY_CHILD
+    "https://www.betonjayareadymix.com/2018/08/fresh-beton-terdekat.html": "Fresh Beton Terdekat",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-bogor.html": "Fresh Beton Bogor",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-bekasi.html": "Fresh Beton Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-jakarta.html": "Fresh Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-tangerang.html": "Fresh Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-depok.html": "Fresh Beton Depok",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-sukabumi.html": "Fresh Beton Sukabumi",
+  "https://www.betonjayareadymix.com/2018/08/fresh-beton-cianjur.html": "Fresh Beton Cianjur",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-terdekat.html": "Karya Beton Terdekat",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA BETON JAYAMIX
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/harga-beton-jayamix-jakarta.html": "Harga Beton Jayamix Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-bekasi.html": "Karya Beton Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-cikarang.html": "Karya Beton Cikarang",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-bogor.html": "Karya Beton Bogor",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-depok.html": "Karya Beton Depok",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-jakarta.html": "Karya Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-tangerang.html": "Karya Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-karawang.html": "Karya Beton Karawang",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-jogja.html": "Karya Beton Jogja",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-bali.html": "Karya Beton Bali",
+  "https://www.betonjayareadymix.com/2018/08/plant-farika-beton.html": "Plant Farika Beton",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-terdekat.html": "Farika Beton Terdekat",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-jakarta.html": "Farika Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-bogor.html": "Farika Beton Bogor",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-bekasi.html": "Farika Beton Bekasi",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-depok.html": "Farika Beton Depok",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-tangerang.html": "Farika Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-cilegon-prov-banten.html": "Farika Beton Cilegon Prov Banten",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-serang.html": "Farika Beton Serang",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA COR BETON
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix-bandung.html": "Harga Cor Beton Ready Mix Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-di-jakarta.html": "Harga Cor Beton di Jakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-bandung.html": "Harga Cor Beton Bandung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-depok.html": "Harga Cor Beton Depok",  // TYPE: MONEY_CHILD
+  // ═══ HARGA BETON COR PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-jabodetabek.html": "Harga Beton Cor Jabodetabek",
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html": "Harga Beton Cor Bogor",
+  "https://www.betonjayareadymix.com/2018/09/harga-cor-beton-ready-mix-jakarta.html": "Harga Cor Beton Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-bekasi.html": "Harga Beton Cor Bekasi",
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-tangerang.html": "Harga Beton Cor Tangerang",
+  "https://www.betonjayareadymix.com/2022/12/harga-beton-cor-serang.html": "Harga Beton Cor Serang",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA READY MIX (LANJUTAN)
-  // 🧠 TYPE: MONEY_CHILD
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kuningan.html": "Harga Ready Mix Kuningan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-pangandaran.html": "Harga Ready Mix Pangandaran",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-indramayu.html": "Harga Ready Mix Indramayu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cirebon.html": "Harga Ready Mix Cirebon",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cianjur.html": "Harga Ready Mix Cianjur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-ciamis.html": "Harga Ready Mix Ciamis",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sukabumi.html": "Harga Ready Mix Sukabumi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-subang.html": "Harga Ready Mix Subang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-majalengka.html": "Harga Ready Mix Majalengka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-purwakarta.html": "Harga Ready Mix Purwakarta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-garut.html": "Harga Ready Mix Garut",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-blitar.html": "Harga Ready Mix Blitar",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kediri.html": "Harga Ready Mix Kediri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sidoarjo.html": "Harga Ready Mix Sidoarjo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-malang.html": "Harga Ready Mix Malang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-semarang.html": "Harga Ready Mix Semarang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html": "Harga Ready Mix Jombang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-jogja.html": "Harga Jayamix Jogja",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-boyolali.html": "Ready Mix Boyolali",  // TYPE: MONEY_CHILD
+  // ═══ HARGA JAYAMIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-pati.html": "Harga Jayamix Pati",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-klaten.html": "Harga Jayamix Klaten",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-gresik.html": "Harga Jayamix Gresik",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-sidoarjo.html": "Harga Jayamix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jombang.html": "Harga Jayamix Jombang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jawa-timur.html": "Harga Jayamix Jawa Timur",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tangerang.html": "Harga Jayamix Tangerang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bogor.html": "Harga Jayamix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-garut.html": "Harga Jayamix Garut",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bandung.html": "Harga Jayamix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bekasi.html": "Harga Jayamix Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cikarang.html": "Harga Jayamix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibinong.html": "Harga Jayamix Cibinong",
+  "https://www.betonjayareadymix.com/2018/08/harga-beton-jayamix-cibinong.html": "Harga Beton Jayamix Cibinong",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cileungsi.html": "Harga Jayamix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cilegon.html": "Harga Jayamix Cilegon",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cinere.html": "Harga Jayamix Cinere",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-indramayu.html": "Harga Jayamix Indramayu",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-depok.html": "Harga Jayamix Depok",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-magelang.html": "Harga Jayamix Magelang",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-malang.html": "Harga Jayamix Malang",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-kediri.html": "Harga Jayamix Kediri",
+  "https://www.betonjayareadymix.com/2021/09/harga-jayamix-cilacap.html": "Harga Jayamix Cilacap",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-kuningan.html": "Harga Jayamix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-surabaya.html": "Harga Jayamix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-blitar.html": "Harga Jayamix Blitar",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-boyolali.html": "Harga Jayamix Boyolali",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-semarang.html": "Harga Jayamix Semarang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cianjur.html": "Harga Jayamix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-cirebon.html": "Harga Jayamix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-pangandaran.html": "Harga Jayamix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-karawang.html": "Harga Jayamix Karawang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-ciamis.html": "Harga Jayamix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-purwakarta.html": "Harga Jayamix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-subang.html": "Harga Jayamix Subang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sumedang.html": "Harga Jayamix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-sukabumi.html": "Harga Jayamix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-majalengka.html": "Harga Jayamix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-tasikmalaya.html": "Harga Jayamix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-bogor.html": "Harga Jayamix Bogor",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-jogja.html": "Harga Jayamix Jogja",
 
-  // ============================================================
-  // [MONEY_CHILD] - HARGA PER KECAMATAN (KARAWANG, TANGERANG, BEKASI, BOGOR, JAKARTA, DEPOK, SERANG)
-  // 🧠 TYPE: MONEY_CHILD (SEMUA)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html": "Harga Ready Mix Tegalwaru Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-talagasari-kab-karawang.html": "Harga Jayamix Talagasari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-talagasari-kab-karawang.html": "Harga Ready Mix Talagasari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-timur-karawang.html": "Harga Jayamix Telukjambe Timur Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-timur.html": "Harga Ready Mix Telukjambe Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-karawang-timur.html": "Harga Jayamix Karawang Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-karawang-timur.html": "Harga Ready Mix Karawang Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-klari-karawang.html": "Harga Ready Mix Klari Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kota-baru-karawang.html": "Harga Jayamix Kota Baru Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-kota-baru-karawang.html": "Harga Ready Mix Kota Baru Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-karawang-barat.html": "Harga Jayamix Karawang Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-karawang-barat.html": "Harga Ready Mix Karawang Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jatisari-kab-karawang.html": "Harga Jayamix Jatisari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jatisari-kab-karawang.html": "Harga Ready Mix Jatisari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-cilebar-kab-karawang.html": "Harga Jayamix Cilebar Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-cilebar-kab-karawang.html": "Harga Ready Mix Cilebar Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-cilamaya-wetan.html": "Harga Ready Mix Cilamaya Wetan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-cilamaya-wetan.html": "Harga Jayamix Cilamaya Wetan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtajaya-kab-karawang.html": "Harga Ready Mix Tirtajaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtamulya-kab-karawang.html": "Harga Ready Mix Tirtamulya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tirtamulya-kab-karawang.html": "Harga Jayamix Tirtamulya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tempuran-kab-karawang.html": "Harga Ready Mix Tempuran Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tempuran-kab-karawang.html": "Harga Jayamix Tempuran Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-barat.html": "Harga Jayamix Telukjambe Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-barat.html": "Harga Ready Mix Telukjambe Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rengasdengklok.html": "Harga Jayamix Rengasdengklok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rengasdengklok.html": "Harga Ready Mix Rengasdengklok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rawamerta-kab-karawang.html": "Harga Jayamix Rawamerta Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rawamerta-kab-karawang.html": "Harga Ready Mix Rawamerta Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-purwasari-karawang.html": "Harga Jayamix Purwasari Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pedes-kab-karawang.html": "Harga Jayamix Pedes Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pedes-kab-karawang.html": "Harga Ready Mix Pedes Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pangkalan-kab-karawang.html": "Harga Jayamix Pangkalan Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pangkalan-kab-karawang.html": "Harga Ready Mix Pangkalan Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jayakerta.html": "Harga Ready Mix Jayakerta",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kutawaluya.html": "Harga Jayamix Kutawaluya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-kutawaluya.html": "Harga Ready Mix Kutawaluya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-klari-karawang.html": "Harga Jayamix Klari Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-lemahabang-kab-karawang.html": "Harga Ready Mix Lemahabang Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-lemahabang-kab-karawang.html": "Harga Jayamix Lemahabang Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-majalaya-kab-karawang.html": "Harga Ready Mix Majalaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-majalaya-kab-karawang.html": "Harga Jayamix Majalaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pakisjaya-kab-karawang.html": "Harga Ready Mix Pakisjaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pakisjaya-kab-karawang.html": "Harga Jayamix Pakisjaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-banyusari-kab-karawang.html": "Harga Jayamix Banyusari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-banyusari-kab-karawang.html": "Harga Ready Mix Banyusari Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-batujaya-kab-karawang.html": "Harga Jayamix Batujaya Kab Karawang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-batujaya-kab-karawang.html": "Harga Ready Mix Batujaya Kab Karawang",  // TYPE: MONEY_CHILD
+  // ═══ HARGA READY MIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-gresik.html": "Harga Ready Mix Gresik",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cikarang.html": "Harga Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-jakarta.html": "Harga Ready Mix Jakarta",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tangerang.html": "Harga Ready Mix Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bekasi.html": "Harga Ready Mix Bekasi",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-depok.html": "Harga Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-bogor.html": "Harga Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibinong.html": "Harga Ready Mix Cibinong",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-pati.html": "Harga Ready Mix Pati",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-klaten.html": "Harga Ready Mix Klaten",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-magelang.html": "Harga Ready Mix Magelang",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-boyolali.html": "Harga Ready Mix Boyolali",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jogja.html": "Harga Ready Mix Jogja",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-surabaya.html": "Harga Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cilegon.html": "Harga Ready Mix Cilegon",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sumedang.html": "Harga Ready Mix Sumedang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tasikmalaya.html": "Harga Ready Mix Tasikmalaya",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-karawang.html": "Harga Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cileungsi.html": "Harga Ready Mix Cileungsi",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-cilacap.html": "Harga Ready Mix Cilacap",
+  "https://www.betonjayareadymix.com/2018/04/harga-readymix-bandung.html": "Harga Readymix Bandung",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kuningan.html": "Harga Ready Mix Kuningan",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-pangandaran.html": "Harga Ready Mix Pangandaran",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-indramayu.html": "Harga Ready Mix Indramayu",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cirebon.html": "Harga Ready Mix Cirebon",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-cianjur.html": "Harga Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-ciamis.html": "Harga Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sukabumi.html": "Harga Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-subang.html": "Harga Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-majalengka.html": "Harga Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-purwakarta.html": "Harga Ready Mix Purwakarta",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-garut.html": "Harga Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-blitar.html": "Harga Ready Mix Blitar",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-kediri.html": "Harga Ready Mix Kediri",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-sidoarjo.html": "Harga Ready Mix Sidoarjo",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-malang.html": "Harga Ready Mix Malang",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-semarang.html": "Harga Ready Mix Semarang",
+  "https://www.betonjayareadymix.com/2021/09/harga-ready-mix-jombang.html": "Harga Ready Mix Jombang",
 
-  // TANGERANG
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-balaraja-kab-tangerang.html": "Harga Ready Mix Balaraja Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-kaler-kab-tangerang.html": "Harga Ready Mix Gunung Kaler Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sindang-jaya-kab-tangerang.html": "Harga Ready Mix Sindang Jaya Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kronjo-kab-tangerang.html": "Harga Ready Mix Kronjo Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kosambi-kab-tangerang.html": "Harga Ready Mix Kosambi Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kresek-kab-tangerang.html": "Harga Ready Mix Kresek Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kemiri-kab-tangerang.html": "Harga Ready Mix Kemiri Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kelapa-dua-kab-tangerang.html": "Harga Ready Mix Kelapa Dua Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mauk-kab-tangerang.html": "Harga Ready Mix Mauk Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-legok-kab-tangerang.html": "Harga Ready Mix Legok Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mekarbaru-kab-tangerang.html": "Harga Ready Mix Mekarbaru Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pasar-kemis-kab-tangerang.html": "Harga Ready Mix Pasar Kemis Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-panongan-kab-tangerang.html": "Harga Ready Mix Panongan Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tigaraksa-kab-tangerang.html": "Harga Ready Mix Tigaraksa Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pakuhaji.html": "Harga Ready Mix Pakuhaji",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-serpong.html": "Harga Ready Mix Serpong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-serpong-utara.html": "Harga Ready Mix Serpong Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-teluknaga.html": "Harga Ready Mix Teluknaga",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jayanti.html": "Harga Ready Mix Jayanti",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cikupa.html": "Harga Ready Mix Cikupa",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukamulya.html": "Harga Ready Mix Sukamulya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukadiri.html": "Harga Ready Mix Sukadiri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-solear.html": "Harga Ready Mix Solear",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sepatan-timur.html": "Harga Ready Mix Sepatan Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sepatan.html": "Harga Ready Mix Sepatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisoka.html": "Harga Ready Mix Cisoka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-batu-ceper.html": "Harga Ready Mix Batu Ceper",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-neglasari-kota-tangerang.html": "Harga Ready Mix Neglasari Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-benda-kota-tangerang.html": "Harga Ready Mix Benda Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibodas-kota-tangerang.html": "Harga Ready Mix Cibodas Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-setu-tangerang-selatan.html": "Harga Ready Mix Setu Tangerang Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jayanti-kab-tangerang.html": "Harga Jayamix Jayanti Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cikupa-kab-tangerang.html": "Harga Jayamix Cikupa Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-balaraja-kab-tangerang.html": "Harga Jayamix Balaraja Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-kaler-kab-tangerang.html": "Harga Jayamix Gunung Kaler Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kosambi-kab-tangerang.html": "Harga Jayamix Kosambi Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kronjo-kab-tangerang.html": "Harga Jayamix Kronjo Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kresek-kab-tangerang.html": "Harga Jayamix Kresek Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kemiri-kab-tangerang.html": "Harga Jayamix Kemiri Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kelapa-dua-kab-tangerang.html": "Harga Jayamix Kelapa Dua Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mauk-kab-tangerang.html": "Harga Jayamix Mauk Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-legok-kab-tangerang.html": "Harga Jayamix Legok Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pasar-kemis-kab-tangerang.html": "Harga Jayamix Pasar Kemis Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-panongan-kab-tangerang.html": "Harga Jayamix Panongan Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mekarbaru-kab-tangerang.html": "Harga Jayamix Mekarbaru Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tigaraksa-kab-tangerang.html": "Harga Jayamix Tigaraksa Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sindang-jaya.html": "Harga Jayamix Sindang Jaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-serpong.html": "Harga Jayamix Serpong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-serpong-utara.html": "Harga Jayamix Serpong Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukamulya.html": "Harga Jayamix Sukamulya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukadiri.html": "Harga Jayamix Sukadiri",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-solear.html": "Harga Jayamix Solear",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sepatan.html": "Harga Jayamix Sepatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisoka.html": "Harga Jayamix Cisoka",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-batu-ceper.html": "Harga Jayamix Batu Ceper",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sepatan-timur.html": "Harga Jayamix Sepatan Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibodas-kota-tangerang.html": "Harga Jayamix Cibodas Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciledug-kota-tangerang.html": "Harga Jayamix Ciledug Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-setu-tangerang-selatan.html": "Harga Jayamix Setu Tangerang Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-benda-kota-tangerang.html": "Harga Jayamix Benda Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-curug-kab-tangerang.html": "Harga Ready Mix Curug Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jambe-kab-tangerang.html": "Harga Ready Mix Jambe Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisauk.html": "Harga Ready Mix Cisauk",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-rajeg-kab-tangerang.html": "Harga Ready Mix Rajeg Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pagedangan.html": "Harga Ready Mix Pagedangan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-curug-kab-tangerang.html": "Harga Jayamix Curug Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jambe-kab-tangerang.html": "Harga Jayamix Jambe Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisauk.html": "Harga Jayamix Cisauk",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-teluknaga.html": "Harga Jayamix Teluknaga",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rajeg-kab-tangerang.html": "Harga Jayamix Rajeg Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pagedangan.html": "Harga Jayamix Pagedangan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pakuhaji-kab-tangerang.html": "Harga Jayamix Pakuhaji Kab Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-panongan.html": "Harga Jayamix Panongan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-tangerang.html": "Harga Ready Mix Kecamatan Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pinang-kota-tangerang.html": "Harga Ready Mix Pinang Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-periuk-kota-tangerang.html": "Harga Ready Mix Periuk Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-larangan-kota-tangerang.html": "Harga Ready Mix Larangan Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-karawaci.html": "Harga Ready Mix Karawaci",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-karangtengah-kota-tangerang.html": "Harga Ready Mix Karangtengah Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jatiuwung.html": "Harga Ready Mix Jatiuwung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cipondoh-kota-tangerang.html": "Harga Ready Mix Cipondoh Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciledug-kota-tangerang.html": "Harga Ready Mix Ciledug Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-tangerang.html": "Harga Jayamix Kecamatan Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pinang-kota-tangerang.html": "Harga Jayamix Pinang Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-periuk-kota-tangerang.html": "Harga Jayamix Periuk Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-neglasari-kota-tangerang.html": "Harga Jayamix Neglasari Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-larangan-kota-tangerang.html": "Harga Jayamix Larangan Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-karawaci-kota-tangerang.html": "Harga Jayamix Karawaci Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-karangtengah-kota-tangerang.html": "Harga Jayamix Karangtengah Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jatiuwung-kota-tangerang.html": "Harga Jayamix Jatiuwung Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipondoh-kota-tangerang.html": "Harga Jayamix Cipondoh Kota Tangerang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciputat-timur.html": "Harga Jayamix Ciputat Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamulang.html": "Harga Jayamix Pamulang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pondok-aren.html": "Harga Jayamix Pondok Aren",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-ciputat.html": "Harga Ready Mix Ciputat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pondok-aren.html": "Harga Ready Mix Pondok Aren",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pamulang.html": "Harga Ready Mix Pamulang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciputat-timur.html": "Harga Ready Mix Ciputat Timur",  // TYPE: MONEY_CHILD
+  // ═══ HARGA BETON READY MIX PER KOTA ═══
+  "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-surabaya.html": "Harga Beton Ready Mix Surabaya",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bandung.html": "Harga Beton Ready Mix Bandung",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-bogor.html": "Harga Beton Ready Mix Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-karawang.html": "Harga Beton Ready Mix Karawang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-depok.html": "Harga Beton Ready Mix Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cikarang.html": "Harga Beton Ready Mix Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cirebon.html": "Harga Beton Ready Mix Cirebon",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-garut.html": "Harga Beton Ready Mix Garut",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-majalengka.html": "Harga Beton Ready Mix Majalengka",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-subang.html": "Harga Beton Ready Mix Subang",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-sukabumi.html": "Harga Beton Ready Mix Sukabumi",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-ciamis.html": "Harga Beton Ready Mix Ciamis",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-cianjur.html": "Harga Beton Ready Mix Cianjur",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-indramayu.html": "Harga Beton Ready Mix Indramayu",
 
-  // BOGOR
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciomas-kab-bogor.html": "Harga Jayamix Ciomas Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciomas-kab-bogor.html": "Harga Ready Mix Ciomas Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisarua-kab-bogor.html": "Harga Jayamix Cisarua Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisarua-kab-bogor.html": "Harga Ready Mix Cisarua Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciseeng-kab-bogor.html": "Harga Jayamix Ciseeng Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciseeng-kab-bogor.html": "Harga Ready Mix Ciseeng Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tenjolaya-kab-bogor.html": "Harga Jayamix Tenjolaya Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tenjolaya-kab-bogor.html": "Harga Ready Mix Tenjolaya Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tenjo-kab-bogor.html": "Harga Jayamix Tenjo Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tenjo-kab-bogor.html": "Harga Ready Mix Tenjo Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tanjungsari-kab-bogor.html": "Harga Jayamix Tanjungsari Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tanjungsari-kab-bogor.html": "Harga Ready Mix Tanjungsari Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tamansari-kab-bogor.html": "Harga Jayamix Tamansari Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tamansari-kab-bogor.html": "Harga Ready Mix Tamansari Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tajur-halang-kab-bogor.html": "Harga Jayamix Tajur Halang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tajur-halang-kab-bogor.html": "Harga Ready Mix Tajur Halang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukaraja-kab-bogor.html": "Harga Jayamix Sukaraja Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukaraja-kab-bogor.html": "Harga Ready Mix Sukaraja Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukamakmur-kab-bogor.html": "Harga Jayamix Sukamakmur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukamakmur-kab-bogor.html": "Harga Ready Mix Sukamakmur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-parung-panjang-kab-bogor.html": "Harga Jayamix Parung Panjang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-parung-panjang-kab-bogor.html": "Harga Ready Mix Parung Panjang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-parung-kab-bogor.html": "Harga Jayamix Parung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-parung-kab-bogor.html": "Harga Ready Mix Parung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamijahan-kab-bogor.html": "Harga Jayamix Pamijahan Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pamijahan-kab-bogor.html": "Harga Ready Mix Pamijahan Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-nanggung-kab-bogor.html": "Harga Jayamix Nanggung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-nanggung-kab-bogor.html": "Harga Ready Mix Nanggung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-megamendung-kab-bogor.html": "Harga Jayamix Megamendung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-megamendung-kab-bogor.html": "Harga Ready Mix Megamendung Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-leuwisadeng-kab-bogor.html": "Harga Jayamix Leuwisadeng Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-leuwisadeng-kab-bogor.html": "Harga Ready Mix Leuwisadeng Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-leuwiliang-kab-bogor.html": "Harga Jayamix Leuwiliang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-leuwiliang-kab-bogor.html": "Harga Ready Mix Leuwiliang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-klapanunggal-kab-bogor.html": "Harga Jayamix Klapanunggal Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-klapanunggal-kab-bogor.html": "Harga Ready Mix Klapanunggal Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kemang-kab-bogor.html": "Harga Jayamix Kemang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kemang-kab-bogor.html": "Harga Ready Mix Kemang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jonggol-kab-bogor.html": "Harga Jayamix Jonggol Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jonggol-kab-bogor.html": "Harga Ready Mix Jonggol Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jasinga-kab-bogor.html": "Harga Jayamix Jasinga Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jasinga-kab-bogor.html": "Harga Ready Mix Jasinga Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/08/harga-beton-ready-mix-cibinong.html": "Harga Beton Ready Mix Cibinong",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cijeruk-kab-bogor.html": "Harga Ready Mix Cijeruk Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibinong-kab-bogor.html": "Harga Ready Mix Cibinong Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cigudeg-kab-bogor.html": "Harga Ready Mix Cigudeg Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cigombong-kab-bogor.html": "Harga Ready Mix Cigombong Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cigombong-kab-bogor.html": "Harga Jayamix Cigombong Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibungbulang-kab-bogor.html": "Harga Ready Mix Cibungbulang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciawi-kab-bogor.html": "Harga Ready Mix Ciawi Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciampea-kab-bogor.html": "Harga Ready Mix Ciampea Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cariu-kab-bogor.html": "Harga Ready Mix Cariu Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-caringin-kab-bogor.html": "Harga Ready Mix Caringin Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bojonggede-kab-bogor.html": "Harga Ready Mix Bojonggede Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-babakan-madang.html": "Harga Ready Mix Babakan Madang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-citeureup-kab-bogor.html": "Harga Ready Mix Citeureup Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-dramaga-kab-bogor.html": "Harga Ready Mix Dramaga Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-putri-kab-bogor.html": "Harga Ready Mix Gunung Putri Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-sindur-kab-bogor.html": "Harga Ready Mix Gunung Sindur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ranca-bungur-kab-bogor.html": "Harga Ready Mix Ranca Bungur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-rumpin-kab-bogor.html": "Harga Ready Mix Rumpin Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukajaya-kab-bogor.html": "Harga Ready Mix Sukajaya Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cijeruk-kab-bogor.html": "Harga Jayamix Cijeruk Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibinong-kab-bogor.html": "Harga Jayamix Cibinong Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cigudeg-kab-bogor.html": "Harga Jayamix Cigudeg Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibungbulang-kab-bogor.html": "Harga Jayamix Cibungbulang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciawi-kab-bogor.html": "Harga Jayamix Ciawi Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciampea-kab-bogor.html": "Harga Jayamix Ciampea Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cariu-kab-bogor.html": "Harga Jayamix Cariu Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-caringin-kab-bogor.html": "Harga Jayamix Caringin Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bojonggede-kab-bogor.html": "Harga Jayamix Bojonggede Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-babakan-madang-kab-bogor.html": "Harga Jayamix Babakan Madang Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-citeureup-kab-bogor.html": "Harga Jayamix Citeureup Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-dramaga-kab-bogor.html": "Harga Jayamix Dramaga Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-putri-kab-bogor.html": "Harga Jayamix Gunung Putri Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-sindur-kab-bogor.html": "Harga Jayamix Gunung Sindur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ranca-bungur-kab-bogor.html": "Harga Jayamix Ranca Bungur Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rumpin-kab-bogor.html": "Harga Jayamix Rumpin Kab Bogor",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukajaya-kab-bogor.html": "Harga Jayamix Sukajaya Kab Bogor",  // TYPE: MONEY_CHILD
+  // ═══ HARGA BETON JAYAMIX ═══
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-jayamix-jakarta.html": "Harga Beton Jayamix Jakarta",
 
-  // BEKASI
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-utara.html": "Harga Jayamix Cikarang Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-utara.html": "Harga Ready Mix Cikarang Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-selatan.html": "Harga Jayamix Cikarang Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-selatan-bekasi.html": "Harga Ready Mix Cikarang Selatan Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-timur.html": "Harga Jayamix Cikarang Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-timur.html": "Harga Ready Mix Cikarang Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-pusat.html": "Harga Jayamix Cikarang Pusat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-pusat-bekasi.html": "Harga Ready Mix Cikarang Pusat Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/06/harga-jayamix-cikarang-barat.html": "Harga Jayamix Cikarang Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-cikarang-barat-bekasi.html": "Harga Ready Mix Cikarang Barat Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-babelan.html": "Harga Jayamix Babelan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-babelan.html": "Harga Ready Mix Babelan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-bojongmangu.html": "Harga Jayamix Bojongmangu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-bojongmangu-bekasi.html": "Harga Ready Mix Bojongmangu Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cabangbungin-bekasi.html": "Harga Ready Mix Cabangbungin Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-cabangbungin-bekasi.html": "Harga Jayamix Cabangbungin Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibitung-bekasi.html": "Harga Jayamix Cibitung Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibitung.html": "Harga Ready Mix Cibitung",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tarumajaya.html": "Harga Ready Mix Tarumajaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tarumajaya-bekasi.html": "Harga Jayamix Tarumajaya Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tambun-utara-bekasi.html": "Harga Jayamix Tambun Utara Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tambun-utara-bekasi.html": "Harga Ready Mix Tambun Utara Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibarusah.html": "Harga Jayamix Cibarusah",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibarusah.html": "Harga Ready Mix Cibarusah",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/02/harga-jayamix-tambun-selatan.html": "Harga Jayamix Tambun Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-tambun-selatan.html": "Harga Ready Mix Tambun Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-tambelang.html": "Harga Jayamix Tambelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-tambelang.html": "Harga Ready Mix Tambelang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-sukawangi-bekasi.html": "Harga Jayamix Sukawangi Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-sukawangi-bekasi.html": "Harga Ready Mix Sukawangi Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-pebayuran.html": "Harga Ready Mix Pebayuran",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-pebayuran-bekasi.html": "Harga Jayamix Pebayuran Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-muara-gembong-bekasi.html": "Harga Jayamix Muara Gembong Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-muara-gembong-bekasi.html": "Harga Ready Mix Muara Gembong Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-kedungwaringin-bekasi.html": "Harga Ready Mix Kedungwaringin Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-kedungwaringin-bekasi.html": "Harga Jayamix Kedungwaringin Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-karangbahagia.html": "Harga Jayamix Karangbahagia",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-karangbahagia.html": "Harga Ready Mix Karangbahagia",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2022/02/harga-ready-mix-sukatani-bekasi.html": "Harga Ready Mix Sukatani Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukatani-bekasi.html": "Harga Jayamix Sukatani Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukakarya-bekasi.html": "Harga Jayamix Sukakarya Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-sukakarya-bekasi.html": "Harga Ready Mix Sukakarya Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-setu-bekasi.html": "Harga Jayamix Setu Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-setu-bekasi.html": "Harga Ready Mix Setu Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-serang-baru-bekasi.html": "Harga Jayamix Serang Baru Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-serang-baru-bekasi.html": "Harga Ready Mix Serang Baru Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bantar-gebang.html": "Harga Ready Mix Bantar Gebang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bantar-gebang.html": "Harga Jayamix Kecamatan Bantar Gebang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-barat.html": "Harga Jayamix Kecamatan Bekasi Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-barat.html": "Harga Ready Mix Kecamatan Bekasi Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bekasi-selatan.html": "Harga Ready Mix Bekasi Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-selatan.html": "Harga Jayamix Kecamatan Bekasi Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-timur.html": "Harga Ready Mix Kecamatan Bekasi Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-timur.html": "Harga Jayamix Kecamatan Bekasi Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-utara.html": "Harga Ready Mix Kecamatan Bekasi Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-utara.html": "Harga Jayamix Kecamatan Bekasi Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jatiasih-kota-bekasi.html": "Harga Ready Mix Jatiasih Kota Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jatiasih-kota-bekasi.html": "Harga Jayamix Jatiasih Kota Bekasi",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-jatisampurna.html": "Harga Jayamix Kecamatan Jatisampurna",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-jatisampurna.html": "Harga Ready Mix Kecamatan Jatisampurna",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-medan-satria.html": "Harga Ready Mix Kecamatan Medan Satria",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-medan-satria.html": "Harga Jayamix Kecamatan Medan Satria",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-mustika-jaya.html": "Harga Ready Mix Kecamatan Mustika Jaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-mustika-jaya.html": "Harga Jayamix Kecamatan Mustika Jaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-pondok-gede.html": "Harga Ready Mix Kecamatan Pondok Gede",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-pondok-gede.html": "Harga Jayamix Kecamatan Pondok Gede",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-pondok-melati.html": "Harga Ready Mix Kecamatan Pondok Melati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-pondok-melati.html": "Harga Jayamix Kecamatan Pondok Melati",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-rawa-lumbu.html": "Harga Ready Mix Kecamatan Rawa Lumbu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rawa-lumbu-kota-bekasi.html": "Harga Jayamix Rawa Lumbu Kota Bekasi",  // TYPE: MONEY_CHILD
+  // ═══ HARGA COR BETON PER KOTA ═══
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix-bandung.html": "Harga Cor Beton Ready Mix Bandung",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-di-jakarta.html": "Harga Cor Beton di Jakarta",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-bandung.html": "Harga Cor Beton Bandung",
+  "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-depok.html": "Harga Cor Beton Depok",
 
-  // JAKARTA
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-timur.html": "Harga Ready Mix Jakarta Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-timur.html": "Harga Jayamix Jakarta Timur",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-kepulauan-seribu.html": "Harga Ready Mix Kepulauan Seribu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kepulauan-seribu.html": "Harga Jayamix Kepulauan Seribu",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-jakarta-selatan.html": "Harga Ready Mix Jakarta Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-selatan.html": "Harga Jayamix Jakarta Selatan",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-pusat.html": "Harga Ready Mix Jakarta Pusat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-pusat.html": "Harga Jayamix Jakarta Pusat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-barat.html": "Harga Jayamix Jakarta Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-barat.html": "Harga Ready Mix Jakarta Barat",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-utara.html": "Harga Jayamix Jakarta Utara",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-utara.html": "Harga Ready Mix Jakarta Utara",  // TYPE: MONEY_CHILD
+  // ═══ HARGA PER KECAMATAN — KARAWANG ═══
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tegalwaru-kab-karawang.html": "Harga Jayamix Tegalwaru Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tegalwaru-kab-karawang.html": "Harga Ready Mix Tegalwaru Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-talagasari-kab-karawang.html": "Harga Jayamix Talagasari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-talagasari-kab-karawang.html": "Harga Ready Mix Talagasari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-timur-karawang.html": "Harga Jayamix Telukjambe Timur Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-timur.html": "Harga Ready Mix Telukjambe Timur",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-karawang-timur.html": "Harga Jayamix Karawang Timur",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-karawang-timur.html": "Harga Ready Mix Karawang Timur",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-klari-karawang.html": "Harga Ready Mix Klari Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kota-baru-karawang.html": "Harga Jayamix Kota Baru Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-kota-baru-karawang.html": "Harga Ready Mix Kota Baru Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-karawang-barat.html": "Harga Jayamix Karawang Barat",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-karawang-barat.html": "Harga Ready Mix Karawang Barat",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jatisari-kab-karawang.html": "Harga Jayamix Jatisari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jatisari-kab-karawang.html": "Harga Ready Mix Jatisari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-cilebar-kab-karawang.html": "Harga Jayamix Cilebar Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-cilebar-kab-karawang.html": "Harga Ready Mix Cilebar Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-cilamaya-wetan.html": "Harga Ready Mix Cilamaya Wetan",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-cilamaya-wetan.html": "Harga Jayamix Cilamaya Wetan",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtajaya-kab-karawang.html": "Harga Ready Mix Tirtajaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tirtamulya-kab-karawang.html": "Harga Ready Mix Tirtamulya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tirtamulya-kab-karawang.html": "Harga Jayamix Tirtamulya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-tempuran-kab-karawang.html": "Harga Ready Mix Tempuran Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-tempuran-kab-karawang.html": "Harga Jayamix Tempuran Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-telukjambe-barat.html": "Harga Jayamix Telukjambe Barat",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-telukjambe-barat.html": "Harga Ready Mix Telukjambe Barat",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rengasdengklok.html": "Harga Jayamix Rengasdengklok",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rengasdengklok.html": "Harga Ready Mix Rengasdengklok",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-rawamerta-kab-karawang.html": "Harga Jayamix Rawamerta Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-rawamerta-kab-karawang.html": "Harga Ready Mix Rawamerta Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-purwasari-karawang.html": "Harga Jayamix Purwasari Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pedes-kab-karawang.html": "Harga Jayamix Pedes Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pedes-kab-karawang.html": "Harga Ready Mix Pedes Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pangkalan-kab-karawang.html": "Harga Jayamix Pangkalan Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pangkalan-kab-karawang.html": "Harga Ready Mix Pangkalan Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-jayakerta.html": "Harga Jayamix Jayakerta",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-jayakerta.html": "Harga Ready Mix Jayakerta",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-kutawaluya.html": "Harga Jayamix Kutawaluya",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-kutawaluya.html": "Harga Ready Mix Kutawaluya",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-klari-karawang.html": "Harga Jayamix Klari Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-lemahabang-kab-karawang.html": "Harga Ready Mix Lemahabang Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-lemahabang-kab-karawang.html": "Harga Jayamix Lemahabang Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-majalaya-kab-karawang.html": "Harga Ready Mix Majalaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-majalaya-kab-karawang.html": "Harga Jayamix Majalaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-pakisjaya-kab-karawang.html": "Harga Ready Mix Pakisjaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-pakisjaya-kab-karawang.html": "Harga Jayamix Pakisjaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-banyusari-kab-karawang.html": "Harga Jayamix Banyusari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-banyusari-kab-karawang.html": "Harga Ready Mix Banyusari Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-jayamix-batujaya-kab-karawang.html": "Harga Jayamix Batujaya Kab Karawang",
+  "https://www.betonjayareadymix.com/2018/08/harga-ready-mix-batujaya-kab-karawang.html": "Harga Ready Mix Batujaya Kab Karawang",
 
-  // DEPOK
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-beji-depok.html": "Harga Jayamix Beji Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-beji-depok.html": "Harga Ready Mix Beji Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tapos.html": "Harga Jayamix Tapos",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tapos-depok.html": "Harga Ready Mix Tapos Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/04/harga-readymix-cinere.html": "Harga Readymix Cinere",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cinere-depok.html": "Harga Jayamix Cinere Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukmajaya.html": "Harga Jayamix Sukmajaya",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukmajaya-depok.html": "Harga Ready Mix Sukmajaya Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-limo.html": "Harga Jayamix Limo",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-limo-depok.html": "Harga Ready Mix Limo Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bojongsari-depok.html": "Harga Jayamix Bojongsari Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-bojongsari-depok.html": "Harga Ready Mix Bojongsari Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pancoran-mas-depok.html": "Harga Jayamix Pancoran Mas Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pancoran-mas-depok.html": "Harga Ready Mix Pancoran Mas Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipayung-depok.html": "Harga Jayamix Cipayung Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cipayung-depok.html": "Harga Ready Mix Cipayung Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cilodong-depok.html": "Harga Jayamix Cilodong Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cilodong-depok.html": "Harga Ready Mix Cilodong Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sawangan-depok.html": "Harga Jayamix Sawangan Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sawangan-depok.html": "Harga Ready Mix Sawangan Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cimanggis-depok.html": "Harga Jayamix Cimanggis Depok",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cimanggis-depok.html": "Harga Ready Mix Cimanggis Depok",  // TYPE: MONEY_CHILD
+  // ═══ HARGA PER KECAMATAN — TANGERANG ═══
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-balaraja-kab-tangerang.html": "Harga Ready Mix Balaraja Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-kaler-kab-tangerang.html": "Harga Ready Mix Gunung Kaler Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sindang-jaya-kab-tangerang.html": "Harga Ready Mix Sindang Jaya Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kronjo-kab-tangerang.html": "Harga Ready Mix Kronjo Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kosambi-kab-tangerang.html": "Harga Ready Mix Kosambi Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kresek-kab-tangerang.html": "Harga Ready Mix Kresek Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kemiri-kab-tangerang.html": "Harga Ready Mix Kemiri Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kelapa-dua-kab-tangerang.html": "Harga Ready Mix Kelapa Dua Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mauk-kab-tangerang.html": "Harga Ready Mix Mauk Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-legok-kab-tangerang.html": "Harga Ready Mix Legok Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mekarbaru-kab-tangerang.html": "Harga Ready Mix Mekarbaru Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pasar-kemis-kab-tangerang.html": "Harga Ready Mix Pasar Kemis Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-panongan-kab-tangerang.html": "Harga Ready Mix Panongan Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tigaraksa-kab-tangerang.html": "Harga Ready Mix Tigaraksa Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pakuhaji.html": "Harga Ready Mix Pakuhaji",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-serpong.html": "Harga Ready Mix Serpong",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-serpong-utara.html": "Harga Ready Mix Serpong Utara",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-teluknaga.html": "Harga Ready Mix Teluknaga",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jayanti.html": "Harga Ready Mix Jayanti",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cikupa.html": "Harga Ready Mix Cikupa",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukamulya.html": "Harga Ready Mix Sukamulya",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukadiri.html": "Harga Ready Mix Sukadiri",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-solear.html": "Harga Ready Mix Solear",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sepatan-timur.html": "Harga Ready Mix Sepatan Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sepatan.html": "Harga Ready Mix Sepatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisoka.html": "Harga Ready Mix Cisoka",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-batu-ceper.html": "Harga Ready Mix Batu Ceper",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-neglasari-kota-tangerang.html": "Harga Ready Mix Neglasari Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-benda-kota-tangerang.html": "Harga Ready Mix Benda Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibodas-kota-tangerang.html": "Harga Ready Mix Cibodas Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-setu-tangerang-selatan.html": "Harga Ready Mix Setu Tangerang Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-curug-kab-tangerang.html": "Harga Ready Mix Curug Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jambe-kab-tangerang.html": "Harga Ready Mix Jambe Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisauk.html": "Harga Ready Mix Cisauk",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-rajeg-kab-tangerang.html": "Harga Ready Mix Rajeg Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pagedangan.html": "Harga Ready Mix Pagedangan",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-tangerang.html": "Harga Ready Mix Kecamatan Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pinang-kota-tangerang.html": "Harga Ready Mix Pinang Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-periuk-kota-tangerang.html": "Harga Ready Mix Periuk Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-larangan-kota-tangerang.html": "Harga Ready Mix Larangan Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-karawaci.html": "Harga Ready Mix Karawaci",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-karangtengah-kota-tangerang.html": "Harga Ready Mix Karangtengah Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jatiuwung.html": "Harga Ready Mix Jatiuwung",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cipondoh-kota-tangerang.html": "Harga Ready Mix Cipondoh Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciledug-kota-tangerang.html": "Harga Ready Mix Ciledug Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jayanti-kab-tangerang.html": "Harga Jayamix Jayanti Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cikupa-kab-tangerang.html": "Harga Jayamix Cikupa Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-balaraja-kab-tangerang.html": "Harga Jayamix Balaraja Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-kaler-kab-tangerang.html": "Harga Jayamix Gunung Kaler Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kosambi-kab-tangerang.html": "Harga Jayamix Kosambi Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kronjo-kab-tangerang.html": "Harga Jayamix Kronjo Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kresek-kab-tangerang.html": "Harga Jayamix Kresek Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kemiri-kab-tangerang.html": "Harga Jayamix Kemiri Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kelapa-dua-kab-tangerang.html": "Harga Jayamix Kelapa Dua Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mauk-kab-tangerang.html": "Harga Jayamix Mauk Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-legok-kab-tangerang.html": "Harga Jayamix Legok Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pasar-kemis-kab-tangerang.html": "Harga Jayamix Pasar Kemis Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-panongan-kab-tangerang.html": "Harga Jayamix Panongan Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mekarbaru-kab-tangerang.html": "Harga Jayamix Mekarbaru Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tigaraksa-kab-tangerang.html": "Harga Jayamix Tigaraksa Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sindang-jaya.html": "Harga Jayamix Sindang Jaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-serpong.html": "Harga Jayamix Serpong",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-serpong-utara.html": "Harga Jayamix Serpong Utara",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-ciputat.html": "Harga Jayamix Ciputat",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukamulya.html": "Harga Jayamix Sukamulya",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukadiri.html": "Harga Jayamix Sukadiri",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-solear.html": "Harga Jayamix Solear",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sepatan.html": "Harga Jayamix Sepatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisoka.html": "Harga Jayamix Cisoka",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-batu-ceper.html": "Harga Jayamix Batu Ceper",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sepatan-timur.html": "Harga Jayamix Sepatan Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibodas-kota-tangerang.html": "Harga Jayamix Cibodas Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciledug-kota-tangerang.html": "Harga Jayamix Ciledug Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-setu-tangerang-selatan.html": "Harga Jayamix Setu Tangerang Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-benda-kota-tangerang.html": "Harga Jayamix Benda Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-curug-kab-tangerang.html": "Harga Jayamix Curug Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jambe-kab-tangerang.html": "Harga Jayamix Jambe Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisauk.html": "Harga Jayamix Cisauk",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-teluknaga.html": "Harga Jayamix Teluknaga",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rajeg-kab-tangerang.html": "Harga Jayamix Rajeg Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pagedangan.html": "Harga Jayamix Pagedangan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pakuhaji-kab-tangerang.html": "Harga Jayamix Pakuhaji Kab Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-panongan.html": "Harga Jayamix Panongan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-tangerang.html": "Harga Jayamix Kecamatan Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pinang-kota-tangerang.html": "Harga Jayamix Pinang Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-periuk-kota-tangerang.html": "Harga Jayamix Periuk Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-neglasari-kota-tangerang.html": "Harga Jayamix Neglasari Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-larangan-kota-tangerang.html": "Harga Jayamix Larangan Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-karawaci-kota-tangerang.html": "Harga Jayamix Karawaci Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-karangtengah-kota-tangerang.html": "Harga Jayamix Karangtengah Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jatiuwung-kota-tangerang.html": "Harga Jayamix Jatiuwung Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipondoh-kota-tangerang.html": "Harga Jayamix Cipondoh Kota Tangerang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciputat-timur.html": "Harga Jayamix Ciputat Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamulang.html": "Harga Jayamix Pamulang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pondok-aren.html": "Harga Jayamix Pondok Aren",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-ciputat.html": "Harga Ready Mix Ciputat",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pondok-aren.html": "Harga Ready Mix Pondok Aren",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pamulang.html": "Harga Ready Mix Pamulang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciputat-timur.html": "Harga Ready Mix Ciputat Timur",
 
-  // SERANG
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tirtayasa-kab-serang.html": "Harga Jayamix Tirtayasa Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-waringinkurung-kab-serang.html": "Harga Jayamix Waringinkurung Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamarayan-kab-serang.html": "Harga Jayamix Pamarayan Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tunjung-teja-kab-serang.html": "Harga Jayamix Tunjung Teja Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tanara-kab-serang.html": "Harga Jayamix Tanara Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pulo-ampel-kab-serang.html": "Harga Jayamix Pulo Ampel Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pontang-kab-serang.html": "Harga Jayamix Pontang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-petir-kab-serang.html": "Harga Jayamix Petir Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-padarincang-kab-serang.html": "Harga Jayamix Padarincang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pabuaran-kab-serang.html": "Harga Jayamix Pabuaran Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mancak-kab-serang.html": "Harga Jayamix Mancak Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-lebak-wangi-kab-serang.html": "Harga Jayamix Lebak Wangi Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kramatwatu-kab-serang.html": "Harga Jayamix Kramatwatu Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kragilan-kab-serang.html": "Harga Jayamix Kragilan Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kopo-kab-serang.html": "Harga Jayamix Kopo Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kibin-kab-serang.html": "Harga Jayamix Kibin Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jawilan-kab-serang.html": "Harga Jayamix Jawilan Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunungsari-kab-serang.html": "Harga Jayamix Gunungsari Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciruas-kab-serang.html": "Harga Jayamix Ciruas Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciomas-kab-serang.html": "Harga Jayamix Ciomas Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cinangka-kab-serang.html": "Harga Jayamix Cinangka Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cikeusal-kab-serang.html": "Harga Jayamix Cikeusal Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-carenang-kab-serang.html": "Harga Jayamix Carenang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bojonegara-kab-serang.html": "Harga Jayamix Bojonegara Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-binuang-kab-serang.html": "Harga Jayamix Binuang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-baros-kab-serang.html": "Harga Jayamix Baros Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bandung-kab-serang.html": "Harga Jayamix Bandung Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-anyar-kab-serang.html": "Harga Jayamix Anyar Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tunjung-teja-kab-serang.html": "Harga Ready Mix Tunjung Teja Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tanara-kab-serang.html": "Harga Ready Mix Tanara Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pulo-ampel-kab-serang.html": "Harga Ready Mix Pulo Ampel Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pontang-kab-serang.html": "Harga Ready Mix Pontang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-petir-kab-serang.html": "Harga Ready Mix Petir Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-padarincang-kab-serang.html": "Harga Ready Mix Padarincang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pabuaran-kab-serang.html": "Harga Ready Mix Pabuaran Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mancak-kab-serang.html": "Harga Ready Mix Mancak Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-lebak-wangi-kab-serang.html": "Harga Ready Mix Lebak Wangi Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kramatwatu-kab-serang.html": "Harga Ready Mix Kramatwatu Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kragilan-kab-serang.html": "Harga Ready Mix Kragilan Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kopo-kab-serang.html": "Harga Ready Mix Kopo Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kibin-kab-serang.html": "Harga Ready Mix Kibin Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jawilan-kab-serang.html": "Harga Ready Mix Jawilan Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunungsari-kab-serang.html": "Harga Ready Mix Gunungsari Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciruas-kab-serang.html": "Harga Ready Mix Ciruas Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciomas-kab-serang.html": "Harga Ready Mix Ciomas Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cinangka-kab-serang.html": "Harga Ready Mix Cinangka Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cikeusal-kab-serang.html": "Harga Ready Mix Cikeusal Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-carenang-kab-serang.html": "Harga Ready Mix Carenang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bojonegara-kab-serang.html": "Harga Ready Mix Bojonegara Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-binuang-kab-serang.html": "Harga Ready Mix Binuang Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-baros-kab-serang.html": "Harga Ready Mix Baros Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bandung-kab-serang.html": "Harga Ready Mix Bandung Kab Serang",  // TYPE: MONEY_CHILD
-  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-anyar-kab-serang.html": "Harga Ready Mix Anyar Kab Serang"  // TYPE: MONEY_CHILD
+  // ═══ HARGA PER KECAMATAN — BOGOR ═══
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciomas-kab-bogor.html": "Harga Jayamix Ciomas Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciomas-kab-bogor.html": "Harga Ready Mix Ciomas Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cisarua-kab-bogor.html": "Harga Jayamix Cisarua Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cisarua-kab-bogor.html": "Harga Ready Mix Cisarua Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciseeng-kab-bogor.html": "Harga Jayamix Ciseeng Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciseeng-kab-bogor.html": "Harga Ready Mix Ciseeng Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tenjolaya-kab-bogor.html": "Harga Jayamix Tenjolaya Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tenjolaya-kab-bogor.html": "Harga Ready Mix Tenjolaya Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tenjo-kab-bogor.html": "Harga Jayamix Tenjo Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tenjo-kab-bogor.html": "Harga Ready Mix Tenjo Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tanjungsari-kab-bogor.html": "Harga Jayamix Tanjungsari Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tanjungsari-kab-bogor.html": "Harga Ready Mix Tanjungsari Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tamansari-kab-bogor.html": "Harga Jayamix Tamansari Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tamansari-kab-bogor.html": "Harga Ready Mix Tamansari Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tajur-halang-kab-bogor.html": "Harga Jayamix Tajur Halang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tajur-halang-kab-bogor.html": "Harga Ready Mix Tajur Halang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukaraja-kab-bogor.html": "Harga Jayamix Sukaraja Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukaraja-kab-bogor.html": "Harga Ready Mix Sukaraja Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukamakmur-kab-bogor.html": "Harga Jayamix Sukamakmur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukamakmur-kab-bogor.html": "Harga Ready Mix Sukamakmur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-parung-panjang-kab-bogor.html": "Harga Jayamix Parung Panjang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-parung-panjang-kab-bogor.html": "Harga Ready Mix Parung Panjang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-parung-kab-bogor.html": "Harga Jayamix Parung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-parung-kab-bogor.html": "Harga Ready Mix Parung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamijahan-kab-bogor.html": "Harga Jayamix Pamijahan Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pamijahan-kab-bogor.html": "Harga Ready Mix Pamijahan Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-nanggung-kab-bogor.html": "Harga Jayamix Nanggung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-nanggung-kab-bogor.html": "Harga Ready Mix Nanggung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-megamendung-kab-bogor.html": "Harga Jayamix Megamendung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-megamendung-kab-bogor.html": "Harga Ready Mix Megamendung Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-leuwisadeng-kab-bogor.html": "Harga Jayamix Leuwisadeng Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-leuwisadeng-kab-bogor.html": "Harga Ready Mix Leuwisadeng Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-leuwiliang-kab-bogor.html": "Harga Jayamix Leuwiliang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-leuwiliang-kab-bogor.html": "Harga Ready Mix Leuwiliang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-klapanunggal-kab-bogor.html": "Harga Jayamix Klapanunggal Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-klapanunggal-kab-bogor.html": "Harga Ready Mix Klapanunggal Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kemang-kab-bogor.html": "Harga Jayamix Kemang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kemang-kab-bogor.html": "Harga Ready Mix Kemang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jonggol-kab-bogor.html": "Harga Jayamix Jonggol Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jonggol-kab-bogor.html": "Harga Ready Mix Jonggol Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jasinga-kab-bogor.html": "Harga Jayamix Jasinga Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jasinga-kab-bogor.html": "Harga Ready Mix Jasinga Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/08/harga-beton-ready-mix-cibinong.html": "Harga Beton Ready Mix Cibinong",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cijeruk-kab-bogor.html": "Harga Ready Mix Cijeruk Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibinong-kab-bogor.html": "Harga Ready Mix Cibinong Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cigudeg-kab-bogor.html": "Harga Ready Mix Cigudeg Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cigombong-kab-bogor.html": "Harga Ready Mix Cigombong Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cigombong-kab-bogor.html": "Harga Jayamix Cigombong Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibungbulang-kab-bogor.html": "Harga Ready Mix Cibungbulang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciawi-kab-bogor.html": "Harga Ready Mix Ciawi Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciampea-kab-bogor.html": "Harga Ready Mix Ciampea Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cariu-kab-bogor.html": "Harga Ready Mix Cariu Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-caringin-kab-bogor.html": "Harga Ready Mix Caringin Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bojonggede-kab-bogor.html": "Harga Ready Mix Bojonggede Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-babakan-madang.html": "Harga Ready Mix Babakan Madang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-citeureup-kab-bogor.html": "Harga Ready Mix Citeureup Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-dramaga-kab-bogor.html": "Harga Ready Mix Dramaga Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-putri-kab-bogor.html": "Harga Ready Mix Gunung Putri Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunung-sindur-kab-bogor.html": "Harga Ready Mix Gunung Sindur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ranca-bungur-kab-bogor.html": "Harga Ready Mix Ranca Bungur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-rumpin-kab-bogor.html": "Harga Ready Mix Rumpin Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukajaya-kab-bogor.html": "Harga Ready Mix Sukajaya Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cijeruk-kab-bogor.html": "Harga Jayamix Cijeruk Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibinong-kab-bogor.html": "Harga Jayamix Cibinong Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cigudeg-kab-bogor.html": "Harga Jayamix Cigudeg Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibungbulang-kab-bogor.html": "Harga Jayamix Cibungbulang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciawi-kab-bogor.html": "Harga Jayamix Ciawi Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciampea-kab-bogor.html": "Harga Jayamix Ciampea Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cariu-kab-bogor.html": "Harga Jayamix Cariu Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-caringin-kab-bogor.html": "Harga Jayamix Caringin Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bojonggede-kab-bogor.html": "Harga Jayamix Bojonggede Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-babakan-madang-kab-bogor.html": "Harga Jayamix Babakan Madang Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-citeureup-kab-bogor.html": "Harga Jayamix Citeureup Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-dramaga-kab-bogor.html": "Harga Jayamix Dramaga Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-putri-kab-bogor.html": "Harga Jayamix Gunung Putri Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunung-sindur-kab-bogor.html": "Harga Jayamix Gunung Sindur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ranca-bungur-kab-bogor.html": "Harga Jayamix Ranca Bungur Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rumpin-kab-bogor.html": "Harga Jayamix Rumpin Kab Bogor",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sukajaya-kab-bogor.html": "Harga Jayamix Sukajaya Kab Bogor",
+
+  // ═══ HARGA PER KECAMATAN — BEKASI ═══
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-utara.html": "Harga Jayamix Cikarang Utara",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-utara.html": "Harga Ready Mix Cikarang Utara",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-selatan.html": "Harga Jayamix Cikarang Selatan",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-selatan-bekasi.html": "Harga Ready Mix Cikarang Selatan Bekasi",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-timur.html": "Harga Jayamix Cikarang Timur",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-timur.html": "Harga Ready Mix Cikarang Timur",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-cikarang-pusat.html": "Harga Jayamix Cikarang Pusat",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-cikarang-pusat-bekasi.html": "Harga Ready Mix Cikarang Pusat Bekasi",
+  "https://www.betonjayareadymix.com/2018/06/harga-jayamix-cikarang-barat.html": "Harga Jayamix Cikarang Barat",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-cikarang-barat-bekasi.html": "Harga Ready Mix Cikarang Barat Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-babelan.html": "Harga Jayamix Babelan",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-babelan.html": "Harga Ready Mix Babelan",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-bojongmangu.html": "Harga Jayamix Bojongmangu",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-bojongmangu-bekasi.html": "Harga Ready Mix Bojongmangu Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cabangbungin-bekasi.html": "Harga Ready Mix Cabangbungin Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-cabangbungin-bekasi.html": "Harga Jayamix Cabangbungin Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cibitung-bekasi.html": "Harga Jayamix Cibitung Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cibitung.html": "Harga Ready Mix Cibitung",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tarumajaya.html": "Harga Ready Mix Tarumajaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tarumajaya-bekasi.html": "Harga Jayamix Tarumajaya Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tambun-utara-bekasi.html": "Harga Jayamix Tambun Utara Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tambun-utara-bekasi.html": "Harga Ready Mix Tambun Utara Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-cibarusah.html": "Harga Jayamix Cibarusah",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-cibarusah.html": "Harga Ready Mix Cibarusah",
+  "https://www.betonjayareadymix.com/2021/02/harga-jayamix-tambun-selatan.html": "Harga Jayamix Tambun Selatan",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-tambun-selatan.html": "Harga Ready Mix Tambun Selatan",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-tambelang.html": "Harga Jayamix Tambelang",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-tambelang.html": "Harga Ready Mix Tambelang",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-sukawangi-bekasi.html": "Harga Jayamix Sukawangi Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-sukawangi-bekasi.html": "Harga Ready Mix Sukawangi Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-pebayuran.html": "Harga Ready Mix Pebayuran",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-pebayuran-bekasi.html": "Harga Jayamix Pebayuran Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-muara-gembong-bekasi.html": "Harga Jayamix Muara Gembong Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-muara-gembong-bekasi.html": "Harga Ready Mix Muara Gembong Bekasi",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-kedungwaringin-bekasi.html": "Harga Ready Mix Kedungwaringin Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-kedungwaringin-bekasi.html": "Harga Jayamix Kedungwaringin Bekasi",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-karangbahagia.html": "Harga Jayamix Karangbahagia",
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-karangbahagia.html": "Harga Ready Mix Karangbahagia",
+  "https://www.betonjayareadymix.com/2022/02/harga-ready-mix-sukatani-bekasi.html": "Harga Ready Mix Sukatani Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukatani-bekasi.html": "Harga Jayamix Sukatani Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukakarya-bekasi.html": "Harga Jayamix Sukakarya Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-sukakarya-bekasi.html": "Harga Ready Mix Sukakarya Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-jayamix-setu-bekasi.html": "Harga Jayamix Setu Bekasi",
+  "https://www.betonjayareadymix.com/2018/05/harga-ready-mix-setu-bekasi.html": "Harga Ready Mix Setu Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-serang-baru-bekasi.html": "Harga Jayamix Serang Baru Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-serang-baru-bekasi.html": "Harga Ready Mix Serang Baru Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bantar-gebang.html": "Harga Ready Mix Bantar Gebang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bantar-gebang.html": "Harga Jayamix Kecamatan Bantar Gebang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-barat.html": "Harga Jayamix Kecamatan Bekasi Barat",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-barat.html": "Harga Ready Mix Kecamatan Bekasi Barat",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bekasi-selatan.html": "Harga Ready Mix Bekasi Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-selatan.html": "Harga Jayamix Kecamatan Bekasi Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-timur.html": "Harga Ready Mix Kecamatan Bekasi Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-timur.html": "Harga Jayamix Kecamatan Bekasi Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-bekasi-utara.html": "Harga Ready Mix Kecamatan Bekasi Utara",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-bekasi-utara.html": "Harga Jayamix Kecamatan Bekasi Utara",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jatiasih-kota-bekasi.html": "Harga Ready Mix Jatiasih Kota Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jatiasih-kota-bekasi.html": "Harga Jayamix Jatiasih Kota Bekasi",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-jatisampurna.html": "Harga Jayamix Kecamatan Jatisampurna",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-jatisampurna.html": "Harga Ready Mix Kecamatan Jatisampurna",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-medan-satria.html": "Harga Ready Mix Kecamatan Medan Satria",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-medan-satria.html": "Harga Jayamix Kecamatan Medan Satria",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-mustika-jaya.html": "Harga Ready Mix Kecamatan Mustika Jaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-mustika-jaya.html": "Harga Jayamix Kecamatan Mustika Jaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-pondok-gede.html": "Harga Ready Mix Kecamatan Pondok Gede",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-pondok-gede.html": "Harga Jayamix Kecamatan Pondok Gede",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-pondok-melati.html": "Harga Ready Mix Kecamatan Pondok Melati",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kecamatan-pondok-melati.html": "Harga Jayamix Kecamatan Pondok Melati",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kecamatan-rawa-lumbu.html": "Harga Ready Mix Kecamatan Rawa Lumbu",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-rawa-lumbu-kota-bekasi.html": "Harga Jayamix Rawa Lumbu Kota Bekasi",
+
+  // ═══ HARGA PER KECAMATAN — JAKARTA ═══
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-timur.html": "Harga Ready Mix Jakarta Timur",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-timur.html": "Harga Jayamix Jakarta Timur",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-kepulauan-seribu.html": "Harga Ready Mix Kepulauan Seribu",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kepulauan-seribu.html": "Harga Jayamix Kepulauan Seribu",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-jakarta-selatan.html": "Harga Ready Mix Jakarta Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-selatan.html": "Harga Jayamix Jakarta Selatan",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-pusat.html": "Harga Ready Mix Jakarta Pusat",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-pusat.html": "Harga Jayamix Jakarta Pusat",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-barat.html": "Harga Jayamix Jakarta Barat",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-barat.html": "Harga Ready Mix Jakarta Barat",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jakarta-utara.html": "Harga Jayamix Jakarta Utara",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jakarta-utara.html": "Harga Ready Mix Jakarta Utara",
+
+  // ═══ HARGA PER KECAMATAN — DEPOK ═══
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-beji-depok.html": "Harga Jayamix Beji Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-beji-depok.html": "Harga Ready Mix Beji Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tapos.html": "Harga Jayamix Tapos",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tapos-depok.html": "Harga Ready Mix Tapos Depok",
+  "https://www.betonjayareadymix.com/2021/04/harga-readymix-cinere.html": "Harga Readymix Cinere",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cinere-depok.html": "Harga Jayamix Cinere Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-sukmajaya.html": "Harga Jayamix Sukmajaya",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sukmajaya-depok.html": "Harga Ready Mix Sukmajaya Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-limo.html": "Harga Jayamix Limo",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-limo-depok.html": "Harga Ready Mix Limo Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bojongsari-depok.html": "Harga Jayamix Bojongsari Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-bojongsari-depok.html": "Harga Ready Mix Bojongsari Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pancoran-mas-depok.html": "Harga Jayamix Pancoran Mas Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pancoran-mas-depok.html": "Harga Ready Mix Pancoran Mas Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cipayung-depok.html": "Harga Jayamix Cipayung Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cipayung-depok.html": "Harga Ready Mix Cipayung Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cilodong-depok.html": "Harga Jayamix Cilodong Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cilodong-depok.html": "Harga Ready Mix Cilodong Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-sawangan-depok.html": "Harga Jayamix Sawangan Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-sawangan-depok.html": "Harga Ready Mix Sawangan Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cimanggis-depok.html": "Harga Jayamix Cimanggis Depok",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cimanggis-depok.html": "Harga Ready Mix Cimanggis Depok",
+
+  // ═══ HARGA PER KECAMATAN — SERANG ═══
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tirtayasa-kab-serang.html": "Harga Jayamix Tirtayasa Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-waringinkurung-kab-serang.html": "Harga Jayamix Waringinkurung Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pamarayan-kab-serang.html": "Harga Jayamix Pamarayan Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tunjung-teja-kab-serang.html": "Harga Jayamix Tunjung Teja Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-tanara-kab-serang.html": "Harga Jayamix Tanara Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pulo-ampel-kab-serang.html": "Harga Jayamix Pulo Ampel Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pontang-kab-serang.html": "Harga Jayamix Pontang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-petir-kab-serang.html": "Harga Jayamix Petir Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-padarincang-kab-serang.html": "Harga Jayamix Padarincang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-pabuaran-kab-serang.html": "Harga Jayamix Pabuaran Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-mancak-kab-serang.html": "Harga Jayamix Mancak Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-lebak-wangi-kab-serang.html": "Harga Jayamix Lebak Wangi Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kramatwatu-kab-serang.html": "Harga Jayamix Kramatwatu Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kragilan-kab-serang.html": "Harga Jayamix Kragilan Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kopo-kab-serang.html": "Harga Jayamix Kopo Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-kibin-kab-serang.html": "Harga Jayamix Kibin Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-jawilan-kab-serang.html": "Harga Jayamix Jawilan Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-gunungsari-kab-serang.html": "Harga Jayamix Gunungsari Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciruas-kab-serang.html": "Harga Jayamix Ciruas Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-ciomas-kab-serang.html": "Harga Jayamix Ciomas Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cinangka-kab-serang.html": "Harga Jayamix Cinangka Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-cikeusal-kab-serang.html": "Harga Jayamix Cikeusal Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-carenang-kab-serang.html": "Harga Jayamix Carenang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bojonegara-kab-serang.html": "Harga Jayamix Bojonegara Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-binuang-kab-serang.html": "Harga Jayamix Binuang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-baros-kab-serang.html": "Harga Jayamix Baros Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-bandung-kab-serang.html": "Harga Jayamix Bandung Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-jayamix-anyar-kab-serang.html": "Harga Jayamix Anyar Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tunjung-teja-kab-serang.html": "Harga Ready Mix Tunjung Teja Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-tanara-kab-serang.html": "Harga Ready Mix Tanara Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pulo-ampel-kab-serang.html": "Harga Ready Mix Pulo Ampel Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pontang-kab-serang.html": "Harga Ready Mix Pontang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-petir-kab-serang.html": "Harga Ready Mix Petir Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-padarincang-kab-serang.html": "Harga Ready Mix Padarincang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-pabuaran-kab-serang.html": "Harga Ready Mix Pabuaran Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-mancak-kab-serang.html": "Harga Ready Mix Mancak Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-lebak-wangi-kab-serang.html": "Harga Ready Mix Lebak Wangi Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kramatwatu-kab-serang.html": "Harga Ready Mix Kramatwatu Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kragilan-kab-serang.html": "Harga Ready Mix Kragilan Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kopo-kab-serang.html": "Harga Ready Mix Kopo Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-kibin-kab-serang.html": "Harga Ready Mix Kibin Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-jawilan-kab-serang.html": "Harga Ready Mix Jawilan Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-gunungsari-kab-serang.html": "Harga Ready Mix Gunungsari Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciruas-kab-serang.html": "Harga Ready Mix Ciruas Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-ciomas-kab-serang.html": "Harga Ready Mix Ciomas Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cinangka-kab-serang.html": "Harga Ready Mix Cinangka Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-cikeusal-kab-serang.html": "Harga Ready Mix Cikeusal Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-carenang-kab-serang.html": "Harga Ready Mix Carenang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bojonegara-kab-serang.html": "Harga Ready Mix Bojonegara Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-binuang-kab-serang.html": "Harga Ready Mix Binuang Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-baros-kab-serang.html": "Harga Ready Mix Baros Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bandung-kab-serang.html": "Harga Ready Mix Bandung Kab Serang",
+  "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-anyar-kab-serang.html": "Harga Ready Mix Anyar Kab Serang"
 };
-
 // ============================================================
 // READY MIX PILLAR POST - MONEY PAGE (UMUM)
 // Parent: Ready Mix (/p/ready-mix-beton-cor-jayamix-minimix.html)
@@ -718,30 +757,124 @@ const urlMappingReadyMixLokasiPost = {
 // Breadcrumb: Home > Material Konstruksi > Material Struktur Bangunan > Ready Mix > [Nama Post]
 // ============================================================
 
-const urlMappingReadyMixPillarPost = {
-  // [MONEY PAGE] - HARGA COR BETON
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-truk-molen.html": "Harga Cor Beton Per Truk Molen",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-molen.html": "Harga Cor Beton per Molen",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-minimix.html": "Harga Cor Beton Minimix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-bertulang.html": "Harga Cor Beton Bertulang",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-bertulang-per-m3.html": "Harga Cor Beton Bertulang Per M3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton.html": "Daftar Harga Cor Beton",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-kubik.html": "Harga Cor Beton per Kubik",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-per-m3.html": "Harga Beton Ready Mix Per M3",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-termurah.html": "Harga Beton Ready Mix Termurah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-terbaru.html": "Harga Beton Ready Mix Terbaru",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-per-kubik.html": "Harga Ready Mix Per Kubik",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-murah.html": "Harga Ready Mix Murah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/harga-readymix-concrete.html": "Harga Readymix Concrete",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix.html": "Harga Cor Beton Ready Mix",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/03/ready-mix-murah.html": "Ready Mix Murah",  // TYPE: MONEY_PAGE
-  "https://www.betonjayareadymix.com/2021/08/cor-beton-murah.html": "Cor Beton Murah"  // TYPE: MONEY_PAGE
+const urlMappingReadyMixFromMoneyMasterMoneyPage = {
+  "https://www.betonjayareadymix.com/2021/08/cor-beton-murah.html": "Cor Beton Murah",
+
+ // ═══ BRAND & PLANT (PLANT POST) ═══
+  "https://www.betonjayareadymix.com/2021/03/jayamix-beton.html": "Jayamix Beton",
+
+ // ═══ DARI KEGUNAAN POST (non SUB1) ═══
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-asphalt.html": "Ready Mix Asphalt",
+  "https://www.betonjayareadymix.com/2018/09/cor-slipform.html": "Cor Slipform",
+  "https://www.betonjayareadymix.com/2018/09/cor-beton-rumah.html": "Cor Beton Rumah",
+  "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",
+
+  // ═══ DARI PANDUAN POST (non SUB1) ═══
+  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix"
+
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-dynamix.html": "Batching Plant Dynamix",
+  "https://www.betonjayareadymix.com/2018/08/dynamix-beton.html": "Dynamix Beton",
+  "https://www.betonjayareadymix.com/2018/04/scg-jayamix.html": "SCG Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/holcim-ready-mix.html": "Holcim Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-merah-putih.html": "Ready Mix Merah Putih",
+  "https://www.betonjayareadymix.com/2021/03/ready-mix-tiga-roda.html": "Ready Mix Tiga Roda",
+  "https://www.betonjayareadymix.com/2018/04/scg-readymix.html": "SCG Ready Mix",
+  "https://www.betonjayareadymix.com/2018/08/scg-beton.html": "SCG Beton",
+  "https://www.betonjayareadymix.com/2021/03/pt-scg-readymix-indonesia.html": "PT SCG Ready Mix Indonesia",
+  "https://www.betonjayareadymix.com/2021/03/scg-readymix-indonesia.html": "SCG Ready Mix Indonesia",
+  "https://www.betonjayareadymix.com/2018/08/scg-batching-plant.html": "SCG Batching Plant",
+  
+ "https://www.betonjayareadymix.com/2021/08/beton-cor-merah-putih.html": "Beton Cor Merah Putih",
+
+ "https://www.betonjayareadymix.com/2018/08/batching-plant-adhimix.html": "Batching Plant Adhimix",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-ready-mix.html": "Adhimix Ready Mix",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-rmc.html": "Adhimix RMC",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-retail.html": "Adhimix Retail",
+  "https://www.betonjayareadymix.com/2018/08/adhimix-group.html": "Adhimix Group",
+
+"https://www.betonjayareadymix.com/2018/08/batching-plant-pionirbeton.html": "Batching Plant Pionirbeton",
+
+
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-sudhira.html": "Karya Beton Sudhira",
+  "https://www.betonjayareadymix.com/2018/08/batching-plant-karya-beton.html": "Batching Plant Karya Beton",
+  "https://www.betonjayareadymix.com/2018/08/karya-beton-readymix.html": "Karya Beton Readymix",
+
+ "https://www.betonjayareadymix.com/2018/08/plant-farika-beton.html": "Plant Farika Beton"
+  
 };
 
+const urlMappingHargaReadyMixFromMoneyMasterMoneyPage = {
+ 
+  // ═══ HARGA COR BETON (PILLAR POST) ═══
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-truk-molen.html": "Harga Cor Beton Per Truk Molen",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-molen.html": "Harga Cor Beton per Molen",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-minimix.html": "Harga Cor Beton Minimix",
+  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-bertulang.html": "Harga Cor Beton Bertulang",
+  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-bertulang-per-m3.html": "Harga Cor Beton Bertulang Per M3",
+  "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton.html": "Daftar Harga Cor Beton",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-per-kubik.html": "Harga Cor Beton per Kubik",
+  "https://www.betonjayareadymix.com/2018/04/harga-beton-cor.html": "Harga Beton Cor",
+  "https://www.betonjayareadymix.com/2021/08/harga-jayamix-paling-murah.html": "Harga Jayamix Paling Murah",
+  "https://www.betonjayareadymix.com/2021/03/jual-beton-ready-mix.html": "Jual Beton Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/cari-harga-beton-ready-mix.html": "Cari Harga Beton Ready Mix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-per-m3.html": "Harga Beton Ready Mix Per M3",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-termurah.html": "Harga Beton Ready Mix Termurah",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-terbaru.html": "Harga Beton Ready Mix Terbaru",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-per-kubik.html": "Harga Ready Mix Per Kubik",
+  "https://www.betonjayareadymix.com/2021/03/harga-readymix-concrete.html": "Harga Readymix Concrete",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-ready-mix.html": "Harga Cor Beton Ready Mix",
+
+
+  // ═══ HARGA MUTU (MUTU POST) ═══
+  "https://www.betonjayareadymix.com/2018/04/harga-ready-mix-k-200.html": "Harga Ready Mix K 200",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-b0.html": "Harga Beton Ready Mix B0",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-350.html": "Harga Ready Mix K 350",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-300.html": "Harga Ready Mix K 300",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-250.html": "Harga Ready Mix K 250",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-k-225.html": "Harga Ready Mix K 225",
+  "https://www.betonjayareadymix.com/2021/03/harga-ready-mix-k-275.html": "Harga Ready Mix K 275",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-250.html": "Harga Cor Beton K 250",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-225.html": "Harga Cor Beton K 225",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-k-175.html": "Harga Ready Mix K 175",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-300-per-m3.html": "Harga Cor Beton K 300 per m3",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-200.html": "Harga Cor Beton K 200",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-175.html": "Harga Cor Beton K 175",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k-275.html": "Harga Cor Beton K 275",
+  "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-k225-per-m3.html": "Harga Cor Beton K225 Per M3",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-k350.html": "Harga Cor Beton K350",
+  "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-k300-holcim.html": "Harga Beton Cor K300 Holcim",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-k300.html": "Harga Jayamix K300",
+
+  // ═══ HARGA COR PER APLIKASI (KEGUNAAN POST) ═══
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jalan-per-m3.html": "Harga Cor Beton Jalan Per M3",
+  "https://www.betonjayareadymix.com/2021/08/harga-cor-beton-dinding.html": "Harga Cor Beton Dinding",
+  "https://www.betonjayareadymix.com/2018/05/harga-cor-beton-untuk-rumah.html": "Harga Cor Beton Untuk Rumah",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-rumah-tinggal-per-m3.html": "Harga Cor Beton Rumah Tinggal Per M3",
+
+  // ═══ BRAND & PLANT (PLANT POST) ═══
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-beton.html": "Harga Jayamix Beton",
+  "https://www.betonjayareadymix.com/2018/04/harga-jayamix-murah.html": "Harga Jayamix Murah",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-m3.html": "Harga Jayamix Per M3",
+  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-per-kubik.html": "Harga Jayamix Per Kubik",
+  "https://www.betonjayareadymix.com/2021/08/harga-ready-mix-tiga-roda.html": "Harga Ready Mix Tiga Roda",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix-per-kubik.html": "Harga Cor Beton Jayamix Per Kubik",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-jayamix.html": "Harga Cor Beton Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/harga-1-molen-jayamix.html": "Harga 1 Molen Jayamix",
+  "https://www.betonjayareadymix.com/2021/12/daftar-harga-cor-beton-jayamix.html": "Daftar Harga Cor Beton Jayamix",
+  "https://www.betonjayareadymix.com/2022/12/harga-jayamix-ready-mix-minimix.html": "Harga Jayamix Ready Mix Minimix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-pionir.html": "Harga Beton Ready Mix Pionir",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-holcim.html": "Harga Beton Ready Mix Holcim",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-jayamix.html": "Harga Beton Ready Mix Jayamix",
+  "https://www.betonjayareadymix.com/2021/03/harga-beton-ready-mix-merah-putih.html": "Harga Beton Ready Mix Merah Putih",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-holcim.html": "Harga Ready Mix Holcim",
+  "https://www.betonjayareadymix.com/2021/04/harga-ready-mix-jayamix.html": "Harga Ready Mix Jayamix",
+  "https://www.betonjayareadymix.com/2021/12/harga-cor-beton-holcim-per-m3.html": "Harga Cor Beton Holcim per m3",
+  "https://www.betonjayareadymix.com/2018/05/harga-beton-ready-mix-adhimix.html": "Harga Beton Ready Mix Adhimix",
+  "https://www.betonjayareadymix.com/2021/03/harga-cor-beton-adhimix.html": "Harga Cor Beton Adhimix",
+  "https://www.betonjayareadymix.com/2018/08/harga-beton-adhimix.html": "Harga Beton Adhimix",
+  "https://www.betonjayareadymix.com/2018/08/harga-adhimix-jayamix.html": "Harga Adhimix Jayamix"
+
+};
 // ============================================================
 // READY MIX MUTU POST - MONEY PAGE & SUB1 (ANALISA)
 // Parent: Ready Mix Mutu (/p/ready-mix-mutu.html)
@@ -1797,8 +1930,8 @@ const urlMappingSemenPutihPost = {
     console.log('[material-struktur-post] 🔍 Check URL: ' + cleanUrl);
 
     var ALL_MAPPINGS = [
-        urlMappingReadyMixLokasiPost,
-        urlMappingReadyMixPillarPost,
+        urlMappingReadyMixMoneyMasterMoneyChild,
+        urlMappingReadyMixFromMoneyMasterMoneyPage,
         urlMappingReadyMixMutuPost,
         urlMappingReadyMixKegunaanPost,
         urlMappingReadyMixPlantPost,
@@ -1873,13 +2006,14 @@ function initMaterialStrukturPost() {
     // ═══════════════════════════════════════════════════════
     // [BLOK 1] SUB PILLAR — READY MIX LOKASI
     // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixLokasiPost[cleanUrl]) {
+    if (urlMappingReadyMixMoneyMasterMoneyChild[cleanUrl]) {
         generateBreadcrumbShared(
-            urlMappingReadyMixLokasiPost,
+            urlMappingReadyMixMoneyMasterMoneyChild,
             cleanUrl,
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+                { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
                 { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
@@ -1889,13 +2023,14 @@ function initMaterialStrukturPost() {
     // ═══════════════════════════════════════════════════════
     // [BLOK 2] SUB PILLAR — READY MIX PILLAR (UMUM)
     // ═══════════════════════════════════════════════════════
-    if (urlMappingReadyMixPillarPost[cleanUrl]) {
+    if (urlMappingReadyMixFromMoneyMasterMoneyPage[cleanUrl]) {
         generateBreadcrumbShared(
-            urlMappingReadyMixPillarPost,
+            urlMappingReadyMixFromMoneyMasterMoneyPage,
             cleanUrl,
             [
                 { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
-                { name: 'Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/material-struktur-bangunan.html' },
+                { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
                 { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
