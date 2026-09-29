@@ -94,16 +94,19 @@ const urlMappingMaterialStrukturBangunanFromSub1MoneyMaster = {
     "https://www.betonjayareadymix.com/p/wiremesh.html": "Wiremesh",
     "https://www.betonjayareadymix.com/p/bondex.html": "Bondex",
     "https://www.betonjayareadymix.com/p/scaffolding.html": "Scaffolding",
+    "https://www.betonjayareadymix.com/p/besi.html": "Besi",
     "https://www.betonjayareadymix.com/p/besi-bangunan.html": "Besi Bangunan",
     "https://www.betonjayareadymix.com/p/baja-konvensional.html": "Baja Konvensional",
+    "https://www.betonjayareadymix.com/p/baja.html": "Baja",
+    "https://www.betonjayareadymix.com/p/baja-ringan.html": "Baja Ringan",
     "https://www.betonjayareadymix.com/p/baja-ringan-struktur.html": "Baja Ringan Struktur",
     "https://www.betonjayareadymix.com/p/baja-tulangan.html": "Baja Tulangan",
     "https://www.betonjayareadymix.com/p/bekisting-baja.html": "Bekisting Baja",
-    "https://www.betonjayareadymix.com/p/semen-instan.html": "Semen Instan",
-    "https://www.betonjayareadymix.com/p/semen-putih.html": "Semen Putih",
-    "https://www.betonjayareadymix.com/p/bekisting-kayu.html": "Bekisting Kayu",
-    "https://www.betonjayareadymix.com/p/mortar-struktural.html": "Mortar Struktural",
-    "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
+     "https://www.betonjayareadymix.com/p/semen-instan.html": "Semen Instan",
+     "https://www.betonjayareadymix.com/p/semen-putih.html": "Semen Putih",
+     "https://www.betonjayareadymix.com/p/bekisting-kayu.html": "Bekisting Kayu",
+    "https://www.betonjayareadymix.com/p/mortar-struktural.html": "Mortar Struktural"
+    //sub variant "https://www.betonjayareadymix.com/p/perekat-beton-epoxy.html": "Perekat Beton Epoxy"
 };
 
 // ============================================================
