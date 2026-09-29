@@ -232,8 +232,11 @@ const urlMappingReadyMixMoneyMasterMoneyChild = {
   "https://www.betonjayareadymix.com/2018/08/farika-beton-tangerang.html": "Farika Beton Tangerang",
   "https://www.betonjayareadymix.com/2018/08/farika-beton-cilegon-prov-banten.html": "Farika Beton Cilegon Prov Banten",
   "https://www.betonjayareadymix.com/2018/08/farika-beton-serang.html": "Farika Beton Serang",
-  "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau",
+  "https://www.betonjayareadymix.com/2018/08/farika-beton-kota-dumai-prov-riau.html": "Farika Beton Kota Dumai Prov Riau"
 
+};
+
+const urlMappingHargaReadyMixMoneyMasterMoneyChild = {
   // ═══ HARGA BETON COR PER KOTA ═══
   "https://www.betonjayareadymix.com/2021/12/harga-beton-cor-jabodetabek.html": "Harga Beton Cor Jabodetabek",
   "https://www.betonjayareadymix.com/2021/08/harga-beton-cor-bogor.html": "Harga Beton Cor Bogor",
@@ -749,6 +752,7 @@ const urlMappingReadyMixMoneyMasterMoneyChild = {
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-baros-kab-serang.html": "Harga Ready Mix Baros Kab Serang",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-bandung-kab-serang.html": "Harga Ready Mix Bandung Kab Serang",
   "https://www.betonjayareadymix.com/2018/07/harga-ready-mix-anyar-kab-serang.html": "Harga Ready Mix Anyar Kab Serang"
+
 };
 // ============================================================
 // READY MIX PILLAR POST - MONEY PAGE (UMUM)
@@ -1931,6 +1935,7 @@ const urlMappingSemenPutihPost = {
 
     var ALL_MAPPINGS = [
         urlMappingReadyMixMoneyMasterMoneyChild,
+        urlMappingHargaReadyMixMoneyMasterMoneyChild,
         urlMappingReadyMixFromMoneyMasterMoneyPage,
         urlMappingReadyMixMutuPost,
         urlMappingReadyMixKegunaanPost,
@@ -2015,6 +2020,20 @@ function initMaterialStrukturPost() {
                 { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
                 { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
                 { name: 'Ready Mix', url: 'https://www.betonjayareadymix.com/p/ready-mix.html'}
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+  
+    if (urlMappingHargaReadyMixMoneyMasterMoneyChild[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingHargaReadyMixMoneyMasterMoneyChild,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
+                { name: 'Harga Ready Mix', url: 'https://www.betonjayareadymix.com/p/harga-ready-mix.html'}
             ],
             'MATERIAL_KONSTRUKSI'
         );
