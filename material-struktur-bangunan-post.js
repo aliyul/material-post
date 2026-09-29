@@ -228,7 +228,6 @@ const urlMappingReadyMixMoneyMasterMoneyChild = {
   "https://www.betonjayareadymix.com/2018/08/karya-beton-karawang.html": "Karya Beton Karawang",
   "https://www.betonjayareadymix.com/2018/08/karya-beton-jogja.html": "Karya Beton Jogja",
   "https://www.betonjayareadymix.com/2018/08/karya-beton-bali.html": "Karya Beton Bali",
-  "https://www.betonjayareadymix.com/2018/08/plant-farika-beton.html": "Plant Farika Beton",
   "https://www.betonjayareadymix.com/2018/08/farika-beton-terdekat.html": "Farika Beton Terdekat",
   "https://www.betonjayareadymix.com/2018/08/farika-beton-jakarta.html": "Farika Beton Jakarta",
   "https://www.betonjayareadymix.com/2018/08/farika-beton-bogor.html": "Farika Beton Bogor",
@@ -258,7 +257,6 @@ const urlMappingHargaReadyMixMoneyMasterMoneyChild = {
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jombang.html": "Harga Jayamix Jombang",
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-jawa-timur.html": "Harga Jayamix Jawa Timur",
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-tangerang.html": "Harga Jayamix Tangerang",
-  "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bogor.html": "Harga Jayamix Bogor",
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-garut.html": "Harga Jayamix Garut",
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bandung.html": "Harga Jayamix Bandung",
   "https://www.betonjayareadymix.com/2021/03/harga-jayamix-bekasi.html": "Harga Jayamix Bekasi",
@@ -782,7 +780,6 @@ const urlMappingReadyMixFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/2018/09/cor-beton-bangunan.html": "Cor Beton Bangunan",
 
   // ═══ DARI PANDUAN POST (non SUB1) ═══
-  "https://www.betonjayareadymix.com/2021/03/ukuran-jayamix.html": "Ukuran Jayamix",
 
   "https://www.betonjayareadymix.com/2018/08/batching-plant-dynamix.html": "Batching Plant Dynamix",
   "https://www.betonjayareadymix.com/2018/08/dynamix-beton.html": "Dynamix Beton",
