@@ -1699,6 +1699,7 @@ const urlMappingSemenPutihPost = {
         urlMappingReadyMixMoneyMasterMoneyChild,
         urlMappingHargaReadyMixMoneyMasterMoneyChild,
         urlMappingReadyMixFromMoneyMasterMoneyPage,
+        urlMappingHargaReadyMixFromMoneyMasterMoneyPage,
         urlMappingReadyMixFromMoneyMasterVariant,
        urlMappingReadyMixFromMoneyMasterSubVariant,
 
@@ -1800,9 +1801,7 @@ function initMaterialStrukturPost() {
         );
     }
 
-    // ═══════════════════════════════════════════════════════
-    // [BLOK 2] SUB PILLAR — READY MIX PILLAR (UMUM)
-    // ═══════════════════════════════════════════════════════
+    
     if (urlMappingReadyMixFromMoneyMasterMoneyPage[cleanUrl]) {
         generateBreadcrumbShared(
             urlMappingReadyMixFromMoneyMasterMoneyPage,
@@ -1816,10 +1815,21 @@ function initMaterialStrukturPost() {
             'MATERIAL_KONSTRUKSI'
         );
     }
-
-    // ═══════════════════════════════════════════════════════
-    // [BLOK 3] SUB PILLAR — READY MIX MUTU
-    // ═══════════════════════════════════════════════════════
+    if (urlMappingHargaReadyMixFromMoneyMasterMoneyPage[cleanUrl]) {
+        generateBreadcrumbShared(
+            urlMappingHargaReadyMixFromMoneyMasterMoneyPage,
+            cleanUrl,
+            [
+                { name: 'Material Konstruksi', url: 'https://www.betonjayareadymix.com/p/material-konstruksi.html' },
+                { name: 'Daftar Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/daftar-material-struktur-bangunan.html' },
+                { name: 'Perbandingan Material Struktur Bangunan', url: 'https://www.betonjayareadymix.com/p/perbandingan-material-struktur-bangunan.html' },
+                { name: 'Harga Ready Mix', url: 'https://www.betonjayareadymix.com/p/harga-ready-mix.html'}
+            ],
+            'MATERIAL_KONSTRUKSI'
+        );
+    }
+    
+  
     if (urlMappingReadyMixFromMoneyMasterVariant[cleanUrl]) {
         generateBreadcrumbShared(
             urlMappingReadyMixFromMoneyMasterVariant,
